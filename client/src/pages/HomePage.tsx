@@ -138,22 +138,48 @@ function getStoriesForLanguage(languageCode: string, allStories: typeof ENGLISH_
   
   const selectedLanguage = languageMap[languageCode] || 'English';
   
-  // Get native stories for the selected language
-  let nativeStories = languageCode === 'fr' ? FRENCH_STORIES : ENGLISH_STORIES;
+  // For languages with native content
+  if (languageCode === 'en') {
+    const translatedFrench = FRENCH_STORIES.map(story => ({
+      ...story,
+      id: `en-translated-${story.id}`,
+      language: 'English',
+      isTranslated: true,
+      originalLanguage: 'French',
+    }));
+    return [...ENGLISH_STORIES, ...translatedFrench];
+  }
   
-  // Get stories from other languages and mark them as translated
-  let otherStories = languageCode === 'fr' ? ENGLISH_STORIES : FRENCH_STORIES;
+  if (languageCode === 'fr') {
+    const translatedEnglish = ENGLISH_STORIES.map(story => ({
+      ...story,
+      id: `fr-translated-${story.id}`,
+      language: 'French',
+      isTranslated: true,
+      originalLanguage: 'English',
+    }));
+    return [...FRENCH_STORIES, ...translatedEnglish];
+  }
   
-  const translatedStories = otherStories.map(story => ({
+  // For languages without native content (German, Spanish, etc.)
+  // Show all stories from English and French as translated
+  const translatedEnglish = ENGLISH_STORIES.map(story => ({
     ...story,
-    id: `${languageCode}-translated-${story.id}`,
+    id: `${languageCode}-translated-en-${story.id}`,
     language: selectedLanguage,
     isTranslated: true,
-    originalLanguage: story.language,
+    originalLanguage: 'English',
   }));
   
-  // Prioritize native stories, then translated ones
-  return [...nativeStories, ...translatedStories];
+  const translatedFrench = FRENCH_STORIES.map(story => ({
+    ...story,
+    id: `${languageCode}-translated-fr-${story.id}`,
+    language: selectedLanguage,
+    isTranslated: true,
+    originalLanguage: 'French',
+  }));
+  
+  return [...translatedEnglish, ...translatedFrench];
 }
 
 export default function HomePage() {
