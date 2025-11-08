@@ -1163,5 +1163,565 @@ Los tres osos nunca volvieron a ver a Ricitos de Oro. Y Ricitos de Oro aprendió
     likeCount: 0,
     isPublic: true,
     imageUrl: "https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=800&h=600&fit=crop"
+  },
+  // ADDITIONAL ENGLISH STORIES
+  {
+    title: "Thumbelina",
+    summary: "A tiny girl no bigger than a thumb goes on an adventure and finds where she truly belongs.",
+    moral: "No matter how small you are, you have a place in the world where you belong.",
+    fullContent: `Once upon a time, there was a woman who wished very much for a little child. She went to a fairy who gave her a special seed. "Plant this in a flowerpot," said the fairy, "and see what happens!"
+
+The woman planted the seed, and soon a beautiful tulip grew. When the flower opened, inside sat a tiny girl, no bigger than a thumb! The woman named her Thumbelina.
+
+One night, an ugly toad hopped through the window. "What a pretty wife she would make for my son!" thought the toad, and she carried Thumbelina away to a lily pad in the middle of a stream.
+
+When Thumbelina woke, she was terrified and cried. Some friendly fish felt sorry for her and nibbled through the stem of the lily pad. It floated down the stream, carrying Thumbelina to safety.
+
+A large beetle found her and thought she was beautiful. He took her to his tree to meet his friends, but they all said, "She only has two legs! How ugly!" The beetle changed his mind and left poor Thumbelina alone.
+
+Summer passed, and winter came. A kind field mouse found Thumbelina nearly frozen and took her in. "You must marry my friend the mole," said the mouse. But the mole lived underground and would never see the sun again!
+
+While walking through the mole's tunnels, Thumbelina found a swallow who seemed dead. She cared for him through the winter, and when spring came, he was well again! "Come with me!" said the swallow. "I'm flying to warm lands."
+
+Thumbelina climbed onto the swallow's back, and they flew far away to a beautiful land of flowers. In the center of one flower sat a tiny prince, just her size! He had beautiful wings and a golden crown.
+
+"Will you be my wife and queen of all the flowers?" he asked. Thumbelina said yes! They gave her delicate wings, and she flew happily among the flowers with her prince, never to be lonely again.`,
+    ageRange: "6-10 years",
+    language: "en",
+    isTranslated: true,
+    originalLanguage: "da",
+    sourceType: "curated",
+    authorName: "Hans Christian Andersen",
+    likeCount: 0,
+    isPublic: true,
+    imageUrl: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop"
+  },
+  {
+    title: "The Elves and the Shoemaker",
+    summary: "A poor shoemaker receives mysterious help from magical elves who make beautiful shoes at night.",
+    moral: "Kindness and gratitude create magic, and helping others brings joy.",
+    fullContent: `Once upon a time, there lived a kind shoemaker and his wife. They were very poor, and one day the shoemaker had only enough leather left to make one pair of shoes.
+
+"I will cut the leather tonight and sew the shoes tomorrow," he said sadly. He cut the pieces and left them on his workbench, then went to bed.
+
+The next morning, he couldn't believe his eyes! On his workbench sat a beautiful pair of shoes, perfectly made with tiny, neat stitches. Not a single mark was wrong!
+
+A customer came that day and loved the shoes so much, he paid double the usual price! With this money, the shoemaker bought enough leather for two pairs of shoes.
+
+Again, he cut the leather and left it on his bench. In the morning, two pairs of beautifully made shoes appeared! These sold quickly too, and soon the shoemaker had enough leather for four pairs.
+
+This continued night after night. The shoemaker became prosperous, but he wondered: who was helping him?
+
+One night, he and his wife decided to hide and watch. At midnight, two tiny elves appeared! They were barefoot and wore ragged clothes, but they worked quickly and skillfully, making perfect shoes.
+
+"Those poor little elves have made us rich," said the wife, "but they have no proper clothes! Let's make them some gifts."
+
+The shoemaker's wife sewed two tiny shirts, coats, and trousers. The shoemaker made two tiny pairs of shoes. On Christmas Eve, they left these gifts on the workbench instead of leather.
+
+At midnight, the elves came and found the clothes! They laughed with joy, dressed quickly, and danced around the shop:
+
+"Now we're boys so fine and neat,
+No more shoes we need to make!"
+
+Then they danced out the door and were never seen again. But the shoemaker and his wife always prospered, and they never forgot the kindness of the little elves.`,
+    ageRange: "3-5 years",
+    language: "en",
+    isTranslated: true,
+    originalLanguage: "de",
+    sourceType: "curated",
+    authorName: "Brothers Grimm",
+    likeCount: 0,
+    isPublic: true,
+    imageUrl: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800&h=600&fit=crop"
+  },
+  {
+    title: "The Bremen Town Musicians",
+    summary: "Four aging animals run away and become friends, scaring robbers with their loud music.",
+    moral: "Friendship and working together make you stronger than you think.",
+    fullContent: `Once upon a time, there was a donkey who had worked hard for his master for many years. Now he was getting old, and his master planned to get rid of him. The donkey heard this and ran away, heading for the town of Bremen to become a musician.
+
+Along the way, he met a dog lying by the road. "Why are you so sad?" asked the donkey.
+
+"I'm old," said the dog, "and my master doesn't want me anymore because I can't hunt well."
+
+"Come with me to Bremen!" said the donkey. "We can be musicians together!" The dog agreed happily.
+
+Soon they met a cat, looking miserable. "What's wrong?" they asked.
+
+"My owner wants to get rid of me because I'm too old to catch mice," said the cat sadly.
+
+"Join us in Bremen!" they said. "We're going to be musicians!" The cat joined them.
+
+Next, they found a rooster crying loudly. "Why are you upset?" they asked.
+
+"Tomorrow my owner plans to make me into soup!" cried the rooster.
+
+"Come to Bremen with us!" they all said. "You have a fine voice for music!" So the four friends continued together.
+
+As night fell, they came to a cottage in the forest. Through the window, they saw robbers eating a feast. The animals were hungry and hatched a plan.
+
+The donkey stood on his hind legs by the window. The dog climbed on the donkey's back. The cat climbed on the dog. The rooster flew up and perched on the cat. Then, all together, they made their music: the donkey brayed, the dog barked, the cat meowed, and the rooster crowed!
+
+The robbers jumped up in fright! "A terrible monster!" they cried, and ran away into the forest.
+
+The four friends went inside, ate the delicious food, and decided to stay. They never did reach Bremen, but they lived happily together in that cottage, making music whenever they pleased.
+
+And the robbers? They were too frightened to ever come back!`,
+    ageRange: "3-5 years",
+    language: "en",
+    isTranslated: true,
+    originalLanguage: "de",
+    sourceType: "curated",
+    authorName: "Brothers Grimm",
+    likeCount: 0,
+    isPublic: true,
+    imageUrl: "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=800&h=600&fit=crop"
+  },
+  {
+    title: "Beauty and the Beast",
+    summary: "A kind girl learns to see beyond appearances and discovers true beauty comes from within.",
+    moral: "True beauty is found on the inside, not in outward appearances.",
+    fullContent: `Once upon a time, a wealthy merchant lived with his three daughters. The youngest, named Beauty, was as kind as she was lovely.
+
+One day, the merchant lost his fortune. The family moved to a small cottage in the countryside. Beauty's sisters complained constantly, but Beauty worked cheerfully and tried to keep everyone's spirits up.
+
+One winter day, the merchant got lost in a forest during a snowstorm. He found a magnificent castle and went inside for shelter. In the morning, he picked a rose from the garden for Beauty.
+
+Suddenly, a horrible Beast appeared! "How dare you steal my roses after I gave you shelter!" roared the Beast. "You must die for this!"
+
+The terrified merchant begged for mercy. "Please, I only wanted a rose for my daughter!"
+
+The Beast thought for a moment. "I will spare your life if one of your daughters comes to live with me of her own free will. You have one month."
+
+When Beauty heard this, she insisted on going. "It was my request for a rose that caused this trouble," she said. "I must go."
+
+At the Beast's castle, Beauty found luxury beyond imagination, but she was lonely and missed her father. The Beast visited her every evening and was always kind and gentle, though his appearance was frightening.
+
+One evening, the Beast asked, "Beauty, will you marry me?"
+
+"I'm sorry," she said gently, "I cannot." The Beast looked heartbroken but said nothing.
+
+Months passed, and Beauty began to see the kindness in the Beast's heart. When she asked to visit her sick father, the Beast agreed, though it pained him. "Take this magic ring," he said. "If you're not back in a week, I will die of a broken heart."
+
+Beauty found her father well, but her selfish sisters convinced her to stay longer. On the tenth night, Beauty dreamed of the Beast dying in his garden. Horrified, she used the magic ring to return instantly.
+
+She found the Beast collapsed by the rose bushes. "Don't die!" she cried, cradling his head. "I love you! Please, I'll marry you!"
+
+At these words, the castle lit up with magic! The Beast transformed into a handsome prince. "A witch cursed me," he explained, "and only true love could break the spell."
+
+Beauty and the Prince married and lived happily ever after, and Beauty's kind father came to live with them in the castle.`,
+    ageRange: "6-10 years",
+    language: "en",
+    isTranslated: true,
+    originalLanguage: "fr",
+    sourceType: "curated",
+    authorName: "Gabrielle-Suzanne Barbot de Villeneuve",
+    likeCount: 0,
+    isPublic: true,
+    imageUrl: "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=800&h=600&fit=crop"
+  },
+  {
+    title: "The Tortoise and the Hare",
+    summary: "A slow tortoise races a fast hare and wins through steady effort.",
+    moral: "Slow and steady wins the race. Natural talent means nothing without effort.",
+    fullContent: `One day, a hare was boasting about how fast he could run. "I'm the fastest animal in the forest!" he bragged. "No one can beat me!"
+
+"That may be true," said a small voice. It was a tortoise, slowly walking by. "But I bet I could beat you in a race."
+
+The hare laughed so hard he nearly fell over! "You? Beat me? That's ridiculous! You're one of the slowest animals alive!"
+
+"We'll see," said the tortoise calmly. "Shall we race tomorrow?"
+
+All the animals gathered to watch. The fox was chosen as the judge. He stood at the finish line far in the distance and waved a flag to start the race.
+
+The hare shot off like lightning! He was so far ahead that he looked back and couldn't even see the tortoise. "This is too easy," he yawned. "I think I'll take a little nap. Even if I sleep for an hour, I'll still win easily!"
+
+He lay down under a shady tree and fell fast asleep.
+
+Meanwhile, the tortoise kept walking, slowly but steadily. Step by step, he plodded along. He never stopped, never gave up, never complained about being tired.
+
+Hour after hour passed. The tortoise slowly and surely made his way along the path. He was determined to finish what he had started.
+
+Finally, the tortoise reached the tree where the hare was sleeping. He didn't stop to wake him up. He just kept walking toward the finish line.
+
+Much later, the hare woke up with a start. "Oh no! I overslept!" he cried. He looked toward the finish line and saw the tortoise just about to cross it!
+
+The hare ran as fast as he could, his legs pumping like pistons. But it was too late! Just as the hare reached the finish line, the tortoise crossed it.
+
+All the animals cheered for the tortoise! He had won the race!
+
+The hare hung his head in shame. He had learned an important lesson: talent and speed mean nothing without effort and dedication. The slow and steady tortoise had won the race after all.`,
+    ageRange: "0-2 years",
+    language: "en",
+    isTranslated: true,
+    originalLanguage: "gr",
+    sourceType: "curated",
+    authorName: "Aesop",
+    likeCount: 0,
+    isPublic: true,
+    imageUrl: "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=800&h=600&fit=crop"
+  },
+  {
+    title: "The Fisherman and His Wife",
+    summary: "A fisherman catches a magic fish, but his greedy wife keeps asking for more wishes.",
+    moral: "Be grateful for what you have, or greed may cost you everything.",
+    fullContent: `Once upon a time, a poor fisherman lived in a tiny shack with his wife. Every day he went fishing in the sea.
+
+One day, he caught a large golden fish. To his amazement, the fish spoke! "Please let me go," said the fish. "I am an enchanted prince!"
+
+The kind fisherman released the fish and went home. When he told his wife, she was angry. "You fool! You should have asked for a wish! Go back and ask for a nice cottage!"
+
+The fisherman returned to the sea and called the fish. "My wife wants a nice cottage," he said apologetically.
+
+"Go home," said the fish. "It is done." When the fisherman returned, their shack had become a pretty cottage!
+
+But soon his wife wanted more. "Go ask for a stone castle!" she demanded. The fish granted this wish too.
+
+Then she wanted to be queen! The fish made her queen. Then she wanted to be empress! The fish granted this as well.
+
+But still she wasn't satisfied. "I want to control the sun and moon!" she cried.
+
+The fisherman was horrified but went to the sea one last time. When he made this terrible request, the sea turned dark and stormy.
+
+"Go home," said the fish quietly.
+
+When the fisherman returned, the castle was gone, the fine clothes were gone, and they were back in their tiny shack by the sea.
+
+And there they remained, for his wife had finally learned that greed leads only to loss.`,
+    ageRange: "6-10 years",
+    language: "en",
+    isTranslated: true,
+    originalLanguage: "de",
+    sourceType: "curated",
+    authorName: "Brothers Grimm",
+    likeCount: 0,
+    isPublic: true,
+    imageUrl: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop"
+  },
+  {
+    title: "The Little Match Girl",
+    summary: "A poor girl lights matches on a cold night and sees beautiful visions that bring her comfort.",
+    moral: "Kindness and compassion matter, especially to those who are suffering.",
+    fullContent: `It was New Year's Eve, and snow was falling. A poor little girl walked through the streets with bare feet and no coat. She was carrying matches to sell, but no one had bought any all day.
+
+She was cold and hungry, but she dared not go home because her father would be angry that she hadn't sold anything. Her hands were nearly frozen, and she found a corner between two houses where she huddled down.
+
+"If I light just one match," she thought, "it might warm my fingers a little." She struck a match.
+
+What a wonderful, warm light! It seemed to her that she was sitting before a great iron stove with brass ornaments. The fire burned so beautifully! But then the match went out, and the stove vanished. She was sitting cold in the corner again.
+
+She struck another match. Through its light, she could see right through the wall of the nearest house. There was a table covered with a white cloth and beautiful china, and in the middle sat a roasted goose stuffed with apples and prunes! And what was even more wonderful, the goose hopped down from the dish and waddled across the floor toward her!
+
+But the match went out, and she saw only the thick, cold wall.
+
+She struck another match. Now she was sitting under a beautiful Christmas tree, even larger and more decorated than the one she had seen through the glass door at the rich merchant's last Christmas. Thousands of candles burned on the green branches, and colorful pictures looked down at her.
+
+The little girl stretched out both her hands—and the match went out. The Christmas candles went higher and higher, and she saw that they had become the stars in the sky. One fell down, making a long line of fire.
+
+"Someone is dying," she thought, for her old grandmother, the only person who had ever loved her, had told her that when a star falls, a soul goes up to God.
+
+She struck another match on the wall. It became bright again, and in the light stood her dear old grandmother, bright and shining, kind and loving.
+
+"Grandmother!" cried the child. "Oh, take me with you! I know you will disappear when the match goes out, just like the warm stove, the wonderful goose, and the beautiful Christmas tree!"
+
+And she quickly struck the whole bundle of matches, for she wanted to keep her grandmother there. The matches burned with such a glow that it became brighter than daylight. Grandmother had never been so tall and beautiful. She took the little girl in her arms, and together they flew in brightness and joy, higher and higher, to where there was no cold, no hunger, and no fear—they were with God.
+
+In the cold morning, people found the little girl in the corner, her cheeks red, a smile on her lips—frozen to death on the last evening of the old year. The New Year's sun rose on the little body sitting there with the matches, one bundle almost burned up.
+
+"She tried to warm herself," people said. But no one knew what beautiful things she had seen, nor how gloriously she had gone with her grandmother into the joy of the New Year.`,
+    ageRange: "6-10 years",
+    language: "en",
+    isTranslated: true,
+    originalLanguage: "da",
+    sourceType: "curated",
+    authorName: "Hans Christian Andersen",
+    likeCount: 0,
+    isPublic: true,
+    imageUrl: "https://images.unsplash.com/photo-1482160549825-59d1b23cb208?w=800&h=600&fit=crop"
+  },
+  {
+    title: "The Town Mouse and the Country Mouse",
+    summary: "Two mice discover that what looks better isn't always better for everyone.",
+    moral: "Simple pleasures and safety are worth more than luxury and danger.",
+    fullContent: `Once upon a time, a town mouse went to visit his cousin who lived in the country. The country mouse was delighted to see his cousin and prepared a meal of simple country food—barley, grain, and roots.
+
+The town mouse nibbled politely but couldn't help turning up his nose. "Dear cousin," he said, "how can you bear to live on such plain food? Come to town with me, and I'll show you how to really live!"
+
+The country mouse had never been to town before, so he agreed to visit. That evening, they arrived at a grand house where the town mouse lived. They crept into the dining room, where the remains of a magnificent feast were still on the table.
+
+"Help yourself!" said the town mouse proudly. The country mouse couldn't believe his eyes! There was cheese, cake, jelly, and all sorts of delicious treats he'd never tasted before.
+
+But just as he took his first bite of cake, there was a terrifying growl. Two huge dogs burst into the room! The mice ran as fast as they could and barely escaped into a tiny hole in the wall.
+
+"Is it always like this?" panted the country mouse, his heart pounding.
+
+"Oh yes," said the town mouse. "But you get used to it. Isn't the food worth it?"
+
+The country mouse waited until the dogs had gone, then said, "Thank you, cousin, but I think I'll go back to the country. I'd rather eat simple food in safety than feast like a king in constant fear. Goodbye!"
+
+And he hurried back to his peaceful country home, where he could eat his barley and grain in peace without fear of dogs or danger.`,
+    ageRange: "0-2 years",
+    language: "en",
+    isTranslated: true,
+    originalLanguage: "gr",
+    sourceType: "curated",
+    authorName: "Aesop",
+    likeCount: 0,
+    isPublic: true,
+    imageUrl: "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=800&h=600&fit=crop"
+  },
+  {
+    title: "The Wolf and the Seven Young Kids",
+    summary: "Seven little goats must outsmart a clever wolf who wants to eat them while their mother is away.",
+    moral: "Listen to your parents' warnings and be clever enough to recognize danger.",
+    fullContent: `Once upon a time there was an old mother goat who had seven little kids. She loved them dearly, as any mother loves her children.
+
+One day she needed to go into the forest to get food. She called all seven to her and said, "Dear children, I must go out. Be on your guard against the wolf. If he gets in, he will eat you all up! The wicked creature often disguises himself, but you can recognize him by his rough voice and his black paws."
+
+The kids promised to be careful. Soon after, there was a knock at the door and a voice called, "Open the door, dear children! Your mother is here and has brought something for each of you!"
+
+But the little kids heard the rough voice and knew it was the wolf. "We won't open the door!" they cried. "You are not our mother. She has a gentle voice, but yours is rough. You are the wolf!"
+
+The wolf went away and swallowed a lump of chalk to make his voice soft. He came back and knocked again. "Open the door, dear children! Your mother is here!"
+
+But the wolf had put his black paw on the window sill. The kids saw it and cried, "We won't open the door! Our mother doesn't have black paws. You are the wolf!"
+
+The wolf ran to the baker and had him cover his paws with dough, then to the miller to dust them with white flour. Now his paws looked white!
+
+Once more he knocked at the door. "Open the door, children! Your mother is here!" His voice was soft, and his paws looked white, so the kids thought their mother had returned and opened the door.
+
+In sprang the wolf! The little goats tried to hide. One jumped under the table, another into the bed, the third into the oven, the fourth in the kitchen, the fifth in the cupboard, the sixth under the washbowl, and the seventh into the clock case.
+
+But the wolf found them all except the youngest in the clock case, and he gobbled them up one by one!
+
+When the mother goat came home, she found the door wide open and her house a mess. She called for her children, and only the youngest answered from the clock case. He told her what had happened.
+
+The mother goat went outside with the youngest kid and found the wolf sleeping under a tree, his belly very full. She noticed his belly moving. "Can my children still be alive?" she wondered.
+
+She sent her youngest home for scissors, needle, and thread. She cut open the wolf's belly, and out jumped the six kids, all still alive! The greedy wolf had swallowed them whole!
+
+"Quickly, fetch some stones!" said the mother. They filled the wolf's belly with stones, and the mother sewed him back up.
+
+When the wolf woke up, he was very thirsty and went to the well to drink. But the stones made him so heavy that he fell in and drowned!
+
+The seven little kids and their mother danced for joy around the well, singing, "The wolf is dead! The wolf is dead!" And they all lived safely and happily ever after.`,
+    ageRange: "3-5 years",
+    language: "en",
+    isTranslated: true,
+    originalLanguage: "de",
+    sourceType: "curated",
+    authorName: "Brothers Grimm",
+    likeCount: 0,
+    isPublic: true,
+    imageUrl: "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=800&h=600&fit=crop"
+  },
+  {
+    title: "The Golden Goose",
+    summary: "A kind young man receives a magic golden goose that helps him win the princess.",
+    moral: "Kindness and generosity are rewarded, while selfishness leads nowhere.",
+    fullContent: `Once there were three brothers. The two eldest were clever and proud, but the youngest, called Simpleton, was kind and simple-minded. His brothers often made fun of him.
+
+One day, the eldest brother went into the forest to cut wood. His mother gave him a fine cake and a bottle of wine for lunch. In the forest, he met a little old man who said, "I'm so hungry and thirsty. Will you share your food?"
+
+"Go away!" said the eldest brother rudely. "I need it all for myself!" But when he began to chop wood, he hurt his arm badly and had to go home.
+
+The second brother went next, with the same fine cake and wine. The little old man asked him to share, but he also refused rudely. Soon he hurt his leg and had to go home too.
+
+Then Simpleton asked to go. His brothers laughed, but his mother let him go, giving him only a plain ash cake and sour beer.
+
+When the little old man asked Simpleton to share, he said kindly, "I only have a plain cake and sour beer, but you're welcome to share it!" But when Simpleton unwrapped the cake, it had turned into a fine cake, and the beer had become sweet wine! They ate together happily.
+
+"Because you have a kind heart," said the old man, "cut down that old tree, and you'll find something valuable." Then he disappeared.
+
+Simpleton cut down the tree and found a goose with feathers of pure gold! He decided to take it to an inn for the night.
+
+The innkeeper's three daughters saw the golden goose and each wanted a golden feather. The first touched it to pluck a feather, but her hand stuck fast! The second tried to pull her sister away, but she stuck too! The third tried to help, and she stuck as well!
+
+In the morning, Simpleton walked away with his goose, and the three girls had to run along behind, stuck fast!
+
+In a field, a parson saw them and called, "Shame on you girls, running after a young man!" He grabbed the youngest girl's arm—and stuck fast! Soon a sexton, and then two farmers joined the silly procession, all stuck together!
+
+They came to a city where the king's daughter had never laughed in her life. The king had declared that whoever could make her laugh could marry her.
+
+When the princess saw Simpleton's goose followed by seven people all stuck in a row, running and stumbling, she burst into laughter! She laughed and laughed until tears ran down her cheeks!
+
+The kind Simpleton married the princess, and they lived happily ever after. And the golden goose brought them good fortune all their days.`,
+    ageRange: "3-5 years",
+    language: "en",
+    isTranslated: true,
+    originalLanguage: "de",
+    sourceType: "curated",
+    authorName: "Brothers Grimm",
+    likeCount: 0,
+    isPublic: true,
+    imageUrl: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&h=600&fit=crop"
+  },
+  {
+    title: "Puss in Boots",
+    summary: "A clever cat helps his poor master become rich by outwitting an ogre and winning a princess.",
+    moral: "Cleverness and loyalty can change your fortune.",
+    fullContent: `Once there was a miller who died and left his three sons with only three things: his mill, his donkey, and his cat. The eldest son got the mill, the middle son got the donkey, and the youngest son got only the cat.
+
+"How unlucky I am," sighed the youngest son. "My brothers can work together, but what can I do with just a cat?"
+
+"Don't worry, master!" said the cat, who could talk. "Just get me a pair of boots and a bag, and you'll see that I'm not such a bad gift after all!"
+
+Amazed, the young man used his last coins to buy the cat a fine pair of boots and a bag. The cat looked very handsome in his boots!
+
+Puss went into the forest, caught a rabbit in his bag, and took it to the king. "Your Majesty," he said with a bow, "my master, the Marquis of Carabas, sends you this gift."
+
+The king was pleased. Day after day, Puss brought the king fine gifts of game, always saying they came from the Marquis of Carabas.
+
+One day, Puss learned the king would drive by the river with his daughter. "Master," he said, "go swim in the river where I tell you, and your fortune is made!"
+
+While the young man swam, Puss hid his poor clothes and cried, "Help! Help! The Marquis of Carabas is drowning! Thieves have stolen his clothes!"
+
+The king remembered the Marquis who sent him gifts and sent servants with fine clothes. When the young man was dressed in royal garments, he looked so handsome that the princess fell in love with him at once!
+
+"Come ride with us!" said the king. As they drove, Puss ran ahead to the fields. "When the king asks who owns these fields," Puss told the workers, "say they belong to the Marquis of Carabas, or the ogre will eat you!"
+
+The king saw the fine fields and asked, "Who owns all this?"
+
+"The Marquis of Carabas, Your Majesty!" said the workers.
+
+At last, Puss came to a great castle owned by a terrible ogre. "I've heard you can transform into any animal," Puss said. "But I bet you can't become a lion!"
+
+"Can't I?" roared the ogre, and instantly became a fierce lion!
+
+"Impressive!" said Puss. "But anyone can become something large. I bet you can't become something tiny, like a mouse!"
+
+"Watch this!" said the ogre, and became a little mouse. Quick as lightning, Puss pounced and ate him up!
+
+When the king arrived at the castle, Puss greeted them. "Welcome to the castle of the Marquis of Carabas!"
+
+The king was so impressed that he offered his daughter's hand in marriage. The miller's son and the princess married and lived happily ever after in the ogre's castle.
+
+And Puss in Boots? He became a great lord and only chased mice for fun!`,
+    ageRange: "6-10 years",
+    language: "en",
+    isTranslated: true,
+    originalLanguage: "fr",
+    sourceType: "curated",
+    authorName: "Charles Perrault",
+    likeCount: 0,
+    isPublic: true,
+    imageUrl: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800&h=600&fit=crop"
+  },
+  {
+    title: "Aladdin and the Magic Lamp",
+    summary: "A poor boy finds a magic lamp with a genie inside who grants wishes.",
+    moral: "True worth comes from who you are inside, not from magical treasures.",
+    fullContent: `Long ago in China, there lived a poor boy named Aladdin. One day, a mysterious stranger claimed to be his uncle and promised to make him rich.
+
+The stranger led Aladdin to a cave. "Go inside and fetch me an old lamp," he said. "But touch nothing else!"
+
+Inside the cave, Aladdin found treasures beyond imagination! He took the old lamp but couldn't resist taking some jewels too. When he tried to leave, the entrance was blocked!
+
+"Give me the lamp first!" demanded the stranger, who was actually a wicked magician.
+
+"Help me out first!" said Aladdin. Angrily, the magician sealed the cave with Aladdin inside!
+
+Alone in the dark, Aladdin accidentally rubbed the lamp. With a thunderous sound, an enormous genie appeared! "I am the Genie of the Lamp," he said. "Your wish is my command!"
+
+"Get me out of this cave!" cried Aladdin. Instantly, he was home with his mother.
+
+When Aladdin rubbed the lamp again, the genie appeared. "We're hungry," said Aladdin. The genie brought them a feast on silver dishes! They sold the dishes and lived comfortably.
+
+One day, Aladdin saw the Sultan's beautiful daughter, Princess Badroulbadour, and fell deeply in love. He sent his mother to the Sultan with the cave jewels as a gift. The Sultan was amazed by the jewels and agreed to the marriage!
+
+For the wedding, Aladdin commanded the genie to build a magnificent palace overnight. The Sultan was astounded!
+
+But the wicked magician learned that Aladdin was alive and had the lamp. Disguised as a merchant, he went to the palace calling, "New lamps for old!"
+
+The princess, not knowing the lamp's value, traded it for a new one. The magician immediately commanded the genie to transport the palace, with the princess inside, far away!
+
+The Sultan was furious and gave Aladdin forty days to bring back his daughter. Aladdin searched desperately. Finally, he found the palace in a distant land.
+
+The princess was overjoyed to see him! "The magician carries the lamp everywhere," she whispered.
+
+Aladdin had a plan. He gave the princess a sleeping powder. "Put this in the magician's wine," he said.
+
+That evening, the magician drank his wine and fell into a deep sleep. Aladdin took the lamp and rubbed it. The genie appeared!
+
+"Take us all back home!" commanded Aladdin. In an instant, the palace returned to its proper place.
+
+The Sultan rejoiced to have his daughter back. Aladdin married the princess, and they lived happily ever after. And Aladdin learned that while the lamp had brought him riches, it was his own bravery and cleverness that had saved the day.`,
+    ageRange: "6-10 years",
+    language: "en",
+    isTranslated: true,
+    originalLanguage: "ar",
+    sourceType: "curated",
+    authorName: "One Thousand and One Nights",
+    likeCount: 0,
+    isPublic: true,
+    imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop"
+  },
+  {
+    title: "Ali Baba and the Forty Thieves",
+    summary: "A poor woodcutter discovers a thieves' treasure cave and uses the magic words to enter.",
+    moral: "Honesty and cleverness triumph over greed and wickedness.",
+    fullContent: `Long ago in Persia, there were two brothers: Cassim, who was rich, and Ali Baba, who was poor and worked as a woodcutter.
+
+One day, while cutting wood, Ali Baba saw forty men on horses approaching. Sensing danger, he hid in a tree.
+
+The men stopped at a large rock. Their captain cried, "Open Sesame!" and the rock opened to reveal a cave! The men went inside with their bags. Later they came out, the captain said, "Close Sesame!" and the rock sealed shut. After they left, Ali Baba climbed down.
+
+He stood before the rock and said, "Open Sesame!" The cave opened! Inside, he found mountains of gold, silk, and jewels—the treasure of forty thieves!
+
+Ali Baba took only a few bags of gold, careful not to be greedy. He said, "Close Sesame!" and hurried home.
+
+When Ali Baba's wife wanted to measure how much gold they had, she borrowed a scale from Cassim's wife. Clever Cassim's wife put wax on the bottom of the scale, and when it was returned, a gold coin was stuck to it!
+
+Cassim forced Ali Baba to tell him the secret. Greedy Cassim rushed to the cave, loaded himself with treasures, but in his greed forgot the magic words to get out! When the thieves returned, they killed him.
+
+Ali Baba found his brother's body and brought it home for burial. The thieves knew someone else had discovered their secret. They searched the town, marking Ali Baba's door with chalk.
+
+But Ali Baba's clever servant girl, Morgiana, saw the mark and marked all the other doors in the street the same way! The thieves were confused.
+
+Next, the thieves hid in oil jars and their captain posed as an oil merchant, seeking shelter at Ali Baba's house. But clever Morgiana discovered the hidden thieves! She boiled oil and poured it into each jar, defeating them all.
+
+Finally, the captain came disguised as a merchant. At dinner, Morgiana performed a dance and, recognizing him, plunged a dagger into his heart, saving Ali Baba!
+
+Ali Baba was so grateful he freed Morgiana and she married his son. They shared the treasure wisely and lived happily ever after, and the secret of the cave was safe.`,
+    ageRange: "6-10 years",
+    language: "en",
+    isTranslated: true,
+    originalLanguage: "ar",
+    sourceType: "curated",
+    authorName: "One Thousand and One Nights",
+    likeCount: 0,
+    isPublic: true,
+    imageUrl: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?w=800&h=600&fit=crop"
+  },
+  {
+    title: "The Lion and the Mouse",
+    summary: "A tiny mouse helps a mighty lion, proving that even the smallest can be important.",
+    moral: "No act of kindness is ever wasted, and everyone can help, no matter how small.",
+    fullContent: `Once upon a time, a great lion was sleeping under a shady tree when a little mouse ran across his paw. The lion woke up and caught the mouse in his huge paw.
+
+"Please don't eat me!" squeaked the little mouse. "If you let me go, someday I might be able to help you!"
+
+The lion laughed at the very idea. "You? Help me? You're so tiny!" But he thought it was funny and let the mouse go.
+
+Several days later, the lion was walking through the jungle when he got caught in a hunter's net! The more he struggled, the tighter the ropes became. He roared loudly, but no one came to help.
+
+The little mouse heard the lion's roar and ran as fast as his tiny legs could carry him. When he saw the lion trapped in the net, he immediately started gnawing on the ropes with his sharp little teeth.
+
+He chewed and chewed, working his way through rope after rope. Finally, the net was weak enough for the lion to break free!
+
+"You laughed at me when I said I could help you," said the mouse. "But you see, even a tiny mouse can help a mighty lion!"
+
+The lion was very grateful. "You're right, little friend," he said. "I was wrong to think that only the big and strong can help others. Thank you for saving my life!"
+
+From that day on, the lion and the mouse were the best of friends. And the lion never again judged anyone by their size.`,
+    ageRange: "0-2 years",
+    language: "en",
+    isTranslated: true,
+    originalLanguage: "gr",
+    sourceType: "curated",
+    authorName: "Aesop",
+    likeCount: 0,
+    isPublic: true,
+    imageUrl: "https://images.unsplash.com/photo-1551269901-5c5e14c25df7?w=800&h=600&fit=crop"
   }
 ];

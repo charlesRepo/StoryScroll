@@ -145,9 +145,9 @@ Added comprehensive profile editing functionality:
 ### Classical Bedtime Stories & Auto-Initialization (November 2025)
 **Story Library Expansion:**
 Expanded the classical bedtime stories collection to provide a rich, diverse library:
-- **Total Stories**: 37 stories (6 sample stories + 31 classical tales)
+- **Total Stories**: 51 stories (6 sample stories + 45 classical tales)
 - **Distribution**: Well-balanced across all four languages and three age ranges
-- **English**: 16 stories including Hansel and Gretel, Cinderella, Little Red Riding Hood, The Three Little Pigs, The Ugly Duckling, Goldilocks, The Emperor's New Clothes, Jack and the Beanstalk, The Gingerbread Man, Rapunzel, The Little Mermaid, Sleeping Beauty, The Princess and the Pea, and more
+- **English**: 30 stories including Hansel and Gretel, Cinderella, Little Red Riding Hood, The Three Little Pigs, The Ugly Duckling, Goldilocks, The Emperor's New Clothes, Jack and the Beanstalk, The Gingerbread Man, Rapunzel, The Little Mermaid, Sleeping Beauty, The Princess and the Pea, Thumbelina, The Elves and the Shoemaker, The Bremen Town Musicians, Beauty and the Beast, The Tortoise and the Hare, The Fisherman and His Wife, The Little Match Girl, The Town Mouse and the Country Mouse, The Wolf and the Seven Young Kids, The Golden Goose, Puss in Boots, Aladdin, Ali Baba and the Forty Thieves, The Lion and the Mouse, and more
 - **French**: 7 stories including Le Petit Chaperon Rouge, Cendrillon, Le Chat Botté, La Belle au Bois Dormant, Le Vilain Petit Canard, Boucle d'Or et les Trois Ours
 - **German**: 7 stories including Hänsel und Gretel, Schneewittchen, Der Froschkönig, Rumpelstilzchen, Rotkäppchen, Aschenputtel
 - **Spanish**: 7 stories including Los Tres Cerditos, Caperucita Roja, Blancanieves, La Cenicienta, El Patito Feo, Ricitos de Oro y los Tres Osos
@@ -173,7 +173,7 @@ Implemented automatic database population to ensure production databases have co
 - **Maintenance Free**: No manual seed script execution required
 
 **Implementation:**
-- Stories curated in `server/classical-stories.ts` (31 classical tales)
+- Stories curated in `server/classical-stories.ts` (45 classical tales)
 - Sample stories defined in `server/initialize-stories.ts` (6 sample stories)
 - Auto-initialization integrated into server startup sequence
 - All stories include: title, summary, moral lesson, full content, age range, language, author attribution, appropriate images
