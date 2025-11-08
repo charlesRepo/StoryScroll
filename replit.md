@@ -142,25 +142,38 @@ Added comprehensive profile editing functionality:
 - Proper validation for username uniqueness and password strength (min 6 characters)
 - Backend endpoint: PATCH `/api/users/profile`
 
-### Classical Bedtime Stories (November 2025)
-Integrated curated collection of classical public domain bedtime stories:
-- **Total Stories**: 16 (6 original sample stories + 10 classical tales)
-- **English**: Hansel and Gretel, Cinderella, Little Red Riding Hood, The Three Little Pigs
-- **French**: Le Petit Chaperon Rouge (Little Red Riding Hood), Cendrillon (Cinderella)
-- **German**: Hänsel und Gretel, Schneewittchen (Snow White)
-- **Spanish**: Los Tres Cerditos (Three Little Pigs), Caperucita Roja (Little Red Riding Hood)
+### Classical Bedtime Stories & Auto-Initialization (November 2025)
+**Story Library Expansion:**
+Expanded the classical bedtime stories collection to provide a rich, diverse library:
+- **Total Stories**: 37 stories (6 sample stories + 31 classical tales)
+- **Distribution**: Well-balanced across all four languages and three age ranges
+- **English**: 16 stories including Hansel and Gretel, Cinderella, Little Red Riding Hood, The Three Little Pigs, The Ugly Duckling, Goldilocks, The Emperor's New Clothes, Jack and the Beanstalk, The Gingerbread Man, Rapunzel, The Little Mermaid, Sleeping Beauty, The Princess and the Pea, and more
+- **French**: 7 stories including Le Petit Chaperon Rouge, Cendrillon, Le Chat Botté, La Belle au Bois Dormant, Le Vilain Petit Canard, Boucle d'Or et les Trois Ours
+- **German**: 7 stories including Hänsel und Gretel, Schneewittchen, Der Froschkönig, Rumpelstilzchen, Rotkäppchen, Aschenputtel
+- **Spanish**: 7 stories including Los Tres Cerditos, Caperucita Roja, Blancanieves, La Cenicienta, El Patito Feo, Ricitos de Oro y los Tres Osos
 
 **Sources:**
 - Brothers Grimm (German fairy tales)
 - Charles Perrault (French fairy tales)
-- Traditional English tales
+- Hans Christian Andersen (Danish fairy tales)
+- Traditional English, French, German, and Spanish tales
 
 **Translation Metadata:**
 - Stories properly flagged with `isTranslated` field
 - Original language tracked in `originalLanguage` field
 - Enables future features for showing original vs translated content
 
+**Auto-Initialization System:**
+Implemented automatic database population to ensure production databases have content without manual intervention:
+- **Module**: `server/initialize-stories.ts` contains initialization logic
+- **Trigger**: Runs automatically on every app startup via `server/index.ts`
+- **Behavior**: Checks if stories table is empty; if yes, populates with all sample and classical stories
+- **Smart Detection**: Skips initialization if stories already exist (prevents duplicates)
+- **Production Ready**: Ensures production database auto-populates on first deployment
+- **Maintenance Free**: No manual seed script execution required
+
 **Implementation:**
-- Stories curated in `server/classical-stories.ts`
-- Added to database via seed script `server/seed.ts`
-- All stories include: title, summary, moral lesson, full content, age range, language, author attribution
+- Stories curated in `server/classical-stories.ts` (31 classical tales)
+- Sample stories defined in `server/initialize-stories.ts` (6 sample stories)
+- Auto-initialization integrated into server startup sequence
+- All stories include: title, summary, moral lesson, full content, age range, language, author attribution, appropriate images
