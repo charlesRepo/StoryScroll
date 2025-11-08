@@ -40,7 +40,7 @@ export default function StoryCard({
       onClick={onClick}
       data-testid="card-story"
     >
-      <div className="flex-1 relative overflow-hidden">
+      <div className="h-1/2 relative overflow-hidden">
         <img
           src={imageUrl}
           alt={title}
@@ -49,7 +49,7 @@ export default function StoryCard({
         />
       </div>
 
-      <div className="p-6 space-y-4">
+      <div className="h-1/2 p-6 space-y-4 overflow-y-auto">
         <div className="flex items-start justify-between gap-4">
           <h2 className="text-2xl font-serif font-semibold text-foreground leading-tight flex-1" data-testid="text-story-title">
             {title}
@@ -83,7 +83,7 @@ export default function StoryCard({
           )}
         </div>
 
-        <p className="text-base text-foreground leading-relaxed line-clamp-4" data-testid="text-story-summary">
+        <p className="text-base text-foreground leading-relaxed" data-testid="text-story-summary">
           {summary}
         </p>
 
