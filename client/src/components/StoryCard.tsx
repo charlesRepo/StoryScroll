@@ -1,4 +1,4 @@
-import { Heart, Book, Globe, User } from "lucide-react";
+import { Heart, Book, Globe, User, Clock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
@@ -6,6 +6,7 @@ export interface StoryCardProps {
   id: string;
   title: string;
   summary: string;
+  fullContent?: string;
   imageUrl: string;
   ageRange: string;
   language: string;
@@ -19,9 +20,18 @@ export interface StoryCardProps {
   onClick?: () => void;
 }
 
+// Calculate reading time based on word count (assuming 200 words per minute for reading aloud to children)
+function calculateReadingTime(text: string): number {
+  const wordsPerMinute = 200;
+  const wordCount = text.trim().split(/\s+/).length;
+  const minutes = Math.ceil(wordCount / wordsPerMinute);
+  return Math.max(1, minutes); // Minimum 1 minute
+}
+
 export default function StoryCard({
   title,
   summary,
+  fullContent,
   imageUrl,
   ageRange,
   language,
@@ -34,6 +44,8 @@ export default function StoryCard({
   onLike,
   onClick,
 }: StoryCardProps) {
+  const readingTime = fullContent ? calculateReadingTime(fullContent) : null;
+
   return (
     <div
       className="h-screen w-full flex flex-col bg-background snap-start cursor-pointer"
@@ -51,9 +63,17 @@ export default function StoryCard({
 
       <div className="h-1/2 p-6 space-y-4 overflow-y-auto">
         <div className="flex items-start justify-between gap-4">
-          <h2 className="text-2xl font-serif font-semibold text-foreground leading-tight flex-1" data-testid="text-story-title">
-            {title}
-          </h2>
+          <div className="flex-1 space-y-2">
+            <h2 className="text-2xl font-serif font-semibold text-foreground leading-tight" data-testid="text-story-title">
+              {title}
+            </h2>
+            {readingTime && (
+              <Badge variant="outline" className="gap-1" data-testid="badge-reading-time">
+                <Clock className="h-3 w-3" />
+                {readingTime} min read
+              </Badge>
+            )}
+          </div>
           <Button
             size="icon"
             variant="ghost"

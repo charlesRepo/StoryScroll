@@ -1,4 +1,4 @@
-import { X, Heart, Book, Globe, User } from "lucide-react";
+import { X, Heart, Book, Globe, User, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -19,6 +19,14 @@ export interface StoryModalProps {
   onLike?: () => void;
 }
 
+// Calculate reading time based on word count (assuming 200 words per minute for reading aloud to children)
+function calculateReadingTime(text: string): number {
+  const wordsPerMinute = 200;
+  const wordCount = text.trim().split(/\s+/).length;
+  const minutes = Math.ceil(wordCount / wordsPerMinute);
+  return Math.max(1, minutes); // Minimum 1 minute
+}
+
 export default function StoryModal({
   title,
   fullContent,
@@ -34,6 +42,8 @@ export default function StoryModal({
   onClose,
   onLike,
 }: StoryModalProps) {
+  const readingTime = calculateReadingTime(fullContent);
+
   return (
     <div className="fixed inset-0 z-50 bg-background" data-testid="modal-story">
       <div className="flex flex-col h-full">
@@ -69,9 +79,15 @@ export default function StoryModal({
             />
 
             <div className="space-y-4">
-              <h1 className="text-3xl font-serif font-semibold text-foreground" data-testid="text-story-modal-title">
-                {title}
-              </h1>
+              <div className="space-y-2">
+                <h1 className="text-3xl font-serif font-semibold text-foreground" data-testid="text-story-modal-title">
+                  {title}
+                </h1>
+                <Badge variant="outline" className="gap-1" data-testid="badge-reading-time-modal">
+                  <Clock className="h-3 w-3" />
+                  {readingTime} min read
+                </Badge>
+              </div>
 
               <div className="flex flex-wrap gap-2">
                 <Badge variant="secondary" data-testid="badge-age-modal">
