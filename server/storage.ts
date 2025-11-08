@@ -1,38 +1,159 @@
-import { type User, type InsertUser } from "@shared/schema";
-import { randomUUID } from "crypto";
-
-// modify the interface with any CRUD methods
-// you might need
+import { 
+  type User, 
+  type InsertUser, 
+  type Story, 
+  type InsertStory, 
+  type LikedStory, 
+  type InsertLikedStory,
+  users,
+  stories,
+  likedStories
+} from "@shared/schema";
+import { db } from "./db";
+import { eq, and, desc } from "drizzle-orm";
 
 export interface IStorage {
+  // User operations
   getUser(id: string): Promise<User | undefined>;
   getUserByUsername(username: string): Promise<User | undefined>;
   createUser(user: InsertUser): Promise<User>;
+  updateUserPreferences(id: string, preferences: { preferredLanguage?: string; preferredAgeRange?: string }): Promise<User | undefined>;
+
+  // Story operations
+  getStory(id: string): Promise<Story | undefined>;
+  getStories(filters: { language?: string; ageRange?: string; isPublic?: boolean }): Promise<Story[]>;
+  createStory(story: InsertStory): Promise<Story>;
+  incrementStoryLikes(storyId: string): Promise<void>;
+  decrementStoryLikes(storyId: string): Promise<void>;
+
+  // Liked stories operations
+  getUserLikedStories(userId: string): Promise<Story[]>;
+  likeStory(userId: string, storyId: string): Promise<LikedStory>;
+  unlikeStory(userId: string, storyId: string): Promise<void>;
+  isStoryLiked(userId: string, storyId: string): Promise<boolean>;
 }
 
-export class MemStorage implements IStorage {
-  private users: Map<string, User>;
-
-  constructor() {
-    this.users = new Map();
-  }
-
+export class DbStorage implements IStorage {
+  // User operations
   async getUser(id: string): Promise<User | undefined> {
-    return this.users.get(id);
+    const result = await db.select().from(users).where(eq(users.id, id));
+    return result[0];
   }
 
   async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
+    const result = await db.select().from(users).where(eq(users.username, username));
+    return result[0];
   }
 
-  async createUser(insertUser: InsertUser): Promise<User> {
-    const id = randomUUID();
-    const user: User = { ...insertUser, id };
-    this.users.set(id, user);
-    return user;
+  async createUser(user: InsertUser): Promise<User> {
+    const result = await db.insert(users).values(user).returning();
+    return result[0];
+  }
+
+  async updateUserPreferences(id: string, preferences: { preferredLanguage?: string; preferredAgeRange?: string }): Promise<User | undefined> {
+    const result = await db.update(users)
+      .set(preferences)
+      .where(eq(users.id, id))
+      .returning();
+    return result[0];
+  }
+
+  // Story operations
+  async getStory(id: string): Promise<Story | undefined> {
+    const result = await db.select().from(stories).where(eq(stories.id, id));
+    return result[0];
+  }
+
+  async getStories(filters: { language?: string; ageRange?: string; isPublic?: boolean } = {}): Promise<Story[]> {
+    let query = db.select().from(stories);
+    
+    const conditions = [];
+    if (filters.language) conditions.push(eq(stories.language, filters.language));
+    if (filters.ageRange) conditions.push(eq(stories.ageRange, filters.ageRange));
+    if (filters.isPublic !== undefined) conditions.push(eq(stories.isPublic, filters.isPublic));
+    
+    if (conditions.length > 0) {
+      query = query.where(and(...conditions)) as any;
+    }
+    
+    return await query.orderBy(desc(stories.createdAt));
+  }
+
+  async createStory(story: InsertStory): Promise<Story> {
+    const result = await db.insert(stories).values(story).returning();
+    return result[0];
+  }
+
+  async incrementStoryLikes(storyId: string): Promise<void> {
+    const story = await this.getStory(storyId);
+    if (story) {
+      await db.update(stories)
+        .set({ likeCount: (story.likeCount || 0) + 1 })
+        .where(eq(stories.id, storyId));
+    }
+  }
+
+  async decrementStoryLikes(storyId: string): Promise<void> {
+    const story = await this.getStory(storyId);
+    if (story && story.likeCount && story.likeCount > 0) {
+      await db.update(stories)
+        .set({ likeCount: story.likeCount - 1 })
+        .where(eq(stories.id, storyId));
+    }
+  }
+
+  // Liked stories operations
+  async getUserLikedStories(userId: string): Promise<Story[]> {
+    const result = await db
+      .select({
+        id: stories.id,
+        title: stories.title,
+        summary: stories.summary,
+        moral: stories.moral,
+        fullContent: stories.fullContent,
+        imageUrl: stories.imageUrl,
+        ageRange: stories.ageRange,
+        language: stories.language,
+        isTranslated: stories.isTranslated,
+        originalLanguage: stories.originalLanguage,
+        sourceType: stories.sourceType,
+        authorId: stories.authorId,
+        authorName: stories.authorName,
+        likeCount: stories.likeCount,
+        isPublic: stories.isPublic,
+        createdAt: stories.createdAt,
+      })
+      .from(likedStories)
+      .innerJoin(stories, eq(likedStories.storyId, stories.id))
+      .where(eq(likedStories.userId, userId))
+      .orderBy(desc(likedStories.createdAt));
+    
+    return result;
+  }
+
+  async likeStory(userId: string, storyId: string): Promise<LikedStory> {
+    const result = await db.insert(likedStories)
+      .values({ userId, storyId })
+      .returning();
+    return result[0];
+  }
+
+  async unlikeStory(userId: string, storyId: string): Promise<void> {
+    await db.delete(likedStories)
+      .where(and(
+        eq(likedStories.userId, userId),
+        eq(likedStories.storyId, storyId)
+      ));
+  }
+
+  async isStoryLiked(userId: string, storyId: string): Promise<boolean> {
+    const result = await db.select().from(likedStories)
+      .where(and(
+        eq(likedStories.userId, userId),
+        eq(likedStories.storyId, storyId)
+      ));
+    return result.length > 0;
   }
 }
 
-export const storage = new MemStorage();
+export const storage = new DbStorage();
