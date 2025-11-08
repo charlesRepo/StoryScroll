@@ -79,17 +79,16 @@ export default function StoryModal({
             />
 
             <div className="space-y-4">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-serif font-semibold text-foreground" data-testid="text-story-modal-title">
-                  {title}
-                </h1>
-                <Badge variant="outline" className="gap-1" data-testid="badge-reading-time-modal">
-                  <Clock className="h-3 w-3" />
-                  {readingTime} min read
-                </Badge>
-              </div>
+              <h1 className="text-3xl font-serif font-semibold text-foreground" data-testid="text-story-modal-title">
+                {title}
+              </h1>
 
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap items-center gap-2">
+                <div className="flex items-center gap-1 text-sm text-muted-foreground" data-testid="text-reading-time-modal">
+                  <Clock className="h-3 w-3" />
+                  {readingTime} min
+                </div>
+                <span className="text-muted-foreground">|</span>
                 <Badge variant="secondary" data-testid="badge-age-modal">
                   {ageRange}
                 </Badge>

@@ -63,17 +63,9 @@ export default function StoryCard({
 
       <div className="h-1/2 p-6 space-y-4 overflow-y-auto">
         <div className="flex items-start justify-between gap-4">
-          <div className="flex-1 space-y-2">
-            <h2 className="text-2xl font-serif font-semibold text-foreground leading-tight" data-testid="text-story-title">
-              {title}
-            </h2>
-            {readingTime && (
-              <Badge variant="outline" className="gap-1" data-testid="badge-reading-time">
-                <Clock className="h-3 w-3" />
-                {readingTime} min read
-              </Badge>
-            )}
-          </div>
+          <h2 className="text-2xl font-serif font-semibold text-foreground leading-tight flex-1" data-testid="text-story-title">
+            {title}
+          </h2>
           <Button
             size="icon"
             variant="ghost"
@@ -88,7 +80,16 @@ export default function StoryCard({
           </Button>
         </div>
 
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap items-center gap-2">
+          {readingTime && (
+            <>
+              <div className="flex items-center gap-1 text-sm text-muted-foreground" data-testid="text-reading-time">
+                <Clock className="h-3 w-3" />
+                {readingTime} min
+              </div>
+              <span className="text-muted-foreground">|</span>
+            </>
+          )}
           <Badge variant="secondary" data-testid="badge-age">
             {ageRange}
           </Badge>
