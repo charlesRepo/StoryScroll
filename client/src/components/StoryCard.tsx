@@ -52,7 +52,7 @@ export default function StoryCard({
       onClick={onClick}
       data-testid="card-story"
     >
-      <div className="h-1/2 relative overflow-hidden">
+      <div className="relative overflow-hidden" style={{ height: '30vh' }}>
         <img
           src={imageUrl}
           alt={title}
@@ -61,7 +61,7 @@ export default function StoryCard({
         />
       </div>
 
-      <div className="h-1/2 p-6 space-y-4 overflow-y-auto">
+      <div className="flex-1 p-6 space-y-4 overflow-y-auto">
         <div className="flex items-start justify-between gap-4">
           <h2 className="text-2xl font-serif font-semibold text-foreground leading-tight flex-1" data-testid="text-story-title">
             {title}
