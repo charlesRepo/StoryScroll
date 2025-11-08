@@ -1,5 +1,6 @@
 import { db } from "./db";
 import { stories } from "@shared/schema";
+import { classicalStories } from "./classical-stories";
 
 const sampleStories = [
   {
@@ -206,12 +207,21 @@ async function seedDatabase() {
   try {
     console.log("Seeding database with sample stories...");
     
+    // Insert sample stories
     for (const story of sampleStories) {
       await db.insert(stories).values(story);
       console.log(`Added story: ${story.title}`);
     }
     
-    console.log("Database seeding completed successfully!");
+    // Insert classical bedtime stories
+    console.log("\nSeeding classical bedtime stories...");
+    for (const story of classicalStories) {
+      await db.insert(stories).values(story);
+      console.log(`Added classical story: ${story.title} (${story.language})`);
+    }
+    
+    console.log("\nDatabase seeding completed successfully!");
+    console.log(`Total stories added: ${sampleStories.length + classicalStories.length}`);
     process.exit(0);
   } catch (error) {
     console.error("Error seeding database:", error);
