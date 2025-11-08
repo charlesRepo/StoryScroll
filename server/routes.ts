@@ -252,7 +252,24 @@ Return the response in this exact JSON format:
       });
     } catch (error: any) {
       console.error("AI generation error:", error);
-      res.status(500).json({ error: error.message });
+      
+      // Handle OpenAI-specific errors
+      if (error.status === 429 || error.code === 'insufficient_quota') {
+        return res.status(503).json({ 
+          error: "AI service is currently unavailable. Please try again later or contact support if this persists." 
+        });
+      }
+      
+      if (error.status === 401 || error.code === 'invalid_api_key') {
+        return res.status(503).json({ 
+          error: "AI service configuration error. Please contact support." 
+        });
+      }
+      
+      // Generic error handling
+      res.status(500).json({ 
+        error: "Failed to generate story. Please try again later." 
+      });
     }
   });
 
