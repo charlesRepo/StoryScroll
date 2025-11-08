@@ -16,6 +16,7 @@ import { Loader2 } from "lucide-react";
 export interface CreateStoryFormProps {
   onGenerate: (params: {
     description: string;
+    moral: string;
     ageRange: string;
     language: string;
     isPublic: boolean;
@@ -36,13 +37,14 @@ export default function CreateStoryForm({
   isLoading = false,
 }: CreateStoryFormProps) {
   const [description, setDescription] = useState("");
+  const [moral, setMoral] = useState("");
   const [ageRange, setAgeRange] = useState("3-5 years");
   const [language, setLanguage] = useState("en");
   const [isPublic, setIsPublic] = useState(false);
 
   const handleSubmit = () => {
     if (description.trim()) {
-      onGenerate({ description, ageRange, language, isPublic });
+      onGenerate({ description, moral, ageRange, language, isPublic });
     }
   };
 
@@ -69,6 +71,22 @@ export default function CreateStoryForm({
             disabled={isLoading}
             data-testid="input-story-description"
           />
+        </div>
+
+        <div className="space-y-2">
+          <Label htmlFor="moral">Moral of the Story (Optional)</Label>
+          <Textarea
+            id="moral"
+            placeholder="e.g., Courage helps us overcome our fears..."
+            className="h-20 resize-none"
+            value={moral}
+            onChange={(e) => setMoral(e.target.value)}
+            disabled={isLoading}
+            data-testid="input-story-moral"
+          />
+          <p className="text-xs text-muted-foreground">
+            Provide a moral lesson, or leave blank and AI will suggest one
+          </p>
         </div>
 
         <div className="space-y-2">

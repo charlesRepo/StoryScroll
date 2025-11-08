@@ -6,6 +6,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 export interface StoryModalProps {
   title: string;
   fullContent: string;
+  moral?: string;
   imageUrl: string;
   ageRange: string;
   language: string;
@@ -30,6 +31,7 @@ function calculateReadingTime(text: string): number {
 export default function StoryModal({
   title,
   fullContent,
+  moral,
   imageUrl,
   ageRange,
   language,
@@ -128,6 +130,14 @@ export default function StoryModal({
                 {fullContent}
               </p>
             </div>
+
+            {moral && (
+              <div className="p-4 bg-muted/50 rounded-md border" data-testid="section-moral-modal">
+                <p className="text-base text-foreground italic">
+                  <span className="font-semibold not-italic">Moral of the Story:</span> {moral}
+                </p>
+              </div>
+            )}
           </div>
         </ScrollArea>
       </div>

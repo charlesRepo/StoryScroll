@@ -6,6 +6,7 @@ export interface StoryCardProps {
   id: string;
   title: string;
   summary: string;
+  moral?: string;
   fullContent?: string;
   imageUrl: string;
   ageRange: string;
@@ -31,6 +32,7 @@ function calculateReadingTime(text: string): number {
 export default function StoryCard({
   title,
   summary,
+  moral,
   fullContent,
   imageUrl,
   ageRange,
@@ -107,6 +109,14 @@ export default function StoryCard({
         <p className="text-base text-foreground leading-relaxed" data-testid="text-story-summary">
           {summary}
         </p>
+
+        {moral && (
+          <div className="pt-2 border-t" data-testid="section-moral">
+            <p className="text-sm text-muted-foreground italic">
+              <span className="font-semibold not-italic">Moral:</span> {moral}
+            </p>
+          </div>
+        )}
 
         <div className="flex items-center justify-between text-sm text-muted-foreground pt-2">
           {sourceType === "classic" ? (
