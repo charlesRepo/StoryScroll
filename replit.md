@@ -9,9 +9,11 @@ A mobile-first web application for discovering and creating bedtime stories for 
 - Multi-language support (English, French, Spanish, German)
 - AI-powered story generation using OpenAI
 - User authentication and personalization
+- Profile editing with secure password management
 - Story liking and bookmarking
 - Search functionality
 - Reading time estimation
+- Classical bedtime story library from public domain sources
 
 ## User Preferences
 
@@ -69,6 +71,7 @@ Preferred communication style: Simple, everyday language.
 - `/api/stories` - Story CRUD operations with filtering
 - `/api/liked-stories` - User's saved stories
 - `/api/users/preferences` - User preference updates
+- `/api/users/profile` - Update user profile (username, email, password)
 - `/api/stories/generate` - AI story generation endpoint
 
 ### Database Design
@@ -128,3 +131,36 @@ Preferred communication style: Simple, everyday language.
 **Image Hosting:**
 - Unsplash for curated story images (placeholder)
 - Future: Support for AI-generated images or user uploads
+
+## Recent Changes
+
+### Profile Editing Feature (November 2025)
+Added comprehensive profile editing functionality:
+- Users can update username, email, and password via SettingsDialog
+- Password changes require current password verification for security
+- All password updates use bcrypt hashing (10 rounds)
+- Proper validation for username uniqueness and password strength (min 6 characters)
+- Backend endpoint: PATCH `/api/users/profile`
+
+### Classical Bedtime Stories (November 2025)
+Integrated curated collection of classical public domain bedtime stories:
+- **Total Stories**: 16 (6 original sample stories + 10 classical tales)
+- **English**: Hansel and Gretel, Cinderella, Little Red Riding Hood, The Three Little Pigs
+- **French**: Le Petit Chaperon Rouge (Little Red Riding Hood), Cendrillon (Cinderella)
+- **German**: Hänsel und Gretel, Schneewittchen (Snow White)
+- **Spanish**: Los Tres Cerditos (Three Little Pigs), Caperucita Roja (Little Red Riding Hood)
+
+**Sources:**
+- Brothers Grimm (German fairy tales)
+- Charles Perrault (French fairy tales)
+- Traditional English tales
+
+**Translation Metadata:**
+- Stories properly flagged with `isTranslated` field
+- Original language tracked in `originalLanguage` field
+- Enables future features for showing original vs translated content
+
+**Implementation:**
+- Stories curated in `server/classical-stories.ts`
+- Added to database via seed script `server/seed.ts`
+- All stories include: title, summary, moral lesson, full content, age range, language, author attribution

@@ -40,6 +40,11 @@ export default function HomePage() {
   // Fetch stories from API
   const { data: storiesData } = useQuery<{ stories: Story[] }>({
     queryKey: ["/api/stories", selectedLanguage, selectedAge],
+    queryFn: async () => {
+      const url = `/api/stories?language=${selectedLanguage}&ageRange=${encodeURIComponent(selectedAge)}`;
+      const response = await apiRequest("GET", url);
+      return await response.json();
+    },
     enabled: isAuthenticated,
   });
 
