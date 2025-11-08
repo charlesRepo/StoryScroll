@@ -338,6 +338,84 @@ Return the response in this exact JSON format:
     }
   });
 
+  // Update user profile (username, email, password)
+  app.patch("/api/users/profile", requireAuth, async (req, res) => {
+    try {
+      const userId = req.session.userId!;
+      const { username, email, currentPassword, newPassword } = req.body;
+
+      // Get current user
+      const currentUser = await storage.getUser(userId);
+      if (!currentUser) {
+        return res.status(404).json({ error: "User not found" });
+      }
+
+      // Validate password change requirements
+      if (currentPassword || newPassword) {
+        if (!currentPassword || !newPassword) {
+          return res.status(400).json({ 
+            error: "Both current password and new password are required to change password" 
+          });
+        }
+
+        if (newPassword.length < 6) {
+          return res.status(400).json({ error: "New password must be at least 6 characters" });
+        }
+
+        // Verify current password
+        const isPasswordValid = await bcrypt.compare(currentPassword, currentUser.password);
+        if (!isPasswordValid) {
+          return res.status(401).json({ error: "Current password is incorrect" });
+        }
+      }
+
+      const updates: any = {};
+
+      // Update username if provided and different
+      if (username !== undefined && username !== currentUser.username) {
+        if (!username || username.trim().length === 0) {
+          return res.status(400).json({ error: "Username cannot be empty" });
+        }
+        
+        // Check if username is already taken
+        const existingUser = await storage.getUserByUsername(username.trim());
+        if (existingUser && existingUser.id !== userId) {
+          return res.status(400).json({ error: "Username already taken" });
+        }
+        updates.username = username.trim();
+      }
+
+      // Update email if provided
+      if (email !== undefined) {
+        updates.email = email && email.trim().length > 0 ? email.trim() : null;
+      }
+
+      // Update password if validated
+      if (currentPassword && newPassword) {
+        const hashedPassword = await bcrypt.hash(newPassword, 10);
+        updates.password = hashedPassword;
+      }
+
+      // Check if there are any updates to make
+      if (Object.keys(updates).length === 0) {
+        return res.status(400).json({ error: "No changes to update" });
+      }
+
+      // Update user profile
+      const updatedUser = await storage.updateUserProfile(userId, updates);
+      if (!updatedUser) {
+        return res.status(404).json({ error: "User not found" });
+      }
+
+      // Don't send password back to client
+      const { password: _, ...userWithoutPassword } = updatedUser;
+      res.json({ user: userWithoutPassword });
+    } catch (error: any) {
+      console.error("Profile update error:", error);
+      res.status(500).json({ error: "Failed to update profile. Please try again." });
+    }
+  });
+
   const httpServer = createServer(app);
 
   return httpServer;

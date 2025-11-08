@@ -18,6 +18,7 @@ export interface IStorage {
   getUserByUsername(username: string): Promise<User | undefined>;
   createUser(user: InsertUser): Promise<User>;
   updateUserPreferences(id: string, preferences: { preferredLanguage?: string; preferredAgeRange?: string }): Promise<User | undefined>;
+  updateUserProfile(id: string, updates: { username?: string; email?: string | null; password?: string }): Promise<User | undefined>;
 
   // Story operations
   getStory(id: string): Promise<Story | undefined>;
@@ -53,6 +54,14 @@ export class DbStorage implements IStorage {
   async updateUserPreferences(id: string, preferences: { preferredLanguage?: string; preferredAgeRange?: string }): Promise<User | undefined> {
     const result = await db.update(users)
       .set(preferences)
+      .where(eq(users.id, id))
+      .returning();
+    return result[0];
+  }
+
+  async updateUserProfile(id: string, updates: { username?: string; email?: string | null; password?: string }): Promise<User | undefined> {
+    const result = await db.update(users)
+      .set(updates)
       .where(eq(users.id, id))
       .returning();
     return result[0];

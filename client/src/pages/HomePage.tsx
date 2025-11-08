@@ -271,7 +271,7 @@ export default function HomePage() {
         {activeTab === "profile" && user && (
           <div className="h-full overflow-y-auto">
             <ProfileSection
-              userName={user.username}
+              user={user}
               childAge={selectedAge}
               preferredLanguage={selectedLanguage}
               onChildAgeChange={setSelectedAge}

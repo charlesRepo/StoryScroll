@@ -1,4 +1,5 @@
-import { User, Settings } from "lucide-react";
+import { useState } from "react";
+import { User as UserIcon, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import {
@@ -9,9 +10,11 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
+import SettingsDialog from "./SettingsDialog";
+import type { User } from "@shared/schema";
 
 export interface ProfileSectionProps {
-  userName: string;
+  user: User;
   childAge: string;
   preferredLanguage: string;
   onChildAgeChange: (age: string) => void;
@@ -28,33 +31,46 @@ const LANGUAGES = [
 ];
 
 export default function ProfileSection({
-  userName,
+  user,
   childAge,
   preferredLanguage,
   onChildAgeChange,
   onLanguageChange,
   onSignOut,
 }: ProfileSectionProps) {
+  const [settingsOpen, setSettingsOpen] = useState(false);
+
   return (
     <div className="p-6 space-y-6">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Avatar className="h-16 w-16">
             <AvatarFallback className="bg-primary text-primary-foreground text-xl">
-              {userName.charAt(0).toUpperCase()}
+              {user.username.charAt(0).toUpperCase()}
             </AvatarFallback>
           </Avatar>
           <div>
             <h2 className="text-xl font-semibold text-foreground" data-testid="text-profile-name">
-              {userName}
+              {user.username}
             </h2>
             <p className="text-sm text-muted-foreground">Parent Account</p>
           </div>
         </div>
-        <Button size="icon" variant="ghost" data-testid="button-settings">
+        <Button 
+          size="icon" 
+          variant="ghost" 
+          data-testid="button-settings"
+          onClick={() => setSettingsOpen(true)}
+        >
           <Settings className="h-5 w-5" />
         </Button>
       </div>
+
+      <SettingsDialog
+        open={settingsOpen}
+        onOpenChange={setSettingsOpen}
+        user={user}
+      />
 
       <div className="space-y-4 pt-4 border-t">
         <div className="space-y-2">
