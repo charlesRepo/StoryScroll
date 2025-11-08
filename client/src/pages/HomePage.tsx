@@ -14,7 +14,7 @@ import oceanImage from "@assets/generated_images/Ocean_Adventure_Story_00f0d0ea.
 import teddyBearImage from "@assets/generated_images/Teddy_Bear_Picnic_Story_d96709f1.png";
 
 // todo: remove mock functionality
-const MOCK_STORIES = [
+const ENGLISH_STORIES = [
   {
     id: "1",
     title: "The Three Little Pigs",
@@ -87,6 +87,75 @@ const MOCK_STORIES = [
   },
 ];
 
+// todo: remove mock functionality
+const FRENCH_STORIES = [
+  {
+    id: "fr-1",
+    title: "Le Petit Chaperon Rouge",
+    summary: "Une petite fille portant une cape à capuche rouge traverse les bois pour rendre visite à sa grand-mère malade avec un panier de friandises. En chemin, elle rencontre un loup rusé qui la trompe pour qu'elle révèle où vit sa grand-mère. Le loup se précipite en avant et se fait passer pour la grand-mère, mais le Petit Chaperon Rouge remarque que quelque chose ne va pas. Heureusement, un bûcheron serviable vient à la rescousse.",
+    fullContent: `Il était une fois une petite fille adorable que tout le monde aimait. Sa grand-mère lui avait fait une belle cape rouge à capuche, et elle la portait si souvent que tout le monde l'appelait le Petit Chaperon Rouge.\n\nUn jour, sa mère lui dit : "Ta grand-mère ne se sent pas bien. S'il te plaît, apporte-lui ce panier de friandises." Le Petit Chaperon Rouge était heureuse d'aider et partit à travers les bois.\n\nEn marchant, elle cueillait des fleurs pour sa grand-mère. Un loup la vit et lui demanda : "Où vas-tu, petite fille ?" "Chez ma grand-mère", répondit-elle innocemment, lui disant où vivait sa grand-mère.\n\nLe loup courut en avance chez la grand-mère, frappa à la porte, et quand la grand-mère ouvrit, il la cacha rapidement dans le placard. Il mit sa chemise de nuit et son bonnet et se coucha dans son lit.\n\nQuand le Petit Chaperon Rouge arriva, elle remarqua quelque chose d'étrange. "Grand-mère, comme tu as de grandes oreilles !" "C'est pour mieux t'entendre", dit le loup. "Et comme tu as de grands yeux !" "C'est pour mieux te voir !"\n\n"Et comme tu as de grandes dents !" "C'est pour mieux manger ces biscuits !" Juste à ce moment, un bûcheron qui passait par là entendit le remue-ménage et vint enquêter.\n\nIl reconnut le loup et aida la grand-mère à sortir du placard. Le loup s'enfuit et ne les embêta plus jamais. Le Petit Chaperon Rouge apprit à être plus prudente et à ne jamais parler aux étrangers dans les bois.`,
+    imageUrl: redRidingHoodImage,
+    ageRange: "6-10 years",
+    language: "French",
+    isNative: true,
+    sourceType: "classic" as const,
+    likeCount: 127,
+  },
+  {
+    id: "fr-2",
+    title: "Les Trois Petits Cochons",
+    summary: "Trois petits cochons construisent chacun une maison avec des matériaux différents. Le premier cochon construit sa maison en paille car c'est rapide et facile. Le deuxième cochon construit sa maison en bâtons, qui est légèrement plus solide. Le troisième cochon travaille dur pour construire une maison robuste en briques. Quand un grand méchant loup arrive, il souffle facilement sur les maisons en paille et en bâtons, mais il ne peut pas souffler sur la solide maison en briques.",
+    fullContent: `Il était une fois trois petits cochons qui vivaient avec leur mère. Un jour, leur mère dit : "Vous êtes assez grands maintenant pour aller dans le monde et construire vos propres maisons."\n\nLe premier petit cochon était très paresseux. Il construisit sa maison en paille car c'était le plus facile à faire. Le deuxième petit cochon était aussi un peu paresseux. Il construisit sa maison en bâtons, qui était légèrement plus solide que la paille mais pas beaucoup. Le troisième petit cochon était travailleur et sage. Il construisit sa maison en briques, ce qui prit beaucoup plus de temps mais était très solide.\n\nUn jour, un grand méchant loup arriva et vit le premier petit cochon dans sa maison de paille. "Petit cochon, petit cochon, laisse-moi entrer !" appela-t-il. "Non, non, par les poils de mon menton !" répondit le cochon. "Alors je vais souffler et ta maison s'envolera !" dit le loup. Et il le fit, soufflant la maison facilement.\n\nLe premier petit cochon courut chez son frère dans la maison de bâtons. Mais le loup le suivit là-bas. "Petits cochons, petits cochons, laissez-moi entrer !" "Non, non, par les poils de nos mentons !" répondirent-ils ensemble. "Alors je vais souffler et votre maison s'envolera !" Et il le fit, envoyant la maison de bâtons s'effondrer.\n\nLes deux cochons coururent aussi vite qu'ils pouvaient vers la maison en briques de leur frère. Le loup arriva et cria : "Petits cochons, petits cochons, laissez-moi entrer !" "Non, non, par les poils de nos mentons !" répondirent-ils tous. "Alors je vais souffler et votre maison s'envolera !"\n\nLe loup souffla et souffla, mais il ne put pas faire tomber la maison en briques. Il essaya encore et encore, mais la maison resta solide. Finalement, épuisé, le loup abandonna et s'en alla, pour ne plus jamais embêter les trois petits cochons.\n\nDepuis ce jour, les trois petits cochons vécurent heureux ensemble dans la maison en briques, et ils apprirent que le travail acharné et la planification en valent toujours la peine.`,
+    imageUrl: threePigsImage,
+    ageRange: "3-5 years",
+    language: "French",
+    isNative: true,
+    sourceType: "classic" as const,
+    likeCount: 156,
+  },
+  {
+    id: "fr-3",
+    title: "Bonne Nuit Lune",
+    summary: "Dans une grande chambre verte confortable, un petit lapin se prépare pour l'heure du coucher en disant bonne nuit à tout ce qui l'entoure. Du ballon rouge flottant près du plafond à la vieille dame qui chuchote chut, le lapin dit au revoir à chaque objet familier. Alors que la chambre devient plus sombre et plus silencieuse, le lapin dit bonne nuit aux étoiles, à l'air et à tous les bruits partout.",
+    fullContent: `Dans la grande chambre verte, il y avait un téléphone, et un ballon rouge, et une image d'une vache sautant par-dessus la lune.\n\nIl y avait trois petits ours assis sur des chaises, et deux petits chatons, et une paire de moufles, et une petite maison de jouet, et une jeune souris.\n\nEt un peigne et une brosse, et un bol plein de bouillie, et une vieille dame tranquille qui chuchotait "chut".\n\n"Bonne nuit chambre", dit le petit lapin.\n\n"Bonne nuit lune", dit le petit lapin. "Bonne nuit vache sautant par-dessus la lune. Bonne nuit lumière, et le ballon rouge. Bonne nuit ours. Bonne nuit chaises."\n\n"Bonne nuit chatons. Et bonne nuit moufles. Bonne nuit horloges. Et bonne nuit chaussettes."\n\n"Bonne nuit petite maison. Et bonne nuit souris. Bonne nuit peigne. Et bonne nuit brosse."\n\n"Bonne nuit personne. Bonne nuit bouillie. Et bonne nuit à la vieille dame qui chuchote chut."\n\n"Bonne nuit étoiles. Bonne nuit air. Bonne nuit bruits partout."\n\nEt bientôt, le petit lapin s'endormit profondément, rêvant de doux rêves dans la grande chambre verte.`,
+    imageUrl: goodnightMoonImage,
+    ageRange: "0-2 years",
+    language: "French",
+    isNative: true,
+    sourceType: "classic" as const,
+    likeCount: 98,
+  },
+];
+
+// todo: remove mock functionality
+function getStoriesForLanguage(languageCode: string, allStories: typeof ENGLISH_STORIES) {
+  const languageMap: Record<string, string> = {
+    'en': 'English',
+    'fr': 'French',
+    'es': 'Spanish',
+    'de': 'German',
+  };
+  
+  const selectedLanguage = languageMap[languageCode] || 'English';
+  
+  // Get native stories for the selected language
+  let nativeStories = languageCode === 'fr' ? FRENCH_STORIES : ENGLISH_STORIES;
+  
+  // Get stories from other languages and mark them as translated
+  let otherStories = languageCode === 'fr' ? ENGLISH_STORIES : FRENCH_STORIES;
+  
+  const translatedStories = otherStories.map(story => ({
+    ...story,
+    id: `${languageCode}-translated-${story.id}`,
+    language: selectedLanguage,
+    isTranslated: true,
+    originalLanguage: story.language,
+  }));
+  
+  // Prioritize native stories, then translated ones
+  return [...nativeStories, ...translatedStories];
+}
+
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState<"feed" | "create" | "liked" | "profile">("feed");
   const [selectedAge, setSelectedAge] = useState("3-5 years");
@@ -95,6 +164,9 @@ export default function HomePage() {
   const [selectedStory, setSelectedStory] = useState<string | null>(null);
   const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  // todo: remove mock functionality
+  const displayedStories = getStoriesForLanguage(selectedLanguage, ENGLISH_STORIES);
 
   // todo: remove mock functionality
   const handleLike = (storyId: string) => {
@@ -136,7 +208,7 @@ export default function HomePage() {
       const threshold = 50;
 
       if (Math.abs(diff) > threshold) {
-        if (diff > 0 && currentStoryIndex < MOCK_STORIES.length - 1) {
+        if (diff > 0 && currentStoryIndex < displayedStories.length - 1) {
           setCurrentStoryIndex((prev) => prev + 1);
         } else if (diff < 0 && currentStoryIndex > 0) {
           setCurrentStoryIndex((prev) => prev - 1);
@@ -153,7 +225,7 @@ export default function HomePage() {
       container.removeEventListener("touchmove", handleTouchMove);
       container.removeEventListener("touchend", handleTouchEnd);
     };
-  }, [currentStoryIndex, activeTab]);
+  }, [currentStoryIndex, activeTab, displayedStories.length]);
 
   // Auto-scroll to current story
   useEffect(() => {
@@ -167,11 +239,16 @@ export default function HomePage() {
     }
   }, [currentStoryIndex, activeTab]);
 
+  // Reset to first story when language changes
+  useEffect(() => {
+    setCurrentStoryIndex(0);
+  }, [selectedLanguage]);
+
   const currentStory = selectedStory
-    ? MOCK_STORIES.find((s) => s.id === selectedStory)
+    ? displayedStories.find((s) => s.id === selectedStory)
     : null;
 
-  const likedStoriesList = MOCK_STORIES.filter((story) =>
+  const likedStoriesList = displayedStories.filter((story) =>
     likedStories.has(story.id)
   ).map((story) => ({
     id: story.id,
@@ -196,7 +273,7 @@ export default function HomePage() {
             className="h-full overflow-y-auto snap-y snap-mandatory scrollbar-hide"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
-            {MOCK_STORIES.map((story) => (
+            {displayedStories.map((story) => (
               <StoryCard
                 key={story.id}
                 {...story}
