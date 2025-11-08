@@ -128,6 +128,62 @@ const FRENCH_STORIES = [
 ];
 
 // todo: remove mock functionality
+const GERMAN_STORIES = [
+  {
+    id: "de-1",
+    title: "Hänsel und Gretel",
+    summary: "Ein Bruder und eine Schwester werden im Wald ausgesetzt und finden ein Lebkuchenhaus, das einer bösen Hexe gehört. Mit List und Mut überlisten sie die Hexe, finden einen Schatz und kehren nach Hause zurück. Diese klassische Geschichte lehrt Kinder über Mut, Zusammenarbeit und dass sie gemeinsam jede Herausforderung meistern können.",
+    fullContent: `Es war einmal ein armer Holzfäller, der mit seiner Frau und seinen zwei Kindern, Hänsel und Gretel, am Rande eines großen Waldes lebte.\n\nEines Nachts, als die Kinder nicht schlafen konnten, hörten sie ihre Eltern sprechen. Es gab nicht genug Essen, und die Eltern beschlossen, die Kinder tief im Wald zurückzulassen.\n\nHänsel hörte dies und sammelte kleine weiße Kieselsteine. Am nächsten Morgen, als sie in den Wald gingen, ließ Hänsel die Steine fallen, um den Weg zu markieren. So fanden sie am Abend nach Hause zurück.\n\nAber beim zweiten Mal hatte Hänsel nur Brotkrumen, und die Vögel fraßen sie alle. Die Kinder verirrten sich und fanden ein wunderbares Haus aus Lebkuchen und Süßigkeiten.\n\nSie begannen zu essen, aber eine alte Hexe kam heraus. Sie tat freundlich, aber sie wollte die Kinder gefangen halten. Sie sperrte Hänsel in einen Käfig und ließ Gretel für sie arbeiten.\n\nGretel war schlau. Als die Hexe sie bat, in den Ofen zu schauen, schubste Gretel die Hexe hinein und befreite ihren Bruder. Sie fanden eine Truhe voller Juwelen und Gold.\n\nMit Hilfe einer Ente überquerten sie einen großen Fluss und fanden den Weg nach Hause. Ihr Vater war überglücklich, sie wiederzusehen, und mit dem Schatz der Hexe lebten sie glücklich bis ans Ende ihrer Tage.`,
+    imageUrl: forestImage,
+    ageRange: "6-10 years",
+    language: "German",
+    isNative: true,
+    sourceType: "classic" as const,
+    likeCount: 189,
+  },
+  {
+    id: "de-2",
+    title: "Der gestiefelte Kater",
+    summary: "Ein cleverer Kater verwendet seine Intelligenz und einen Paar Stiefel, um seinem armen Besitzer zu Reichtum und Glück zu verhelfen. Durch listige Pläne und geschickte Täuschungen verwandelt der Kater das Leben seines Herrn und macht ihn zu einem wohlhabenden Prinzen. Eine Geschichte über Klugheit, Loyalität und wie Intelligenz wichtiger sein kann als Stärke.",
+    fullContent: `Es war einmal ein armer Müller, der starb und seinen drei Söhnen nur eine Mühle, einen Esel und einen Kater hinterließ. Der jüngste Sohn bekam nur den Kater und war sehr traurig.\n\nAber dieser Kater war kein gewöhnlicher Kater! Er konnte sprechen! Der Kater sagte: "Gib mir nur ein Paar Stiefel und einen Sack, und du wirst sehen, dass du gar nicht so schlecht dran bist."\n\nDer Kater zog seine Stiefel an und ging in den Wald. Er fing Kaninchen und Rebhühner und brachte sie dem König als Geschenke von seinem "Herrn, dem Marquis von Carabas".\n\nEines Tages erfuhr der Kater, dass der König mit seiner schönen Tochter am Fluss spazieren fahren würde. Er bat seinen Herrn, im Fluss zu baden. Als die Kutsche vorbeikam, rief der Kater: "Hilfe! Mein Herr, der Marquis von Carabas, ertrinkt!"\n\nDer König half dem jungen Mann und gab ihm feine Kleider. Die Prinzessin fand den "Marquis" sehr charmant.\n\nDer schlaue Kater lief voraus zu einem großen Schloss, das einem bösen Zauberer gehörte. Er überlistete den Zauberer und das Schloss gehörte nun seinem Herrn.\n\nAls der König ankam, war er sehr beeindruckt. Der junge Mann heiratete die Prinzessin, und der gestiefelte Kater lebte glücklich als großer Lord im Schloss.`,
+    imageUrl: teddyBearImage,
+    ageRange: "3-5 years",
+    language: "German",
+    isNative: true,
+    sourceType: "classic" as const,
+    likeCount: 145,
+  },
+];
+
+// todo: remove mock functionality
+const SPANISH_STORIES = [
+  {
+    id: "es-1",
+    title: "Los Tres Cerditos",
+    summary: "Tres cerditos construyen cada uno una casa con diferentes materiales. El primer cerdito construye su casa de paja porque es rápido y fácil. El segundo cerdito construye su casa de palos, que es un poco más fuerte. El tercer cerdito trabaja duro para construir una casa resistente de ladrillos. Cuando llega un lobo feroz, sopla fácilmente las casas de paja y palos, pero no puede derribar la fuerte casa de ladrillos.",
+    fullContent: `Había una vez tres cerditos que vivían con su madre. Un día, su madre les dijo: "Ya son lo suficientemente grandes para salir al mundo y construir sus propias casas."\n\nEl primer cerdito era muy perezoso. Construyó su casa de paja porque era lo más fácil de hacer. El segundo cerdito también era un poco perezoso. Construyó su casa de palos, que era un poco más fuerte que la paja pero no mucho. El tercer cerdito era trabajador y sabio. Construyó su casa de ladrillos, lo que tomó mucho más tiempo pero era muy fuerte.\n\nUn día, un lobo feroz apareció y vio al primer cerdito en su casa de paja. "¡Cerdito, cerdito, déjame entrar!" llamó. "¡No, no, por los pelos de mi barbilla!" respondió el cerdito. "¡Entonces soplaré y soplaré y tu casa derribaré!" dijo el lobo. Y lo hizo, derribando la casa fácilmente.\n\nEl primer cerdito corrió a la casa de palos de su hermano. Pero el lobo lo siguió allí. "¡Cerditos, cerditos, déjenme entrar!" "¡No, no, por los pelos de nuestras barbillas!" respondieron juntos. "¡Entonces soplaré y soplaré y su casa derribaré!" Y lo hizo, haciendo que la casa de palos se derrumbara.\n\nAmbos cerditos corrieron tan rápido como pudieron a la casa de ladrillos de su hermano. El lobo llegó y gritó: "¡Cerditos, cerditos, déjenme entrar!" "¡No, no, por los pelos de nuestras barbillas!" respondieron todos. "¡Entonces soplaré y soplaré y su casa derribaré!"\n\nEl lobo sopló y sopló, pero no pudo derribar la casa de ladrillos. Lo intentó una y otra vez, pero la casa se mantuvo fuerte. Finalmente, exhausto, el lobo se rindió y se fue, para nunca más molestar a los tres cerditos.\n\nDesde ese día, los tres cerditos vivieron felices juntos en la casa de ladrillos, y aprendieron que el trabajo duro y la planificación siempre valen la pena.`,
+    imageUrl: threePigsImage,
+    ageRange: "3-5 years",
+    language: "Spanish",
+    isNative: true,
+    sourceType: "classic" as const,
+    likeCount: 167,
+  },
+  {
+    id: "es-2",
+    title: "Caperucita Roja",
+    summary: "Una dulce niña con una capa roja con capucha va por el bosque para visitar a su abuela enferma con una cesta de golosinas. En el camino, se encuentra con un lobo astuto que la engaña para que revele dónde vive su abuela. El lobo corre adelante y finge ser la abuela, pero Caperucita Roja nota que algo está mal. Afortunadamente, un leñador acude al rescate.",
+    fullContent: `Había una vez una niña muy dulce a la que todos querían. Su abuela le había hecho una hermosa capa roja con capucha, y la usaba tan a menudo que todos la llamaban Caperucita Roja.\n\nUn día, su madre le dijo: "Tu abuela no se siente bien. Por favor, llévale esta cesta de golosinas." Caperucita Roja estaba feliz de ayudar y partió por el bosque.\n\nMientras caminaba, recogía flores para su abuela. Un lobo la vio y le preguntó: "¿A dónde vas, niña?" "A la casa de mi abuela", respondió ella inocentemente, diciéndole dónde vivía su abuela.\n\nEl lobo corrió adelante a la casa de la abuela, llamó a la puerta, y cuando la abuela abrió, rápidamente la escondió en el armario. Se puso su camisón y su gorro y se metió en su cama.\n\nCuando Caperucita Roja llegó, notó algo extraño. "¡Abuela, qué orejas tan grandes tienes!" "Son para oírte mejor", dijo el lobo. "¡Y qué ojos tan grandes tienes!" "¡Son para verte mejor!"\n\n"¡Y qué dientes tan grandes tienes!" "¡Son para comer mejor estas galletas!" Justo en ese momento, un leñador que pasaba por allí oyó el alboroto y vino a investigar.\n\nReconoció al lobo y ayudó a la abuela a salir del armario. El lobo huyó y nunca más los molestó. Caperucita Roja aprendió a ser más cuidadosa y a nunca hablar con extraños en el bosque.`,
+    imageUrl: redRidingHoodImage,
+    ageRange: "6-10 years",
+    language: "Spanish",
+    isNative: true,
+    sourceType: "classic" as const,
+    likeCount: 143,
+  },
+];
+
+// todo: remove mock functionality
 function getStoriesForLanguage(languageCode: string, allStories: typeof ENGLISH_STORIES) {
   const languageMap: Record<string, string> = {
     'en': 'English',
@@ -138,48 +194,41 @@ function getStoriesForLanguage(languageCode: string, allStories: typeof ENGLISH_
   
   const selectedLanguage = languageMap[languageCode] || 'English';
   
-  // For languages with native content
-  if (languageCode === 'en') {
-    const translatedFrench = FRENCH_STORIES.map(story => ({
-      ...story,
-      id: `en-translated-${story.id}`,
-      language: 'English',
-      isTranslated: true,
-      originalLanguage: 'French',
-    }));
-    return [...ENGLISH_STORIES, ...translatedFrench];
+  // Helper to get all stories from other languages as translated
+  const getTranslatedStories = (targetLang: string, excludeLang: string) => {
+    const allLanguageStories = [
+      { stories: ENGLISH_STORIES, lang: 'English' },
+      { stories: FRENCH_STORIES, lang: 'French' },
+      { stories: GERMAN_STORIES, lang: 'German' },
+      { stories: SPANISH_STORIES, lang: 'Spanish' },
+    ];
+    
+    return allLanguageStories
+      .filter(({ lang }) => lang !== excludeLang)
+      .flatMap(({ stories, lang }) => 
+        stories.map(story => ({
+          ...story,
+          id: `${targetLang}-translated-${story.id}`,
+          language: targetLang,
+          isTranslated: true,
+          originalLanguage: lang,
+        }))
+      );
+  };
+  
+  // Return native stories first, then translated ones
+  switch (languageCode) {
+    case 'en':
+      return [...ENGLISH_STORIES, ...getTranslatedStories('English', 'English')];
+    case 'fr':
+      return [...FRENCH_STORIES, ...getTranslatedStories('French', 'French')];
+    case 'de':
+      return [...GERMAN_STORIES, ...getTranslatedStories('German', 'German')];
+    case 'es':
+      return [...SPANISH_STORIES, ...getTranslatedStories('Spanish', 'Spanish')];
+    default:
+      return [...ENGLISH_STORIES, ...getTranslatedStories('English', 'English')];
   }
-  
-  if (languageCode === 'fr') {
-    const translatedEnglish = ENGLISH_STORIES.map(story => ({
-      ...story,
-      id: `fr-translated-${story.id}`,
-      language: 'French',
-      isTranslated: true,
-      originalLanguage: 'English',
-    }));
-    return [...FRENCH_STORIES, ...translatedEnglish];
-  }
-  
-  // For languages without native content (German, Spanish, etc.)
-  // Show all stories from English and French as translated
-  const translatedEnglish = ENGLISH_STORIES.map(story => ({
-    ...story,
-    id: `${languageCode}-translated-en-${story.id}`,
-    language: selectedLanguage,
-    isTranslated: true,
-    originalLanguage: 'English',
-  }));
-  
-  const translatedFrench = FRENCH_STORIES.map(story => ({
-    ...story,
-    id: `${languageCode}-translated-fr-${story.id}`,
-    language: selectedLanguage,
-    isTranslated: true,
-    originalLanguage: 'French',
-  }));
-  
-  return [...translatedEnglish, ...translatedFrench];
 }
 
 export default function HomePage() {
