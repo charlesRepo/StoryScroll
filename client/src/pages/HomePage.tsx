@@ -248,7 +248,12 @@ export default function HomePage() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // todo: remove mock functionality
-  const displayedStories = getStoriesForLanguage(selectedLanguage, ENGLISH_STORIES);
+  const allStoriesByLanguage = getStoriesForLanguage(selectedLanguage, ENGLISH_STORIES);
+  
+  // Filter stories by selected age range
+  const displayedStories = allStoriesByLanguage.filter(
+    (story) => story.ageRange === selectedAge
+  );
   
   // todo: remove mock functionality
   // Get all stories for search (across all languages)
@@ -330,10 +335,10 @@ export default function HomePage() {
     }
   }, [currentStoryIndex, activeTab]);
 
-  // Reset to first story when language changes
+  // Reset to first story when language or age changes
   useEffect(() => {
     setCurrentStoryIndex(0);
-  }, [selectedLanguage]);
+  }, [selectedLanguage, selectedAge]);
 
   const currentStory = selectedStory
     ? displayedStories.find((s) => s.id === selectedStory) || 
