@@ -1,15 +1,16 @@
-import { Home, Plus, Heart, User } from "lucide-react";
+import { Home, Plus, Heart, User, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export interface BottomNavProps {
-  activeTab: "feed" | "create" | "liked" | "profile";
-  onTabChange: (tab: "feed" | "create" | "liked" | "profile") => void;
+  activeTab: "feed" | "create" | "search" | "liked" | "profile";
+  onTabChange: (tab: "feed" | "create" | "search" | "liked" | "profile") => void;
 }
 
 export default function BottomNav({ activeTab, onTabChange }: BottomNavProps) {
   const tabs = [
     { id: "feed" as const, icon: Home, label: "Feed", testId: "button-nav-feed" },
     { id: "create" as const, icon: Plus, label: "Create", testId: "button-nav-create" },
+    { id: "search" as const, icon: Search, label: "Search", testId: "button-nav-search" },
     { id: "liked" as const, icon: Heart, label: "Liked", testId: "button-nav-liked" },
     { id: "profile" as const, icon: User, label: "Profile", testId: "button-nav-profile" },
   ];

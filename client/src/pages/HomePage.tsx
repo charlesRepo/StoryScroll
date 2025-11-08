@@ -6,6 +6,7 @@ import StoryModal from "@/components/StoryModal";
 import CreateStoryForm from "@/components/CreateStoryForm";
 import LikedStoriesGrid from "@/components/LikedStoriesGrid";
 import ProfileSection from "@/components/ProfileSection";
+import SearchView from "@/components/SearchView";
 import threePigsImage from "@assets/generated_images/Three_Little_Pigs_Story_8b547c50.png";
 import goodnightMoonImage from "@assets/generated_images/Goodnight_Moon_Story_6d2c34bc.png";
 import forestImage from "@assets/generated_images/Forest_Adventure_Story_b89c2136.png";
@@ -232,7 +233,7 @@ function getStoriesForLanguage(languageCode: string, allStories: typeof ENGLISH_
 }
 
 export default function HomePage() {
-  const [activeTab, setActiveTab] = useState<"feed" | "create" | "liked" | "profile">("feed");
+  const [activeTab, setActiveTab] = useState<"feed" | "create" | "search" | "liked" | "profile">("feed");
   const [selectedAge, setSelectedAge] = useState("3-5 years");
   const [selectedLanguage, setSelectedLanguage] = useState("en");
   const [likedStories, setLikedStories] = useState<Set<string>>(new Set());
@@ -242,6 +243,15 @@ export default function HomePage() {
 
   // todo: remove mock functionality
   const displayedStories = getStoriesForLanguage(selectedLanguage, ENGLISH_STORIES);
+  
+  // todo: remove mock functionality
+  // Get all stories for search (across all languages)
+  const allStoriesForSearch = [
+    ...ENGLISH_STORIES,
+    ...FRENCH_STORIES,
+    ...GERMAN_STORIES,
+    ...SPANISH_STORIES,
+  ];
 
   // todo: remove mock functionality
   const handleLike = (storyId: string) => {
@@ -320,7 +330,8 @@ export default function HomePage() {
   }, [selectedLanguage]);
 
   const currentStory = selectedStory
-    ? displayedStories.find((s) => s.id === selectedStory)
+    ? displayedStories.find((s) => s.id === selectedStory) || 
+      allStoriesForSearch.find((s) => s.id === selectedStory)
     : null;
 
   const likedStoriesList = displayedStories.filter((story) =>
@@ -368,6 +379,15 @@ export default function HomePage() {
               }}
             />
           </div>
+        )}
+
+        {activeTab === "search" && (
+          <SearchView
+            allStories={allStoriesForSearch}
+            onStoryClick={(id) => setSelectedStory(id)}
+            onLike={handleLike}
+            likedStories={likedStories}
+          />
         )}
 
         {activeTab === "liked" && (
