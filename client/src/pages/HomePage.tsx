@@ -40,7 +40,7 @@ export default function HomePage() {
   }, [selectedLanguage, selectedAge, isAuthenticated]);
 
   // Fetch stories from API (no auth required for browsing)
-  const { data: storiesData } = useQuery<{ stories: Story[] }>({
+  const { data: storiesData, isFetching: isStoriesFetching } = useQuery<{ stories: Story[] }>({
     queryKey: ["/api/stories", selectedLanguage, selectedAge],
     queryFn: async () => {
       const url = `/api/stories?language=${selectedLanguage}&ageRange=${encodeURIComponent(selectedAge)}`;
@@ -327,7 +327,14 @@ export default function HomePage() {
               scrollSnapStop: "always",
             }}
           >
-            {stories.length === 0 ? (
+            {isStoriesFetching ? (
+              <div className="min-h-full flex items-center justify-center" data-testid="loading-stories">
+                <div className="flex flex-col items-center gap-3">
+                  <Loader2 className="h-8 w-8 animate-spin text-primary" />
+                  <p className="text-sm text-muted-foreground">Loading stories...</p>
+                </div>
+              </div>
+            ) : stories.length === 0 ? (
               <div className="min-h-full flex items-center justify-center p-6 text-center">
                 <div>
                   <p className="text-muted-foreground mb-2">No stories found</p>
