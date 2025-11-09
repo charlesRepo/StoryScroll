@@ -27,6 +27,7 @@ export default function HomePage() {
   const [selectedAge, setSelectedAge] = useState<string>("3-5 years");
   const [selectedStory, setSelectedStory] = useState<string | null>(null);
   const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
+  const [generatedStory, setGeneratedStory] = useState<Partial<Story> | null>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // Update preferences when language or age changes
@@ -213,6 +214,9 @@ export default function HomePage() {
       const response = await apiRequest("POST", "/api/stories/generate", params);
       return await response.json() as { story: Partial<Story> };
     },
+    onSuccess: (data) => {
+      setGeneratedStory(data.story);
+    },
     onError: (error: any) => {
       toast({
         title: "Generation failed",
@@ -378,10 +382,12 @@ export default function HomePage() {
           <div className="h-full overflow-y-auto">
             <CreateStoryForm
               onGenerate={(params) => {
+                setGeneratedStory(null);
                 generateStoryMutation.mutate(params);
               }}
-              generatedStory={generateStoryMutation.data?.story}
+              generatedStory={generatedStory}
               isGenerating={generateStoryMutation.isPending}
+              onResetGeneratedStory={() => setGeneratedStory(null)}
             />
           </div>
         )}

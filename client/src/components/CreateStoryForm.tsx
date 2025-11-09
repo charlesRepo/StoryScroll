@@ -25,8 +25,9 @@ export interface CreateStoryFormProps {
     language: string;
     generateMoral: boolean;
   }) => void;
-  generatedStory?: Partial<Story>;
+  generatedStory?: Partial<Story> | null;
   isGenerating?: boolean;
+  onResetGeneratedStory: () => void;
 }
 
 const AGE_RANGES = ["0-2 years", "3-5 years", "6-10 years"];
@@ -39,6 +40,7 @@ export default function CreateStoryForm({
   onGenerate,
   generatedStory,
   isGenerating = false,
+  onResetGeneratedStory,
 }: CreateStoryFormProps) {
   const { toast } = useToast();
   const [theme, setTheme] = useState("");
@@ -77,9 +79,10 @@ export default function CreateStoryForm({
       queryClient.invalidateQueries({ queryKey: ["/api/stories"] });
       queryClient.invalidateQueries({ queryKey: ["/api/stories/mine"] });
       
-      // Reset form
+      // Reset form and close editing screen
       setTheme("");
       setGenerateMoral(true);
+      onResetGeneratedStory();
     },
     onError: (error: any) => {
       toast({
@@ -201,6 +204,7 @@ export default function CreateStoryForm({
           onCancel={() => {
             setTheme("");
             setGenerateMoral(true);
+            onResetGeneratedStory();
           }}
           isPublishing={publishStoryMutation.isPending}
         />
