@@ -28,16 +28,30 @@ export default function FilterBar({
   onLanguageChange,
 }: FilterBarProps) {
   return (
-    <div className="sticky top-0 z-50 bg-white/95 dark:bg-gray-950/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 supports-[backdrop-filter]:dark:bg-gray-950/80 border-b">
-      <div className="p-4 space-y-3">
-        <div className="flex items-center gap-3">
-          <img 
-            src={logoUrl} 
-            alt="StoryScroll" 
-            className="w-10 h-10 object-contain flex-shrink-0"
-            data-testid="img-filter-bar-logo"
-          />
-          <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-hide flex-1">
+    <div className="sticky top-0 z-50">
+      <div 
+        className="px-4 py-3 flex items-center gap-3"
+        style={{ backgroundColor: 'hsl(195, 52%, 24%)' }}
+        data-testid="header-storyscroll"
+      >
+        <img 
+          src={logoUrl} 
+          alt="StoryScroll" 
+          className="w-10 h-10 object-contain flex-shrink-0"
+          data-testid="img-header-logo"
+        />
+        <h1 
+          className="text-xl font-serif font-bold"
+          style={{ color: 'hsl(43, 85%, 65%)' }}
+          data-testid="text-header-title"
+        >
+          StoryScroll
+        </h1>
+      </div>
+
+      <div className="bg-white/95 dark:bg-gray-950/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 supports-[backdrop-filter]:dark:bg-gray-950/80 border-b">
+        <div className="p-4 space-y-3">
+          <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-hide">
             {AGE_RANGES.map((age) => (
               <Badge
                 key={age}
@@ -50,20 +64,20 @@ export default function FilterBar({
               </Badge>
             ))}
           </div>
-        </div>
 
-        <Select value={selectedLanguage} onValueChange={onLanguageChange}>
-          <SelectTrigger className="w-full" data-testid="select-language">
-            <SelectValue placeholder="Select language" />
-          </SelectTrigger>
-          <SelectContent>
-            {LANGUAGES.map((lang) => (
-              <SelectItem key={lang.value} value={lang.value}>
-                {lang.label}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
+          <Select value={selectedLanguage} onValueChange={onLanguageChange}>
+            <SelectTrigger className="w-full" data-testid="select-language">
+              <SelectValue placeholder="Select language" />
+            </SelectTrigger>
+            <SelectContent>
+              {LANGUAGES.map((lang) => (
+                <SelectItem key={lang.value} value={lang.value}>
+                  {lang.label}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
       </div>
     </div>
   );
