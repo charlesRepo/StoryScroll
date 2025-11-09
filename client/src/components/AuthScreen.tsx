@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useAuth } from "@/lib/auth";
 import { useToast } from "@/hooks/use-toast";
+import logoUrl from "@assets/storyscroll_logo_1762725801637.png";
 
 export default function AuthScreen() {
   const [isSignup, setIsSignup] = useState(false);
@@ -64,11 +65,19 @@ export default function AuthScreen() {
     <div className="w-full h-full flex flex-col items-center justify-center p-6 bg-primary/8">
       <div className="w-full max-w-md space-y-8">
         <div className="space-y-4 text-center">
+          <div className="flex justify-center mb-4">
+            <img 
+              src={logoUrl} 
+              alt="StoryScroll Logo" 
+              className="w-32 h-32 object-contain"
+              data-testid="img-logo"
+            />
+          </div>
           <h1 className="text-4xl font-serif font-bold text-foreground">
-            Bedtime Stories
+            StoryScroll
           </h1>
           <p className="text-lg text-muted-foreground">
-            Discover the perfect story for your child
+            Discover the perfect bedtime story for your child
           </p>
         </div>
 

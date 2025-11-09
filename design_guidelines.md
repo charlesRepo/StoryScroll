@@ -1,4 +1,16 @@
-# Bedtime Story Discovery App - Design Guidelines
+# StoryScroll - Design Guidelines
+
+## Brand Identity
+
+**Logo**: Friendly sleeping scroll character with moon and stars
+- Conveys: Bedtime, storytelling, calm, child-friendly
+- Style: Whimsical, warm, approachable
+
+**Color Palette** (extracted from logo):
+- **Primary**: Golden Yellow `hsl(43, 85%, 73%)` - Warmth, stories, magic
+- **Background**: Deep Teal `hsl(195, 52%, 24%)` - Nighttime, calm, trust
+- **Accent**: Soft Cream `hsl(43, 65%, 92%)` - Paper, gentle contrast
+- **Text**: Deep Navy for light mode, Cream for dark mode
 
 ## Design Approach
 
