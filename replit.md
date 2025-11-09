@@ -90,3 +90,12 @@ Removed broken placeholder images to fix functionality issues:
 - **Trade-off**: Improved functionality (no broken images, everything clickable) at cost of visual appeal
 - **Note**: Database still contains `imageUrl` field with Unsplash placeholders; not currently displayed in UI
 - **Future Options**: Could add proper image generation, upload custom illustrations, or use reliable image service
+
+### Error Message Improvements (November 2025)
+Implemented centralized error handling to prevent JSON objects from appearing in user-facing error messages:
+- **Frontend Utility**: Created `normalizeErrorMessage()` in `client/src/lib/errorUtils.ts` to extract readable text from any error format
+- **Query Client**: Updated `throwIfResNotOk` to normalize all API errors before displaying them
+- **Backend Consistency**: Fixed Zod validation errors to return formatted strings instead of arrays
+- **Result**: All error toasts now display clean, user-friendly English text instead of raw JSON objects or "[object Object]"
+- **Coverage**: Affects all error displays across AuthScreen, SettingsDialog, CreateStoryForm, HomePage, and ChangePasswordDialog
+- **Error Contract**: Backend consistently returns `{ error: "string message" }` format for all error responses
