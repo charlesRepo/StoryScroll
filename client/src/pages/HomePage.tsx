@@ -320,7 +320,7 @@ export default function HomePage() {
         {activeTab === "feed" && (
           <div
             ref={scrollContainerRef}
-            className="h-full overflow-y-auto snap-y snap-mandatory scrollbar-hide bg-primary/8"
+            className="h-full overflow-y-auto snap-y snap-mandatory scrollbar-hide bg-primary/50"
             style={{ 
               scrollbarWidth: "none", 
               msOverflowStyle: "none",
