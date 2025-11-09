@@ -62,25 +62,18 @@ export default function StoryCard({
 
   return (
     <div
-      className="min-h-full w-full flex flex-col bg-background snap-start cursor-pointer"
-      onClick={onClick}
+      className="min-h-full w-full flex items-center justify-center snap-start p-6"
       data-testid="card-story"
     >
-      <div className="relative overflow-hidden" style={{ height: '30vh' }}>
-        <img
-          src={imageUrl}
-          alt={title}
-          className="w-full h-full object-cover"
-          data-testid="img-story-cover"
-        />
-      </div>
-
-      <div className="flex-1 p-6 space-y-4 overflow-y-auto">
+      <div 
+        className="bg-[#faf8f5] rounded-lg shadow-lg p-8 max-w-2xl w-full space-y-4 border border-gray-200/50 cursor-pointer"
+        onClick={onClick}
+      >
         <div className="flex items-start justify-between gap-4">
-          <h2 className="text-2xl font-serif font-semibold text-foreground leading-tight flex-1" data-testid="text-story-title">
+          <h2 className="text-4xl font-serif font-bold text-gray-900 leading-tight flex-1" data-testid="text-story-title">
             {title}
           </h2>
-          <div className="flex gap-1">
+          <div className="flex gap-1 flex-shrink-0">
             {showRestoreButton && onRestore && (
               <Button
                 size="icon"
@@ -131,11 +124,11 @@ export default function StoryCard({
         <div className="flex flex-wrap items-center gap-2">
           {readingTime && (
             <>
-              <div className="flex items-center gap-1 text-sm text-muted-foreground" data-testid="text-reading-time">
+              <div className="flex items-center gap-1 text-sm text-gray-600" data-testid="text-reading-time">
                 <Clock className="h-3 w-3" />
                 {readingTime} min
               </div>
-              <span className="text-muted-foreground">|</span>
+              <span className="text-gray-400">|</span>
             </>
           )}
           <Badge variant="secondary" data-testid="badge-age">
@@ -152,19 +145,19 @@ export default function StoryCard({
           )}
         </div>
 
-        <p className="text-base text-foreground leading-relaxed" data-testid="text-story-summary">
+        <p className="text-lg text-gray-700 leading-relaxed" data-testid="text-story-summary">
           {summary}
         </p>
 
         {moral && (
-          <div className="pt-2 border-t" data-testid="section-moral">
-            <p className="text-sm text-muted-foreground italic">
+          <div className="pt-2 border-t border-gray-300" data-testid="section-moral">
+            <p className="text-sm text-gray-600 italic">
               <span className="font-semibold not-italic">Moral:</span> {moral}
             </p>
           </div>
         )}
 
-        <div className="flex items-center justify-between text-sm text-muted-foreground pt-2">
+        <div className="flex items-center justify-between text-sm text-gray-600 pt-2">
           {sourceType === "classic" ? (
             <div className="flex items-center gap-1" data-testid="text-source-classic">
               <Book className="h-4 w-4" />
@@ -177,7 +170,7 @@ export default function StoryCard({
             </div>
           )}
           {likeCount > 0 && (
-            <span className="text-muted-foreground" data-testid="text-like-count">
+            <span className="text-gray-600" data-testid="text-like-count">
               {likeCount} {likeCount === 1 ? "like" : "likes"}
             </span>
           )}
