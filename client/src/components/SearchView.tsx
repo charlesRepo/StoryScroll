@@ -103,26 +103,17 @@ export default function SearchView({
             {filteredStories.map((story) => (
               <div
                 key={story.id}
-                className="bg-card border rounded-md overflow-hidden hover-elevate active-elevate-2"
+                className="bg-card border rounded-md hover-elevate active-elevate-2 cursor-pointer"
+                onClick={() => onStoryClick(story.id)}
                 data-testid={`card-search-result-${story.id}`}
               >
-                <div
-                  className="cursor-pointer"
-                  onClick={() => onStoryClick(story.id)}
-                >
-                  <img
-                    src={story.imageUrl}
-                    alt={story.title}
-                    className="w-full aspect-[4/3] object-cover"
-                  />
-                  <div className="p-3">
-                    <h3 className="text-sm font-semibold text-foreground line-clamp-2 mb-1" data-testid={`text-search-result-title-${story.id}`}>
-                      {story.title}
-                    </h3>
-                    <p className="text-xs text-muted-foreground line-clamp-2">
-                      {story.summary}
-                    </p>
-                  </div>
+                <div className="p-4">
+                  <h3 className="text-sm font-semibold text-foreground line-clamp-2 mb-2" data-testid={`text-search-result-title-${story.id}`}>
+                    {story.title}
+                  </h3>
+                  <p className="text-xs text-muted-foreground line-clamp-3 mb-3">
+                    {story.summary}
+                  </p>
                 </div>
                 <div className="px-3 pb-3 flex justify-between items-center">
                   <span className="text-xs text-muted-foreground capitalize">

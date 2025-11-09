@@ -73,13 +73,6 @@ export default function StoryModal({
 
         <ScrollArea className="flex-1">
           <div className="max-w-prose mx-auto px-6 py-8 space-y-6">
-            <img
-              src={imageUrl}
-              alt={title}
-              className="w-full aspect-[4/3] object-cover rounded-md"
-              data-testid="img-story-modal"
-            />
-
             <div className="space-y-4">
               <h1 className="text-3xl font-serif font-semibold text-foreground" data-testid="text-story-modal-title">
                 {title}
