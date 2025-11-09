@@ -26,35 +26,6 @@ export interface SearchViewProps {
   likedStories: Set<string>;
 }
 
-// Simple search function
-function searchStory(searchTerm: string, text: string): boolean {
-  const search = searchTerm.toLowerCase().trim();
-  const target = text.toLowerCase();
-  
-  // Direct match with spaces
-  if (target.includes(search)) {
-    return true;
-  }
-  
-  // Fuzzy match without spaces (for typos)
-  const searchNoSpaces = search.replace(/\s+/g, '');
-  const targetNoSpaces = target.replace(/\s+/g, '');
-  
-  if (targetNoSpaces.includes(searchNoSpaces)) {
-    return true;
-  }
-  
-  // Character sequence match
-  let searchIndex = 0;
-  for (let i = 0; i < targetNoSpaces.length && searchIndex < searchNoSpaces.length; i++) {
-    if (targetNoSpaces[i] === searchNoSpaces[searchIndex]) {
-      searchIndex++;
-    }
-  }
-  
-  return searchIndex === searchNoSpaces.length;
-}
-
 export default function SearchView({
   allStories,
   onStoryClick,
@@ -65,31 +36,37 @@ export default function SearchView({
 
   const filteredStories = searchQuery.trim()
     ? allStories.filter((story) => {
-        const searchableText = `${story.title} ${story.summary} ${story.fullContent}`;
-        return searchStory(searchQuery, searchableText);
+        const query = searchQuery.toLowerCase();
+        const title = story.title.toLowerCase();
+        const summary = story.summary.toLowerCase();
+        const content = story.fullContent.toLowerCase();
+        
+        return title.includes(query) || summary.includes(query) || content.includes(query);
       })
     : [];
 
   return (
     <div className="h-full flex flex-col bg-background">
+      {/* Search Header */}
       <div className="sticky top-0 z-50 bg-background border-b p-4">
-        <div className="relative w-full max-w-full">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground pointer-events-none" data-testid="icon-search" aria-hidden="true" />
+        <div className="relative flex items-center">
+          <div className="absolute left-3 pointer-events-none">
+            <Search className="h-5 w-5 text-muted-foreground" data-testid="icon-search" />
+          </div>
           <Input
-            type="search"
-            placeholder="Search stories in any language..."
-            className="pl-10 pr-10 w-full"
+            type="text"
+            placeholder="Search stories..."
+            className="pl-10 pr-10"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             data-testid="input-search"
             autoFocus
-            aria-label="Search stories"
           />
           {searchQuery && (
             <Button
               size="icon"
               variant="ghost"
-              className="absolute right-1 top-1/2 -translate-y-1/2 h-8 w-8"
+              className="absolute right-1 h-8 w-8"
               onClick={() => setSearchQuery("")}
               data-testid="button-clear-search"
             >
@@ -99,6 +76,7 @@ export default function SearchView({
         </div>
       </div>
 
+      {/* Results */}
       <div className="flex-1 overflow-y-auto">
         {!searchQuery.trim() ? (
           <div className="flex flex-col items-center justify-center p-12 text-center">
@@ -107,7 +85,7 @@ export default function SearchView({
               Search Stories
             </h3>
             <p className="text-sm text-muted-foreground">
-              Search for stories by title, keywords, or themes in any language
+              Search for stories by title, keywords, or themes
             </p>
           </div>
         ) : filteredStories.length === 0 ? (
@@ -125,22 +103,56 @@ export default function SearchView({
             {filteredStories.map((story) => (
               <div
                 key={story.id}
-                className="bg-card border rounded-md overflow-hidden cursor-pointer hover-elevate active-elevate-2"
-                onClick={() => onStoryClick(story.id)}
+                className="bg-card border rounded-md overflow-hidden hover-elevate active-elevate-2"
                 data-testid={`card-search-result-${story.id}`}
               >
-                <img
-                  src={story.imageUrl}
-                  alt={story.title}
-                  className="w-full aspect-[4/3] object-cover"
-                />
-                <div className="p-3">
-                  <h3 className="text-sm font-semibold text-foreground line-clamp-2 mb-1" data-testid={`text-search-result-title-${story.id}`}>
-                    {story.title}
-                  </h3>
-                  <p className="text-xs text-muted-foreground line-clamp-2">
-                    {story.summary}
-                  </p>
+                <div
+                  className="cursor-pointer"
+                  onClick={() => onStoryClick(story.id)}
+                >
+                  <img
+                    src={story.imageUrl}
+                    alt={story.title}
+                    className="w-full aspect-[4/3] object-cover"
+                  />
+                  <div className="p-3">
+                    <h3 className="text-sm font-semibold text-foreground line-clamp-2 mb-1" data-testid={`text-search-result-title-${story.id}`}>
+                      {story.title}
+                    </h3>
+                    <p className="text-xs text-muted-foreground line-clamp-2">
+                      {story.summary}
+                    </p>
+                  </div>
+                </div>
+                <div className="px-3 pb-3 flex justify-between items-center">
+                  <span className="text-xs text-muted-foreground capitalize">
+                    {story.ageRange}
+                  </span>
+                  <Button
+                    size="icon"
+                    variant="ghost"
+                    className="h-8 w-8"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      onLike(story.id);
+                    }}
+                    data-testid={`button-like-${story.id}`}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      className={`h-5 w-5 ${
+                        likedStories.has(story.id)
+                          ? "fill-red-500 stroke-red-500"
+                          : "fill-none stroke-current"
+                      }`}
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                    </svg>
+                  </Button>
                 </div>
               </div>
             ))}
