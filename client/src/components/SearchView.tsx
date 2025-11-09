@@ -73,12 +73,12 @@ export default function SearchView({
   return (
     <div className="h-full flex flex-col bg-background">
       <div className="sticky top-0 z-50 bg-background border-b p-4">
-        <div className="relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+        <div className="relative w-full max-w-full">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground pointer-events-none" />
           <Input
             type="search"
             placeholder="Search stories in any language..."
-            className="pl-10 pr-10"
+            className="pl-10 pr-10 w-full"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             data-testid="input-search"

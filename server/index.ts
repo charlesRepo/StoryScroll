@@ -5,6 +5,9 @@ import { initializeStoriesIfEmpty } from "./initialize-stories";
 
 const app = express();
 
+// Trust proxy for production deployments (required for secure cookies behind HTTPS proxy)
+app.set("trust proxy", 1);
+
 declare module 'http' {
   interface IncomingMessage {
     rawBody: unknown
