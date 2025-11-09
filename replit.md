@@ -43,6 +43,19 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+### StoryScroll Logo & Color Scheme Integration (November 2025)
+Integrated official branding with new logo and comprehensive color palette update:
+- **Logo Asset**: Added `attached_assets/storyscroll_logo_1762725801637.png` featuring sleeping scroll character with moon and stars
+- **AuthScreen Update**: Logo displayed prominently (128x128px) above "StoryScroll" title on authentication screen
+- **Brand Name**: Changed from "Bedtime Stories" to "StoryScroll" across the application
+- **Color Palette** (extracted from logo):
+  - **Primary**: Golden Yellow `hsl(43, 85%, 55-60%)` - Warmth, magic, storytelling
+  - **Background**: Deep Teal `hsl(195, 52%, 12-24%)` for dark mode, Warm Cream `hsl(43, 65%, 96%)` for light mode
+  - **Foreground**: Deep Teal text `hsl(195, 52%, 18%)` in light mode, Golden Cream `hsl(43, 85%, 90%)` in dark mode
+- **Design Philosophy**: Bedtime theme with nighttime sky (teal) and warm story elements (golden yellow)
+- **Updated Files**: `client/src/index.css`, `client/src/components/AuthScreen.tsx`, `design_guidelines.md`
+- **Testing**: Verified logo display, color scheme application across all components, and readability in both light/dark modes
+
 ### Story Publishing & Editing Feature (November 2025)
 Added comprehensive story publishing and management capabilities:
 - **Edit Before Publishing**: After AI generates a story, users can now edit title, summary, moral, and full content before publishing
