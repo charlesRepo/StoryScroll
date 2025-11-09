@@ -61,7 +61,7 @@ export default function AuthScreen() {
   };
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center p-6 bg-gradient-to-b from-primary/10 to-background">
+    <div className="w-full h-full flex flex-col items-center justify-center p-6 bg-primary/8">
       <div className="w-full max-w-md space-y-8">
         <div className="space-y-4 text-center">
           <h1 className="text-4xl font-serif font-bold text-foreground">
