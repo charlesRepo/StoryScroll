@@ -165,6 +165,24 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+### Search Functionality Rebuild (November 2025)
+Completely rebuilt search functionality with simplified, more reliable implementation:
+- **Simple Search Algorithm**: Replaced complex fuzzy matching with basic case-insensitive `.includes()` matching
+  - Searches across title, summary, and full story content
+  - More predictable and reliable results
+  - Searches all 51 stories regardless of current filter settings
+- **Input Type Fix**: Changed from `type="search"` to `type="text"` to eliminate browser styling conflicts
+- **Search Results Features**:
+  - Grid layout with story cards showing image, title, summary, and age range
+  - Like button on each search result (heart icon fills red when liked)
+  - Clicking card opens story in modal
+  - Liked stories from search appear in Liked tab
+- **UI Improvements**:
+  - Search icon visible on left side of input
+  - Clear (X) button appears when typing
+  - Empty state with helpful message
+  - No results state with suggestion to try different search
+
 ### Bug Fixes (November 2025)
 Fixed several critical bugs to improve user experience:
 - **Production Deployment Fixes**: Added trust proxy for session cookies
@@ -175,11 +193,6 @@ Fixed several critical bugs to improve user experience:
   - Sessions now persist across server restarts
   - Cookie duration extended to 6 days as requested
   - Fixes 401 Unauthorized errors on profile updates in development
-- **Search Improvements**: Fixed search to handle multi-word queries correctly
-  - Direct string match with spaces checked first (e.g., "Three Little Pigs")
-  - Falls back to fuzzy matching for typos and partial matches
-  - Search icon layout fixed to prevent wrapping on narrow viewports
-  - Added `w-full max-w-full` constraints and `pointer-events-none` to icon
 - **Scrolling Viewport**: Fixed card visibility when scrolling
   - Changed from fixed-height scroll to scrollIntoView API
   - Cards always fully visible whether scrolling up or down
