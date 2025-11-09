@@ -30,14 +30,14 @@ export default function FilterBar({
   return (
     <div className="sticky top-0 z-50">
       <div 
-        className="px-4 h-10 flex items-center gap-3"
+        className="px-4 h-[60px] flex items-center gap-3"
         style={{ backgroundColor: 'rgb(19, 50, 81)' }}
         data-testid="header-storyscroll"
       >
         <img 
           src={logoUrl} 
           alt="StoryScroll" 
-          className="w-10 h-10 object-contain flex-shrink-0"
+          className="w-[60px] h-[60px] object-contain flex-shrink-0"
           data-testid="img-header-logo"
         />
         <h1 
