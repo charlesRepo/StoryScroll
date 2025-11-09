@@ -138,7 +138,7 @@ export default function StoryCard({
           </Badge>
         </div>
 
-        <p className="text-xl text-gray-700 leading-relaxed min-h-[10rem]" data-testid="text-story-summary">
+        <p className="text-lg text-gray-700 leading-relaxed" data-testid="text-story-summary">
           {summary}
         </p>
 
