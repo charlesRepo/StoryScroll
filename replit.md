@@ -157,12 +157,28 @@ Preferred communication style: Simple, everyday language.
 **Session Storage:**
 - connect-pg-simple for PostgreSQL-backed session storage
 - Enables persistent sessions across server restarts
+- 6-day cookie duration for better user experience
 
 **Image Hosting:**
 - Unsplash for curated story images (placeholder)
 - Future: Support for AI-generated images or user uploads
 
 ## Recent Changes
+
+### Bug Fixes (November 2025)
+Fixed several critical bugs to improve user experience:
+- **Session Persistence**: Added PostgreSQL session store using connect-pg-simple
+  - Sessions now persist across server restarts
+  - Cookie duration extended to 6 days as requested
+  - Fixes 401 Unauthorized errors on profile updates
+- **Search Improvements**: Fixed search to handle multi-word queries correctly
+  - Direct string match with spaces checked first (e.g., "Three Little Pigs")
+  - Falls back to fuzzy matching for typos and partial matches
+  - Search icon verified working correctly
+- **Scrolling Viewport**: Fixed card visibility when scrolling
+  - Changed from fixed-height scroll to scrollIntoView API
+  - Cards always fully visible whether scrolling up or down
+  - Added scrollSnapStop for smoother snap behavior
 
 ### Story Dismissal Feature (November 2025)
 Implemented story dismissal with undo functionality:
