@@ -48,15 +48,15 @@ Integrated official branding with new logo and comprehensive color palette updat
 - **Logo Asset**: Added `attached_assets/storyscroll_logo_1762725801637.png` featuring sleeping scroll character with moon and stars
 - **Logo Placement**: 
   - AuthScreen: Large logo (128x128px) above "StoryScroll" title on authentication screen
-  - Filter Bar: Small logo (40x40px) on the left side of the sticky top filter bar, always visible while browsing
+  - App Header: Branded header bar at top of feed with dark teal background `hsl(195, 52%, 24%)`, logo (40x40px) on left, and "StoryScroll" text in golden yellow `hsl(43, 85%, 65%)` next to it
 - **Brand Name**: Changed from "Bedtime Stories" to "StoryScroll" across the application
 - **Color Palette** (extracted from logo):
   - **Primary**: Golden Yellow `hsl(43, 85%, 55-60%)` - Warmth, magic, storytelling
   - **Background**: Deep Teal `hsl(195, 52%, 12-24%)` for dark mode, Warm Cream `hsl(43, 65%, 96%)` for light mode
   - **Foreground**: Deep Teal text `hsl(195, 52%, 18%)` in light mode, Golden Cream `hsl(43, 85%, 90%)` in dark mode
-- **Design Philosophy**: Bedtime theme with nighttime sky (teal) and warm story elements (golden yellow)
+- **Design Philosophy**: Bedtime theme with nighttime sky (teal) and warm story elements (golden yellow). Header uses logo's dark teal background for strong brand identity.
 - **Updated Files**: `client/src/index.css`, `client/src/components/AuthScreen.tsx`, `client/src/components/FilterBar.tsx`, `design_guidelines.md`
-- **Testing**: Verified logo display in both locations, color scheme application across all components, filter functionality with logo present, and readability in both light/dark modes
+- **Testing**: Verified logo display in both locations, branded header appearance with correct colors, sticky behavior, color scheme application across all components, and readability in both light/dark modes
 
 ### Story Publishing & Editing Feature (November 2025)
 Added comprehensive story publishing and management capabilities:
