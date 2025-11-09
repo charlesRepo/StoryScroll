@@ -1,13 +1,17 @@
 import { QueryClient, QueryFunction } from "@tanstack/react-query";
+import { normalizeErrorMessage } from "./errorUtils";
 
 async function throwIfResNotOk(res: Response) {
   if (!res.ok) {
     const text = await res.text();
     try {
       const json = JSON.parse(text);
-      throw new Error(json.error || json.message || res.statusText);
+      // Use normalizeErrorMessage to extract user-friendly text
+      const message = normalizeErrorMessage(json);
+      throw new Error(message);
     } catch (parseError) {
-      throw new Error(text || res.statusText);
+      // If parsing fails, normalize the text response
+      throw new Error(normalizeErrorMessage(text || res.statusText));
     }
   }
 }
