@@ -49,8 +49,8 @@ export default function SearchView({
     <div className="h-full flex flex-col bg-background">
       {/* Search Header */}
       <div className="sticky top-0 z-50 bg-background border-b p-4">
-        <div className="relative">
-          <div className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none z-10">
+        <div className="relative flex items-center">
+          <div className="absolute left-3 pointer-events-none">
             <Search className="h-5 w-5 text-muted-foreground" data-testid="icon-search" />
           </div>
           <Input
@@ -66,7 +66,7 @@ export default function SearchView({
             <Button
               size="icon"
               variant="ghost"
-              className="absolute right-2 top-1/2 -translate-y-1/2 h-7 w-7"
+              className="absolute right-1 h-8 w-8"
               onClick={() => setSearchQuery("")}
               data-testid="button-clear-search"
             >
