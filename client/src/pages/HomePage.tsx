@@ -344,17 +344,32 @@ export default function HomePage() {
                 </div>
               </div>
             ) : (
-              stories.map((story) => (
-                <StoryCard
-                  key={story.id}
-                  {...story}
-                  isLiked={likedStoryIds.has(story.id)}
-                  onLike={() => handleLike(story.id)}
-                  onDismiss={() => handleDismiss(story.id)}
-                  isDismissPending={pendingByStory[story.id]?.dismiss || false}
-                  onClick={() => setSelectedStory(story.id)}
-                />
-              ))
+              <>
+                {stories.map((story) => (
+                  <StoryCard
+                    key={story.id}
+                    {...story}
+                    isLiked={likedStoryIds.has(story.id)}
+                    onLike={() => handleLike(story.id)}
+                    onDismiss={() => handleDismiss(story.id)}
+                    isDismissPending={pendingByStory[story.id]?.dismiss || false}
+                    onClick={() => setSelectedStory(story.id)}
+                  />
+                ))}
+                {stories.length > 0 && (
+                  <div 
+                    className="min-h-full flex items-center justify-center snap-start snap-always p-6"
+                    data-testid="end-of-feed"
+                  >
+                    <div className="text-center">
+                      <p className="text-muted-foreground">No more stories to show</p>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        Try changing the filters to see different stories
+                      </p>
+                    </div>
+                  </div>
+                )}
+              </>
             )}
           </div>
         )}
