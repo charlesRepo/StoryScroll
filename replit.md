@@ -66,3 +66,10 @@ Improved user feedback during filter changes:
 - **Implementation**: Uses TanStack Query's `isFetching` state to detect when stories are being refetched
 - **UX Improvement**: Prevents showing "No stories found" message during brief loading periods
 - **Visual Design**: Spinner with "Loading stories..." text provides clear feedback during filter transitions
+
+### End-of-Feed Message (November 2025)
+Added clear indication when user reaches the end of available stories:
+- **Message**: "No more stories to show" appears after the last story card
+- **Helper Text**: Suggests changing filters to see different stories
+- **Snap Scroll**: Message uses same full-height layout and snap behavior as story cards
+- **Conditional Display**: Only shows when stories are available (not shown in empty state)
