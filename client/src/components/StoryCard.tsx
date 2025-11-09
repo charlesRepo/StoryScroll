@@ -116,7 +116,7 @@ export default function StoryCard({
           </Button>
         </div>
 
-        <h2 className="text-4xl font-serif font-bold text-gray-900 leading-tight w-full" data-testid="text-story-title">
+        <h2 className="font-serif font-bold text-gray-900 leading-tight w-full" style={{ fontSize: '32px' }} data-testid="text-story-title">
           {title}
         </h2>
 

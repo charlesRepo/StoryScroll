@@ -234,7 +234,7 @@ Return the response in this exact JSON format:
 {
   "title": "Story title here",
   "content": "Full story text here",
-  "summary": "A rich, detailed summary paragraph of at least 7-9 sentences that captures the essence of the story, introduces the main characters, describes the key events, and conveys the emotional journey in a warm and engaging way",
+  "summary": "A concise, engaging summary of the story (maximum 70 words or 390 characters with spaces). Capture the key plot points and main characters in a warm, inviting way",
   "moral": "${generateMoral ? "A brief moral of the story" : ""}"
 }`;
 

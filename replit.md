@@ -35,8 +35,18 @@ Preferred communication style: Simple, everyday language.
 
 ## External Dependencies
 
-- **AI Service**: OpenAI API for generating custom bedtime stories (title, summary, moral, full content).
+- **AI Service**: OpenAI API for generating custom bedtime stories (title, summary, moral, full content). Summaries limited to 70 words or 390 characters for optimal mobile readability.
 - **Database**: Neon Serverless PostgreSQL, configured via `DATABASE_URL`.
 - **UI Components**: Radix UI primitives, shadcn/ui, Lucide React (icons).
 - **Session Storage**: `connect-pg-simple` for PostgreSQL-backed session persistence.
 - **Image Hosting**: Unsplash (placeholders), with future plans for AI-generated or user-uploaded images.
+
+## Recent Changes
+
+### Story Summary & Title Optimization (November 2025)
+Optimized story presentation for better mobile readability:
+- **Title Font-Size**: Reduced from 36px to 32px for better visual balance
+- **Summary Length**: Capped at 70 words or 390 characters (displays 4-5 lines on mobile)
+- **Updated Stories**: Revised 10 popular English stories (Hansel and Gretel, Cinderella, Little Red Riding Hood, The Three Little Pigs, The Ugly Duckling, Goldilocks, Jack and the Beanstalk, The Golden Goose, Puss in Boots, Sleeping Beauty)
+- **AI Generation**: Updated prompt to enforce summary length limits for all new stories
+- **Result**: Clean, readable cards that provide quick story context without overwhelming the screen
