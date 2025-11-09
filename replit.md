@@ -167,18 +167,28 @@ Preferred communication style: Simple, everyday language.
 
 ### Bug Fixes (November 2025)
 Fixed several critical bugs to improve user experience:
+- **Production Deployment Fixes**: Added trust proxy for session cookies
+  - `app.set("trust proxy", 1)` allows secure cookies behind HTTPS proxy
+  - Fixes 401 Unauthorized errors on profile updates in production
+  - Sessions work properly in production environment
 - **Session Persistence**: Added PostgreSQL session store using connect-pg-simple
   - Sessions now persist across server restarts
   - Cookie duration extended to 6 days as requested
-  - Fixes 401 Unauthorized errors on profile updates
+  - Fixes 401 Unauthorized errors on profile updates in development
 - **Search Improvements**: Fixed search to handle multi-word queries correctly
   - Direct string match with spaces checked first (e.g., "Three Little Pigs")
   - Falls back to fuzzy matching for typos and partial matches
-  - Search icon verified working correctly
+  - Search icon layout fixed to prevent wrapping on narrow viewports
+  - Added `w-full max-w-full` constraints and `pointer-events-none` to icon
 - **Scrolling Viewport**: Fixed card visibility when scrolling
   - Changed from fixed-height scroll to scrollIntoView API
   - Cards always fully visible whether scrolling up or down
   - Added scrollSnapStop for smoother snap behavior
+- **Password Change UX**: Improved password change experience
+  - Moved password change to separate ChangePasswordDialog
+  - Settings dialog now focused on username/email only
+  - "Change Password" button opens dedicated dialog
+  - Better UX separation of concerns
 
 ### Story Dismissal Feature (November 2025)
 Implemented story dismissal with undo functionality:
