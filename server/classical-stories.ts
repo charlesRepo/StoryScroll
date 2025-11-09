@@ -1,1727 +1,1937 @@
 export const classicalStories = [
-  // ENGLISH STORIES
   {
-    title: "Hansel and Gretel",
-    summary: "Two children outwit a wicked witch who lives in a house made of sweets deep in the forest.",
-    moral: "Cleverness and courage can overcome even the greatest dangers when you work together.",
-    fullContent: `Once upon a time, in a small cottage at the edge of a great forest, there lived a poor woodcutter with his two children, Hansel and Gretel. Times were hard, and food was scarce.
-
-One night, Hansel and Gretel overheard their parents talking about leading them into the forest and leaving them there, as there was not enough food for all. Clever Hansel sneaked outside and filled his pockets with white pebbles that shone in the moonlight.
-
-The next morning, the family ventured deep into the forest. As they walked, Hansel secretly dropped the white pebbles along the path. When their parents left them, the children waited until the moon rose, and the pebbles showed them the way home.
-
-But the parents tried again. This time, Hansel could only use bread crumbs to mark the path, and birds ate them all. Lost in the forest, Hansel and Gretel wandered until they discovered an amazing house made entirely of bread, with a roof of cake and windows of clear sugar.
-
-Hungry and delighted, they began to nibble at the house. Suddenly, a witch appeared. She was kind at first, inviting them inside and feeding them a delicious meal. But she was wicked and planned to fatten Hansel up and eat him!
-
-She locked Hansel in a cage and made Gretel work as her servant. Each day, the witch asked Hansel to stick out his finger to see if he was fat enough, but clever Hansel stuck out a small bone instead.
-
-Finally, the witch grew impatient. She ordered Gretel to check if the oven was hot enough. But brave Gretel pretended not to understand, and when the witch bent down to show her, Gretel gave her a push and shut the oven door tight.
-
-The children found the witch's treasure of pearls and precious stones, filled their pockets, and fled the house. After wandering through the forest, they finally found their way home, where their father welcomed them with tears of joy. Their stepmother had gone away, and they all lived happily together with the treasure they had brought home.`,
-    ageRange: "6-10 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "de",
-    sourceType: "curated",
-    authorName: "Brothers Grimm",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1513569536613-b522c5c67e4e?w=800&h=600&fit=crop"
+    "title": "Snow White and the Seven Friends",
+    "fullContent": "Once upon a time, in a kingdom far away, there lived a kind and gentle princess named Snow White. She had skin as white as snow, lips as red as roses, and hair as black as ebony. Snow White's stepmother, the queen, was not very kind. She wanted to be the fairest in the land, so she asked her magic mirror every day, 'Mirror, mirror on the wall, who is the fairest of them all?' The mirror would always answer, 'You, my queen, are the fairest of them all.' But one day, the mirror said, 'Snow White is the fairest of them all.' This made the queen very jealous.\n\nSnow White, unaware of the queen's jealousy, loved to wander in the forest near her castle. One day, the queen, disguised as an old woman, offered Snow White a shiny red apple. As soon as she took a bite, Snow White fell into a deep sleep.\n\nLucky for Snow White, seven little friends, the kind dwarfs, found her in the forest. They took care of her and protected her. They placed her in a beautiful glass bed surrounded by flowers.\n\nOne day, a prince from a neighboring kingdom happened to pass by and saw Snow White. He gently kissed her forehead, and to everyone's delight, she awoke from her sleep, smiling brightly.\n\nSnow White thanked the dwarfs and the prince. She learned the importance of kindness and friendship, and with the prince, she returned to the castle to live happily ever after, always cherishing her seven little friends.",
+    "summary": "Snow White, a kind princess, falls into a deep sleep after eating a poisoned apple from her jealous stepmother. Seven dwarfs care for her, and a prince's gentle kiss awakens her. Grateful, Snow White embraces kindness and friendship, living happily ever after.",
+    "moral": "Kindness and friendship can overcome any challenge.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-oq5inm?w=800"
   },
   {
-    title: "Cinderella",
-    summary: "A kind girl, mistreated by her stepfamily, goes to the royal ball with the help of her Fairy Godmother.",
-    moral: "Kindness and grace will be rewarded, and dreams can come true with a little magic.",
-    fullContent: `Once upon a time, there lived a sweet girl named Cinderella. After her father remarried, she lived with her stepmother and two stepsisters who were cruel and unkind. They made Cinderella do all the housework while they lived in luxury.
-
-One day, an invitation arrived from the palace. The King was hosting a grand ball so the Prince could choose a bride! The stepsisters were thrilled and spent days preparing their gowns. Cinderella helped them get ready, though she wished she could go too.
-
-"You?" laughed her stepmother. "You cannot go to the ball dressed in rags!" And they left her behind, crying by the fireplace.
-
-Suddenly, a bright light filled the room. "Don't cry, dear child," said a kind voice. It was Cinderella's Fairy Godmother! With a wave of her magic wand, she transformed a pumpkin into a golden coach, mice into horses, and Cinderella's rags into a beautiful gown with glass slippers.
-
-"You shall go to the ball!" said the Fairy Godmother. "But remember, at midnight the magic will end. You must leave before then."
-
-At the ball, everyone wondered who the mysterious, beautiful princess was. The Prince couldn't take his eyes off Cinderella, and they danced together all evening. Cinderella was so happy that she forgot about the time until the clock began to strike midnight.
-
-"I must go!" she cried, and ran down the palace steps so quickly that one of her glass slippers fell off. The Prince tried to follow, but she disappeared into the night.
-
-The next day, the Prince declared he would marry whoever the glass slipper fit. His servants went from house to house. When they reached Cinderella's home, her stepsisters tried to squeeze their feet into the slipper, but it was no use.
-
-"May I try?" asked Cinderella quietly. Her stepmother laughed, but the servant insisted. The slipper fit perfectly! At that moment, Cinderella's Fairy Godmother appeared and transformed her rags into a beautiful gown once more.
-
-The Prince recognized her at once and asked her to marry him. Cinderella forgave her stepfamily, and she and the Prince lived happily ever after.`,
-    ageRange: "3-5 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "fr",
-    sourceType: "curated",
-    authorName: "Charles Perrault",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1565734451735-742fea78c39f?w=800&h=600&fit=crop"
+    "title": "Hansel and Gretel's Sweet Adventure",
+    "fullContent": "Once upon a time, in a cozy little village, lived a brother and sister named Hansel and Gretel. One sunny morning, they wandered into the forest to pick berries. As they walked, they found a delightful house made entirely of candy! The roof was made of gingerbread, the walls were chocolate, and the windows were sugar. Hungry and curious, they nibbled on the delicious treats. Suddenly, a kind old woman opened the door and invited them in. She gave them warm cookies and milk. Hansel and Gretel felt happy and safe. But as night fell, the old woman revealed her true nature. She wanted to keep Hansel and Gretel forever! The clever children knew they must find a way home. With quick thinking, they tricked the old woman and made their escape. Hand in hand, they followed a trail of shining pebbles back to their village. Their parents hugged them tightly, so relieved to see them safe. Hansel and Gretel promised to never wander too far again, and they learned the importance of listening to their parents. Every now and then, they would visit the edge of the forest, but they always returned home before dark, remembering their sweet adventure.",
+    "summary": "Hansel and Gretel explore the forest and find a candy house. Trapped by a cunning old woman, they use their wits to escape and return home safely, realizing the importance of listening to their parents.",
+    "moral": "Always listen to your parents and be cautious of strangers.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-kbeg1h?w=800"
   },
   {
-    title: "Little Red Riding Hood",
-    summary: "A little girl in a red hood encounters a sly wolf on her way to her grandmother's house.",
-    moral: "Always be cautious and listen to your parents' warnings about strangers.",
-    fullContent: `Once upon a time, there was a dear little girl who was loved by everyone, especially her grandmother. For her birthday, her grandmother had made her a little red velvet hood, which suited her so well that she wanted to wear it all the time. Soon everyone called her Little Red Riding Hood.
-
-One day, her mother said, "Little Red Riding Hood, your grandmother is ill. Take this basket of food to her, but do not stray from the path and do not talk to strangers."
-
-Little Red Riding Hood promised and set off through the forest. Soon she met a wolf. "Good morning, Little Red Riding Hood," said the wolf politely. "Where are you going?"
-
-"To my grandmother's house," she replied innocently. "She lives in the cottage at the end of the path."
-
-"What a lovely idea!" said the crafty wolf. "Why don't you pick some flowers for her? Look how beautiful they are!" While Little Red Riding Hood gathered flowers, forgetting her mother's warning, the wolf ran ahead to grandmother's house.
-
-The wolf knocked on the door. "Who is there?" called grandmother. "It is Little Red Riding Hood," the wolf replied in a sweet voice. "Come in, dear," said grandmother, and the wolf burst in and gobbled her up!
-
-The wolf put on grandmother's nightcap and got into her bed just as Little Red Riding Hood arrived with her basket and flowers.
-
-"Grandmother, what big ears you have!" said Little Red Riding Hood. "The better to hear you with, my dear," replied the wolf. "Grandmother, what big eyes you have!" "The better to see you with, my dear." "Grandmother, what big teeth you have!" "The better to eat you with!"
-
-And with that, the wolf leaped out of bed. Little Red Riding Hood screamed! Fortunately, a huntsman was passing by and heard her cry. He rushed in and chased the wolf away.
-
-The huntsman made the wolf release grandmother, who was shaken but unharmed. Little Red Riding Hood learned her lesson: always listen to your mother and never talk to strangers. She never strayed from the path again, and she and her grandmother enjoyed the treats from the basket together.`,
-    ageRange: "3-5 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "fr",
-    sourceType: "curated",
-    authorName: "Charles Perrault",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1511044568932-338cba0ad803?w=800&h=600&fit=crop"
+    "title": "Rapunzel's Tower Adventure",
+    "fullContent": "Once upon a time, in a faraway kingdom, there lived a girl named Rapunzel. She had long, golden hair that sparkled like sunshine. Rapunzel lived in a tall, enchanted tower hidden deep in the forest. Her days were filled with singing and painting, but she longed to explore the world beyond. One day, a kind prince heard her beautiful song and followed it to the tower. 'Rapunzel, Rapunzel, let down your hair,' he called. Rapunzel let her hair fall like a golden rope, and the prince climbed up to meet her. They talked and laughed, and soon they became friends. The prince promised to help Rapunzel see the world. Together, they crafted a plan to leave the tower. Using her long hair, they climbed down safely. Rapunzel was finally free! She saw flowers blooming, birds chirping, and the sky stretching endlessly. The prince and Rapunzel traveled to the prince's kingdom, where they lived happily ever after, exploring new places and making new friends every day.",
+    "summary": "Rapunzel, with her long golden hair, lived in a tall tower. She dreamed of exploring the world. A kind prince heard her song, climbed her hair, and they became friends. Together, they left the tower and explored the world beyond, living happily ever after.",
+    "moral": "Friendship and courage can help you overcome any challenge.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-hwynps?w=800"
   },
   {
-    title: "The Three Little Pigs",
-    summary: "Three little pigs build houses of straw, sticks, and bricks to protect themselves from the big bad wolf.",
-    moral: "Hard work and planning ahead will protect you when challenges come.",
-    fullContent: `Once upon a time, there were three little pigs who lived with their mother. When they were old enough, she sent them out into the world to seek their fortune.
-
-The first little pig met a man with some straw. "Please give me that straw to build a house," said the pig. The man did, and the first little pig quickly built himself a house of straw. It was easy and didn't take long at all!
-
-The second little pig met a man with some sticks. "Please give me those sticks to build a house," said the pig. The man did, and the second little pig built himself a house of sticks. It was a bit stronger than straw and didn't take too long either.
-
-The third little pig met a man with some bricks. "Please give me those bricks to build a house," said the pig. The man did, and the third little pig worked hard for many days to build a strong house of bricks.
-
-Soon, a big bad wolf came along. He went to the first little pig's straw house and said, "Little pig, little pig, let me come in!" "Not by the hair on my chinny chin chin!" said the pig. "Then I'll huff, and I'll puff, and I'll blow your house down!" And he did! The first little pig ran to his brother's house of sticks.
-
-The wolf followed and said, "Little pigs, little pigs, let me come in!" "Not by the hair on our chinny chin chins!" they said. "Then I'll huff, and I'll puff, and I'll blow your house down!" And he did! The two little pigs ran to their brother's house of bricks.
-
-The wolf arrived at the brick house and said, "Little pigs, little pigs, let me come in!" "Not by the hair on our chinny chin chins!" they said. "Then I'll huff, and I'll puff, and I'll blow your house down!"
-
-So he huffed, and he puffed, and he huffed and puffed again. But no matter how hard he blew, the brick house stood strong! The wolf was so tired that he gave up and went away.
-
-The three little pigs learned an important lesson. The two pigs who had rushed to build their houses now helped their wise brother add rooms to his brick house, and they all lived there safely and happily ever after.`,
-    ageRange: "3-5 years",
-    language: "en",
-    isTranslated: false,
-    originalLanguage: "en",
-    sourceType: "curated",
-    authorName: "Traditional English Tale",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=800&h=600&fit=crop"
+    "title": "The Tale of Rumpelstiltskin",
+    "fullContent": "Once upon a time, in a small village, there lived a miller who had a beautiful daughter. To impress the king, the miller boasted that his daughter could spin straw into gold. The king, intrigued, summoned the girl to his castle and locked her in a room full of straw, demanding she turn it into gold by morning. The poor girl was at a loss, until a mysterious little man appeared, offering to help in exchange for a promise. Desperate, she agreed. The little man spun the straw into gold, and the king was delighted. But this happened twice more, and each time the girl promised him something dear. Finally, when the king decided to marry her, the little man returned to claim his reward: her firstborn child. In despair, the girl pleaded with the man, and he gave her a chance. If she could guess his name in three days, she could keep her child. The girl was distraught, but on the second night, she overheard the little man singing his name while dancing in the woods. \"Rumpelstiltskin,\" he sang. On the third day, when he came to claim the child, she confidently spoke his name. The little man was furious, stamped his foot, and vanished forever. The girl lived happily ever after with her child and the kind king.",
+    "summary": "A miller's daughter must spin straw into gold for a king. With the help of a mysterious man, she succeeds but must guess his name to keep her child. She overhears his name, Rumpelstiltskin, and saves her child, living happily ever after.",
+    "moral": "Promises should be made carefully, and cleverness can help solve problems.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-ajpdzr?w=800"
   },
   {
-    title: "The Ugly Duckling",
-    summary: "A young bird, mocked for being different, discovers he is actually a beautiful swan.",
-    moral: "Everyone is special in their own way, and true beauty comes from within.",
-    fullContent: `It was a lovely summer day on the farm. Mother Duck sat on her nest, waiting for her eggs to hatch. One by one, the eggs cracked open and out popped fluffy yellow ducklings. But one egg, the biggest one, didn't hatch.
-
-Finally, the large egg cracked and out came a duckling who looked... different. He was bigger than the others, with gray feathers instead of yellow.
-
-"What an ugly duckling!" said Mother Duck, but she loved him anyway.
-
-The other ducklings weren't so kind. "You're so ugly!" they quacked. "You don't belong here!" Even the chickens and the cat made fun of him.
-
-The poor duckling felt so sad. "Nobody wants me," he thought. So one day, he ran away from the farm.
-
-He wandered through fields and forests, looking for a place to belong. He met some wild ducks, but they flew away. He found some geese, but they told him to leave. Winter came, and the poor duckling was cold and alone.
-
-One day, he saw a group of beautiful white birds flying overhead. They had long graceful necks and elegant wings. "How beautiful they are!" sighed the duckling. "I wish I could be like them."
-
-Winter passed, and spring arrived. The duckling, now grown, came to a quiet pond. In the water, he saw his reflection and gasped. He wasn't an ugly gray duckling anymore - he had turned into a beautiful white swan with a long, graceful neck!
-
-The other swans swam over to him. "Welcome, friend!" they said. "You're one of us!" The duckling - now a swan - could hardly believe it.
-
-Children playing by the pond pointed at him. "Look at that swan! He's the most beautiful one of all!"
-
-The swan thought of all the times he had been teased and rejected. But now he understood that he had never been an ugly duckling at all. He had always been a swan, just waiting to grow up.
-
-And he lived happily ever after, swimming gracefully with his new family, knowing that being different made him special.`,
-    ageRange: "3-5 years",
-    language: "en",
-    isTranslated: false,
-    originalLanguage: "en",
-    sourceType: "curated",
-    authorName: "Hans Christian Andersen",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop"
+    "title": "The Frog Prince",
+    "fullContent": "Once upon a time, in a beautiful kingdom, there was a young princess who loved to play with her golden ball near a shimmering pond. One day, the ball slipped from her fingers and splashed into the water. As she began to cry, a small frog hopped up and asked, 'Why are you crying, dear princess?' The princess replied, 'My golden ball has fallen into the pond!' The frog smiled and said, 'I can retrieve it for you if you promise to let me be your friend.' Desperate, the princess agreed. The frog dove into the pond and returned with the ball. Overjoyed, the princess ran home, forgetting her promise. The next day, the frog appeared at the castle door. The king, learning of the promise, insisted the princess keep her word. Reluctantly, she let the frog dine with her and even allowed him to sleep on a silk pillow. As days passed, the princess grew fond of the frog. On the third day, she gave him a gentle kiss, and magically, the frog transformed into a handsome prince! He explained, 'An evil witch turned me into a frog, and only a true friendship could break the spell.' The prince and princess became best friends and lived happily ever after.",
+    "summary": "A princess loses her golden ball in a pond and befriends a frog who retrieves it. She keeps her promise, and the frog turns into a prince, revealing a curse broken by true friendship.",
+    "moral": "True friendship and keeping promises can lead to wonderful surprises.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-ck9zpj?w=800"
   },
   {
-    title: "Goldilocks and the Three Bears",
-    summary: "A curious girl discovers three bears' house and learns an important lesson about respecting others' property.",
-    moral: "Always respect other people's belongings and ask before using them.",
-    fullContent: `Once upon a time, there were three bears who lived in a cozy house in the woods: Papa Bear, Mama Bear, and Baby Bear.
-
-One morning, Mama Bear made porridge for breakfast, but it was too hot to eat. "Let's go for a walk while it cools," said Papa Bear. So the three bears went out for a stroll in the forest.
-
-While they were gone, a little girl named Goldilocks came skipping through the woods. She had beautiful golden hair that bounced as she walked. When she saw the bears' house, she was curious.
-
-"I wonder who lives here," she said, and knocked on the door. Nobody answered. She tried the door and it opened! "Hello?" she called, but there was no reply. So she walked right in.
-
-On the table, she saw three bowls of porridge. Goldilocks was hungry. She tried Papa Bear's porridge. "Ouch! This is too hot!" She tried Mama Bear's porridge. "Ew! This is too cold!" Then she tried Baby Bear's porridge. "Mmm! This is just right!" And she ate it all up.
-
-Next, Goldilocks saw three chairs. She sat in Papa Bear's chair. "This is too hard!" She sat in Mama Bear's chair. "This is too soft!" Then she sat in Baby Bear's chair. "This is just right!" But when she rocked back and forth, CRASH! The little chair broke into pieces.
-
-Goldilocks was getting tired. She went upstairs and saw three beds. She tried Papa Bear's bed. "Too hard!" She tried Mama Bear's bed. "Too soft!" Then she tried Baby Bear's bed. "Just right!" And she fell fast asleep.
-
-Soon, the three bears came home from their walk. "Someone's been eating my porridge!" growled Papa Bear. "Someone's been eating my porridge!" said Mama Bear. "Someone's been eating my porridge," cried Baby Bear, "and they ate it all up!"
-
-The bears looked around. "Someone's been sitting in my chair!" growled Papa Bear. "Someone's been sitting in my chair!" said Mama Bear. "Someone's been sitting in my chair," cried Baby Bear, "and they broke it!"
-
-The bears went upstairs. "Someone's been sleeping in my bed!" growled Papa Bear. "Someone's been sleeping in my bed!" said Mama Bear. "Someone's been sleeping in my bed," cried Baby Bear, "and there she is!"
-
-Goldilocks woke up to see three bears staring at her! She jumped out of bed and ran down the stairs, out the door, and all the way home as fast as she could run.
-
-The three bears never saw Goldilocks again. And Goldilocks learned an important lesson: never go into someone else's house without permission!`,
-    ageRange: "0-2 years",
-    language: "en",
-    isTranslated: false,
-    originalLanguage: "en",
-    sourceType: "curated",
-    authorName: "Traditional English Tale",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=800&h=600&fit=crop"
+    "title": "Snow-White and Rose-Red",
+    "fullContent": "Once upon a time, there lived two little sisters named Snow-White and Rose-Red. They were kind and cheerful, always helping their mother with chores and playing in the forest. One day, a bear knocked on their door. The sisters were frightened at first, but the bear spoke kindly and became their friend.\n\nAs the seasons changed, the bear visited often, sharing stories and laughter. One day, the bear told the sisters that he must leave. He had to protect his treasure from a wicked dwarf. Snow-White and Rose-Red promised to help him.\n\nDuring their adventures, they met the dwarf, who was rude and ungrateful despite the sisters' kindness. They helped him out of many troubles, but he never thanked them.\n\nOne day, the dwarf tried to steal the bear's treasure. Just as he was about to succeed, the bear arrived and stopped him. The bear transformed into a prince, freed from a spell. He thanked Snow-White and Rose-Red for their kindness and bravery.\n\nThe sisters and their mother were invited to the prince's castle, where they lived happily ever after. Snow-White and Rose-Red learned that kindness and bravery could change the world.",
+    "summary": "Snow-White and Rose-Red befriend a kind bear who visits them often. When he leaves to protect his treasure from a wicked dwarf, the sisters help him. Their kindness helps break a spell, turning the bear into a prince. Together, they learn that kindness and bravery can change the world.",
+    "moral": "Kindness and bravery can change the world and bring unexpected rewards.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-9nvx0j?w=800"
   },
   {
-    title: "The Emperor's New Clothes",
-    summary: "Two swindlers trick a vain emperor into believing invisible clothes are magnificent robes.",
-    moral: "Be honest and speak the truth, even when others are afraid to.",
-    fullContent: `Many years ago, there lived an emperor who loved beautiful clothes more than anything else. He had a different outfit for every hour of the day!
-
-One day, two clever swindlers came to town. They heard about the emperor's love of clothes and had an idea. "We can weave the finest cloth imaginable," they told the emperor. "It's so special that it's invisible to anyone who is stupid or unfit for their position."
-
-"Wonderful!" thought the emperor. "If I wear those clothes, I can find out which of my ministers are wise and which are foolish!" He gave the swindlers lots of money and silk thread to begin their work.
-
-The swindlers set up their looms and pretended to weave, but there was nothing there! They pocketed all the silk and money for themselves.
-
-The emperor sent his most trusted minister to check on the progress. The minister looked at the empty looms. "Oh my!" he thought. "I can't see anything! But I mustn't tell anyone, or they'll think I'm stupid!" So he told the emperor the cloth was magnificent.
-
-The emperor sent another minister, and the same thing happened. Nobody wanted to admit they couldn't see the cloth!
-
-Finally, the swindlers announced the clothes were ready. They pretended to dress the emperor in the invisible garments. "How do I look?" asked the emperor, staring at his reflection in the mirror. He couldn't see anything either, but he didn't want to seem stupid!
-
-"Magnificent!" cried all the ministers, though they saw nothing.
-
-The emperor decided to parade through the streets in his "new clothes" so everyone could admire them. He walked proudly through the town in his underwear, while the crowd cheered because nobody wanted to admit they couldn't see the special cloth.
-
-Then a little child in the crowd called out, "But he's not wearing any clothes!"
-
-"Did you hear that?" people whispered. Soon everyone was saying it. "He's not wearing any clothes! The emperor has no clothes on!"
-
-The emperor realized the child was right, but he lifted his chin high and continued his parade. He had learned an important lesson about vanity and honesty, and he was never quite so proud again.`,
-    ageRange: "6-10 years",
-    language: "en",
-    isTranslated: false,
-    originalLanguage: "en",
-    sourceType: "curated",
-    authorName: "Hans Christian Andersen",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&h=600&fit=crop"
+    "title": "The Clever Kids and the Sneaky Wolf",
+    "fullContent": "Once upon a time, in a cozy little cottage, there lived a mother goat and her seven young kids. One sunny morning, Mother Goat had to go to the market, but before leaving, she told her kids, \"Beware of the sneaky wolf. Don’t open the door unless you hear my sweet voice.\" The kids nodded and promised to be careful. After Mother Goat left, the wicked wolf, who had been listening, came to the door and knocked. In a gruff voice, he said, \"Let me in, my dear children, for your mother is home.\" But the clever kids knew it was the wolf and replied, \"Your voice is too rough to be our mother’s!\" The wolf ran to get some honey to sweeten his voice, and tried again, \"Open the door, my little ones, your mother has returned.\" This time his voice sounded sweet, but the youngest kid peeked through the crack under the door and saw the wolf’s hairy paws. \"We won't open the door! You are the wolf!\" they shouted. Frustrated, the wolf ran away. Later, Mother Goat returned home, proud of her children for being so wise and cautious. \"You are clever and brave,\" she said, hugging them all. And they lived happily ever after, always remembering to be careful and listen to their mother’s advice.",
+    "summary": "Seven young kids cleverly outsmart a sneaky wolf by recognizing his tricks and staying safe. They listen to their mother’s advice and never open the door to strangers, keeping their home safe and sound.",
+    "moral": "Always be cautious and listen to the advice of those who care for you.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-62cw1u?w=800"
   },
   {
-    title: "Jack and the Beanstalk",
-    summary: "A poor boy trades his cow for magic beans and climbs to a giant's castle in the clouds.",
-    moral: "Bravery and quick thinking can help you overcome great challenges.",
-    fullContent: `Once upon a time, there was a poor widow who lived with her son Jack. They were so poor that one day she said, "Jack, we must sell our cow, Milky-White. Take her to market."
-
-On the way to market, Jack met a strange old man. "I'll trade you these magic beans for your cow," said the man, showing Jack five colorful beans.
-
-"Magic beans?" said Jack excitedly. "It's a deal!" He traded the cow for the beans and ran home.
-
-His mother was furious! "Magic beans? You foolish boy!" She threw the beans out the window and sent Jack to bed without supper.
-
-The next morning, Jack woke to see an enormous beanstalk growing outside his window, reaching all the way up into the clouds! "The beans really were magic!" he said.
-
-Jack began to climb. Up, up, up he went, through the clouds, until he reached a strange land. There stood a huge castle. Jack was hungry, so he knocked on the door.
-
-A giant woman answered. "Run away, boy! My husband is an ogre who eats people!" But Jack begged for food, so she let him in and gave him bread and cheese.
-
-Suddenly, the ground shook. "Fe-fi-fo-fum!" boomed a voice. The woman quickly hid Jack in the oven.
-
-The giant stomped in and sat down to breakfast. After eating, he took out a hen. "Lay!" he commanded, and the hen laid a golden egg! Then the giant fell asleep.
-
-Jack crept out, grabbed the hen, and climbed down the beanstalk. He and his mother sold the golden eggs and were never poor again.
-
-But Jack was curious. He climbed the beanstalk again! This time, he waited until the giant fell asleep, then stole a magic harp that played beautiful music.
-
-But the harp cried, "Master! Master!" The giant woke and chased Jack down the beanstalk.
-
-Jack climbed down as fast as he could. "Mother! Bring the axe!" he shouted. When Jack reached the ground, he chopped down the beanstalk. The giant fell down, down, down and was never seen again.
-
-Jack and his mother lived happily with the magic hen and harp, and Jack learned that while being brave is good, it's also wise to know when to stop taking risks!`,
-    ageRange: "6-10 years",
-    language: "en",
-    isTranslated: false,
-    originalLanguage: "en",
-    sourceType: "curated",
-    authorName: "Traditional English Tale",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1542601098-3adb3b104d0c?w=800&h=600&fit=crop"
+    "title": "The Gentle Goose",
+    "fullContent": "Once upon a time, in a cozy village, there lived a kind-hearted boy named Daniel. One day, while exploring the forest, he stumbled upon a shimmering golden goose. Amazed by its beauty, Daniel gently picked it up and carried it home. As he walked, the golden goose started to sing a sweet melody, enchanting everyone who heard it. People from the village began to follow Daniel, drawn by the magical tune. When Daniel reached his home, he decided to share the golden goose with his family and friends. As they gathered around, the golden goose laid a special egg, glittering with gold. Each time they treated the goose with kindness, it laid more golden eggs, bringing happiness to the whole village. Daniel learned that by sharing and caring, true magic happens. As the village prospered, they all lived happily ever after, with the golden goose as their cherished friend.",
+    "summary": "Daniel finds a golden goose that sings a magical tune, enchanting the villagers. By sharing and caring for the goose, they all enjoy its golden gifts and live happily ever after. Kindness brings joy.",
+    "moral": "Kindness and sharing bring happiness to all.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-suzzq7?w=800"
   },
   {
-    title: "The Gingerbread Man",
-    summary: "A gingerbread cookie comes to life and runs away from everyone who wants to eat him.",
-    moral: "Being too confident can sometimes lead to trouble.",
-    fullContent: `Once upon a time, an old woman decided to bake a gingerbread man. She mixed the dough, shaped it into a little man with raisins for eyes and buttons, and put it in the oven.
-
-When she opened the oven door, the gingerbread man hopped out and ran toward the door! "Stop!" cried the old woman. But the gingerbread man called out:
-
-"Run, run, as fast as you can! You can't catch me, I'm the gingerbread man!"
-
-And he ran out the door. The old woman and the old man chased him, but they couldn't catch him.
-
-He ran past a cow. "Stop!" mooed the cow. "I want to eat you!" But the gingerbread man just laughed.
-
-"Run, run, as fast as you can! You can't catch me, I'm the gingerbread man! I've run from an old woman and an old man, and I can run from you, I can!"
-
-He ran past a horse, past some farmers, past a whole school of children! Everyone chased him, but nobody could catch the gingerbread man.
-
-Finally, he came to a river. "Oh no!" he said. "How will I cross?"
-
-A sly fox appeared. "I can help you," said the fox. "Jump on my tail and I'll carry you across."
-
-The gingerbread man jumped onto the fox's tail. As they went into the water, the fox said, "You're getting wet! Jump onto my back."
-
-The gingerbread man jumped onto the fox's back. "You're still getting wet!" said the fox. "Jump onto my head."
-
-The gingerbread man jumped onto the fox's head. "You're still getting wet!" said the fox. "Jump onto my nose."
-
-The gingerbread man jumped onto the fox's nose. And SNAP! The fox tossed the gingerbread man into the air and ate him in one bite!
-
-And that was the end of the gingerbread man!`,
-    ageRange: "0-2 years",
-    language: "en",
-    isTranslated: false,
-    originalLanguage: "en",
-    sourceType: "curated",
-    authorName: "Traditional Tale",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=800&h=600&fit=crop"
+    "title": "Tiny Tim's Adventure",
+    "fullContent": "Once upon a time, in a cozy little cottage, there lived a couple who always wished for a child. One day, they were blessed with a tiny boy, no bigger than a thumb, and they lovingly named him Tiny Tim. Despite his size, Tim was a clever and brave little boy. He loved to explore the world around him. \n\nOne sunny day, Tim decided to go on an adventure. He climbed onto a friendly horse's mane and whispered directions into its ear. Together, they trotted through the fields, over hills, and past flowing streams. Tim marveled at the giant flowers and towering trees that seemed to reach the sky.\n\nWhile on his journey, he met a group of ants who were in trouble. Their bridge had broken, and they needed help crossing a little stream. With a bright idea, Tim used a fallen leaf as a boat and helped the ants safely to the other side. The grateful ants waved goodbye, promising to remember his kindness.\n\nAs the day turned to dusk, Tim heard his parents calling his name. It was time to head home. The horse knew the way, and soon they were back at the cozy cottage. Tim's parents hugged him tightly, thankful for his safe return.\n\nThat night, tucked in his little bed, Tiny Tim dreamed of more adventures, knowing that no matter his size, he could make a big difference in the world.",
+    "summary": "Tiny Tim, a boy as small as a thumb, goes on an adventure with a friendly horse. He helps ants cross a stream using a leaf and returns home safely to his loving parents, proving that even the smallest can make a big difference.",
+    "moral": "Even the smallest among us can make a big difference with kindness and cleverness.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-lnxec?w=800"
   },
   {
-    title: "Rapunzel",
-    summary: "A girl with incredibly long hair is locked in a tower by a witch, until a prince helps her escape.",
-    moral: "Love and determination can overcome any obstacle.",
-    fullContent: `Long ago, a man and woman longed for a child. They lived next to a witch's garden full of beautiful plants. The woman saw some rapunzel lettuce and wanted it desperately.
-
-Her husband snuck into the garden to get some, but the witch caught him! "You've stolen from me!" she said. "You must give me your baby when it's born!"
-
-When their daughter was born, the witch took her and named her Rapunzel. When Rapunzel turned twelve, the witch locked her in a tall tower with no door, only a high window.
-
-Rapunzel had beautiful long golden hair. When the witch wanted to visit, she would call, "Rapunzel, Rapunzel, let down your hair!" Rapunzel would drop her long braid out the window, and the witch would climb up.
-
-Years passed. One day, a prince was riding through the forest and heard beautiful singing. It was Rapunzel! He watched the witch climb up Rapunzel's hair and learned her secret.
-
-The next day, he called, "Rapunzel, Rapunzel, let down your hair!" Rapunzel let down her hair, and the prince climbed up. They fell in love.
-
-"I will help you escape," said the prince. "Bring me silk each day, and I'll weave a ladder."
-
-But the witch discovered their plan! "You betrayed me!" she cried, and cut off Rapunzel's beautiful hair. Then she sent Rapunzel away to a desert far away.
-
-When the prince came that evening, he climbed up Rapunzel's hair, but found the witch instead! She pushed him out the window. He fell into thorns that blinded him.
-
-The prince wandered for years, sad and lost. One day, he heard a familiar voice singing. It was Rapunzel! She had found a small cottage in the desert.
-
-When Rapunzel saw the prince, she wept with joy. Her tears fell on his eyes, and suddenly he could see again! They returned to his kingdom together, got married, and lived happily ever after.`,
-    ageRange: "6-10 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "de",
-    sourceType: "curated",
-    authorName: "Brothers Grimm",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1509023464722-18d996393ca8?w=800&h=600&fit=crop"
+    "title": "The Fisherman and the Magic Fish",
+    "fullContent": "Once upon a time, there was a kind fisherman who lived with his wife in a small, cozy cottage by the sea. One day, while fishing, he caught a magical fish that could talk! The fish pleaded, 'Please let me go, and I will grant you a wish.' The fisherman, amazed, set the fish free and hurried home to tell his wife.\n\nHis wife, full of excitement, said, 'Ask the fish for a cozy little house.' So, the fisherman returned to the sea and called for the fish. With a splash, the fish appeared and granted the wish. The couple soon had a lovely little house.\n\nBut soon, the fisherman's wife wanted more. She asked for a big castle, and the fisherman, though hesitant, went to the fish again. The fish granted the wish, and they lived in a grand castle.\n\nHowever, the wife was never satisfied. She wanted to be queen of the land. Reluctantly, the fisherman returned to the fish. This time, the fish looked sad but granted her wish.\n\nFinally, the wife wanted to control the sun and the moon. The fisherman, worried, asked the fish once more. The fish sighed deeply and said, 'Go home, and you will find what you truly need.' When they returned home, they found themselves back in their simple cozy cottage by the sea.\n\nAnd so, they learned to be happy with what they had, living peacefully ever after.",
+    "summary": "A fisherman catches a magic fish that grants wishes. His wife, never satisfied, asks for more each time. Eventually, their wishes go too far, and they return to their small home, learning to appreciate what they have.",
+    "moral": "Be content with what you have and appreciate the simple joys in life.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-jfwyj?w=800"
   },
   {
-    title: "The Little Mermaid",
-    summary: "A young mermaid gives up her voice to gain legs and be with the prince she loves.",
-    moral: "True love sometimes requires sacrifice, but always be true to yourself.",
-    fullContent: `Far out in the ocean, where the water is as blue as cornflowers, lived the Sea King with his six mermaid daughters. The youngest was the most beautiful, with a voice sweeter than anyone in the sea.
-
-On her fifteenth birthday, she was allowed to swim to the surface. There, she saw a handsome prince on a ship. Suddenly, a storm struck! The ship sank, and the Little Mermaid saved the prince, bringing him to shore.
-
-She fell deeply in love with him, but he never saw her. Back under the sea, the Little Mermaid couldn't stop thinking about the prince and the world above.
-
-Finally, she visited the Sea Witch. "I can give you legs," said the witch, "but it will feel like walking on knives. And you must give me your voice. If the prince doesn't marry you, you'll turn into sea foam."
-
-The Little Mermaid agreed. She drank the potion, and her tail became legs. The prince found her on the beach and took her to his palace. Though she couldn't speak, they became friends.
-
-But the prince thought another princess had saved him from the storm. When his father arranged for him to marry her, the Little Mermaid's heart broke.
-
-On the wedding ship, her sisters appeared with a knife. "The Sea Witch gave us this. If you kill the prince, you'll become a mermaid again and can come home!"
-
-But the Little Mermaid loved the prince too much to hurt him. At dawn, she threw herself into the sea, ready to become foam. Instead, she transformed into a spirit of the air, given a chance to earn an immortal soul through good deeds.
-
-And she learned that true love means wanting happiness for those we love, even if it's not with us.`,
-    ageRange: "6-10 years",
-    language: "en",
-    isTranslated: false,
-    originalLanguage: "en",
-    sourceType: "curated",
-    authorName: "Hans Christian Andersen",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop"
+    "title": "The Valiant Little Tailor",
+    "fullContent": "Once upon a time, in a small village, there lived a little tailor who was known for his cleverness and courage. One day, while sewing a jacket, he swatted at some pesky flies, exclaiming, 'Seven at one stroke!' Proud of his feat, he stitched the words onto his belt. Feeling bold, the tailor set off to show the world his bravery. Along the way, he met a giant. The giant, impressed by the tailor's belt, challenged him to prove his strength. The clever tailor outsmarted the giant with quick thinking and tricks. The giant, believing the tailor to be truly strong, let him pass. The tailor continued his journey, eventually reaching a kingdom. The king, hearing of the tailor's feats, tasked him with defeating a troublesome pair of giants. Using his wits, the tailor tricked the giants into fighting each other until they were no more. The king, amazed by his cleverness, rewarded the tailor with half the kingdom and his daughter’s hand in marriage. And so, the little tailor became a king, living happily ever after, proving that even the smallest among us can achieve great things with courage and cleverness.",
+    "summary": "A clever little tailor swats seven flies and embarks on an adventure. He outsmarts giants and wins a kingdom with his wit, proving that courage and cleverness can lead to great things.",
+    "moral": "Courage and cleverness can overcome great challenges.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-8nr9?w=800"
   },
   {
-    title: "Sleeping Beauty",
-    summary: "A princess is cursed to sleep for a hundred years until awakened by a prince's kiss.",
-    moral: "True love can break any curse and overcome any obstacle.",
-    fullContent: `Once upon a time, a king and queen finally had a baby daughter. To celebrate, they invited seven fairies to be godmothers. Each fairy gave the princess a gift: beauty, grace, kindness, wit, musical talent, and a lovely singing voice.
-
-But there was an eighth fairy who hadn't been invited because everyone thought she was dead. She arrived furious!
-
-"Since you forgot me," she cried, "here is my gift: When the princess turns sixteen, she will prick her finger on a spindle and die!"
-
-Everyone was horrified! But the seventh good fairy hadn't given her gift yet. "I cannot undo this curse," she said, "but I can soften it. The princess will not die, but will sleep for one hundred years, until a prince comes to wake her with a kiss."
-
-The king ordered all spindles in the kingdom burned. Sixteen years passed peacefully. The princess, named Aurora, grew to be the kindest, most beautiful girl.
-
-On her sixteenth birthday, Aurora explored the castle and found an old tower. Inside, an old woman was spinning with a spindle.
-
-"What's that?" asked Aurora curiously. "Let me try!" She touched the spindle and pricked her finger. Instantly, she fell into a deep sleep.
-
-The whole castle fell asleep too! The king, queen, servants, even the dogs and horses - all slept. Thick thorns grew around the castle, hiding it from the world.
-
-A hundred years passed. One day, a young prince heard the story of the sleeping beauty. "I must find her!" he said bravely.
-
-He made his way through the thorns, which parted miraculously before him. He entered the silent castle and climbed the stairs to the tower.
-
-There he saw the most beautiful girl he'd ever seen, sleeping peacefully. He knelt and kissed her gently.
-
-Aurora opened her eyes! The whole castle woke at the same moment. The dogs barked, the horses whinnied, and the king and queen awoke too.
-
-The prince and Aurora fell in love at first sight. They were married and lived happily ever after.`,
-    ageRange: "3-5 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "fr",
-    sourceType: "curated",
-    authorName: "Charles Perrault",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1513569536613-b522c5c67e4e?w=800&h=600&fit=crop"
+    "title": "The Adventure of the Brave Musicians",
+    "fullContent": "Once upon a time, in a little village, there lived four friends: a donkey, a dog, a cat, and a rooster. They were getting older and decided to seek a new life as musicians in Bremen Town. Along their journey, they found a cozy little house in the forest. It was occupied by some mischievous robbers. The animals bravely planned to scare them away. First, the donkey stood tall, the dog climbed onto his back, the cat perched on the dog, and the rooster flew to the top. Together, they made such a loud and funny noise that the robbers thought it was a monster and ran away, leaving the house for the animals. The friends sang, laughed, and decided to stay there, living happily ever after. And so, the brave musicians found their perfect home and sang sweet lullabies every night, bringing peace to all who listened.",
+    "summary": "Four animal friends, a donkey, dog, cat, and rooster, dream of becoming musicians. On their way to Bremen, they scare away robbers from a cozy house. Together, they create a new home, singing lullabies every night. They discover the power of friendship and teamwork.",
+    "moral": "With friendship and teamwork, great challenges can be overcome.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-io2pco?w=800"
   },
   {
-    title: "The Princess and the Pea",
-    summary: "A prince searches for a real princess, and only a tiny pea can reveal the truth.",
-    moral: "True nobility comes from sensitivity and refinement, not just title.",
-    fullContent: `Once upon a time, there was a prince who wanted to marry a real princess. He traveled all over the world looking for one, but there was always something wrong. There were plenty of princesses, but he could never be quite sure if they were real princesses.
-
-One evening, there was a terrible storm with thunder, lightning, and rain pouring down. Suddenly, there was a knock at the castle door.
-
-The old king went to open it. Outside stood a princess, but what a sight! The rain and wind had made her look terrible. Water ran down her hair and clothes, into her shoes and out again.
-
-"I am a real princess," she said.
-
-"Well, we'll soon find out about that!" thought the old queen. She said nothing but went into the bedroom, took all the bedding off, and placed one tiny pea on the bottom of the bed. Then she took twenty mattresses and piled them on top of the pea. Then twenty soft feather beds on top of the mattresses.
-
-That's where the princess was to sleep that night.
-
-In the morning, they asked her how she had slept.
-
-"Oh, terribly!" said the princess. "I hardly slept at all! There was something hard in the bed, and I'm black and blue all over. It was just dreadful!"
-
-Now they knew she was a real princess because she had felt the pea through twenty mattresses and twenty feather beds. Only a real princess could be that sensitive!
-
-So the prince married her, for now he knew he had found a real princess. The pea was put in a museum, where it can still be seen today, unless someone has stolen it!
-
-And that's a true story!`,
-    ageRange: "0-2 years",
-    language: "en",
-    isTranslated: false,
-    originalLanguage: "en",
-    sourceType: "curated",
-    authorName: "Hans Christian Andersen",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1582735689869-f6b70c31c992?w=800&h=600&fit=crop"
-  },
-
-  // FRENCH STORIES
-  {
-    title: "Le Petit Chaperon Rouge",
-    summary: "Une petite fille en cape rouge rencontre un loup rusé en allant chez sa grand-mère.",
-    moral: "Soyez toujours prudent et écoutez les avertissements de vos parents concernant les étrangers.",
-    fullContent: `Il était une fois une petite fille de village, la plus jolie qu'on eût su voir. Sa mère en était folle, et sa grand-mère plus folle encore. Cette bonne femme lui fit faire un petit chaperon rouge qui lui seyait si bien que partout on l'appelait le Petit Chaperon Rouge.
-
-Un jour, sa mère lui dit : "Va voir comment se porte ta grand-mère, car on m'a dit qu'elle était malade. Porte-lui cette galette et ce petit pot de beurre. Mais ne t'écarte pas du chemin et ne parle pas aux étrangers."
-
-Le Petit Chaperon Rouge partit aussitôt à travers la forêt. En passant dans un bois, elle rencontra compère le Loup.
-
-"Où vas-tu, mon enfant?" demanda le Loup d'une voix douce. "Je vais voir ma grand-mère," répondit innocemment la petite fille, "et lui porter une galette et un petit pot de beurre."
-
-"Où demeure-t-elle?" "Oh! c'est au-delà du moulin que vous voyez là-bas, à la première maison du village."
-
-Le Loup rusé lui dit : "Eh bien! je veux l'aller voir aussi. Je m'y en vais par ce chemin-ci, et toi par ce chemin-là, et nous verrons à qui plus tôt y sera." Pendant que le Petit Chaperon Rouge s'amusait à cueillir des fleurs, le Loup courut de toute sa force vers la maison de la grand-mère.
-
-Toc, toc! "Qui est là?" demanda la grand-mère. "C'est votre petite-fille, le Petit Chaperon Rouge," répondit le Loup en contrefaisant sa voix, "qui vous apporte une galette et un petit pot de beurre."
-
-La bonne grand-mère cria : "Tire la chevillette, la bobinette cherra." Le Loup tira la chevillette et la porte s'ouvrit. Il se jeta sur la bonne femme et la dévora en moins de rien.
-
-Ensuite, il ferma la porte et alla se coucher dans le lit de la grand-mère, en attendant le Petit Chaperon Rouge.
-
-Quelque temps après, le Petit Chaperon Rouge vint frapper à la porte. Toc, toc! "Qui est là?" Le Loup adoucit sa voix et dit : "C'est ta petite-fille, le Petit Chaperon Rouge."
-
-"Tire la chevillette, la bobinette cherra." Le Petit Chaperon Rouge entra.
-
-"Ma mère-grand, que vous avez de grands bras!" dit-elle. "C'est pour mieux t'embrasser, ma fille."
-
-"Ma mère-grand, que vous avez de grandes jambes!" "C'est pour mieux courir, mon enfant."
-
-"Ma mère-grand, que vous avez de grandes oreilles!" "C'est pour mieux écouter, mon enfant."
-
-"Ma mère-grand, que vous avez de grands yeux!" "C'est pour mieux voir, mon enfant."
-
-"Ma mère-grand, que vous avez de grandes dents!" "C'est pour mieux te manger!"
-
-Et en disant ces mots, le méchant Loup se jeta sur le Petit Chaperon Rouge.
-
-Heureusement, un chasseur qui passait par là entendit les cris et accourut. Il chassa le Loup et sauva la grand-mère.
-
-Le Petit Chaperon Rouge apprit sa leçon : il faut toujours écouter les conseils de sa maman et ne jamais parler aux étrangers dans la forêt.`,
-    ageRange: "3-5 years",
-    language: "fr",
-    isTranslated: false,
-    originalLanguage: "fr",
-    sourceType: "curated",
-    authorName: "Charles Perrault",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1511044568932-338cba0ad803?w=800&h=600&fit=crop"
+    "title": "The Golden Bird",
+    "fullContent": "Once upon a time, in a faraway kingdom, there lived a king who had a beautiful garden. In this garden, there grew a special tree that bore golden apples. One day, the king noticed that some of the apples were missing. He was puzzled and wanted to find the thief. So, he sent his three sons to solve the mystery. The eldest son went first but fell asleep and failed. The second son tried next, but he too fell asleep. Finally, it was the youngest son's turn. He stayed awake and saw a golden bird flying down, plucking an apple. The youngest son bravely followed the bird to its nest. When he told his father, the king was delighted and rewarded him. The golden bird no longer stole apples and became a friend to the kingdom, bringing happiness to everyone. And so, they all lived happily ever after.",
+    "summary": "In a kingdom with a tree of golden apples, a golden bird steals the fruit. The king's youngest son uncovers the mystery and befriends the bird, bringing joy to all. Together, they ensure the garden's safety, ending the tale on a harmonious note.",
+    "moral": "Sometimes, the smallest and least expected can achieve the greatest things. Courage and perseverance can solve even the most puzzling mysteries.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-mb2ls68?w=800"
   },
   {
-    title: "Cendrillon",
-    summary: "Une jeune fille gentille, maltraitée par sa belle-famille, va au bal royal avec l'aide de sa marraine la fée.",
-    moral: "La gentillesse et la grâce seront récompensées, et les rêves peuvent devenir réalité avec un peu de magie.",
-    fullContent: `Il était une fois une douce jeune fille nommée Cendrillon. Après que son père se soit remarié, elle vivait avec sa belle-mère et ses deux demi-sœurs qui étaient cruelles et méchantes. Elles faisaient faire à Cendrillon toutes les tâches ménagères pendant qu'elles vivaient dans le luxe.
-
-Un jour, une invitation arriva du palais. Le Roi organisait un grand bal pour que le Prince puisse choisir une épouse! Les demi-sœurs étaient ravies et passèrent des jours à préparer leurs robes. Cendrillon les aida à se préparer, même si elle aurait aimé y aller aussi.
-
-"Toi?" se moqua sa belle-mère. "Tu ne peux pas aller au bal habillée en haillons!" Et elles la laissèrent derrière, pleurant près de la cheminée.
-
-Soudain, une lumière brillante remplit la pièce. "Ne pleure pas, mon enfant," dit une voix douce. C'était la marraine la fée de Cendrillon! D'un coup de sa baguette magique, elle transforma une citrouille en carrosse doré, des souris en chevaux, et les haillons de Cendrillon en une magnifique robe avec des pantoufles de verre.
-
-"Tu iras au bal!" dit la marraine la fée. "Mais souviens-toi, à minuit la magie prendra fin. Tu dois partir avant."
-
-Au bal, tout le monde se demandait qui était cette mystérieuse et belle princesse. Le Prince ne pouvait détacher ses yeux de Cendrillon, et ils dansèrent ensemble toute la soirée. Cendrillon était si heureuse qu'elle oublia l'heure jusqu'à ce que l'horloge commence à sonner minuit.
-
-"Je dois partir!" cria-t-elle, et elle courut si vite dans les escaliers du palais qu'une de ses pantoufles de verre tomba. Le Prince essaya de la suivre, mais elle disparut dans la nuit.
-
-Le lendemain, le Prince déclara qu'il épouserait celle à qui la pantoufle de verre irait. Ses serviteurs allèrent de maison en maison. Quand ils arrivèrent chez Cendrillon, ses demi-sœurs essayèrent de forcer leurs pieds dans la pantoufle, mais en vain.
-
-"Puis-je essayer?" demanda doucement Cendrillon. Sa belle-mère rit, mais le serviteur insista. La pantoufle allait parfaitement! À ce moment, la marraine la fée de Cendrillon apparut et transforma ses haillons en une belle robe une fois de plus.
-
-Le Prince la reconnut aussitôt et lui demanda de l'épouser. Cendrillon pardonna à sa belle-famille, et elle et le Prince vécurent heureux pour toujours.`,
-    ageRange: "3-5 years",
-    language: "fr",
-    isTranslated: false,
-    originalLanguage: "fr",
-    sourceType: "curated",
-    authorName: "Charles Perrault",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1565734451735-742fea78c39f?w=800&h=600&fit=crop"
+    "title": "The Twelve Brothers and the Enchanted Birds",
+    "fullContent": "Once upon a time, in a faraway kingdom, there lived a king and queen with twelve brave sons. One day, the king decided that if their next child was a girl, she would inherit the kingdom, and the boys would have to leave. Soon, a beautiful baby girl was born, and the brothers were sent away. \n\nThe brothers wandered into a dark forest and built a cozy home. They promised to care for each other, no matter what. Years passed, and their sister, now a curious young girl, discovered a secret about her brothers. She learned that they had been turned into birds by an enchantress. \n\nDetermined to break the spell, the girl embarked on a journey. She met a kind old woman who told her that to save her brothers, she must stay silent for seven years and weave twelve magical shirts. Without hesitation, she began her task.\n\nThe years passed slowly, and she never spoke a word. One day, as the seventh year was ending, she finished the last shirt. Just then, the enchantress reappeared, ready to capture the brothers forever. With a loving heart, their sister threw the shirts over the birds. In an instant, the brothers transformed back into themselves, free of the curse. \n\nTogether, they returned to the kingdom, where the king and queen welcomed them with open arms. The family was reunited, and they lived happily ever after, grateful for the love and bravery that brought them together.",
+    "summary": "Twelve brothers are turned into birds and only their sister's bravery can save them. She weaves magical shirts in silence for seven years, breaking the curse and reuniting the family. They live happily ever after, thankful for their love and courage.",
+    "moral": "Bravery and love can overcome any obstacle and bring families together.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-v73adj?w=800"
   },
   {
-    title: "Le Chat Botté",
-    summary: "Un chat intelligent aide son pauvre maître à devenir riche en utilisant la ruse et le charme.",
-    moral: "L'intelligence et la créativité valent plus que les richesses matérielles.",
-    fullContent: `Il était une fois un meunier qui avait trois fils. Quand il mourut, il laissa son moulin au plus vieux, son âne au second, et seulement un chat au plus jeune.
-
-"Qu'est-ce que je vais faire avec juste un chat?" se lamenta le jeune homme. "Je vais mourir de faim!"
-
-"Ne vous inquiétez pas, maître," dit le chat (car ce chat pouvait parler!). "Donnez-moi juste un sac et une paire de bottes, et vous verrez que je ne suis pas si inutile."
-
-Le jeune homme était surpris, mais il donna au chat ce qu'il demandait. Le chat mit les bottes et partit avec le sac.
-
-Le chat attrapa des lapins et des perdrix et les apporta au roi, disant qu'ils étaient des cadeaux du "Marquis de Carabas" (c'était le nom que le chat avait inventé pour son maître).
-
-Le roi était très impressionné par ces beaux cadeaux.
-
-Un jour, le chat apprit que le roi et sa fille allaient se promener en carrosse près de la rivière. Il dit à son maître: "Allez vous baigner dans la rivière, et laissez-moi faire le reste."
-
-Quand le carrosse royal passa, le chat cria: "Au secours! Le Marquis de Carabas se noie! On lui a volé ses vêtements!"
-
-Le roi se souvint des beaux cadeaux et ordonna à ses serviteurs de sauver le marquis. Ils donnèrent au jeune homme de beaux habits royaux. La princesse le regarda et le trouva très beau.
-
-Le chat rusé courut en avant et ordonna aux fermiers: "Quand le roi passera, dites que ces terres appartiennent au Marquis de Carabas, sinon vous serez hachés menu comme chair à pâté!"
-
-Les fermiers obéirent, et le roi fut très impressionné par les vastes terres du "marquis."
-
-Enfin, le chat arriva à un magnifique château qui appartenait à un ogre. Le chat dit: "J'ai entendu dire que vous pouvez vous transformer en n'importe quel animal. Pouvez-vous devenir un lion?"
-
-L'ogre se transforma en un lion terrible! Le chat eut peur mais demanda: "Mais pouvez-vous devenir quelque chose de petit, comme une souris?"
-
-"Bien sûr!" dit l'ogre, et il se transforma en une petite souris. Hop! Le chat l'attrapa et le mangea!
-
-Quand le carrosse royal arriva au château, le chat accueillit le roi: "Bienvenue au château du Marquis de Carabas!"
-
-Le roi était si impressionné qu'il proposa au jeune homme d'épouser sa fille. Le jeune meunier et la princesse tombèrent amoureux et se marièrent.
-
-Et le chat? Il devint un grand seigneur et ne courut plus jamais après les souris, sauf pour s'amuser!`,
-    ageRange: "6-10 years",
-    language: "fr",
-    isTranslated: false,
-    originalLanguage: "fr",
-    sourceType: "curated",
-    authorName: "Charles Perrault",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800&h=600&fit=crop"
+    "title": "The White Snake's Secret",
+    "fullContent": "Once upon a time, in a kingdom far away, there lived a kind and curious servant who worked for a wise king. Every evening, the king would eat a special dish covered with a silver lid. One day, the servant could not contain his curiosity and decided to take a peek. He found a white snake inside! Just a tiny taste gave him the ability to understand the language of animals. \n\nThe next day, the servant overheard birds talking about a missing ring from the queen's palace. The birds knew where it was! The servant informed the king, and they found the ring, proving the servant's honesty. Grateful, the king rewarded him with gold and let him travel the world. \n\nOn his journey, the servant helped many creatures, like saving fish from a net and aiding ants in distress. Each time, the animals promised to help him in return. One day, he encountered a princess who had set a challenge for her suitors: whoever could complete her tasks would win her heart. The tasks seemed impossible, but the servant was not alone. \n\nThe fish retrieved a ring from the ocean's depths, the ants gathered tiny seeds, and he won the princess’s heart with the help of a bird's golden apple. The servant and the princess lived happily ever after, surrounded by their animal friends.\n\nAnd so, the servant learned that kindness and curiosity can lead to beautiful adventures and friendships.",
+    "summary": "A servant discovers a white snake that grants him the ability to understand animals. Using this gift, he solves mysteries, helps animals, and wins a princess's heart with their aid. His journey shows that kindness leads to great adventures.",
+    "moral": "Kindness and curiosity can open doors to wonderful adventures and friendships.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-2t9oel?w=800"
   },
   {
-    title: "La Belle au Bois Dormant",
-    summary: "Une princesse est maudite à dormir pendant cent ans jusqu'à ce qu'un prince vienne la réveiller.",
-    moral: "Le véritable amour peut surmonter n'importe quelle épreuve.",
-    fullContent: `Il était une fois un roi et une reine qui désiraient un enfant plus que tout au monde. Enfin, une belle princesse naquit. Pour célébrer, le roi invita toutes les fées du royaume à être marraines de la princesse.
-
-Sept fées vinrent, chacune donnant un don à la princesse: beauté, grâce, intelligence, talent musical, gentillesse, charme et bonté.
-
-Mais il y avait une huitième fée qui n'avait pas été invitée parce que personne ne l'avait vue depuis cinquante ans. Elle arriva furieuse!
-
-"Puisque vous m'avez oubliée," cria-t-elle, "voici mon don: Quand la princesse aura seize ans, elle se piquera le doigt avec un fuseau et mourra!"
-
-Tout le monde fut horrifié! Mais la dernière bonne fée n'avait pas encore donné son don. "Je ne peux pas annuler cette malédiction," dit-elle, "mais je peux l'adoucir. La princesse ne mourra pas, mais dormira pendant cent ans, jusqu'à ce qu'un prince vienne la réveiller d'un baiser."
-
-Le roi ordonna que tous les fuseaux du royaume soient brûlés. Seize ans passèrent paisiblement. La princesse, nommée Aurore, grandit en devenant la jeune fille la plus belle et la plus gentille.
-
-Le jour de son seizième anniversaire, Aurore explora le château et découvrit une vieille tour. À l'intérieur, une vieille femme filait avec un fuseau.
-
-"Qu'est-ce que c'est?" demanda Aurore, curieuse. "Laissez-moi essayer!" Elle toucha le fuseau et se piqua le doigt. Aussitôt, elle tomba dans un profond sommeil.
-
-Tout le château s'endormit aussi! Le roi, la reine, les serviteurs, même les chiens et les chevaux - tous s'endormirent. Des ronces épaisses poussèrent autour du château, le cachant du monde.
-
-Cent ans passèrent. Un jour, un jeune prince entendit l'histoire de la belle princesse endormie. "Je dois la trouver!" dit-il bravement.
-
-Il se fraya un chemin à travers les ronces qui s'écartaient miraculeusement devant lui. Il entra dans le château silencieux et monta les escaliers de la tour.
-
-Là, il vit la plus belle jeune fille qu'il ait jamais vue, dormant paisiblement. Il s'agenouilla et l'embrassa doucement.
-
-Aurore ouvrit les yeux! Tout le château se réveilla en même temps. Les chiens aboyèrent, les chevaux hennirent, et le roi et la reine se réveillèrent aussi.
-
-Le prince et Aurore tombèrent amoureux au premier regard. Ils se marièrent et vécurent heureux pour toujours.`,
-    ageRange: "3-5 years",
-    language: "fr",
-    isTranslated: false,
-    originalLanguage: "fr",
-    sourceType: "curated",
-    authorName: "Charles Perrault",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1513569536613-b522c5c67e4e?w=800&h=600&fit=crop"
+    "title": "The Kind Shoemaker and the Little Elves",
+    "fullContent": "Once upon a time, in a small village, there lived a kind shoemaker and his wife. They were very poor but always helped others when they could. One night, the shoemaker cut the last piece of leather he had and said, 'Tomorrow, I'll make a pair of shoes from this.' Then he went to bed, leaving the leather on his workbench. \n\nTo his surprise, when he woke up the next morning, a beautiful pair of shoes was waiting for him. A customer soon bought them, and the shoemaker could buy more leather. Every night, he left the leather on the bench, and every morning, he found perfectly crafted shoes. This went on for many nights, and the shoemaker and his wife wondered who was helping them. \n\nOne night, they decided to stay up and hide behind a curtain to see who their mysterious helpers were. To their amazement, they saw two tiny elves working quickly and skillfully, stitching and sewing the shoes. They worked all night, and as the sun rose, they vanished, leaving behind lovely shoes. \n\nThe shoemaker and his wife wanted to thank the elves for their kindness. So, they made little clothes and shoes for the elves and left them on the workbench before going to sleep. The elves found the gifts and danced with joy. From that night on, they stopped coming, but the shoemaker and his wife were already prosperous and happy, thanks to their tiny friends.",
+    "summary": "A kind shoemaker and his wife receive help from two tiny elves who craft beautiful shoes at night. Grateful, the shoemaker makes clothes for the elves, who dance with joy. The elves leave, but the couple remains prosperous and happy.",
+    "moral": "Kindness and gratitude go a long way. Helping others can bring unexpected blessings.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-wr429?w=800"
   },
   {
-    title: "Le Vilain Petit Canard",
-    summary: "Un jeune oiseau, moqué pour être différent, découvre qu'il est en réalité un magnifique cygne.",
-    moral: "Chacun est spécial à sa manière, et la vraie beauté vient de l'intérieur.",
-    fullContent: `C'était une belle journée d'été à la ferme. Maman Cane était assise sur son nid, attendant que ses œufs éclosent. Un par un, les œufs se fissurèrent et des canetons duveteux jaunes en sortirent. Mais un œuf, le plus gros, ne s'ouvrait pas.
-
-Enfin, le grand œuf se brisa et un caneton en sortit... mais il avait l'air différent. Il était plus grand que les autres, avec des plumes grises au lieu de jaunes.
-
-"Quel vilain petit canard!" dit Maman Cane, mais elle l'aimait quand même.
-
-Les autres canetons n'étaient pas si gentils. "Tu es si laid!" cancanaient-ils. "Tu n'as pas ta place ici!" Même les poules et le chat se moquaient de lui.
-
-Le pauvre caneton se sentait si triste. "Personne ne veut de moi," pensa-t-il. Alors un jour, il s'enfuit de la ferme.
-
-Il erra à travers les champs et les forêts, cherchant un endroit où il serait accepté. Il rencontra des canards sauvages, mais ils s'envolèrent. Il trouva des oies, mais elles lui dirent de partir. L'hiver arriva, et le pauvre caneton avait froid et était seul.
-
-Un jour, il vit un groupe de magnifiques oiseaux blancs voler au-dessus de lui. Ils avaient de longs cous gracieux et des ailes élégantes. "Comme ils sont beaux!" soupira le caneton. "J'aimerais pouvoir leur ressembler."
-
-L'hiver passa et le printemps arriva. Le caneton, maintenant adulte, arriva près d'un étang tranquille. Dans l'eau, il vit son reflet et haleta. Il n'était plus un vilain caneton gris - il s'était transformé en un magnifique cygne blanc avec un long cou gracieux!
-
-Les autres cygnes nagèrent vers lui. "Bienvenue, ami!" dirent-ils. "Tu es l'un des nôtres!" Le caneton - maintenant un cygne - ne pouvait pas y croire.
-
-Des enfants jouant près de l'étang le montrèrent du doigt. "Regardez ce cygne! Il est le plus beau de tous!"
-
-Le cygne pensa à toutes les fois où il avait été taquiné et rejeté. Mais maintenant il comprenait qu'il n'avait jamais été un vilain canard. Il avait toujours été un cygne, attendant juste de grandir.
-
-Et il vécut heureux pour toujours, nageant gracieusement avec sa nouvelle famille, sachant qu'être différent le rendait spécial.`,
-    ageRange: "3-5 years",
-    language: "fr",
-    isTranslated: true,
-    originalLanguage: "en",
-    sourceType: "curated",
-    authorName: "Hans Christian Andersen",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop"
+    "title": "Mother Holle's Magical Snow",
+    "fullContent": "Once upon a time, there lived a kind-hearted girl with her mean stepmother and stepsister. The girl was made to do all the chores, but she never complained. One day, while spinning wool by the well, she dropped her spindle. Her stepmother told her to jump into the well to retrieve it. Bravely, she leaped in and found herself in a magical land. There, she met Mother Holle, a gentle old woman who needed help making her bed. The girl shook the bed so well that feathers flew out like snowflakes. Mother Holle was pleased and rewarded her with gold. When she returned home, her stepsister grew envious and jumped into the well herself. But she was lazy and refused to help Mother Holle. Instead of gold, she returned covered in soot! From then on, the kind-hearted girl lived happily ever after, treasured by all.",
+    "summary": "A kind girl helps Mother Holle and is rewarded with gold. Her lazy stepsister tries the same but ends up covered in soot. Kindness and hard work bring happiness, while laziness does not.",
+    "moral": "Kindness and hard work are always rewarded.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-yplwh?w=800"
   },
   {
-    title: "Boucle d'Or et les Trois Ours",
-    summary: "Une fille curieuse découvre la maison de trois ours et apprend une leçon importante sur le respect de la propriété d'autrui.",
-    moral: "Respectez toujours les affaires des autres et demandez avant de les utiliser.",
-    fullContent: `Il était une fois trois ours qui vivaient dans une maison confortable dans les bois: Papa Ours, Maman Ourse et Bébé Ours.
-
-Un matin, Maman Ourse prépara du porridge pour le petit déjeuner, mais il était trop chaud pour le manger. "Allons nous promener pendant qu'il refroidit," dit Papa Ours. Les trois ours partirent donc se promener dans la forêt.
-
-Pendant leur absence, une petite fille nommée Boucle d'Or arriva en sautillant dans les bois. Elle avait de magnifiques cheveux dorés qui rebondissaient lorsqu'elle marchait. Quand elle vit la maison des ours, elle fut curieuse.
-
-"Je me demande qui vit ici," dit-elle en frappant à la porte. Personne ne répondit. Elle essaya la porte et elle s'ouvrit! "Allô?" appela-t-elle, mais il n'y eut pas de réponse. Alors elle entra.
-
-Sur la table, elle vit trois bols de porridge. Boucle d'Or avait faim. Elle goûta le porridge de Papa Ours. "Aïe! C'est trop chaud!" Elle goûta le porridge de Maman Ourse. "Beurk! C'est trop froid!" Puis elle goûta le porridge de Bébé Ours. "Miam! C'est juste bien!" Et elle le mangea complètement.
-
-Ensuite, Boucle d'Or vit trois chaises. Elle s'assit dans la chaise de Papa Ours. "Elle est trop dure!" Elle s'assit dans la chaise de Maman Ourse. "Elle est trop molle!" Puis elle s'assit dans la chaise de Bébé Ours. "Elle est juste bien!" Mais quand elle se balança d'avant en arrière, CRAC! La petite chaise se brisa en morceaux.
-
-Boucle d'Or était fatiguée. Elle monta à l'étage et vit trois lits. Elle essaya le lit de Papa Ours. "Trop dur!" Elle essaya le lit de Maman Ourse. "Trop mou!" Puis elle essaya le lit de Bébé Ours. "Juste bien!" Et elle s'endormit profondément.
-
-Bientôt, les trois ours rentrèrent de leur promenade. "Quelqu'un a mangé mon porridge!" gronda Papa Ours. "Quelqu'un a mangé mon porridge!" dit Maman Ourse. "Quelqu'un a mangé mon porridge," pleura Bébé Ours, "et l'a tout mangé!"
-
-Les ours regardèrent autour d'eux. "Quelqu'un s'est assis dans ma chaise!" gronda Papa Ours. "Quelqu'un s'est assis dans ma chaise!" dit Maman Ourse. "Quelqu'un s'est assis dans ma chaise," pleura Bébé Ours, "et l'a cassée!"
-
-Les ours montèrent à l'étage. "Quelqu'un a dormi dans mon lit!" gronda Papa Ours. "Quelqu'un a dormi dans mon lit!" dit Maman Ourse. "Quelqu'un a dormi dans mon lit," pleura Bébé Ours, "et elle y est encore!"
-
-Boucle d'Or se réveilla et vit trois ours qui la regardaient! Elle sauta du lit et dévala les escaliers, sortit par la porte, et courut jusqu'à chez elle aussi vite qu'elle le pouvait.
-
-Les trois ours ne revirent plus jamais Boucle d'Or. Et Boucle d'Or apprit une leçon importante: ne jamais entrer dans la maison de quelqu'un d'autre sans permission!`,
-    ageRange: "0-2 years",
-    language: "fr",
-    isTranslated: true,
-    originalLanguage: "en",
-    sourceType: "curated",
-    authorName: "Conte Traditionnel Anglais",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=800&h=600&fit=crop"
-  },
-
-  // GERMAN STORIES
-  {
-    title: "Hänsel und Gretel",
-    summary: "Zwei Kinder überlisten eine böse Hexe, die in einem Haus aus Süßigkeiten tief im Wald lebt.",
-    moral: "Klugheit und Mut können selbst die größten Gefahren überwinden, wenn man zusammenarbeitet.",
-    fullContent: `Es war einmal ein armer Holzfäller, der mit seinen zwei Kindern, Hänsel und Gretel, in einem kleinen Häuschen am Rande eines großen Waldes lebte. Die Zeiten waren hart und es gab wenig zu essen.
-
-Eines Nachts hörten Hänsel und Gretel ihre Eltern darüber sprechen, sie tief in den Wald zu führen und dort zurückzulassen, da nicht genug Essen für alle da war. Der kluge Hänsel schlich sich hinaus und füllte seine Taschen mit weißen Kieselsteinen, die im Mondlicht glänzten.
-
-Am nächsten Morgen ging die Familie tief in den Wald. Während sie gingen, ließ Hänsel heimlich die weißen Kieselsteine auf den Weg fallen. Als ihre Eltern sie verließen, warteten die Kinder, bis der Mond aufging, und die Kieselsteine zeigten ihnen den Weg nach Hause.
-
-Aber die Eltern versuchten es erneut. Diesmal konnte Hänsel nur Brotkrümel benutzen, um den Weg zu markieren, und die Vögel fraßen sie alle auf. Verloren im Wald wanderten Hänsel und Gretel umher, bis sie ein erstaunliches Haus entdeckten, das ganz aus Brot gebaut war, mit einem Dach aus Kuchen und Fenstern aus klarem Zucker.
-
-Hungrig und erfreut begannen sie, am Haus zu knabbern. Plötzlich erschien eine Hexe. Sie war zunächst freundlich, lud sie ein und gab ihnen eine köstliche Mahlzeit. Aber sie war böse und plante, Hänsel zu mästen und zu essen!
-
-Sie sperrte Hänsel in einen Käfig und machte Gretel zu ihrer Dienerin. Jeden Tag bat die Hexe Hänsel, seinen Finger herauszustrecken, um zu sehen, ob er fett genug war, aber der kluge Hänsel streckte stattdessen einen kleinen Knochen heraus.
-
-Schließlich wurde die Hexe ungeduldig. Sie befahl Gretel zu prüfen, ob der Ofen heiß genug war. Aber die mutige Gretel tat so, als würde sie es nicht verstehen, und als die Hexe sich herunterbeugte, um es ihr zu zeigen, gab Gretel ihr einen Stoß und schloss die Ofentür fest zu.
-
-Die Kinder fanden den Schatz der Hexe mit Perlen und Edelsteinen, füllten ihre Taschen und flohen aus dem Haus. Nach langem Wandern durch den Wald fanden sie endlich den Weg nach Hause, wo ihr Vater sie mit Freudentränen empfing. Ihre Stiefmutter war fortgegangen, und sie lebten alle glücklich zusammen mit dem Schatz, den sie mitgebracht hatten.`,
-    ageRange: "6-10 years",
-    language: "de",
-    isTranslated: false,
-    originalLanguage: "de",
-    sourceType: "curated",
-    authorName: "Gebrüder Grimm",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1513569536613-b522c5c67e4e?w=800&h=600&fit=crop"
+    "title": "The Four Skillful Brothers",
+    "fullContent": "Once upon a time, there were four brothers who left home to learn different skills. The eldest brother learned to be a skilled star-gazer, who could see everything happening in the sky. The second brother became a powerful thief, who could take anything without being noticed. The third brother learned to be an expert hunter, and the youngest mastered tailoring. After years of training, they returned home, eager to show their father what they had learned. One day, their father told them of a dragon that had taken a princess far away. The brothers decided to rescue her. The star-gazer found the dragon's lair, the thief stole the key to the princess's cage, the hunter fought off the dragon, and the tailor stitched a balloon to fly them all back home safely. Each brother's skill was crucial in saving the princess. They learned that teamwork and using their unique skills together made them stronger. They returned as heroes, and their father was proud. From then on, they used their skills to help others, living happily ever after.",
+    "summary": "Four brothers each learn a special skill: star-gazing, thievery, hunting, and tailoring. Together, they use their talents to rescue a princess from a dragon. Their teamwork and unique abilities save the day, showing that everyone has something valuable to offer.",
+    "moral": "Teamwork and using individual skills together can achieve great things.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-h2wsjb?w=800"
   },
   {
-    title: "Schneewittchen",
-    summary: "Eine schöne Prinzessin flieht vor ihrer bösen Stiefmutter und findet Zuflucht bei sieben Zwergen.",
-    moral: "Wahre Schönheit kommt von innen, und Güte wird am Ende immer belohnt.",
-    fullContent: `Es war einmal mitten im Winter, und die Schneeflocken fielen wie Federn vom Himmel. Eine Königin saß an einem Fenster und nähte. Als sie hinaussah auf den Schnee, stach sie sich mit der Nadel in den Finger, und drei Tropfen Blut fielen in den Schnee.
-
-"Hätte ich doch ein Kind so weiß wie Schnee, so rot wie Blut und so schwarzhaarig wie Ebenholz!" wünschte sie sich.
-
-Bald darauf bekam sie eine Tochter, die war so weiß wie Schnee, so rot wie Blut und hatte so schwarze Haare wie Ebenholz. Sie wurde Schneewittchen genannt. Doch die Königin starb bald nach der Geburt.
-
-Nach einem Jahr nahm sich der König eine neue Frau. Sie war schön, aber eitel und böse. Sie besaß einen magischen Spiegel, den sie jeden Tag fragte: "Spieglein, Spieglein an der Wand, wer ist die Schönste im ganzen Land?"
-
-Und der Spiegel antwortete stets: "Ihr, meine Königin, seid die Schönste im Land."
-
-Aber als Schneewittchen sieben Jahre alt war, wurde sie schöner als die Königin selbst. Als die Königin ihren Spiegel fragte, antwortete er:
-
-"Ihr, meine Königin, seid schön, aber Schneewittchen ist tausendmal schöner als Ihr."
-
-Voller Neid befahl die böse Königin einem Jäger, Schneewittchen in den Wald zu bringen und zu töten. Aber der gute Jäger verschonte das Kind und ließ es im Wald zurück.
-
-Schneewittchen lief durch den Wald, bis sie ein kleines Häuschen fand. Darin war alles klein und fein: ein Tisch mit sieben kleinen Tellern, sieben kleinen Löffeln, sieben kleinen Messern und Gabeln, und sieben kleinen Bechern. An der Wand standen sieben kleine Betten.
-
-Müde und hungrig aß Schneewittchen von jedem Teller ein wenig und trank aus jedem Becher ein wenig. Dann legte sie sich in eines der Betten und schlief ein.
-
-Als es dunkel wurde, kamen die Besitzer des Häuschens nach Hause: sieben Zwerge, die in den Bergen nach Erz gruben. Sie fanden Schneewittchen und als sie ihre Geschichte hörten, sagten sie: "Wenn du für uns den Haushalt führen willst, kannst du bei uns bleiben."
-
-Schneewittchen blieb bei den Zwergen und war glücklich. Aber die böse Königin erfuhr vom Spiegel, dass Schneewittchen noch am Leben war. Dreimal versuchte sie, Schneewittchen zu töten - mit einem Schnürriemen, einem vergifteten Kamm und schließlich mit einem vergifteten Apfel.
-
-Der vergiftete Apfel ließ Schneewittchen in einen todesähnlichen Schlaf fallen. Die Zwerge legten sie in einen gläsernen Sarg auf einem Berg. Eines Tages kam ein Königssohn vorbei und verliebte sich in die schöne Schneewittchen. Er bat die Zwerge, ihm den Sarg zu geben.
-
-Als seine Diener den Sarg trugen, stolperten sie, und das Stück vergifteter Apfel fiel aus Schneewittchens Mund. Sie öffnete die Augen und war wieder lebendig!
-
-Der Prinz und Schneewittchen heirateten, und die böse Königin wurde für ihre Taten bestraft. Schneewittchen und der Prinz lebten glücklich und zufrieden.`,
-    ageRange: "6-10 years",
-    language: "de",
-    isTranslated: false,
-    originalLanguage: "de",
-    sourceType: "curated",
-    authorName: "Gebrüder Grimm",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800&h=600&fit=crop"
+    "title": "One-Eye, Two-Eyes, and Three-Eyes",
+    "fullContent": "Once upon a time, there were three sisters who lived in a little cottage by the forest. The first sister had one eye, the second had two eyes like everyone else, and the third had three eyes. Poor Two-Eyes was often teased by her sisters for being ordinary. She would often wander into the forest, feeling sad and alone. One day, she met a kind-hearted fairy who saw her sadness and decided to help. The fairy gave Two-Eyes a magic wish. With it, Two-Eyes wished for a table of delicious food to appear whenever she was hungry. From that day on, she never went hungry again. Her sisters, One-Eye and Three-Eyes, grew curious about her secret. They tried to spy on her, but the fairy cleverly cast a spell to make them fall asleep whenever they tried. Eventually, the sisters realized that being kind to Two-Eyes was the best way to share in her happiness. They all learned to appreciate each other’s uniqueness, and they lived happily ever after, grateful for the magic of kindness and love.",
+    "summary": "Three sisters, One-Eye, Two-Eyes, and Three-Eyes, live together. Two-Eyes is teased for being ordinary but is helped by a fairy who grants her a magic wish. Her sisters learn to appreciate her and each other, discovering the magic of kindness and love. They all live happily ever after.",
+    "moral": "Kindness and understanding can create happiness and harmony.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-scvi7m?w=800"
   },
   {
-    title: "Der Froschkönig",
-    summary: "Eine Prinzessin muss ihr Versprechen an einen Frosch halten, der sich in einen Prinzen verwandelt.",
-    moral: "Halte immer deine Versprechen, auch wenn es schwierig ist.",
-    fullContent: `Es war einmal eine schöne Prinzessin, die gerne mit ihrer goldenen Kugel im Schlosspark spielte. Eines Tages fiel die Kugel in einen tiefen Brunnen.
-
-"Oh nein!" weinte die Prinzessin. "Meine geliebte goldene Kugel!"
-
-Plötzlich tauchte ein Frosch aus dem Brunnen auf. "Ich kann deine Kugel holen," quakte er, "aber was gibst du mir dafür?"
-
-"Alles was du willst!" sagte die Prinzessin schnell. "Meine Kleider, meine Perlen, sogar meine goldene Krone!"
-
-"Ich will deine Sachen nicht," sagte der Frosch. "Aber wenn ich dein Freund sein darf, von deinem goldenen Teller essen und in deinem Bett schlafen darf, dann hole ich deine Kugel."
-
-Die Prinzessin versprach es, dachte aber: "Was für ein dummer Frosch! Er kann das Wasser sowieso nicht verlassen."
-
-Der Frosch tauchte in den Brunnen und brachte die goldene Kugel zurück. Die Prinzessin schnappte sie sich und rannte davon!
-
-"Warte!" rief der Frosch. "Nimm mich mit!" Aber die Prinzessin hörte nicht.
-
-Am nächsten Tag, als die Prinzessin mit dem König zu Abend aß, hörten sie ein Klopfen an der Tür:
-
-"Prinzessin, jüngste, mach mir auf!
-Weißt du nicht, was gestern war,
-als ich bei dem kühlen Wasser saß?"
-
-Der König fragte: "Wer ist das?" Die Prinzessin erzählte ihm widerwillig die ganze Geschichte.
-
-"Du musst dein Versprechen halten," sagte der König streng. "Lass den Frosch herein."
-
-Angewidert öffnete die Prinzessin die Tür. Der Frosch hüpfte herein und aß von ihrem goldenen Teller. "Jetzt bin ich müde," sagte der Frosch. "Bring mich in dein Zimmer."
-
-Die Prinzessin wollte nicht, aber der König bestand darauf. Sie nahm den Frosch mit zwei Fingern und trug ihn nach oben.
-
-"Setz mich auf dein Bett," sagte der Frosch. Die Prinzessin war so wütend, dass sie den Frosch an die Wand warf!
-
-Aber als der Frosch auf den Boden fiel, war er kein Frosch mehr! Vor ihr stand ein gut aussehender Prinz!
-
-Der Prinz erklärte: "Eine böse Hexe hat mich in einen Frosch verwandelt. Nur wenn eine Prinzessin ihr Versprechen hielt und mich in ihr Zimmer brachte, konnte der Zauber gebrochen werden."
-
-Die Prinzessin schämte sich, dass sie so gemein gewesen war. Der Prinz vergab ihr. Sie wurden Freunde, dann verliebten sie sich und heirateten.
-
-Und die Prinzessin lernte, immer ihre Versprechen zu halten.`,
-    ageRange: "3-5 years",
-    language: "de",
-    isTranslated: false,
-    originalLanguage: "de",
-    sourceType: "curated",
-    authorName: "Gebrüder Grimm",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1531137950332-60db62d5c928?w=800&h=600&fit=crop"
+    "title": "The Magical Blue Light",
+    "fullContent": "Once upon a time, in a quiet village, a brave soldier wandered home after many years of service. He was tired and alone until he stumbled upon a tiny house in the forest. An old woman lived there, and she promised him shelter if he helped her retrieve a blue light from a deep well. The soldier agreed and bravely descended into the well. With the blue light in his hands, he realized it held magic powers, summoning a friendly spirit to help him. The spirit granted him three wishes. His first wish was for a warm meal, and instantly, a feast appeared. His second wish was to reunite with his old friends, and they soon arrived at the door, laughing and sharing stories. For his final wish, the soldier wished for a peaceful life in the village. His heart was content, knowing he was never alone with the blue light by his side. And so, the soldier and his friends lived in happiness, always grateful for the magical blue light that brought them together.",
+    "summary": "A brave soldier finds a magical blue light that grants him three wishes. With the help of a friendly spirit, he enjoys a warm meal, reunites with friends, and finds peace in his village. The soldier learns the value of friendship and gratitude.",
+    "moral": "True happiness comes from friendship and gratitude.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-0mvzpt?w=800"
   },
   {
-    title: "Rumpelstilzchen",
-    summary: "Ein kleiner Mann hilft einer Müllerstochter, dafür verlangt er ihr erstes Kind.",
-    moral: "Sei vorsichtig mit Versprechen, die du machst, besonders wenn du verzweifelt bist.",
-    fullContent: `Es war einmal ein Müller, der prahlte vor dem König: "Meine Tochter kann Stroh zu Gold spinnen!"
-
-Das war natürlich nicht wahr, aber der König war gierig. Er sperrte das Müllerstochter in eine Kammer voller Stroh. "Spinne das bis morgen zu Gold, oder du stirbst!" befahl er.
-
-Das arme Mädchen weinte verzweifelt. Plötzlich erschien ein kleines Männchen. "Was gibst du mir, wenn ich dir helfe?" fragte es.
-
-"Meine Halskette," sagte das Mädchen. Das Männchen nahm die Halskette, setzte sich ans Spinnrad und - ratsch, ratsch, ratsch - spann das ganze Stroh zu Gold!
-
-Der König war begeistert, aber gierig. Er brachte sie in eine größere Kammer mit noch mehr Stroh. Wieder kam das Männchen. "Was gibst du mir diesmal?" Das Mädchen gab ihm ihren Ring.
-
-Am dritten Tag brachte der König sie in die größte Kammer. "Wenn du das schaffst, wirst du meine Königin," sagte er.
-
-Das Männchen kam wieder, aber das Mädchen hatte nichts mehr zu geben. "Versprich mir dein erstes Kind," sagte das Männchen, "dann helfe ich dir noch einmal."
-
-In ihrer Verzweiflung versprach es das Mädchen. Das Männchen spann alles Stroh zu Gold, und sie wurde Königin.
-
-Ein Jahr später bekam die Königin ein schönes Baby. Sie hatte das Männchen völlig vergessen. Aber es erschien plötzlich und forderte: "Gib mir das Kind!"
-
-Die Königin weinte bitterlich. Das Männchen hatte etwas Mitleid. "Ich gebe dir drei Tage. Wenn du meinen Namen errätst, darfst du das Kind behalten."
-
-Die Königin schickte Boten durch das ganze Land, um alle Namen zu sammeln. Am ersten Tag nannte sie dem Männchen hundert Namen: "Kaspar? Melchior? Balthasar?" Aber bei jedem Namen schüttelte es den Kopf.
-
-Am zweiten Tag probierte sie die seltsamsten Namen: "Rippenbraten? Hammelkeule? Schnürbein?" Aber wieder schüttelte das Männchen den Kopf.
-
-Am dritten Tag kam ein Bote zurück mit einer seltsamen Geschichte. "Ich sah ein kleines Haus im Wald. Davor tanzte ein Männchen ums Feuer und sang:
-
-'Heute back' ich, morgen brau' ich,
-übermorgen hol' ich der Königin ihr Kind.
-Ach wie gut, dass niemand weiß,
-dass ich Rumpelstilzchen heiß!'"
-
-Als das Männchen am Abend kam, fragte die Königin: "Heißt du vielleicht... Rumpelstilzchen?"
-
-"Das hat dir der Teufel gesagt!" schrie das Männchen wütend. Es stampfte so fest auf den Boden, dass es darin verschwand, und kam nie wieder zurück.
-
-Die Königin und ihr Kind lebten glücklich und zufrieden, und sie versprach nie wieder etwas, ohne genau nachzudenken.`,
-    ageRange: "6-10 years",
-    language: "de",
-    isTranslated: false,
-    originalLanguage: "de",
-    sourceType: "curated",
-    authorName: "Gebrüder Grimm",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=600&fit=crop"
+    "title": "The Little Mermaid's Kind Heart",
+    "fullContent": "Once upon a time, in the shimmering sea, lived a curious little mermaid named Marina. She loved exploring her underwater world filled with colorful fish and coral gardens. One day, Marina swam to the surface and saw a ship sailing by. Onboard was a young prince, and Marina was fascinated by the world above the waves. As night fell, a storm began, and the sea became wild. Marina watched as the prince's ship was tossed by the waves. With her kind heart, she swam through the storm to help. She found the prince in the water and gently brought him to the shore. As dawn broke, Marina hid among the rocks, watching the prince awaken. She felt happy knowing he was safe. Though she longed to join him, she knew her place was in the ocean. Marina returned to her family, cherishing the memory of her adventure. The prince often visited the shore, feeling grateful for his mysterious rescuer. Marina learned that true kindness comes from the heart and that love can be silent yet strong. Under the sea, she continued her adventures, her heart full of joy and kindness.",
+    "summary": "Marina, a curious little mermaid, saves a prince during a storm. Though she loves him, she returns to the sea, knowing her place. Marina learns that true kindness comes from the heart and love can be silent.",
+    "moral": "True kindness comes from the heart, and love can be silent yet strong.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-tnkha?w=800"
   },
   {
-    title: "Rotkäppchen",
-    summary: "Ein kleines Mädchen mit roter Kappe begegnet einem listigen Wolf auf dem Weg zum Haus ihrer Großmutter.",
-    moral: "Sei immer vorsichtig und höre auf die Warnungen deiner Eltern vor Fremden.",
-    fullContent: `Es war einmal ein liebes kleines Mädchen, das von allen geliebt wurde, besonders von seiner Großmutter. Zu ihrem Geburtstag hatte ihre Großmutter ihr ein rotes Samtkäppchen gemacht, das ihr so gut stand, dass sie es immer tragen wollte. Bald nannten alle sie Rotkäppchen.
-
-Eines Tages sagte ihre Mutter: "Rotkäppchen, deine Großmutter ist krank. Bring ihr diesen Korb mit Essen, aber verlasse nicht den Weg und sprich nicht mit Fremden."
-
-Rotkäppchen versprach es und machte sich auf den Weg durch den Wald. Bald traf sie einen Wolf. "Guten Morgen, Rotkäppchen," sagte der Wolf höflich. "Wohin gehst du?"
-
-"Zum Haus meiner Großmutter," antwortete sie unschuldig. "Sie wohnt in der Hütte am Ende des Weges."
-
-"Was für eine schöne Idee!" sagte der listige Wolf. "Warum pflückst du ihr nicht ein paar Blumen? Schau, wie schön sie sind!" Während Rotkäppchen Blumen pflückte und die Warnung ihrer Mutter vergaß, rannte der Wolf voraus zum Haus der Großmutter.
-
-Der Wolf klopfte an die Tür. "Wer ist da?" rief die Großmutter. "Rotkäppchen," antwortete der Wolf mit süßer Stimme. "Komm herein, Liebes," sagte die Großmutter, und der Wolf stürmte herein und verschlang sie!
-
-Der Wolf zog die Nachthaube der Großmutter an und legte sich in ihr Bett, gerade als Rotkäppchen mit ihrem Korb und den Blumen ankam.
-
-"Großmutter, was für große Ohren du hast!" sagte Rotkäppchen. "Damit ich dich besser hören kann, mein Kind," antwortete der Wolf. "Großmutter, was für große Augen du hast!" "Damit ich dich besser sehen kann, mein Kind." "Großmutter, was für große Zähne du hast!" "Damit ich dich besser fressen kann!"
-
-Und damit sprang der Wolf aus dem Bett. Rotkäppchen schrie! Glücklicherweise kam gerade ein Jäger vorbei und hörte ihren Schrei. Er eilte herein und jagte den Wolf davon.
-
-Der Jäger sorgte dafür, dass der Wolf die Großmutter wieder freigab, die erschrocken, aber unverletzt war. Rotkäppchen lernte ihre Lektion: Höre immer auf deine Mutter und sprich nie mit Fremden. Sie verließ nie wieder den Weg, und sie und ihre Großmutter genossen zusammen die Leckereien aus dem Korb.`,
-    ageRange: "3-5 years",
-    language: "de",
-    isTranslated: true,
-    originalLanguage: "fr",
-    sourceType: "curated",
-    authorName: "Charles Perrault",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1511044568932-338cba0ad803?w=800&h=600&fit=crop"
+    "title": "The Beautiful Swan",
+    "fullContent": "Once upon a time, in a cozy meadow by a shimmering pond, a mother duck sat on her nest. One by one, her eggs began to crack open, revealing fluffy yellow ducklings. But one egg, larger than the rest, hatched slowly. Out came a little bird, different from his siblings, with grey feathers and not-so-pretty looks. Everyone called him the Ugly Duckling. As the days passed, the ugly duckling felt lonely. The other ducklings quacked and played, but he waddled alone. One sunny afternoon, he saw graceful swans gliding across the water. He wished he could be like them. Seasons changed, and the little duckling grew. One spring morning, he saw his reflection in the pond. To his surprise, he wasn't an ugly duckling at all! He had transformed into a stunning swan, just like those he admired. Now, he glided across the water with elegance. The other animals marveled at his beauty, and he felt happy and loved. The swan learned that he was beautiful inside and out, just as he always had been. From then on, he swam proudly, knowing he belonged.",
+    "summary": "An ugly duckling feels alone and different. As he grows, he discovers he's a beautiful swan, realizing beauty is within. He finds happiness and a sense of belonging.",
+    "moral": "True beauty comes from within, and everyone has their own unique path to finding their place in the world.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-tclr00k?w=800"
   },
   {
-    title: "Aschenputtel",
-    summary: "Ein freundliches Mädchen, von ihrer Stieffamilie misshandelt, geht mit Hilfe ihrer Feenpatin zum königlichen Ball.",
-    moral: "Freundlichkeit und Anmut werden belohnt, und Träume können mit ein wenig Magie wahr werden.",
-    fullContent: `Es war einmal ein süßes Mädchen namens Aschenputtel. Nachdem ihr Vater wieder heiratete, lebte sie mit ihrer Stiefmutter und zwei Stiefschwestern, die grausam und gemein waren. Sie ließen Aschenputtel alle Hausarbeit erledigen, während sie selbst im Luxus lebten.
-
-Eines Tages kam eine Einladung vom Palast an. Der König veranstaltete einen großen Ball, damit der Prinz eine Braut auswählen konnte! Die Stiefschwestern waren begeistert und verbrachten Tage damit, ihre Kleider vorzubereiten. Aschenputtel half ihnen, sich fertig zu machen, obwohl sie auch gerne gegangen wäre.
-
-"Du?" lachte ihre Stiefmutter. "Du kannst nicht in Lumpen zum Ball gehen!" Und sie ließen sie weinend am Kamin zurück.
-
-Plötzlich erfüllte ein helles Licht den Raum. "Weine nicht, liebes Kind," sagte eine freundliche Stimme. Es war Aschenputtels gute Fee! Mit einem Schwung ihres Zauberstabs verwandelte sie einen Kürbis in eine goldene Kutsche, Mäuse in Pferde und Aschenputtels Lumpen in ein wunderschönes Kleid mit gläsernen Pantoffeln.
-
-"Du sollst zum Ball gehen!" sagte die gute Fee. "Aber denk dran, um Mitternacht endet die Magie. Du musst vorher gehen."
-
-Beim Ball fragten sich alle, wer die mysteriöse, schöne Prinzessin war. Der Prinz konnte seine Augen nicht von Aschenputtel abwenden, und sie tanzten den ganzen Abend zusammen. Aschenputtel war so glücklich, dass sie die Zeit vergaß, bis die Uhr Mitternacht zu schlagen begann.
-
-"Ich muss gehen!" rief sie und rannte die Palasttreppen so schnell hinunter, dass einer ihrer gläsernen Pantoffel abfiel. Der Prinz versuchte zu folgen, aber sie verschwand in der Nacht.
-
-Am nächsten Tag erklärte der Prinz, er würde diejenige heiraten, der der gläserne Pantoffel passte. Seine Diener gingen von Haus zu Haus. Als sie bei Aschenputtel ankamen, versuchten ihre Stiefschwestern, ihre Füße in den Pantoffel zu quetschen, aber es war vergeblich.
-
-"Darf ich es versuchen?" fragte Aschenputtel leise. Ihre Stiefmutter lachte, aber der Diener bestand darauf. Der Pantoffel passte perfekt! In diesem Moment erschien Aschenputtels gute Fee und verwandelte ihre Lumpen noch einmal in ein schönes Kleid.
-
-Der Prinz erkannte sie sofort und bat sie, ihn zu heiraten. Aschenputtel vergab ihrer Stieffamilie, und sie und der Prinz lebten glücklich bis ans Ende ihrer Tage.`,
-    ageRange: "3-5 years",
-    language: "de",
-    isTranslated: true,
-    originalLanguage: "fr",
-    sourceType: "curated",
-    authorName: "Charles Perrault",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1565734451735-742fea78c39f?w=800&h=600&fit=crop"
-  },
-
-  // SPANISH STORIES
-  {
-    title: "Los Tres Cerditos",
-    summary: "Tres cerditos construyen casas de paja, madera y ladrillos para protegerse del lobo feroz.",
-    moral: "El trabajo duro y la planificación te protegerán cuando lleguen los desafíos.",
-    fullContent: `Había una vez tres cerditos que vivían con su madre. Cuando fueron lo suficientemente mayores, ella los envió al mundo a buscar fortuna.
-
-El primer cerdito se encontró con un hombre que llevaba paja. "Por favor, dame esa paja para construir una casa," dijo el cerdito. El hombre se la dio, y el primer cerdito rápidamente construyó una casa de paja. ¡Fue fácil y no llevó mucho tiempo!
-
-El segundo cerdito se encontró con un hombre que llevaba palos. "Por favor, dame esos palos para construir una casa," dijo el cerdito. El hombre se los dio, y el segundo cerdito construyó una casa de palos. Era un poco más fuerte que la paja y tampoco llevó mucho tiempo.
-
-El tercer cerdito se encontró con un hombre que llevaba ladrillos. "Por favor, dame esos ladrillos para construir una casa," dijo el cerdito. El hombre se los dio, y el tercer cerdito trabajó duro durante muchos días para construir una casa fuerte de ladrillos.
-
-Pronto, llegó un lobo feroz. Fue a la casa de paja del primer cerdito y dijo: "¡Cerdito, cerdito, déjame entrar!" "¡No, por los pelos de mi barbilla!" dijo el cerdito. "¡Entonces soplaré y soplaré y tu casa derribaré!" ¡Y lo hizo! El primer cerdito corrió a la casa de palos de su hermano.
-
-El lobo siguió y dijo: "¡Cerditos, cerditos, déjenme entrar!" "¡No, por los pelos de nuestras barbillas!" dijeron. "¡Entonces soplaré y soplaré y su casa derribaré!" ¡Y lo hizo! Los dos cerditos corrieron a la casa de ladrillos de su hermano.
-
-El lobo llegó a la casa de ladrillos y dijo: "¡Cerditos, cerditos, déjenme entrar!" "¡No, por los pelos de nuestras barbillas!" dijeron. "¡Entonces soplaré y soplaré y su casa derribaré!"
-
-Así que sopló y sopló, y volvió a soplar. Pero no importaba cuánto soplara, ¡la casa de ladrillos se mantuvo firme! El lobo estaba tan cansado que se rindió y se fue.
-
-Los tres cerditos aprendieron una lección importante. Los dos cerditos que se habían apresurado a construir sus casas ahora ayudaron a su sabio hermano a agregar habitaciones a su casa de ladrillos, y todos vivieron allí seguros y felices para siempre.`,
-    ageRange: "3-5 years",
-    language: "es",
-    isTranslated: true,
-    originalLanguage: "en",
-    sourceType: "curated",
-    authorName: "Cuento Tradicional Inglés",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=800&h=600&fit=crop"
+    "title": "The Snow Queen's Gentle Touch",
+    "fullContent": "Once upon a time, in a village covered in snow, lived a little girl named Lily. She loved to play in the snow, making snow angels and building snow castles. One day, as she was playing, a gentle snowflake landed on her nose. To her surprise, it spoke, 'Hello, Lily! I am the Snow Queen's messenger. She wishes to see you in her magical snow palace.' Curiosity filled Lily's heart, and she followed the snowflake through a shimmering forest. The trees were covered in sparkling snow, and the animals greeted her warmly. Finally, she reached the grand palace, where the Snow Queen smiled warmly and invited Lily inside. The palace was beautiful, with ice sculptures and twinkling lights. The Snow Queen said, 'Thank you for visiting, dear Lily. Remember, kindness and warmth can melt even the coldest of hearts.' Lily returned home, carrying the Snow Queen's message of love and kindness. She shared it with everyone in the village, and they all felt the warmth of the Snow Queen's gentle touch, even in the coldest winter days.",
+    "summary": "Lily meets the Snow Queen, who invites her to a magical snow palace. There, Lily learns that kindness and warmth can touch even the coldest hearts. She shares this message with her village, spreading love and warmth.",
+    "moral": "Kindness and warmth can melt the coldest of hearts.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-o2o21e?w=800"
   },
   {
-    title: "Caperucita Roja",
-    summary: "Una niña con una capa roja encuentra un lobo astuto en el camino a la casa de su abuelita.",
-    moral: "Sé siempre cauteloso y escucha las advertencias de tus padres sobre los extraños.",
-    fullContent: `Había una vez una niñita muy querida que era amada por todos, especialmente por su abuelita. Para su cumpleaños, su abuela le había hecho una pequeña caperuza de terciopelo rojo que le quedaba tan bien que quería usarla todo el tiempo. Pronto todos la llamaban Caperucita Roja.
-
-Un día, su madre le dijo: "Caperucita Roja, tu abuelita está enferma. Llévale esta cesta con comida, pero no te desvíes del camino y no hables con extraños."
-
-Caperucita Roja lo prometió y partió por el bosque. Pronto se encontró con un lobo. "Buenos días, Caperucita Roja," dijo el lobo cortésmente. "¿A dónde vas?"
-
-"A la casa de mi abuelita," respondió inocentemente. "Vive en la casita al final del camino."
-
-"¡Qué idea tan encantadora!" dijo el astuto lobo. "¿Por qué no recoges algunas flores para ella? ¡Mira qué hermosas son!" Mientras Caperucita Roja recogía flores, olvidando la advertencia de su madre, el lobo corrió hacia la casa de la abuelita.
-
-Toc, toc! "¿Quién es?" llamó la abuelita. "Es Caperucita Roja," respondió el lobo con voz dulce. "Pasa, querida," dijo la abuela, ¡y el lobo entró de un salto y se la comió!
-
-El lobo se puso el gorro de dormir de la abuela y se metió en su cama justo cuando llegaba Caperucita Roja con su cesta y flores.
-
-"¡Abuelita, qué orejas tan grandes tienes!" dijo Caperucita Roja. "Son para oírte mejor, querida," respondió el lobo. "¡Abuelita, qué ojos tan grandes tienes!" "Son para verte mejor, querida." "¡Abuelita, qué dientes tan grandes tienes!" "¡Son para comerte mejor!"
-
-Y con eso, el lobo saltó de la cama. ¡Caperucita Roja gritó! Afortunadamente, un cazador pasaba por allí y escuchó su grito. Entró corriendo y ahuyentó al lobo.
-
-El cazador hizo que el lobo liberara a la abuelita, quien estaba asustada pero ilesa. Caperucita Roja aprendió su lección: siempre escucha a tu madre y nunca hables con extraños. Nunca más se desvió del camino, y ella y su abuelita disfrutaron juntas de las golosinas de la cesta.`,
-    ageRange: "3-5 years",
-    language: "es",
-    isTranslated: true,
-    originalLanguage: "fr",
-    sourceType: "curated",
-    authorName: "Charles Perrault",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1511044568932-338cba0ad803?w=800&h=600&fit=crop"
+    "title": "The Emperor's Silly New Clothes",
+    "fullContent": "Once upon a time, in a beautiful kingdom, there was an emperor who loved clothes more than anything else. One day, two clever strangers came to town, claiming they could make the most wonderful outfit ever seen. They said it was magical because only wise people could see it. The emperor was excited and ordered a new suit immediately. When the clothes were 'finished,' the emperor couldn't see anything at all, but he pretended he could because he didn't want to seem foolish. So off he went in a parade, wearing his 'new clothes.' People in the kingdom were afraid to speak the truth, so they all admired the 'invisible' suit. But then, a little child pointed and shouted, 'The emperor is not wearing any clothes!' Everyone gasped, but then they laughed, realizing the child was right. The emperor blushed but laughed too, promising never to be tricked again. From that day on, he wore simple clothes and was much happier.",
+    "summary": "In a kingdom, an emperor loves clothes. Tricked by strangers, he parades in 'magical' clothes visible only to the wise. A child points out he's wearing nothing. Everyone laughs, and the emperor learns to value honesty over appearances.",
+    "moral": "It's important to be honest and to value truth over appearances.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-xcrhj?w=800"
   },
   {
-    title: "Blancanieves",
-    summary: "Una hermosa princesa escapa de su malvada madrastra y encuentra refugio con siete enanitos.",
-    moral: "La verdadera belleza viene del corazón, y la bondad siempre será recompensada.",
-    fullContent: `Érase una vez, en pleno invierno, una reina que cosía junto a una ventana. Al mirar la nieve blanca, se pinchó el dedo y tres gotas de sangre cayeron sobre la nieve.
-
-"¡Oh!" pensó la reina. "Desearía tener una hija con piel blanca como la nieve, labios rojos como la sangre y cabello negro como el ébano."
-
-Pronto nació una hermosa princesa, tan blanca como la nieve, con labios rojos y cabello negro. La llamaron Blancanieves. Pero la reina murió poco después de su nacimiento.
-
-Al año, el rey se casó con una nueva mujer. Era hermosa pero vanidosa y malvada. Tenía un espejo mágico que le preguntaba cada día: "Espejo, espejito, ¿quién es la más hermosa del reino?"
-
-Y el espejo siempre respondía: "Vos, mi reina, sois la más hermosa."
-
-Pero cuando Blancanieves cumplió siete años, se volvió más hermosa que la reina. Cuando la reina preguntó al espejo, éste respondió:
-
-"Vos, mi reina, sois hermosa, pero Blancanieves es mil veces más hermosa."
-
-Llena de celos, la malvada reina ordenó a un cazador llevar a Blancanieves al bosque y matarla. Pero el bondadoso cazador no pudo hacerlo y dejó a Blancanieves en el bosque.
-
-Blancanieves corrió hasta encontrar una casita. Dentro, todo era pequeño: siete platitos, siete cucharitas, siete camas. Cansada, probó un poco de comida de cada plato y se durmió en una de las camas.
-
-Cuando oscureció, llegaron los dueños: ¡siete enanitos que trabajaban en las minas! Encontraron a Blancanieves y, al oír su historia, dijeron: "Puedes quedarte con nosotros si cuidas la casa."
-
-Blancanieves vivió feliz con los enanitos. Pero la malvada reina descubrió por el espejo que Blancanieves seguía viva. Tres veces intentó matarla: con un corsé apretado, un peine envenenado y finalmente una manzana envenenada.
-
-La manzana envenenada hizo que Blancanieves cayera en un sueño profundo. Los enanitos la pusieron en un ataúd de cristal en una montaña.
-
-Un día, un príncipe pasó por allí y se enamoró de la hermosa Blancanieves. Pidió a los enanitos que le dieran el ataúd. Cuando sus sirvientes lo llevaban, tropezaron, y el trozo de manzana envenenada salió de la garganta de Blancanieves.
-
-¡Blancanieves abrió los ojos y estaba viva! El príncipe y Blancanieves se casaron, la malvada reina fue castigada por sus acciones, y todos vivieron felices para siempre.`,
-    ageRange: "6-10 years",
-    language: "es",
-    isTranslated: true,
-    originalLanguage: "de",
-    sourceType: "curated",
-    authorName: "Hermanos Grimm",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800&h=600&fit=crop"
+    "title": "Little Thumbelina's Adventure",
+    "fullContent": "Once upon a time, a tiny girl named Thumbelina was born from a beautiful flower in a kind woman's garden. She was no bigger than a thumb, and she loved to dance and sing. One day, a curious toad spotted her and thought she would make a perfect bride for his son. He took her to the river, but Thumbelina was sad and missed her home. With the help of some friendly fish, she escaped by floating on a lily pad. As she floated along, she met a butterfly and many other creatures that showed her kindness. Eventually, Thumbelina met a beautiful fairy prince who was just her size. They became friends and traveled together to his magical land. There, Thumbelina was surrounded by flowers and friends, and she was never lonely again. She had found her true home, where she could dance and sing all day long, happily ever after.",
+    "summary": "Thumbelina, a tiny girl born from a flower, embarks on an adventure after being taken by a toad. With help from river creatures, she escapes and finds friendship with a fairy prince. Together, they live happily in a magical land.",
+    "moral": "Kindness and courage can lead you to where you truly belong.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-8w0i0c?w=800"
   },
   {
-    title: "La Cenicienta",
-    summary: "Una joven bondadosa, maltratada por su madrastra, va al baile real con la ayuda de su hada madrina.",
-    moral: "La bondad y la gracia serán recompensadas, y los sueños pueden hacerse realidad con un poco de magia.",
-    fullContent: `Había una vez una dulce joven llamada Cenicienta. Después de que su padre se volviera a casar, vivía con su madrastra y dos hermanastras crueles y desagradables. Hacían que Cenicienta hiciera todo el trabajo de la casa mientras ellas vivían en el lujo.
-
-Un día, llegó una invitación del palacio. ¡El Rey estaba organizando un gran baile para que el Príncipe eligiera una novia! Las hermanastras estaban emocionadas y pasaron días preparando sus vestidos. Cenicienta les ayudó a prepararse, aunque deseaba poder ir también.
-
-"¿Tú?" se burló su madrastra. "¡No puedes ir al baile vestida con harapos!" Y la dejaron atrás, llorando junto a la chimenea.
-
-De repente, una luz brillante llenó la habitación. "No llores, querida niña," dijo una voz amable. ¡Era el Hada Madrina de Cenicienta! Con un movimiento de su varita mágica, transformó una calabaza en un carruaje dorado, ratones en caballos, y los harapos de Cenicienta en un hermoso vestido con zapatillas de cristal.
-
-"¡Irás al baile!" dijo el Hada Madrina. "Pero recuerda, a medianoche la magia terminará. Debes irte antes de entonces."
-
-En el baile, todos se preguntaban quién era la misteriosa y hermosa princesa. El Príncipe no podía apartar sus ojos de Cenicienta, y bailaron juntos toda la noche. Cenicienta estaba tan feliz que olvidó la hora hasta que el reloj comenzó a dar las doce.
-
-"¡Debo irme!" gritó, y corrió por las escaleras del palacio tan rápido que una de sus zapatillas de cristal se cayó. El Príncipe intentó seguirla, pero desapareció en la noche.
-
-Al día siguiente, el Príncipe declaró que se casaría con quien le quedara la zapatilla de cristal. Sus sirvientes fueron de casa en casa. Cuando llegaron a la casa de Cenicienta, sus hermanastras intentaron meter sus pies en la zapatilla, pero fue en vano.
-
-"¿Puedo probar?" preguntó Cenicienta en voz baja. Su madrastra se rió, pero el sirviente insistió. ¡La zapatilla le quedó perfecta! En ese momento, el Hada Madrina de Cenicienta apareció y transformó sus harapos en un hermoso vestido una vez más.
-
-El Príncipe la reconoció de inmediato y le pidió que se casara con él. Cenicienta perdonó a su madrastra y hermanastras, y ella y el Príncipe vivieron felices para siempre.`,
-    ageRange: "3-5 years",
-    language: "es",
-    isTranslated: true,
-    originalLanguage: "fr",
-    sourceType: "curated",
-    authorName: "Charles Perrault",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1565734451735-742fea78c39f?w=800&h=600&fit=crop"
+    "title": "The Brave Tin Soldier",
+    "fullContent": "Once upon a time, a little boy received a set of toy soldiers for his birthday. Among them was a brave tin soldier who stood on one leg, as he was the last one made and there wasn't enough metal for both legs. Despite this, he was proud and stood tall. One day, the boy placed the soldiers on the windowsill. As the wind blew, the little tin soldier fell out of the window and onto the street. A curious adventure began as he was swept away by a stream, narrowly escaping danger. Along the way, he met a paper boat, a rat, and even a fish who swallowed him whole! Thankfully, the fish was caught by a fisherman and sold at the market, where the same boy's mother bought it. Imagine their surprise when the boy found his brave tin soldier inside the fish! The soldier was happy to be home. He learned that no matter how far he traveled, his courage and resilience would always bring him back to where he belonged.",
+    "summary": "A brave tin soldier on one leg falls out the window and embarks on an adventurous journey. He encounters a paper boat, a rat, and gets swallowed by a fish. The fish is caught and bought by the boy's mother, bringing the soldier back home. His courage and resilience are rewarded.",
+    "moral": "Bravery and resilience can help you face any challenge and find your way back home.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-z2hwoq?w=800"
   },
   {
-    title: "El Patito Feo",
-    summary: "Un joven pájaro, burlado por ser diferente, descubre que en realidad es un hermoso cisne.",
-    moral: "Todos somos especiales a nuestra manera, y la verdadera belleza viene de adentro.",
-    fullContent: `Era un hermoso día de verano en la granja. Mamá Pata estaba sentada en su nido, esperando que sus huevos eclosionaran. Uno por uno, los huevos se rompieron y salieron patitos esponjosos y amarillos. Pero un huevo, el más grande, no se abría.
-
-Finalmente, el huevo grande se rompió y salió un patito que se veía... diferente. Era más grande que los otros, con plumas grises en lugar de amarillas.
-
-"¡Qué patito tan feo!" dijo Mamá Pata, pero de todos modos lo amaba.
-
-Los otros patitos no eran tan amables. "¡Eres tan feo!" graznaban. "¡No perteneces aquí!" Incluso las gallinas y el gato se burlaban de él.
-
-El pobre patito se sentía tan triste. "Nadie me quiere," pensó. Así que un día, se escapó de la granja.
-
-Vagó por campos y bosques, buscando un lugar donde pertenecer. Conoció a algunos patos salvajes, pero volaron lejos. Encontró algunos gansos, pero le dijeron que se fuera. Llegó el invierno, y el pobre patito tenía frío y estaba solo.
-
-Un día, vio un grupo de hermosos pájaros blancos volando sobre él. Tenían largos cuellos gráciles y alas elegantes. "¡Qué hermosos son!" suspiró el patito. "Desearía poder ser como ellos."
-
-Pasó el invierno y llegó la primavera. El patito, ahora crecido, llegó a un estanque tranquilo. En el agua, vio su reflejo y jadeó. ¡Ya no era un patito gris y feo - se había convertido en un hermoso cisne blanco con un largo cuello grácil!
-
-Los otros cisnes nadaron hacia él. "¡Bienvenido, amigo!" dijeron. "¡Eres uno de nosotros!" El patito - ahora un cisne - apenas podía creerlo.
-
-Los niños que jugaban junto al estanque lo señalaron. "¡Mira ese cisne! ¡Es el más hermoso de todos!"
-
-El cisne pensó en todas las veces que había sido burlado y rechazado. Pero ahora entendía que nunca había sido un patito feo. Siempre había sido un cisne, solo esperando crecer.
-
-Y vivió feliz para siempre, nadando graciosamente con su nueva familia, sabiendo que ser diferente lo hacía especial.`,
-    ageRange: "3-5 years",
-    language: "es",
-    isTranslated: true,
-    originalLanguage: "en",
-    sourceType: "curated",
-    authorName: "Hans Christian Andersen",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop"
+    "title": "The Nightingale's Song",
+    "fullContent": "Once upon a time, in a grand palace, there lived a curious emperor who adored beautiful things. One day, he heard about a nightingale whose song was the sweetest in the world. The emperor ordered his servants to bring the nightingale to the palace. When the nightingale sang, its melody was so enchanting that everyone, including the emperor, was captivated. The emperor was so pleased that he kept the nightingale in a golden cage, wanting to hear its song every day. But the little bird became sad, for it longed to fly freely in the forest. \n\nSeeing the bird's sadness, a wise servant suggested releasing the nightingale. The emperor agreed, and as soon as the bird was free, it sang the most beautiful song ever heard, filling the palace with joy. From that day on, the nightingale visited the palace every evening, singing its sweet song in gratitude. The emperor learned that true beauty comes from the happiness and freedom of the heart.",
+    "summary": "An emperor captures a nightingale for its beautiful song but learns that true beauty comes from freedom. Once released, the nightingale sings even more beautifully, teaching the emperor about the joy of freedom.",
+    "moral": "True beauty and happiness come from freedom and kindness.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-gt959n?w=800"
   },
   {
-    title: "Ricitos de Oro y los Tres Osos",
-    summary: "Una niña curiosa descubre la casa de tres osos y aprende una lección importante sobre respetar la propiedad ajena.",
-    moral: "Siempre respeta las pertenencias de otras personas y pide permiso antes de usarlas.",
-    fullContent: `Había una vez tres osos que vivían en una casa acogedora en el bosque: Papá Oso, Mamá Osa y Bebé Oso.
-
-Una mañana, Mamá Osa preparó gachas para el desayuno, pero estaban demasiado calientes para comer. "Vamos a dar un paseo mientras se enfrían," dijo Papá Oso. Así que los tres osos salieron a pasear por el bosque.
-
-Mientras estaban fuera, una niñita llamada Ricitos de Oro llegó saltando por el bosque. Tenía hermosos cabellos dorados que rebotaban mientras caminaba. Cuando vio la casa de los osos, sintió curiosidad.
-
-"Me pregunto quién vive aquí," dijo, y tocó la puerta. Nadie respondió. Intentó abrir la puerta y ¡se abrió! "¿Hola?" llamó, pero no hubo respuesta. Así que entró directamente.
-
-En la mesa, vio tres tazones de gachas. Ricitos de Oro tenía hambre. Probó las gachas de Papá Oso. "¡Ay! ¡Están demasiado calientes!" Probó las gachas de Mamá Osa. "¡Puaj! ¡Están demasiado frías!" Luego probó las gachas de Bebé Oso. "¡Mmm! ¡Están perfectas!" Y se las comió todas.
-
-Después, Ricitos de Oro vio tres sillas. Se sentó en la silla de Papá Oso. "¡Esta es demasiado dura!" Se sentó en la silla de Mamá Osa. "¡Esta es demasiado blanda!" Luego se sentó en la silla de Bebé Oso. "¡Esta es perfecta!" Pero cuando se meció hacia adelante y hacia atrás, ¡CRASH! La silla pequeña se rompió en pedazos.
-
-Ricitos de Oro estaba cansada. Subió las escaleras y vio tres camas. Probó la cama de Papá Oso. "¡Demasiado dura!" Probó la cama de Mamá Osa. "¡Demasiado blanda!" Luego probó la cama de Bebé Oso. "¡Perfecta!" Y se quedó profundamente dormida.
-
-Pronto, los tres osos regresaron de su paseo. "¡Alguien ha estado comiendo mis gachas!" gruñó Papá Oso. "¡Alguien ha estado comiendo mis gachas!" dijo Mamá Osa. "¡Alguien ha estado comiendo mis gachas," lloró Bebé Oso, "y se las comió todas!"
-
-Los osos miraron alrededor. "¡Alguien se ha sentado en mi silla!" gruñó Papá Oso. "¡Alguien se ha sentado en mi silla!" dijo Mamá Osa. "¡Alguien se ha sentado en mi silla," lloró Bebé Oso, "y la rompió!"
-
-Los osos subieron las escaleras. "¡Alguien ha estado durmiendo en mi cama!" gruñó Papá Oso. "¡Alguien ha estado durmiendo en mi cama!" dijo Mamá Osa. "¡Alguien ha estado durmiendo en mi cama," lloró Bebé Oso, "y ahí está!"
-
-Ricitos de Oro se despertó y vio a tres osos mirándola. ¡Saltó de la cama y bajó corriendo las escaleras, salió por la puerta y corrió todo el camino a casa tan rápido como pudo!
-
-Los tres osos nunca volvieron a ver a Ricitos de Oro. Y Ricitos de Oro aprendió una lección importante: ¡nunca entres en la casa de alguien sin permiso!`,
-    ageRange: "0-2 years",
-    language: "es",
-    isTranslated: true,
-    originalLanguage: "en",
-    sourceType: "curated",
-    authorName: "Cuento Tradicional Inglés",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=800&h=600&fit=crop"
-  },
-  // ADDITIONAL ENGLISH STORIES
-  {
-    title: "Thumbelina",
-    summary: "A tiny girl no bigger than a thumb goes on an adventure and finds where she truly belongs.",
-    moral: "No matter how small you are, you have a place in the world where you belong.",
-    fullContent: `Once upon a time, there was a woman who wished very much for a little child. She went to a fairy who gave her a special seed. "Plant this in a flowerpot," said the fairy, "and see what happens!"
-
-The woman planted the seed, and soon a beautiful tulip grew. When the flower opened, inside sat a tiny girl, no bigger than a thumb! The woman named her Thumbelina.
-
-One night, an ugly toad hopped through the window. "What a pretty wife she would make for my son!" thought the toad, and she carried Thumbelina away to a lily pad in the middle of a stream.
-
-When Thumbelina woke, she was terrified and cried. Some friendly fish felt sorry for her and nibbled through the stem of the lily pad. It floated down the stream, carrying Thumbelina to safety.
-
-A large beetle found her and thought she was beautiful. He took her to his tree to meet his friends, but they all said, "She only has two legs! How ugly!" The beetle changed his mind and left poor Thumbelina alone.
-
-Summer passed, and winter came. A kind field mouse found Thumbelina nearly frozen and took her in. "You must marry my friend the mole," said the mouse. But the mole lived underground and would never see the sun again!
-
-While walking through the mole's tunnels, Thumbelina found a swallow who seemed dead. She cared for him through the winter, and when spring came, he was well again! "Come with me!" said the swallow. "I'm flying to warm lands."
-
-Thumbelina climbed onto the swallow's back, and they flew far away to a beautiful land of flowers. In the center of one flower sat a tiny prince, just her size! He had beautiful wings and a golden crown.
-
-"Will you be my wife and queen of all the flowers?" he asked. Thumbelina said yes! They gave her delicate wings, and she flew happily among the flowers with her prince, never to be lonely again.`,
-    ageRange: "6-10 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "da",
-    sourceType: "curated",
-    authorName: "Hans Christian Andersen",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=600&fit=crop"
+    "title": "The Little Match Girl's Magical Night",
+    "fullContent": "On a cold winter evening, a little girl named Clara wandered through the snowy streets, holding a bundle of matches. Her shoes were too big and her coat was thin, but Clara was brave. As the snowflakes danced in the air, Clara found a cozy corner to rest. She took out a match and struck it against the wall. Magically, a warm glow appeared, and Clara saw a beautiful fireplace in front of her. She held out her hands to feel the warmth and smiled. As the match flickered out, Clara struck another. This time, she saw a grand feast with delicious food. Her tummy rumbled happily as she imagined tasting all the goodies. The match dimmed, but Clara was not sad. She struck another match, revealing a sparkling Christmas tree, adorned with twinkling lights and colorful ornaments. Clara's eyes sparkled with joy. Lastly, she lit one more match and saw her beloved grandmother smiling warmly. \"I love you,\" Clara whispered. As the final match burned out, she felt her grandmother's gentle hug in her heart. Clara fell asleep dreaming of warmth and love, knowing that even in the cold, magic was all around her.",
+    "summary": "A little girl named Clara finds warmth and joy on a cold winter night by lighting matches that bring magical visions of love and comfort. Through her imagination, she discovers that even in tough times, warmth and magic are always there.",
+    "moral": "Even in the coldest moments, love and imagination can bring warmth and happiness.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-vfuz6g?w=800"
   },
   {
-    title: "The Elves and the Shoemaker",
-    summary: "A poor shoemaker receives mysterious help from magical elves who make beautiful shoes at night.",
-    moral: "Kindness and gratitude create magic, and helping others brings joy.",
-    fullContent: `Once upon a time, there lived a kind shoemaker and his wife. They were very poor, and one day the shoemaker had only enough leather left to make one pair of shoes.
-
-"I will cut the leather tonight and sew the shoes tomorrow," he said sadly. He cut the pieces and left them on his workbench, then went to bed.
-
-The next morning, he couldn't believe his eyes! On his workbench sat a beautiful pair of shoes, perfectly made with tiny, neat stitches. Not a single mark was wrong!
-
-A customer came that day and loved the shoes so much, he paid double the usual price! With this money, the shoemaker bought enough leather for two pairs of shoes.
-
-Again, he cut the leather and left it on his bench. In the morning, two pairs of beautifully made shoes appeared! These sold quickly too, and soon the shoemaker had enough leather for four pairs.
-
-This continued night after night. The shoemaker became prosperous, but he wondered: who was helping him?
-
-One night, he and his wife decided to hide and watch. At midnight, two tiny elves appeared! They were barefoot and wore ragged clothes, but they worked quickly and skillfully, making perfect shoes.
-
-"Those poor little elves have made us rich," said the wife, "but they have no proper clothes! Let's make them some gifts."
-
-The shoemaker's wife sewed two tiny shirts, coats, and trousers. The shoemaker made two tiny pairs of shoes. On Christmas Eve, they left these gifts on the workbench instead of leather.
-
-At midnight, the elves came and found the clothes! They laughed with joy, dressed quickly, and danced around the shop:
-
-"Now we're boys so fine and neat,
-No more shoes we need to make!"
-
-Then they danced out the door and were never seen again. But the shoemaker and his wife always prospered, and they never forgot the kindness of the little elves.`,
-    ageRange: "3-5 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "de",
-    sourceType: "curated",
-    authorName: "Brothers Grimm",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800&h=600&fit=crop"
+    "title": "The Princess and the Tiny Pea",
+    "fullContent": "Once upon a time, in a faraway kingdom, there lived a young prince who wanted to marry a real princess. Many came to the castle claiming to be princesses, but the prince was never sure. One stormy night, a knock on the castle door revealed a young woman soaked by the rain. She claimed to be a princess, but the queen had a clever idea to test her. She prepared a bed for the girl with twenty mattresses and placed a tiny pea underneath them all. The next morning, the young woman was asked how she slept. She replied, 'Oh, it was terrible! I felt something hard under all the mattresses and barely slept a wink!' The queen and prince rejoiced, for only a true princess could feel a pea through so many mattresses. The prince and the princess were soon married, and they lived happily ever after, always remembering the tiny pea that had brought them together.",
+    "summary": "A prince seeks a true princess. A girl arrives on a stormy night, and the queen tests her with a pea under mattresses. She feels it, proving she's a true princess. They marry, living happily ever after.",
+    "moral": "True worth and identity are often revealed under pressure.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-giokcs?w=800"
   },
   {
-    title: "The Bremen Town Musicians",
-    summary: "Four aging animals run away and become friends, scaring robbers with their loud music.",
-    moral: "Friendship and working together make you stronger than you think.",
-    fullContent: `Once upon a time, there was a donkey who had worked hard for his master for many years. Now he was getting old, and his master planned to get rid of him. The donkey heard this and ran away, heading for the town of Bremen to become a musician.
-
-Along the way, he met a dog lying by the road. "Why are you so sad?" asked the donkey.
-
-"I'm old," said the dog, "and my master doesn't want me anymore because I can't hunt well."
-
-"Come with me to Bremen!" said the donkey. "We can be musicians together!" The dog agreed happily.
-
-Soon they met a cat, looking miserable. "What's wrong?" they asked.
-
-"My owner wants to get rid of me because I'm too old to catch mice," said the cat sadly.
-
-"Join us in Bremen!" they said. "We're going to be musicians!" The cat joined them.
-
-Next, they found a rooster crying loudly. "Why are you upset?" they asked.
-
-"Tomorrow my owner plans to make me into soup!" cried the rooster.
-
-"Come to Bremen with us!" they all said. "You have a fine voice for music!" So the four friends continued together.
-
-As night fell, they came to a cottage in the forest. Through the window, they saw robbers eating a feast. The animals were hungry and hatched a plan.
-
-The donkey stood on his hind legs by the window. The dog climbed on the donkey's back. The cat climbed on the dog. The rooster flew up and perched on the cat. Then, all together, they made their music: the donkey brayed, the dog barked, the cat meowed, and the rooster crowed!
-
-The robbers jumped up in fright! "A terrible monster!" they cried, and ran away into the forest.
-
-The four friends went inside, ate the delicious food, and decided to stay. They never did reach Bremen, but they lived happily together in that cottage, making music whenever they pleased.
-
-And the robbers? They were too frightened to ever come back!`,
-    ageRange: "3-5 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "de",
-    sourceType: "curated",
-    authorName: "Brothers Grimm",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=800&h=600&fit=crop"
+    "title": "The Enchanted Tinderbox",
+    "fullContent": "Once upon a time, there was a brave soldier walking through a forest. He met an old witch who asked him to climb down a hollow tree and retrieve a magical tinderbox. In return, she promised him riches. The soldier agreed and found three rooms filled with treasures, each guarded by a huge dog with eyes as big as saucers. Using the tinderbox, he summoned the dogs, who became his friends. With their help, the soldier returned home with gold and jewels. That night, he discovered that the tinderbox could summon the dogs anytime he struck it. With their loyal help, the soldier shared his wealth with the townspeople, bringing happiness to everyone. As the soldier lay down to sleep, he knew he had found more than just treasure; he had found friendship and kindness. And so, he lived happily ever after, with the magical dogs by his side.",
+    "summary": "A soldier finds a magical tinderbox guarded by dogs with big eyes. With their help, he gains treasure and shares it with the townspeople, discovering the true value of friendship and kindness.",
+    "moral": "True wealth lies in friendship and kindness, not in riches alone.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-dakaex?w=800"
   },
   {
-    title: "Beauty and the Beast",
-    summary: "A kind girl learns to see beyond appearances and discovers true beauty comes from within.",
-    moral: "True beauty is found on the inside, not in outward appearances.",
-    fullContent: `Once upon a time, a wealthy merchant lived with his three daughters. The youngest, named Beauty, was as kind as she was lovely.
-
-One day, the merchant lost his fortune. The family moved to a small cottage in the countryside. Beauty's sisters complained constantly, but Beauty worked cheerfully and tried to keep everyone's spirits up.
-
-One winter day, the merchant got lost in a forest during a snowstorm. He found a magnificent castle and went inside for shelter. In the morning, he picked a rose from the garden for Beauty.
-
-Suddenly, a horrible Beast appeared! "How dare you steal my roses after I gave you shelter!" roared the Beast. "You must die for this!"
-
-The terrified merchant begged for mercy. "Please, I only wanted a rose for my daughter!"
-
-The Beast thought for a moment. "I will spare your life if one of your daughters comes to live with me of her own free will. You have one month."
-
-When Beauty heard this, she insisted on going. "It was my request for a rose that caused this trouble," she said. "I must go."
-
-At the Beast's castle, Beauty found luxury beyond imagination, but she was lonely and missed her father. The Beast visited her every evening and was always kind and gentle, though his appearance was frightening.
-
-One evening, the Beast asked, "Beauty, will you marry me?"
-
-"I'm sorry," she said gently, "I cannot." The Beast looked heartbroken but said nothing.
-
-Months passed, and Beauty began to see the kindness in the Beast's heart. When she asked to visit her sick father, the Beast agreed, though it pained him. "Take this magic ring," he said. "If you're not back in a week, I will die of a broken heart."
-
-Beauty found her father well, but her selfish sisters convinced her to stay longer. On the tenth night, Beauty dreamed of the Beast dying in his garden. Horrified, she used the magic ring to return instantly.
-
-She found the Beast collapsed by the rose bushes. "Don't die!" she cried, cradling his head. "I love you! Please, I'll marry you!"
-
-At these words, the castle lit up with magic! The Beast transformed into a handsome prince. "A witch cursed me," he explained, "and only true love could break the spell."
-
-Beauty and the Prince married and lived happily ever after, and Beauty's kind father came to live with them in the castle.`,
-    ageRange: "6-10 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "fr",
-    sourceType: "curated",
-    authorName: "Gabrielle-Suzanne Barbot de Villeneuve",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=800&h=600&fit=crop"
+    "title": "The Little Girl and Her Shiny Red Shoes",
+    "fullContent": "Once upon a time, in a quaint little village, there was a cheerful girl named Mia. She had a pair of shiny red shoes that she absolutely loved. Every morning, she would put them on and dance around the house, giggling with delight. One sunny day, Mia's mother asked her to help pick flowers for a special tea party. Mia was so excited that she danced all the way to the meadow. The flowers filled her basket with colors of pink, yellow, and blue. As she danced, she noticed a little bird with a hurt wing. Gently, Mia picked up the bird and tucked it safely in her basket. With her shoes tapping softly, she hurried back home. Once there, Mia carefully tended to the bird, giving it water and seeds. Her kindness made the bird sing a sweet tune. At the tea party, Mia's red shoes twinkled in the sunlight, but what truly shone was her caring heart. That night, as she lay in bed, the little bird chirped a lullaby just for her. Mia drifted off to sleep, knowing that kindness was the most beautiful thing of all.",
+    "summary": "Mia loved her shiny red shoes and danced with joy. On a flower-picking day, she found an injured bird and cared for it. Her kindness was celebrated at a tea party, showing that a caring heart shines brighter than any shoe.",
+    "moral": "True beauty comes from kindness and helping others.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-ddx3q?w=800"
   },
   {
-    title: "The Tortoise and the Hare",
-    summary: "A slow tortoise races a fast hare and wins through steady effort.",
-    moral: "Slow and steady wins the race. Natural talent means nothing without effort.",
-    fullContent: `One day, a hare was boasting about how fast he could run. "I'm the fastest animal in the forest!" he bragged. "No one can beat me!"
-
-"That may be true," said a small voice. It was a tortoise, slowly walking by. "But I bet I could beat you in a race."
-
-The hare laughed so hard he nearly fell over! "You? Beat me? That's ridiculous! You're one of the slowest animals alive!"
-
-"We'll see," said the tortoise calmly. "Shall we race tomorrow?"
-
-All the animals gathered to watch. The fox was chosen as the judge. He stood at the finish line far in the distance and waved a flag to start the race.
-
-The hare shot off like lightning! He was so far ahead that he looked back and couldn't even see the tortoise. "This is too easy," he yawned. "I think I'll take a little nap. Even if I sleep for an hour, I'll still win easily!"
-
-He lay down under a shady tree and fell fast asleep.
-
-Meanwhile, the tortoise kept walking, slowly but steadily. Step by step, he plodded along. He never stopped, never gave up, never complained about being tired.
-
-Hour after hour passed. The tortoise slowly and surely made his way along the path. He was determined to finish what he had started.
-
-Finally, the tortoise reached the tree where the hare was sleeping. He didn't stop to wake him up. He just kept walking toward the finish line.
-
-Much later, the hare woke up with a start. "Oh no! I overslept!" he cried. He looked toward the finish line and saw the tortoise just about to cross it!
-
-The hare ran as fast as he could, his legs pumping like pistons. But it was too late! Just as the hare reached the finish line, the tortoise crossed it.
-
-All the animals cheered for the tortoise! He had won the race!
-
-The hare hung his head in shame. He had learned an important lesson: talent and speed mean nothing without effort and dedication. The slow and steady tortoise had won the race after all.`,
-    ageRange: "0-2 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "gr",
-    sourceType: "curated",
-    authorName: "Aesop",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=800&h=600&fit=crop"
+    "title": "The Gentle Swans",
+    "fullContent": "Once upon a time, in a faraway kingdom, there lived a kind princess named Eliza. She had eleven brothers who loved her dearly. They were all very happy until the wicked queen cast a spell, turning the brothers into wild swans. Every night, the swans returned to their human form, but only until the first light of dawn.\n\nEliza was determined to break the spell. She discovered that to save her brothers, she must weave eleven shirts made of stinging nettles and remain silent until the task was complete. Even though the nettles hurt her hands, Eliza worked tirelessly.\n\nThe animals of the forest saw her kindness and decided to help. The rabbits gathered nettles, the birds sang calming tunes, and the wise old owl stood guard. Despite the difficulties, Eliza never gave up.\n\nFinally, just as the sun began to rise on the last day, Eliza finished the eleventh shirt. She ran to the swans, threw the shirts over them, and watched as the spell broke. Her brothers returned to their human form, and all the animals celebrated with joyful dances.\n\nThe king, who had heard of Eliza's bravery, welcomed them back to the castle. From then on, they all lived happily and peacefully, filled with gratitude and love for each other.",
+    "summary": "Princess Eliza's brothers are turned into swans by a spell. To save them, she must weave shirts from nettles without speaking. With help from forest animals, Eliza completes her task, breaking the spell and reuniting with her brothers. They live happily ever after.",
+    "moral": "True love and determination can overcome any obstacle. Kindness and perseverance bring rewards.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-n04kln?w=800"
   },
   {
-    title: "The Fisherman and His Wife",
-    summary: "A fisherman catches a magic fish, but his greedy wife keeps asking for more wishes.",
-    moral: "Be grateful for what you have, or greed may cost you everything.",
-    fullContent: `Once upon a time, a poor fisherman lived in a tiny shack with his wife. Every day he went fishing in the sea.
-
-One day, he caught a large golden fish. To his amazement, the fish spoke! "Please let me go," said the fish. "I am an enchanted prince!"
-
-The kind fisherman released the fish and went home. When he told his wife, she was angry. "You fool! You should have asked for a wish! Go back and ask for a nice cottage!"
-
-The fisherman returned to the sea and called the fish. "My wife wants a nice cottage," he said apologetically.
-
-"Go home," said the fish. "It is done." When the fisherman returned, their shack had become a pretty cottage!
-
-But soon his wife wanted more. "Go ask for a stone castle!" she demanded. The fish granted this wish too.
-
-Then she wanted to be queen! The fish made her queen. Then she wanted to be empress! The fish granted this as well.
-
-But still she wasn't satisfied. "I want to control the sun and moon!" she cried.
-
-The fisherman was horrified but went to the sea one last time. When he made this terrible request, the sea turned dark and stormy.
-
-"Go home," said the fish quietly.
-
-When the fisherman returned, the castle was gone, the fine clothes were gone, and they were back in their tiny shack by the sea.
-
-And there they remained, for his wife had finally learned that greed leads only to loss.`,
-    ageRange: "6-10 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "de",
-    sourceType: "curated",
-    authorName: "Brothers Grimm",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop"
+    "title": "The Swineherd's Clever Gift",
+    "fullContent": "Once upon a time, in a faraway kingdom, a young prince disguised himself as a humble swineherd to win the heart of a beautiful princess. He created magical toys that played lovely tunes, hoping to impress her. The princess, fascinated by the enchanting melodies, traded her precious treasures for them. Each night, the prince played the melodies, and the princess grew fond of his charming presence. One day, the prince revealed his true identity, showing that he valued love over material things. The princess realized that true worth comes from the heart, not possessions. They understood each other, learning to cherish the simple joys in life. They became close friends, enjoying the beautiful music and the warmth of their newfound friendship. And in the gentle glow of the moonlight, they lived happily ever after, cherishing the melodies that brought them together.",
+    "summary": "A prince disguises himself as a swineherd to win a princess's heart. He creates magical toys, trading them for her treasures. When he reveals his identity, they learn true worth comes from the heart. They become friends, cherishing simple joys and living happily ever after.",
+    "moral": "True value lies in the heart and simple joys, not in material possessions.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-4k8vvm?w=800"
   },
   {
-    title: "The Little Match Girl",
-    summary: "A poor girl lights matches on a cold night and sees beautiful visions that bring her comfort.",
-    moral: "Kindness and compassion matter, especially to those who are suffering.",
-    fullContent: `It was New Year's Eve, and snow was falling. A poor little girl walked through the streets with bare feet and no coat. She was carrying matches to sell, but no one had bought any all day.
-
-She was cold and hungry, but she dared not go home because her father would be angry that she hadn't sold anything. Her hands were nearly frozen, and she found a corner between two houses where she huddled down.
-
-"If I light just one match," she thought, "it might warm my fingers a little." She struck a match.
-
-What a wonderful, warm light! It seemed to her that she was sitting before a great iron stove with brass ornaments. The fire burned so beautifully! But then the match went out, and the stove vanished. She was sitting cold in the corner again.
-
-She struck another match. Through its light, she could see right through the wall of the nearest house. There was a table covered with a white cloth and beautiful china, and in the middle sat a roasted goose stuffed with apples and prunes! And what was even more wonderful, the goose hopped down from the dish and waddled across the floor toward her!
-
-But the match went out, and she saw only the thick, cold wall.
-
-She struck another match. Now she was sitting under a beautiful Christmas tree, even larger and more decorated than the one she had seen through the glass door at the rich merchant's last Christmas. Thousands of candles burned on the green branches, and colorful pictures looked down at her.
-
-The little girl stretched out both her hands—and the match went out. The Christmas candles went higher and higher, and she saw that they had become the stars in the sky. One fell down, making a long line of fire.
-
-"Someone is dying," she thought, for her old grandmother, the only person who had ever loved her, had told her that when a star falls, a soul goes up to God.
-
-She struck another match on the wall. It became bright again, and in the light stood her dear old grandmother, bright and shining, kind and loving.
-
-"Grandmother!" cried the child. "Oh, take me with you! I know you will disappear when the match goes out, just like the warm stove, the wonderful goose, and the beautiful Christmas tree!"
-
-And she quickly struck the whole bundle of matches, for she wanted to keep her grandmother there. The matches burned with such a glow that it became brighter than daylight. Grandmother had never been so tall and beautiful. She took the little girl in her arms, and together they flew in brightness and joy, higher and higher, to where there was no cold, no hunger, and no fear—they were with God.
-
-In the cold morning, people found the little girl in the corner, her cheeks red, a smile on her lips—frozen to death on the last evening of the old year. The New Year's sun rose on the little body sitting there with the matches, one bundle almost burned up.
-
-"She tried to warm herself," people said. But no one knew what beautiful things she had seen, nor how gloriously she had gone with her grandmother into the joy of the New Year.`,
-    ageRange: "6-10 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "da",
-    sourceType: "curated",
-    authorName: "Hans Christian Andersen",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1482160549825-59d1b23cb208?w=800&h=600&fit=crop"
+    "title": "The Little Fir Tree's Dream",
+    "fullContent": "Once upon a time, in a deep, green forest, there stood a little fir tree. All around it, tall trees swayed in the wind, and the little fir tree wished to grow tall and see the world. But as the seasons changed, the little fir tree was too busy dreaming of the future to enjoy the present. \n\nEach spring, the birds chirped merrily, building nests in its branches. In summer, the gentle sun warmed its needles. In autumn, the wind whispered secrets through the forest. Yet, the little fir tree sighed, \"I want to be big!\"\n\nWhen winter arrived, the forest was covered in a blanket of snow. The little fir tree sparkled with frost, and children came to play nearby. They laughed and sang, decorating the fir tree with shiny ribbons and colorful ornaments. \n\nFor the first time, the little fir tree felt special and loved. It realized that every season brought its own joy and beauty. It understood that being small was not so bad after all.\n\nAs time went on, the little fir tree grew taller, but it never forgot to enjoy the simple pleasures of each day. It learned that happiness is found in the moment, and it shared its wisdom with all the creatures of the forest.\n\nAnd so, the little fir tree lived happily ever after, content with its place in the world.",
+    "summary": "A little fir tree dreams of growing tall, but it learns to appreciate the beauty of each season. With time, it discovers that happiness lies in enjoying the present moment, not just dreaming of the future.",
+    "moral": "Cherish the present and find joy in each moment.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-ygq7s?w=800"
   },
   {
-    title: "The Town Mouse and the Country Mouse",
-    summary: "Two mice discover that what looks better isn't always better for everyone.",
-    moral: "Simple pleasures and safety are worth more than luxury and danger.",
-    fullContent: `Once upon a time, a town mouse went to visit his cousin who lived in the country. The country mouse was delighted to see his cousin and prepared a meal of simple country food—barley, grain, and roots.
-
-The town mouse nibbled politely but couldn't help turning up his nose. "Dear cousin," he said, "how can you bear to live on such plain food? Come to town with me, and I'll show you how to really live!"
-
-The country mouse had never been to town before, so he agreed to visit. That evening, they arrived at a grand house where the town mouse lived. They crept into the dining room, where the remains of a magnificent feast were still on the table.
-
-"Help yourself!" said the town mouse proudly. The country mouse couldn't believe his eyes! There was cheese, cake, jelly, and all sorts of delicious treats he'd never tasted before.
-
-But just as he took his first bite of cake, there was a terrifying growl. Two huge dogs burst into the room! The mice ran as fast as they could and barely escaped into a tiny hole in the wall.
-
-"Is it always like this?" panted the country mouse, his heart pounding.
-
-"Oh yes," said the town mouse. "But you get used to it. Isn't the food worth it?"
-
-The country mouse waited until the dogs had gone, then said, "Thank you, cousin, but I think I'll go back to the country. I'd rather eat simple food in safety than feast like a king in constant fear. Goodbye!"
-
-And he hurried back to his peaceful country home, where he could eat his barley and grain in peace without fear of dogs or danger.`,
-    ageRange: "0-2 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "gr",
-    sourceType: "curated",
-    authorName: "Aesop",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=800&h=600&fit=crop"
+    "title": "The Magic Trunk's Journey",
+    "fullContent": "Once upon a time, in a quaint village, there lived a young man named Carl. Carl was given a magical trunk by his grandfather. Little did he know, this trunk could fly! One starry night, Carl climbed inside, and off they soared above the clouds. They flew over sparkling rivers, lush forests, and shimmering seas. As they glided, Carl sang to the stars and whispered to the moon. \n\nIn a distant kingdom, Carl spotted a beautiful garden. Landing softly, he met a kind princess who loved nature as much as he did. They talked about the wonders of the world and shared stories under the soft glow of the moon. \n\nAs dawn approached, Carl realized it was time to return. With a gentle goodbye, he promised to visit the princess again. The trunk lifted into the sky, and Carl waved until the garden was a tiny speck below. \n\nWhen Carl returned home, he felt grateful. He learned that adventure awaits those who dare to dream, and friendships can bloom in the most magical places. And so, each night, Carl would look up at the stars, remembering his friends and the magical journey of the flying trunk.",
+    "summary": "Carl discovers a magical trunk that can fly. He visits a faraway kingdom, meets a kind princess, and learns the value of adventure and friendship. With dreams in his heart, Carl returns home, cherishing the memories of his magical journey.",
+    "moral": "Adventure awaits those who dare to dream, and friendships can be found in magical places.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-lrpael?w=800"
   },
   {
-    title: "The Wolf and the Seven Young Kids",
-    summary: "Seven little goats must outsmart a clever wolf who wants to eat them while their mother is away.",
-    moral: "Listen to your parents' warnings and be clever enough to recognize danger.",
-    fullContent: `Once upon a time there was an old mother goat who had seven little kids. She loved them dearly, as any mother loves her children.
-
-One day she needed to go into the forest to get food. She called all seven to her and said, "Dear children, I must go out. Be on your guard against the wolf. If he gets in, he will eat you all up! The wicked creature often disguises himself, but you can recognize him by his rough voice and his black paws."
-
-The kids promised to be careful. Soon after, there was a knock at the door and a voice called, "Open the door, dear children! Your mother is here and has brought something for each of you!"
-
-But the little kids heard the rough voice and knew it was the wolf. "We won't open the door!" they cried. "You are not our mother. She has a gentle voice, but yours is rough. You are the wolf!"
-
-The wolf went away and swallowed a lump of chalk to make his voice soft. He came back and knocked again. "Open the door, dear children! Your mother is here!"
-
-But the wolf had put his black paw on the window sill. The kids saw it and cried, "We won't open the door! Our mother doesn't have black paws. You are the wolf!"
-
-The wolf ran to the baker and had him cover his paws with dough, then to the miller to dust them with white flour. Now his paws looked white!
-
-Once more he knocked at the door. "Open the door, children! Your mother is here!" His voice was soft, and his paws looked white, so the kids thought their mother had returned and opened the door.
-
-In sprang the wolf! The little goats tried to hide. One jumped under the table, another into the bed, the third into the oven, the fourth in the kitchen, the fifth in the cupboard, the sixth under the washbowl, and the seventh into the clock case.
-
-But the wolf found them all except the youngest in the clock case, and he gobbled them up one by one!
-
-When the mother goat came home, she found the door wide open and her house a mess. She called for her children, and only the youngest answered from the clock case. He told her what had happened.
-
-The mother goat went outside with the youngest kid and found the wolf sleeping under a tree, his belly very full. She noticed his belly moving. "Can my children still be alive?" she wondered.
-
-She sent her youngest home for scissors, needle, and thread. She cut open the wolf's belly, and out jumped the six kids, all still alive! The greedy wolf had swallowed them whole!
-
-"Quickly, fetch some stones!" said the mother. They filled the wolf's belly with stones, and the mother sewed him back up.
-
-When the wolf woke up, he was very thirsty and went to the well to drink. But the stones made him so heavy that he fell in and drowned!
-
-The seven little kids and their mother danced for joy around the well, singing, "The wolf is dead! The wolf is dead!" And they all lived safely and happily ever after.`,
-    ageRange: "3-5 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "de",
-    sourceType: "curated",
-    authorName: "Brothers Grimm",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=800&h=600&fit=crop"
+    "title": "The Tortoise and the Hare",
+    "fullContent": "Once upon a time, in a lush green forest, there lived a speedy Hare and a slow-moving Tortoise. The Hare loved to boast about how fast he could run. One sunny day, he challenged the Tortoise to a race. The Tortoise, wise and calm, accepted. As the race began, the Hare sprinted ahead, leaving the Tortoise far behind. Feeling confident, he decided to rest under a shady tree, thinking he had plenty of time. Meanwhile, the Tortoise continued plodding steadily along the path. The forest animals cheered him on, his determination inspiring them. Soon, the Hare fell into a deep sleep. As the sun began to set, the Tortoise, with his unwavering pace, caught up and quietly passed the sleeping Hare. The animals gathered at the finish line were amazed to see the Tortoise crossing it first! Just then, the Hare woke up and dashed towards the finish line, but it was too late. The Tortoise had won the race! The Hare hung his head and learned that boasting and overconfidence could sometimes lead to unexpected outcomes. The Tortoise smiled gently, knowing that steady effort and patience often lead to success.",
+    "summary": "In a forest race, a speedy Hare boasts and races a slow Tortoise. Overconfident, the Hare naps, allowing the steady Tortoise to win. The story shows that patience and consistency can lead to success.",
+    "moral": "Slow and steady wins the race. Consistency and patience are key to success.",
+    "ageRange": "3-5 years",
+    "authorName": "Aesop",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-frza?w=800"
   },
   {
-    title: "The Golden Goose",
-    summary: "A kind young man receives a magic golden goose that helps him win the princess.",
-    moral: "Kindness and generosity are rewarded, while selfishness leads nowhere.",
-    fullContent: `Once there were three brothers. The two eldest were clever and proud, but the youngest, called Simpleton, was kind and simple-minded. His brothers often made fun of him.
-
-One day, the eldest brother went into the forest to cut wood. His mother gave him a fine cake and a bottle of wine for lunch. In the forest, he met a little old man who said, "I'm so hungry and thirsty. Will you share your food?"
-
-"Go away!" said the eldest brother rudely. "I need it all for myself!" But when he began to chop wood, he hurt his arm badly and had to go home.
-
-The second brother went next, with the same fine cake and wine. The little old man asked him to share, but he also refused rudely. Soon he hurt his leg and had to go home too.
-
-Then Simpleton asked to go. His brothers laughed, but his mother let him go, giving him only a plain ash cake and sour beer.
-
-When the little old man asked Simpleton to share, he said kindly, "I only have a plain cake and sour beer, but you're welcome to share it!" But when Simpleton unwrapped the cake, it had turned into a fine cake, and the beer had become sweet wine! They ate together happily.
-
-"Because you have a kind heart," said the old man, "cut down that old tree, and you'll find something valuable." Then he disappeared.
-
-Simpleton cut down the tree and found a goose with feathers of pure gold! He decided to take it to an inn for the night.
-
-The innkeeper's three daughters saw the golden goose and each wanted a golden feather. The first touched it to pluck a feather, but her hand stuck fast! The second tried to pull her sister away, but she stuck too! The third tried to help, and she stuck as well!
-
-In the morning, Simpleton walked away with his goose, and the three girls had to run along behind, stuck fast!
-
-In a field, a parson saw them and called, "Shame on you girls, running after a young man!" He grabbed the youngest girl's arm—and stuck fast! Soon a sexton, and then two farmers joined the silly procession, all stuck together!
-
-They came to a city where the king's daughter had never laughed in her life. The king had declared that whoever could make her laugh could marry her.
-
-When the princess saw Simpleton's goose followed by seven people all stuck in a row, running and stumbling, she burst into laughter! She laughed and laughed until tears ran down her cheeks!
-
-The kind Simpleton married the princess, and they lived happily ever after. And the golden goose brought them good fortune all their days.`,
-    ageRange: "3-5 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "de",
-    sourceType: "curated",
-    authorName: "Brothers Grimm",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&h=600&fit=crop"
+    "title": "The Little Shepherd and the Playful Wolf",
+    "fullContent": "Once upon a time, in a small village, there was a little shepherd named Oliver. Oliver loved playing games, especially using his imagination. One sunny day, as he was watching over the sheep, he thought it would be fun to pretend that a wolf was nearby. \"Wolf! Wolf!\" he shouted loudly. The villagers, hearing his cries, rushed up the hill to protect the sheep. When they arrived, they found Oliver laughing, for there was no wolf at all. The villagers shook their heads and returned to their chores. \n\nA few days later, Oliver decided to play the same trick again. \"Wolf! Wolf!\" he cried even louder this time. Once again, the villagers hurried to help, only to find Oliver giggling. They were not happy and told Oliver that he should never lie. But Oliver, still thinking it was a fun game, didn't listen. \n\nThen, one afternoon, a real wolf appeared from the forest! Oliver was scared and shouted, \"Wolf! Wolf! Please help!\" But this time, the villagers didn't believe him. They continued with their work, thinking Oliver was playing another trick. The wolf chased the sheep, and Oliver was very, very sorry for not being truthful before. \n\nFrom that day on, Oliver learned a very important lesson about always telling the truth. He became a trustworthy shepherd, and the villagers always knew they could count on him.",
+    "summary": "Oliver, a playful shepherd, cries \"Wolf!\" as a joke, tricking villagers twice. When a real wolf appears, no one believes him, and he learns the importance of truthfulness.",
+    "moral": "Always tell the truth, so others will trust you.",
+    "ageRange": "3-5 years",
+    "authorName": "Aesop",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-gutm4p?w=800"
   },
   {
-    title: "Puss in Boots",
-    summary: "A clever cat helps his poor master become rich by outwitting an ogre and winning a princess.",
-    moral: "Cleverness and loyalty can change your fortune.",
-    fullContent: `Once there was a miller who died and left his three sons with only three things: his mill, his donkey, and his cat. The eldest son got the mill, the middle son got the donkey, and the youngest son got only the cat.
-
-"How unlucky I am," sighed the youngest son. "My brothers can work together, but what can I do with just a cat?"
-
-"Don't worry, master!" said the cat, who could talk. "Just get me a pair of boots and a bag, and you'll see that I'm not such a bad gift after all!"
-
-Amazed, the young man used his last coins to buy the cat a fine pair of boots and a bag. The cat looked very handsome in his boots!
-
-Puss went into the forest, caught a rabbit in his bag, and took it to the king. "Your Majesty," he said with a bow, "my master, the Marquis of Carabas, sends you this gift."
-
-The king was pleased. Day after day, Puss brought the king fine gifts of game, always saying they came from the Marquis of Carabas.
-
-One day, Puss learned the king would drive by the river with his daughter. "Master," he said, "go swim in the river where I tell you, and your fortune is made!"
-
-While the young man swam, Puss hid his poor clothes and cried, "Help! Help! The Marquis of Carabas is drowning! Thieves have stolen his clothes!"
-
-The king remembered the Marquis who sent him gifts and sent servants with fine clothes. When the young man was dressed in royal garments, he looked so handsome that the princess fell in love with him at once!
-
-"Come ride with us!" said the king. As they drove, Puss ran ahead to the fields. "When the king asks who owns these fields," Puss told the workers, "say they belong to the Marquis of Carabas, or the ogre will eat you!"
-
-The king saw the fine fields and asked, "Who owns all this?"
-
-"The Marquis of Carabas, Your Majesty!" said the workers.
-
-At last, Puss came to a great castle owned by a terrible ogre. "I've heard you can transform into any animal," Puss said. "But I bet you can't become a lion!"
-
-"Can't I?" roared the ogre, and instantly became a fierce lion!
-
-"Impressive!" said Puss. "But anyone can become something large. I bet you can't become something tiny, like a mouse!"
-
-"Watch this!" said the ogre, and became a little mouse. Quick as lightning, Puss pounced and ate him up!
-
-When the king arrived at the castle, Puss greeted them. "Welcome to the castle of the Marquis of Carabas!"
-
-The king was so impressed that he offered his daughter's hand in marriage. The miller's son and the princess married and lived happily ever after in the ogre's castle.
-
-And Puss in Boots? He became a great lord and only chased mice for fun!`,
-    ageRange: "6-10 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "fr",
-    sourceType: "curated",
-    authorName: "Charles Perrault",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800&h=600&fit=crop"
+    "title": "The Ant and the Grasshopper",
+    "fullContent": "Once upon a time, in a sunny meadow, lived a busy ant and a cheerful grasshopper. The ant worked hard, gathering food for the winter. The grasshopper, however, loved to sing and play his violin all day long. As the days grew shorter and colder, the ant's storage was full, but the grasshopper had nothing to keep him warm and fed. One chilly evening, the grasshopper knocked on the ant's door, shivering and hungry. The ant felt sorry for the grasshopper and shared some of his food. The grasshopper thanked the ant, promising to work hard next season. The ant and grasshopper learned the value of planning and sharing, and they became good friends, playing music together on sunny days and working side by side during harvest time. And so, both the ant and the grasshopper lived happily in the meadow, each appreciating the other's strengths and learning from their differences.",
+    "summary": "In a sunny meadow, a hard-working ant gathers food for winter while a singing grasshopper plays. As winter arrives, the grasshopper finds himself hungry and cold. The generous ant shares his food, teaching the grasshopper the value of preparation and friendship. They become good friends, learning from each other and enjoying music and work together.",
+    "moral": "Planning for the future is important, but sharing and friendship make life richer.",
+    "ageRange": "3-5 years",
+    "authorName": "Aesop",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-hsprr?w=800"
   },
   {
-    title: "Aladdin and the Magic Lamp",
-    summary: "A poor boy finds a magic lamp with a genie inside who grants wishes.",
-    moral: "True worth comes from who you are inside, not from magical treasures.",
-    fullContent: `Long ago in China, there lived a poor boy named Aladdin. One day, a mysterious stranger claimed to be his uncle and promised to make him rich.
-
-The stranger led Aladdin to a cave. "Go inside and fetch me an old lamp," he said. "But touch nothing else!"
-
-Inside the cave, Aladdin found treasures beyond imagination! He took the old lamp but couldn't resist taking some jewels too. When he tried to leave, the entrance was blocked!
-
-"Give me the lamp first!" demanded the stranger, who was actually a wicked magician.
-
-"Help me out first!" said Aladdin. Angrily, the magician sealed the cave with Aladdin inside!
-
-Alone in the dark, Aladdin accidentally rubbed the lamp. With a thunderous sound, an enormous genie appeared! "I am the Genie of the Lamp," he said. "Your wish is my command!"
-
-"Get me out of this cave!" cried Aladdin. Instantly, he was home with his mother.
-
-When Aladdin rubbed the lamp again, the genie appeared. "We're hungry," said Aladdin. The genie brought them a feast on silver dishes! They sold the dishes and lived comfortably.
-
-One day, Aladdin saw the Sultan's beautiful daughter, Princess Badroulbadour, and fell deeply in love. He sent his mother to the Sultan with the cave jewels as a gift. The Sultan was amazed by the jewels and agreed to the marriage!
-
-For the wedding, Aladdin commanded the genie to build a magnificent palace overnight. The Sultan was astounded!
-
-But the wicked magician learned that Aladdin was alive and had the lamp. Disguised as a merchant, he went to the palace calling, "New lamps for old!"
-
-The princess, not knowing the lamp's value, traded it for a new one. The magician immediately commanded the genie to transport the palace, with the princess inside, far away!
-
-The Sultan was furious and gave Aladdin forty days to bring back his daughter. Aladdin searched desperately. Finally, he found the palace in a distant land.
-
-The princess was overjoyed to see him! "The magician carries the lamp everywhere," she whispered.
-
-Aladdin had a plan. He gave the princess a sleeping powder. "Put this in the magician's wine," he said.
-
-That evening, the magician drank his wine and fell into a deep sleep. Aladdin took the lamp and rubbed it. The genie appeared!
-
-"Take us all back home!" commanded Aladdin. In an instant, the palace returned to its proper place.
-
-The Sultan rejoiced to have his daughter back. Aladdin married the princess, and they lived happily ever after. And Aladdin learned that while the lamp had brought him riches, it was his own bravery and cleverness that had saved the day.`,
-    ageRange: "6-10 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "ar",
-    sourceType: "curated",
-    authorName: "One Thousand and One Nights",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop"
+    "title": "The Fox and the Juicy Grapes",
+    "fullContent": "Once upon a time, in a sunny forest, there lived a clever fox. This fox loved wandering through the woods, looking for something tasty to eat. One warm afternoon, he spotted a vine full of shiny, purple grapes hanging high over a branch. The grapes looked so delicious that the fox's mouth watered just thinking about them. He jumped and leaped, trying to reach the grapes, but they were just too high. Tired and a bit grumpy, the fox sat down to rest. 'Those grapes are probably sour anyway,' he said to himself, and with a swish of his bushy tail, he trotted off into the forest. As he walked, he began to hum a little tune, feeling happy once more. The fox realized that he could find plenty of other tasty treats on the forest floor, like juicy berries or crunchy leaves. And so, he continued on his way, ready to explore and find his next adventure.",
+    "summary": "A clever fox, spotting delicious grapes hanging high, tries to reach them but fails. He decides they're probably sour and happily trots away, finding joy in other treats.",
+    "moral": "It's easy to pretend we don't want something when we can't have it.",
+    "ageRange": "3-5 years",
+    "authorName": "Aesop",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-3ffj0d?w=800"
   },
   {
-    title: "Ali Baba and the Forty Thieves",
-    summary: "A poor woodcutter discovers a thieves' treasure cave and uses the magic words to enter.",
-    moral: "Honesty and cleverness triumph over greed and wickedness.",
-    fullContent: `Long ago in Persia, there were two brothers: Cassim, who was rich, and Ali Baba, who was poor and worked as a woodcutter.
-
-One day, while cutting wood, Ali Baba saw forty men on horses approaching. Sensing danger, he hid in a tree.
-
-The men stopped at a large rock. Their captain cried, "Open Sesame!" and the rock opened to reveal a cave! The men went inside with their bags. Later they came out, the captain said, "Close Sesame!" and the rock sealed shut. After they left, Ali Baba climbed down.
-
-He stood before the rock and said, "Open Sesame!" The cave opened! Inside, he found mountains of gold, silk, and jewels—the treasure of forty thieves!
-
-Ali Baba took only a few bags of gold, careful not to be greedy. He said, "Close Sesame!" and hurried home.
-
-When Ali Baba's wife wanted to measure how much gold they had, she borrowed a scale from Cassim's wife. Clever Cassim's wife put wax on the bottom of the scale, and when it was returned, a gold coin was stuck to it!
-
-Cassim forced Ali Baba to tell him the secret. Greedy Cassim rushed to the cave, loaded himself with treasures, but in his greed forgot the magic words to get out! When the thieves returned, they killed him.
-
-Ali Baba found his brother's body and brought it home for burial. The thieves knew someone else had discovered their secret. They searched the town, marking Ali Baba's door with chalk.
-
-But Ali Baba's clever servant girl, Morgiana, saw the mark and marked all the other doors in the street the same way! The thieves were confused.
-
-Next, the thieves hid in oil jars and their captain posed as an oil merchant, seeking shelter at Ali Baba's house. But clever Morgiana discovered the hidden thieves! She boiled oil and poured it into each jar, defeating them all.
-
-Finally, the captain came disguised as a merchant. At dinner, Morgiana performed a dance and, recognizing him, plunged a dagger into his heart, saving Ali Baba!
-
-Ali Baba was so grateful he freed Morgiana and she married his son. They shared the treasure wisely and lived happily ever after, and the secret of the cave was safe.`,
-    ageRange: "6-10 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "ar",
-    sourceType: "curated",
-    authorName: "One Thousand and One Nights",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?w=800&h=600&fit=crop"
+    "title": "The Lion and the Mouse",
+    "fullContent": "Once upon a time, in a lush green forest, there lived a mighty lion. One day, while the lion was sleeping under a shade, a tiny mouse accidentally ran across his nose. The lion woke up with a loud roar and caught the little mouse with his paw. Trembling with fear, the mouse pleaded, \"Please, mighty lion, spare my life! I promise to help you one day in return.\" The lion laughed at the thought of the little mouse helping him, but he felt generous and let the mouse go. A few days later, the lion was caught in a hunter's net. He roared and struggled, but the net only tightened around him. Hearing the lion's cries, the mouse remembered his promise and ran to help. With his sharp little teeth, the mouse gnawed through the ropes, setting the lion free. The lion was so grateful that he said, \"Thank you, little mouse. You have saved my life today.\" They both realized that even the smallest friends can make a big difference. From that day on, the lion and the mouse were the best of friends, living happily in the forest.",
+    "summary": "A lion spares a mouse, who later returns the favor by freeing the lion from a net. Friendship grows between them, teaching that even the smallest creatures can make a big difference.",
+    "moral": "Even the smallest beings can make a big difference.",
+    "ageRange": "3-5 years",
+    "authorName": "Aesop",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-3f2d29?w=800"
   },
   {
-    title: "The Lion and the Mouse",
-    summary: "A tiny mouse helps a mighty lion, proving that even the smallest can be important.",
-    moral: "No act of kindness is ever wasted, and everyone can help, no matter how small.",
-    fullContent: `Once upon a time, a great lion was sleeping under a shady tree when a little mouse ran across his paw. The lion woke up and caught the mouse in his huge paw.
-
-"Please don't eat me!" squeaked the little mouse. "If you let me go, someday I might be able to help you!"
-
-The lion laughed at the very idea. "You? Help me? You're so tiny!" But he thought it was funny and let the mouse go.
-
-Several days later, the lion was walking through the jungle when he got caught in a hunter's net! The more he struggled, the tighter the ropes became. He roared loudly, but no one came to help.
-
-The little mouse heard the lion's roar and ran as fast as his tiny legs could carry him. When he saw the lion trapped in the net, he immediately started gnawing on the ropes with his sharp little teeth.
-
-He chewed and chewed, working his way through rope after rope. Finally, the net was weak enough for the lion to break free!
-
-"You laughed at me when I said I could help you," said the mouse. "But you see, even a tiny mouse can help a mighty lion!"
-
-The lion was very grateful. "You're right, little friend," he said. "I was wrong to think that only the big and strong can help others. Thank you for saving my life!"
-
-From that day on, the lion and the mouse were the best of friends. And the lion never again judged anyone by their size.`,
-    ageRange: "0-2 years",
-    language: "en",
-    isTranslated: true,
-    originalLanguage: "gr",
-    sourceType: "curated",
-    authorName: "Aesop",
-    likeCount: 0,
-    isPublic: true,
-    imageUrl: "https://images.unsplash.com/photo-1551269901-5c5e14c25df7?w=800&h=600&fit=crop"
+    "title": "The Town Mouse and the Country Mouse",
+    "fullContent": "Once upon a time, in a cozy little burrow in the countryside, there lived a sweet and simple country mouse named Clara. One sunny afternoon, Clara's cousin, Timmy the town mouse, came to visit. Timmy was amazed by the peaceful green fields and the gentle sounds of the countryside. He squeaked, 'Clara, you must come to town with me! It's lively and full of delicious treats!' Clara agreed to visit and off they went.\n\nUpon arriving in town, Clara was dazzled by the bright lights and bustling streets. Timmy led her to a grand dining hall where the table was filled with cheese, bread, and sweet fruits. Clara nibbled on the treats, her eyes sparkling with delight. But suddenly, a loud noise startled her. It was a cat prowling nearby! Clara scurried under the table, her heart pounding.\n\nTimmy chuckled, 'Don't worry, Clara! You'll get used to it.' But Clara shook her head. 'Timmy, thank you for showing me your world, but I miss the quiet of the countryside. I think I'd rather have my simple meals and peaceful nights than all these treats with danger lurking.'\n\nWith a hug, Clara said goodbye to Timmy and returned to her cozy home in the countryside. She curled up in her soft bed, listening to the gentle rustle of the leaves, grateful for the simple joys of her life.",
+    "summary": "Clara, a country mouse, visits her cousin Timmy in town. She enjoys the treats but is scared by the city's dangers. Clara realizes she prefers the peaceful countryside and returns home, valuing safety over excitement.",
+    "moral": "Sometimes, simple and safe is better than exciting but dangerous.",
+    "ageRange": "3-5 years",
+    "authorName": "Aesop",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-b5tvdh?w=800"
+  },
+  {
+    "title": "The Wise Fox and the Cheery Crow",
+    "fullContent": "Once upon a time, in a lush green forest, there lived a clever fox named Felix and a joyful crow named Clara. One sunny morning, Clara found a delicious piece of cheese and perched herself comfortably on a tree branch. As she admired her treasure, Felix, who was wandering nearby, spotted her and thought of a cunning plan. \n\nFelix called up to Clara, 'Oh, dear Clara, your feathers are so shiny, and your voice must be just as beautiful. Won't you sing a song for me?' Clara, flattered and proud, opened her beak to sing, and down fell the cheese! Quick as a flash, Felix caught the cheese and gobbled it up. \n\nClara fluttered down, a little sad but still cheerful. 'Well, I guess I learned something today,' she chuckled, 'next time, I’ll hold onto my cheese before I sing.' Felix, feeling a bit guilty, smiled and said, 'I’m sorry for tricking you, my friend. It was a clever trick, but let's be friends and share our stories instead.'\n\nFrom that day on, Felix and Clara became the best of friends, sharing their adventures and laughter. Felix learned not to trick others, and Clara learned to be cautious but never lost her joyful spirit. And so, the forest echoed with their laughter and songs, and they lived happily ever after.",
+    "summary": "In a forest, a clever fox named Felix tricks a joyful crow named Clara into dropping her cheese. Learning from this, Clara laughs it off, and Felix apologizes. They become friends, sharing stories and laughter, teaching us about the value of honesty and friendship.",
+    "moral": "Honesty and friendship bring true happiness, and being cautious is always wise.",
+    "ageRange": "3-5 years",
+    "authorName": "Aesop",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-en8s3j?w=800"
+  },
+  {
+    "title": "The Goose That Laid the Golden Eggs",
+    "fullContent": "Once upon a time, in a cozy little farm, there lived a kind farmer named Jack and his wife, Lily. They had a special goose that laid a beautiful golden egg every day. Each morning, Jack would collect the shimmering egg, and Lily would marvel at its beauty. They lived happily, grateful for the goose's magical gift. One night, Jack had a dream. He imagined that inside the goose were many golden eggs, just waiting to be collected all at once. When he woke up, he shared his dream with Lily. 'What if we could have all the golden eggs now?' he asked excitedly. Lily, being wise and gentle, shook her head. 'Our goose gives us a golden egg every day. Let's be patient and appreciate what we have,' she said softly. But Jack couldn't stop thinking about the golden eggs. His excitement grew, and he decided to look inside the goose. To his surprise, he found nothing special, just an ordinary goose. With tears in his eyes, Jack realized his mistake. He had lost the wonderful gift they had. Lily comforted him, reminding him of the love and happiness they still shared. From that day, Jack learned to be patient and grateful for the blessings in life. The farm was filled with laughter and love, and Jack and Lily lived happily ever after.",
+    "summary": "A farmer named Jack and his wife Lily had a goose that laid a golden egg every day. Eager for more, Jack looked inside the goose, only to lose their treasure. Realizing his mistake, he learned to be grateful for what he had, finding happiness in patience and love.",
+    "moral": "Be patient and appreciate what you have, for greed can lead to loss.",
+    "ageRange": "3-5 years",
+    "authorName": "Aesop",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-og3ux8?w=800"
+  },
+  {
+    "title": "The Gentle Sun and the Blustery Wind",
+    "fullContent": "Once upon a time, high in the sky, the North Wind and the Sun had a friendly debate about who was stronger. They decided to have a contest. Just below, a little traveler was walking along the path wearing a cozy coat. 'Let's see who can make the traveler remove his coat,' suggested the North Wind. The Sun agreed.\n\nThe North Wind went first. He huffed and puffed with all his might, blowing cold air and swirling leaves. But the harder the wind blew, the tighter the traveler wrapped his coat around himself.\n\nThen it was the Sun's turn. The Sun shone gently and warmly. The rays of the Sun touched the traveler like a soft hug. Soon enough, the traveler felt so warm and happy that he took off his coat.\n\nThe North Wind realized that sometimes gentleness is more effective than force. The Sun and the North Wind laughed together, learning an important lesson that day. And the little traveler continued on his way, content and cozy.\n\nAnd so, the Sun and the Wind became good friends, always remembering that gentle warmth can achieve what blustery force cannot.",
+    "summary": "The North Wind and the Sun had a contest to see who could make a traveler remove his coat. The Wind blew fiercely, but the traveler held tight. The Sun shone warmly, and the traveler happily removed his coat. The story shows that gentleness is often more effective than force.",
+    "moral": "Gentleness and kindness can achieve more than force and aggression.",
+    "ageRange": "3-5 years",
+    "authorName": "Aesop",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-c1ddbb?w=800"
+  },
+  {
+    "title": "The Dog and His Reflection",
+    "fullContent": "Once upon a time, in a quaint little village, there was a playful dog named Max. One sunny afternoon, Max found a juicy bone and was very excited. As he trotted home, he had to cross a sparkling stream. As Max looked down, he saw his reflection in the water. To his surprise, it looked like another dog with a bigger bone! Greedy Max thought, 'I want that bigger bone!' He barked at his reflection, hoping the other dog would drop the bone. But as he opened his mouth to bark, his own bone fell into the water and was lost forever. Max was very sad. He realized he should have been happy with what he had. From that day on, Max learned to appreciate the treasures he already had and shared happily with his friends.",
+    "summary": "Max the dog finds a bone and crosses a stream. He sees his reflection, thinks it's another dog with a bigger bone, and barks. His bone falls into the water, teaching Max to appreciate what he has.",
+    "moral": "Be happy with what you have and don't be greedy, or you might lose what you already possess.",
+    "ageRange": "3-5 years",
+    "authorName": "Aesop",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-uupxs?w=800"
+  },
+  {
+    "title": "The Fox and the Stork",
+    "fullContent": "Once upon a time, in a lush, green forest, lived a clever fox and a graceful stork. The fox, known for his tricks, invited the stork for dinner. \"Come, dear friend,\" he said, \"I have a delicious soup prepared just for us!\" The stork, flapping her long wings, gracefully accepted the invitation. But when she arrived at the fox's den, she found the soup served in shallow bowls. The fox licked up the soup easily, while the stork's long beak couldn't manage a single sip. The stork left hungry but politely thanked the fox and invited him for dinner the next day. When the fox came over, the stork served a tasty stew in tall, narrow jars. The stork dipped her beak happily, enjoying her meal, but the fox couldn't reach the stew with his snout. The fox realized his mistake and learned never to trick his friends again. From that day on, the fox and the stork shared meals that suited them both, becoming the best of friends. And in the quiet of the forest, they lived happily, learning the value of kindness and respect.",
+    "summary": "A fox plays a trick on a stork by serving soup in shallow bowls. The stork returns the favor with stew in tall jars. The fox learns a lesson about treating others kindly, and they become friends, sharing meals that suit them both.",
+    "moral": "Treat others as you wish to be treated.",
+    "ageRange": "3-5 years",
+    "authorName": "Aesop",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-ux9z?w=800"
+  },
+  {
+    "title": "The Clever Crow and the Pitcher",
+    "fullContent": "Once upon a time, in a sunlit meadow, there lived a clever crow named Corby. One hot summer's day, Corby was very thirsty and flew around searching for water. Finally, he spotted a pitcher with a little water at the bottom. Corby tried to reach the water, but his beak was too short. He thought for a moment and had a bright idea. Corby noticed some small pebbles nearby. He picked them up one by one and dropped them into the pitcher. With each pebble, the water rose a little higher. Corby continued patiently, and soon the water was within reach. He drank happily and flew away, feeling proud of his cleverness. From that day on, the animals in the meadow called him Corby the Wise Crow, and they knew that even small creatures could solve big problems if they used their wits.",
+    "summary": "Corby the clever crow finds a water-filled pitcher but can't reach the water. Using his wit, he drops pebbles into the pitcher, raising the water level and quenching his thirst. His cleverness shows that even small creatures can solve big problems.",
+    "moral": "With creativity and patience, any problem can be solved.",
+    "ageRange": "3-5 years",
+    "authorName": "Aesop",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-bmsr1xr?w=800"
+  },
+  {
+    "title": "The Clever Sheep and the Tricky Wolf",
+    "fullContent": "Once upon a time, in a sunny meadow, there lived a clever sheep named Sally. Sally loved to play with her friends and munch on the green grass. Nearby, a sly wolf watched them, wishing he could sneak into the meadow. One day, the wolf found a fluffy sheep's coat and thought, 'With this, I can trick the sheep!' He put it on and looked just like one of Sally's friends. As the sun began to set, the sheep gathered to go home. The wolf, in his disguise, joined them. But Sally noticed something strange about this new sheep. His paws were too big, and his eyes were too sharp. Sally whispered to her friends, 'Let's play a game of hide and seek!' Everyone loved games, so they agreed. As they scattered, Sally led the wolf to a hidden spot. 'You hide here,' she said with a smile, 'and we'll come find you!' The wolf, excited to catch them later, agreed. But instead of playing, Sally and her friends hurried home, leaving the wolf alone in the dark. The wolf realized he had been tricked and ran away, never to return. From that day on, Sally and her friends played happily and safely in the meadow.",
+    "summary": "Sally the sheep outsmarts a wolf in disguise by using a clever game of hide and seek to keep her friends safe. The wolf learns that honesty is better than tricks.",
+    "moral": "Being honest and true is always wiser than trying to deceive others.",
+    "ageRange": "3-5 years",
+    "authorName": "Aesop",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-hgy6?w=800"
+  },
+  {
+    "title": "The Bundle of Sticks",
+    "fullContent": "Once upon a time, in a cozy little village, there lived an old man with his three sons. The sons often quarreled and refused to work together. One day, the old man called them and handed each a single stick. \"Break it,\" he said. Snap! Each stick broke easily. Then, he handed them a bundle of sticks tied together. \"Now, try to break this.\" The sons struggled, but the bundle remained unbroken. The father smiled and said, \"My sons, if you stand united like this bundle, nothing can break you. But if you quarrel, you will be easily broken.\" From that day on, the brothers worked together, helping each other and living in harmony. Their village prospered, and the family was admired by all for their unity and love. And so, they lived happily ever after, knowing the strength of unity.",
+    "summary": "In a village, an old man teaches his quarrelsome sons the power of unity. When they try to break a bundle of sticks, they learn that together they are strong, but alone they are weak. They become united and live happily ever after.",
+    "moral": "Together we are strong; divided, we fall.",
+    "ageRange": "3-5 years",
+    "authorName": "Aesop",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-vpfdx?w=800"
+  },
+  {
+    "title": "The Three Little Pigs",
+    "fullContent": "Once upon a time, there were three little pigs who lived with their mother. One day, she said, 'You are growing up and need to build your own homes.' The first pig built a house of straw, the second a house of sticks, and the third a house of bricks. One day, a big bad wolf came by. He huffed and puffed and blew down the straw house. The first pig ran to his brother's stick house. The wolf huffed and puffed again and blew that house down too. Both pigs ran to their brother's brick house. The wolf tried to blow it down, but no matter how hard he huffed and puffed, the brick house stood strong. The frustrated wolf finally gave up and ran away. The three little pigs lived happily ever after in the safe, sturdy brick house, understanding the value of hard work and careful planning.",
+    "summary": "Three little pigs build houses of straw, sticks, and bricks. A big bad wolf blows down the straw and stick houses, but the brick house stands strong. The pigs learn that hard work and planning pay off.",
+    "moral": "Hard work and careful planning lead to success and safety.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-jge29z?w=800"
+  },
+  {
+    "title": "Goldilocks and the Three Bears",
+    "fullContent": "Once upon a time, in a cozy little cottage in the middle of the woods, there lived three bears: Papa Bear, Mama Bear, and Baby Bear. One sunny morning, they decided to go for a walk while their porridge cooled. Meanwhile, a curious little girl named Goldilocks wandered into the forest and discovered the bears' cottage. She knocked on the door, but no one answered. So, she let herself in. Inside, she saw three bowls of porridge. Goldilocks tasted the first bowl, but it was too hot. The second bowl was too cold. But the third bowl was just right, so she ate it all up! Feeling tired, Goldilocks found three chairs. The first chair was too big, the second was still too big, but the third chair was just right. She sat down and broke it! Finally, Goldilocks went upstairs and found three beds. The first bed was too hard, the second too soft, but the third bed was just right, and she fell fast asleep. Soon, the three bears returned home. 'Someone's been eating my porridge!' Papa Bear growled. 'Someone's been eating my porridge!' Mama Bear said. 'Someone's been eating my porridge, and it's all gone!' cried Baby Bear. They noticed the chairs and beds too. 'Someone's been sleeping in my bed, and she's still here!' exclaimed Baby Bear. Goldilocks woke up, saw the bears, and dashed out the door, never to return. From that day on, she learned to always be respectful of others' homes.",
+    "summary": "Goldilocks enters the home of three bears, eats their porridge, breaks a chair, and sleeps in their beds. When the bears return, she learns a lesson about respecting others' belongings.",
+    "moral": "Always be respectful of others and their belongings.",
+    "ageRange": "3-5 years",
+    "authorName": "Anonymous",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-ehmyg9?w=800"
+  },
+  {
+    "title": "Jack and the Magical Beanstalk",
+    "fullContent": "Once upon a time, in a cozy little village, there lived a boy named Jack. Jack and his mother were very poor and had nothing but a cow named Daisy. One day, Jack's mother asked him to sell Daisy at the market. On his way, Jack met a man who offered him five magic beans in exchange for Daisy. Jack, curious and full of wonder, accepted the trade and rushed home to show his mother. She was not pleased and tossed the beans out the window. \n\nThe next morning, Jack awoke to find a giant beanstalk stretching up into the clouds! Jack, brimming with adventure, climbed the beanstalk. At the top, he discovered a massive castle. Inside, Jack met a friendly giant who shared his treasures: a golden egg-laying hen and a magical harp that played the sweetest tunes.\n\nThe giant, seeing Jack's kindness, gifted him the hen and the harp, asking him to cherish them. Jack thanked the giant and returned home, where he and his mother lived happily ever after, never wanting for anything again.",
+    "summary": "Jack trades his cow for magic beans, growing a beanstalk to a giant's castle. With the giant's kindness, Jack receives a hen and harp, ensuring happiness for him and his mother.",
+    "moral": "Kindness and curiosity can lead to unexpected blessings.",
+    "ageRange": "3-5 years",
+    "authorName": "Joseph Jacobs",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-wuqd0h?w=800"
+  },
+  {
+    "title": "The Adventures of the Gingerbread Man",
+    "fullContent": "Once upon a time, in a cozy little kitchen, a kind old woman decided to bake a special treat. She carefully mixed the dough, cut out a little man's shape, and placed him in the oven. To her surprise, when she opened the oven door, the gingerbread man jumped out and ran away! 'Run, run, as fast as you can! You can't catch me, I'm the Gingerbread Man!' he sang. The old woman chased him, but he was too fast. He ran past a cow, a horse, and a farmer, each joining the chase. Finally, the Gingerbread Man reached a river and met a clever fox. 'I can help you cross,' said the fox. The Gingerbread Man hopped onto the fox's tail, then his back, and finally his nose. But just as they reached the other side, the fox snapped his mouth shut, and the Gingerbread Man was gone. And so, the little gingerbread adventure came to an end. But don't worry, the old woman baked another one the next day, who stayed safe in her cozy kitchen.",
+    "summary": "A Gingerbread Man escapes from an oven and outsmarts many, until he meets a clever fox. Despite his speed, the Gingerbread Man learns the hard way about trusting strangers. A new gingerbread friend is baked, safely staying home.",
+    "moral": "Be cautious about whom you trust, especially with strangers.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-ywt78b?w=800"
+  },
+  {
+    "title": "Puss in Boots and the Enchanted Castle",
+    "fullContent": "Once upon a time, in a quaint little village, there lived a clever cat named Puss. He belonged to a young miller's son who had little more than Puss to his name. One day, Puss said, 'Master, give me a pair of boots and trust me. I will make you rich.' The young man, curious and hopeful, agreed.\n\nPuss put on his shiny boots and set off on a journey to the enchanted castle. On his way, he caught a plump rabbit and presented it to the king, saying, 'A gift from my master, the Marquis of Carabas.' The king was delighted and thanked Puss warmly.\n\nPuss continued to impress the king with more gifts, each time speaking highly of his master, the Marquis of Carabas. One sunny day, Puss told his master to take a swim in the river. While he was swimming, Puss hid his clothes and called out for help as the king's carriage passed by.\n\n'Help!' cried Puss. 'The Marquis has been robbed!' The king, remembering the generous gifts, immediately offered new clothes and invited him to ride in his carriage.\n\nAs they traveled, Puss ran ahead to a grand castle owned by a wicked ogre. Puss cleverly tricked the ogre into turning into a tiny mouse, then pounced and gobbled him up! With the ogre gone, the castle was now free.\n\nPuss welcomed the king and his master to the castle, declaring it as the home of the Marquis of Carabas. The king was so impressed that he invited the young man to marry his daughter.\n\nTogether, they lived happily ever after, with Puss serving as their loyal and clever companion.",
+    "summary": "Puss, the clever cat, helps his young master by impressing the king and tricking an ogre, ultimately securing a castle and a royal marriage for his master. They all live happily ever after.",
+    "moral": "With cleverness and courage, you can overcome challenges and achieve great things.",
+    "ageRange": "3-5 years",
+    "authorName": "Charles Perrault",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-7r0b1b?w=800"
+  },
+  {
+    "title": "Little Red Riding Hood's Gentle Journey",
+    "fullContent": "Once upon a time, in a cozy village, there was a cheerful little girl named Little Red Riding Hood. She loved visiting her grandmother, who lived in a cottage deep in the forest. One sunny day, her mother packed a basket full of delicious treats and reminded her to stay on the path and be careful. Little Red Riding Hood skipped happily along the path, admiring the colorful flowers and listening to the birds sing.\n\nAs she journeyed through the forest, she met a friendly squirrel. \"Hello, Little Red Riding Hood!\" chirped the squirrel. \"Where are you going?\" She replied, \"I'm going to Grandma's house to bring her some treats.\" The squirrel nodded and reminded her to stay on the path.\n\nSoon, Little Red Riding Hood reached her grandmother's cottage. She knocked on the door and heard her grandmother's voice, \"Come in, dear!\" But when she entered, it wasn't her grandmother—it was the sneaky wolf in disguise! He had put on Grandma's nightgown and cap.\n\nLittle Red Riding Hood looked closely and said, \"What big eyes you have!\" The wolf replied, \"The better to see you with, my dear.\" She continued, \"What big ears you have!\" \"The better to hear you with,\" said the wolf. Finally, she exclaimed, \"What big teeth you have!\" The wolf grinned, \"The better to eat you with!\"\n\nJust then, her grandmother, who had hidden safely, appeared and scared the wolf away. The wolf dashed into the forest, never to be seen again. Little Red Riding Hood and her grandmother enjoyed the treats together, laughing and sharing stories. Little Red Riding Hood learned the importance of listening to her mother's advice and staying safe on her adventures.\n\nFrom that day on, she always stayed on the path and was ever so careful, ensuring every visit to Grandmother's was filled with joy and safety.",
+    "summary": "Little Red Riding Hood sets off to visit her grandmother, meeting a friendly squirrel along the way. She encounters a wolf in disguise but is saved by her clever grandmother. They share treats and stories, teaching Little Red Riding Hood the importance of safety and listening to advice.",
+    "moral": "Always listen to your elders and stay cautious to avoid danger.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-wsjhoe?w=800"
+  },
+  {
+    "title": "Cinderella's Magical Evening",
+    "fullContent": "Once upon a time, in a lovely village, there lived a kind girl named Cinderella. She lived with her stepmother and stepsisters, who were not very nice to her. One day, the king announced a grand ball, and everyone was invited. Cinderella's stepsisters went, but she was left behind. As she sat sadly, a magical fairy appeared. 'Don't worry, dear Cinderella,' she said, waving her wand. In an instant, Cinderella's rags turned into a beautiful dress, and a pumpkin turned into a sparkling carriage. 'But remember,' the fairy said, 'you must return by midnight.' At the ball, Cinderella danced with the prince, and they had a wonderful time. But as the clock struck twelve, she hurried away, leaving behind her glass slipper. The prince searched the kingdom for the girl who fit the slipper. When Cinderella tried it on, it fit perfectly! The prince and Cinderella were reunited, and they lived happily ever after.",
+    "summary": "Cinderella, a kind girl mistreated by her stepfamily, attends a royal ball with the help of a fairy godmother. She leaves behind a glass slipper, leading the prince to find her. They reunite and live happily ever after.",
+    "moral": "Kindness and patience lead to happiness and love.",
+    "ageRange": "3-5 years",
+    "authorName": "Charles Perrault",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-byy9a?w=800"
+  },
+  {
+    "title": "The Sleepy Princess",
+    "fullContent": "Once upon a time, in a faraway kingdom, there was a lovely princess named Aurora. On her birthday, a wicked fairy cast a spell causing Aurora to sleep for many years. But her fairy friends, Flora, Fauna, and Merryweather, softened the spell. They promised that Aurora would wake with a true love's kiss. Years passed, and the kingdom waited. One day, a brave prince rode through the forest and discovered the sleeping castle. He was enchanted by Aurora's beauty and gave her a gentle kiss. Magically, Aurora awoke, and the entire kingdom rejoiced. With laughter and music, the castle celebrated. Aurora and the prince became friends, and they often played in the garden with the fairies. Everyone was happy, and they all lived peacefully ever after.",
+    "summary": "Princess Aurora falls into a deep sleep due to a spell but is awakened by a prince's kiss. Her friends, the fairies, protect her, and the kingdom rejoices when she awakes. Aurora and the prince become friends and live happily in the kingdom. This tale teaches the power of friendship and love.",
+    "moral": "True love and friendship can overcome any obstacle, bringing joy and happiness.",
+    "ageRange": "3-5 years",
+    "authorName": "Perrault",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-6q6q7m?w=800"
+  },
+  {
+    "title": "Beauty and the Kind Beast",
+    "fullContent": "Once upon a time, in a quiet village, there was a kind girl named Beauty. She lived with her father and two sisters. One day, her father got lost in the forest and stumbled upon a mysterious castle. Inside the castle lived a Beast, who was sad and alone. The Beast let Beauty’s father go, but only if Beauty would visit him. When Beauty arrived at the castle, she was scared at first. But the Beast was kind and showed her the beautiful gardens and the library full of books. They spent many days talking and laughing together.\n\nAs time went by, Beauty realized that the Beast had a kind heart. She missed her family and asked to visit them. The Beast agreed but asked her to return soon. While at home, Beauty told her family about the kind Beast. Her sisters were jealous, but Beauty kept her promise and went back to the castle.\n\nWhen she returned, she found the Beast sad and lonely. Beauty realized she cared for him deeply. As she hugged him, a magical spell broke, and the Beast turned into a handsome prince! The prince explained that he was cursed and only true love could set him free. Beauty and the prince lived happily ever after, surrounded by love and friendship.",
+    "summary": "Beauty visits a lonely Beast in a magical castle. They become true friends, and Beauty's love breaks a spell, revealing a kind prince. They live happily, teaching us that kindness sees beyond appearances.",
+    "moral": "True beauty is found within, and kindness can break even the strongest curse.",
+    "ageRange": "3-5 years",
+    "authorName": "Gabrielle-Suzanne de Villeneuve",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-gt9rb?w=800"
+  },
+  {
+    "title": "Aladdin and the Magic Lamp",
+    "fullContent": "Once upon a time in a faraway land, there was a young boy named Aladdin. He lived with his mother in a small house. One day, Aladdin found a dusty old lamp. When he rubbed it, a magical genie appeared! The genie granted Aladdin three wishes. Aladdin wished for a beautiful palace, delicious food, and happiness for his mother. Aladdin's kind heart made him share his fortune with his friends and neighbors. Everyone in the town was happy and grateful. Aladdin learned that true happiness comes from caring for others. With the genie as his friend, Aladdin's life was filled with joy and friendship. And so, Aladdin and his mother lived happily ever after.",
+    "summary": "Aladdin finds a magic lamp and a genie grants him three wishes. He wishes for a palace, food, and happiness for his mother. By sharing his fortune, Aladdin discovers true happiness comes from caring for others. He lives happily ever after.",
+    "moral": "True happiness comes from kindness and sharing with others.",
+    "ageRange": "3-5 years",
+    "authorName": "Adapted from Arabian Nights",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-zczk64?w=800"
+  },
+  {
+    "title": "Le Petit Chaperon Rouge",
+    "fullContent": "Il était une fois, une petite fille appelée Le Petit Chaperon Rouge qui vivait avec sa maman près d'une grande forêt. Un jour, sa maman lui demanda d'apporter une galette et un petit pot de beurre à sa grand-mère malade qui habitait de l'autre côté de la forêt. En chemin, Le Petit Chaperon Rouge rencontra un loup. Le loup, curieux, lui demanda où elle allait. Elle répondit qu'elle rendait visite à sa grand-mère. Le loup, très rusé, proposa au Petit Chaperon Rouge de faire une course pour voir qui arriverait le premier chez la grand-mère. Le loup prit le chemin le plus rapide et arriva le premier. Il se déguisa en grand-mère et se coucha dans le lit. Quand Le Petit Chaperon Rouge arriva, elle trouva sa 'grand-mère' bien étrange avec de grandes oreilles, de grands yeux et de grandes dents. C'était le loup ! Mais heureusement, un bûcheron qui passait par là entendit les cris de la petite fille et vint à son secours. Il fit fuir le loup et sauva Le Petit Chaperon Rouge et sa grand-mère. Elles se promirent de toujours faire attention en traversant la forêt.",
+    "summary": "Le Petit Chaperon Rouge visite sa grand-mère malade et rencontre un loup rusé. Le loup essaie de la piéger, mais un bûcheron vient à leur secours. Elles apprennent à être prudentes.",
+    "moral": "Il est important de rester prudent et d'écouter les conseils des adultes.",
+    "ageRange": "3-5 years",
+    "authorName": "Charles Perrault",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-shrxv?w=800"
+  },
+  {
+    "title": "Cendrillon, la Douce Fille aux Pantoufles de Verre",
+    "fullContent": "Il était une fois, une gentille jeune fille nommée Cendrillon. Elle vivait avec sa méchante belle-mère et ses deux sœurs jalouses. Chaque jour, elle devait faire toutes les corvées de la maison pendant que ses sœurs se reposaient. Un jour, le roi organisa un grand bal et invita toutes les jeunes filles du royaume. Cendrillon rêvait d'y aller, mais sa belle-mère lui interdit. Alors qu'elle pleurait dans le jardin, une fée marraine apparut et transforma une citrouille en un magnifique carrosse, et des souris en beaux chevaux. Elle donna à Cendrillon une robe splendide et de délicates pantoufles de verre, mais lui dit de rentrer avant minuit. Cendrillon arriva au bal et tout le monde fut émerveillé par sa beauté. Le prince tomba amoureux d'elle instantanément. Mais quand l'horloge sonna minuit, Cendrillon s'enfuit en courant, laissant derrière elle une de ses pantoufles de verre. Le prince, déterminé à la retrouver, parcourut le royaume et fit essayer la pantoufle à toutes les jeunes filles. Finalement, il arriva chez Cendrillon. La pantoufle lui allait parfaitement, et elle et le prince vécurent heureux pour toujours.",
+    "summary": "Cendrillon, une jeune fille douce, aidée par sa fée marraine, se rend à un bal où elle enchante le prince. En s'enfuyant, elle perd une pantoufle de verre. Le prince la retrouve grâce à cette pantoufle, et ils vivent heureux pour toujours.",
+    "moral": "La gentillesse et la patience sont toujours récompensées.",
+    "ageRange": "3-5 years",
+    "authorName": "Charles Perrault",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-asts5r?w=800"
+  },
+  {
+    "title": "La Belle au bois dormant",
+    "fullContent": "Il était une fois, dans un royaume lointain, une belle princesse nommée Aurore. À sa naissance, une méchante fée lui jeta un sort : à ses 16 ans, elle se piquerait le doigt sur un fuseau et tomberait dans un profond sommeil. Heureusement, une gentille fée adoucit le sort, disant qu'Aurore se réveillerait par le baiser d'un prince. Les années passèrent, et Aurore grandit entourée d'amour et de magie. Mais le jour de ses 16 ans, le sort se réalisa. Tout le château sombra dans le sommeil. Un jeune prince, guidé par l'amour, brava les ronces et le silence pour atteindre Aurore. En lui donnant un doux baiser, il la réveilla, ainsi que tout le royaume. La joie et la lumière revinrent, et ils vécurent heureux pour toujours. Chaque soir, le royaume se souvenait de cette histoire, se rappelant que l'amour et la bonté triomphent toujours.",
+    "summary": "Dans un royaume lointain, la princesse Aurore tombe dans un sommeil profond à cause d'un sort. Un prince, guidé par l'amour, la réveille avec un baiser, et le royaume retrouve la joie.",
+    "moral": "L'amour et la bonté peuvent surmonter les défis les plus sombres.",
+    "ageRange": "3-5 years",
+    "authorName": "Charles Perrault",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-p8zgwp?w=800"
+  },
+  {
+    "title": "Le Chat Botté",
+    "fullContent": "Il était une fois un meunier qui, en mourant, laissa à son plus jeune fils un chat. Mais ce n'était pas un chat ordinaire; il était intelligent et rusé. Avec une paire de bottes et un sac, le chat se mit en route pour aider son maître. Il captura un lapin et l'offrit au roi en disant que c'était un cadeau de la part de son maître, le Marquis de Carabas. Petit à petit, grâce à ses ruses, le chat réussit à convaincre le roi que son maître était riche et important. Finalement, le roi invita le jeune homme à épouser sa fille. Grâce à l'ingéniosité du chat, son maître devint riche et heureux, vivant dans un grand château.",
+    "summary": "Un chat intelligent aide son maître à devenir riche et important grâce à ses ruses. En offrant des cadeaux au roi et en usant de son ingéniosité, le chat amène son maître à épouser la princesse, assurant ainsi leur bonheur.",
+    "moral": "La ruse et l'intelligence peuvent ouvrir les portes du succès.",
+    "ageRange": "3-5 years",
+    "authorName": "Charles Perrault",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-c8feio?w=800"
+  },
+  {
+    "title": "Les Fées",
+    "fullContent": "Il était une fois une gentille fille qui vivait avec sa cruelle belle-mère et sa méchante sœur. Un jour, elle alla puiser de l'eau à la fontaine. Là, elle rencontra une fée déguisée en vieille femme. Gentiment, elle offrit de l'eau à la vieille dame. En récompense, chaque mot qu'elle prononçait faisait tomber une fleur ou un bijou de sa bouche. Quand sa sœur jalouse tenta d'obtenir le même don, elle fut grossière avec la fée et fut maudite: chaque mot qu'elle disait produisait un serpent ou un crapaud. La gentille fille finit par vivre heureuse tandis que la sœur apprit à ses dépens qu'il fallait toujours être bienveillant.",
+    "summary": "Une gentille fille aide une fée déguisée en vieille femme et reçoit un don magique. Sa sœur jalouse, au contraire, est grossière et est maudite. La gentille fille vit heureuse, tandis que sa sœur apprend l'importance de la gentillesse.",
+    "moral": "La gentillesse et la générosité sont toujours récompensées.",
+    "ageRange": "3-5 years",
+    "authorName": "Charles Perrault",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-rbj3gq?w=800"
+  },
+  {
+    "title": "Le Petit Poucet et les Petits Cailloux",
+    "fullContent": "Il était une fois un petit garçon nommé Poucet, le plus jeune de sept frères. Sa famille était très pauvre, et un jour, ses parents décidèrent, à contrecœur, de les laisser dans la forêt. Mais Poucet était un enfant très rusé. Avant de partir, il ramassa de petits cailloux blancs et les mit dans sa poche. En marchant dans la forêt, il laissa tomber les cailloux sur le chemin. Quand la nuit tomba et que la lune éclaira le ciel, les cailloux brillèrent et Poucet guida ses frères vers la maison, suivant les petits cailloux scintillants. Leur maman et leur papa les accueillirent avec joie et promirent de ne plus jamais les abandonner. Ainsi, grâce à l'ingéniosité de Petit Poucet, lui et ses frères retrouvèrent le chemin de la maison et vécurent heureux.",
+    "summary": "Le Petit Poucet, un garçon rusé, guide ses frères perdus dans la forêt grâce à des cailloux blancs qu'il a laissés derrière lui. Ils retrouvent ainsi le chemin de la maison et sont réunis avec leurs parents.",
+    "moral": "La ruse et l'ingéniosité peuvent surmonter les difficultés.",
+    "ageRange": "3-5 years",
+    "authorName": "Charles Perrault",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-jbljc?w=800"
+  },
+  {
+    "title": "Barbe-Bleue et Le Secret du Château",
+    "fullContent": "Il était une fois un homme riche nommé Barbe-Bleue, connu pour sa grande maison mystérieuse. Un jour, il invita une jeune femme à visiter son château. Curieuse, elle accepta. Barbe-Bleue lui donna toutes les clés sauf une, expliquant qu'elle ne devait pas ouvrir une certaine porte. La jeune femme, cependant, était trop curieuse et ouvrit la porte interdite. Elle découvrit un trésor caché rempli de livres magiques et de jouets merveilleux. Barbe-Bleue, au lieu d'être en colère, sourit et dit : « Tu as découvert mon secret, mais tu as aussi découvert la magie du partage. Désormais, nous partagerons ce trésor avec tous nos amis. » Et ainsi, le château devint un lieu de joie et de jeu pour tous les enfants du village.",
+    "summary": "Une jeune femme découvre un trésor magique dans le château de Barbe-Bleue. Au lieu de colère, Barbe-Bleue choisit de partager la magie avec tous, transformant le château en lieu de bonheur.",
+    "moral": "La curiosité peut mener à de belles découvertes, et partager avec les autres rend la vie plus joyeuse.",
+    "ageRange": "3-5 years",
+    "authorName": "Charles Perrault",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-b29b3h?w=800"
+  },
+  {
+    "title": "Riquet à la Houpe",
+    "fullContent": "Il était une fois un petit prince nommé Riquet à la Houpe, qui était très intelligent mais peu attrayant. Dans un royaume voisin, vivait une princesse d'une grande beauté, mais qui avait du mal à comprendre les choses. Riquet avait le pouvoir d'offrir son intelligence à celle qu'il aimerait, et la princesse avait le pouvoir de rendre beau celui qu'elle aimerait. Un jour, Riquet rencontra la princesse et lui promit qu'elle serait aussi intelligente qu'elle était belle si elle acceptait de l'épouser dans un an. La princesse fut touchée par sa gentillesse et accepta. Durant l'année qui suivit, la princesse devint effectivement très intelligente et remarqua combien Riquet était bon et généreux. Quand l'année fut écoulée, elle réalisa qu'elle l'aimait vraiment et, par son amour, Riquet devint aussi beau que son cœur. Ils vécurent heureux ensemble, découvrant que l'amour et la gentillesse pouvaient transformer le monde autour d'eux.",
+    "summary": "Riquet à la Houpe, un prince intelligent mais peu attrayant, et une princesse belle mais distraite, découvrent que l'amour et la gentillesse peuvent transformer leur monde, les rendant heureux ensemble.",
+    "moral": "L'amour et la gentillesse peuvent révéler la beauté intérieure et changer notre perception du monde.",
+    "ageRange": "6-10 years",
+    "authorName": "Charles Perrault",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-fqxsic?w=800"
+  },
+  {
+    "title": "La Belle et la Bête",
+    "fullContent": "Il était une fois, dans un village pittoresque, une jeune fille nommée Belle. Belle aimait lire et rêver d'aventures. Un jour, son père se perdit dans la forêt et trouva refuge dans un château enchanté. Là, il fut capturé par une Bête mystérieuse. Pour sauver son père, Belle se proposa d'aller à sa place. Elle découvrit que la Bête n'était pas aussi effrayante qu'elle le semblait. Avec le temps, Belle et la Bête devinrent amis et partagèrent de nombreux moments de bonheur. Un jour, Belle réalisa que la Bête avait un cœur d'or et qu'elle l'aimait vraiment. Son amour brisa le sortilège, et la Bête redevint un prince charmant. Ils vécurent heureux, entourés des livres et des rires, dans le château devenu un véritable foyer.",
+    "summary": "Belle, une jeune fille, va vivre dans un château avec une Bête pour sauver son père. Elle découvre que sous l'apparence effrayante se cache un cœur gentil. Son amour brise le sortilège, transformant la Bête en prince. Ils vécurent heureux.",
+    "moral": "L'amour et la gentillesse peuvent révéler la vraie beauté au-delà des apparences.",
+    "ageRange": "3-5 years",
+    "authorName": "Gabrielle-Suzanne de Villeneuve",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-fdhj7s?w=800"
+  },
+  {
+    "title": "Blanche-Neige et les Sept Nains",
+    "fullContent": "Il était une fois, une jolie princesse nommée Blanche-Neige. Sa marâtre jalouse, la reine, voulait être la plus belle du royaume. Elle ordonna à un chasseur de conduire Blanche-Neige dans la forêt et de la faire disparaître. Mais le chasseur, au cœur tendre, la laissa s'échapper. Blanche-Neige trouva refuge chez sept nains gentils qui vivaient dans une petite maison. Un jour, la reine découvrit que Blanche-Neige était toujours en vie. Déguisée en vieille femme, elle offrit à Blanche-Neige une pomme empoisonnée. La princesse s'endormit profondément. Heureusement, un prince passant par là, éveilla Blanche-Neige d'un doux baiser. Ils vécurent heureux pour toujours, et la méchante reine ne fut jamais revue.",
+    "summary": "Blanche-Neige, une princesse, est sauvée par sept nains gentils après avoir échappé à sa marâtre jalouse. Endormie par une pomme empoisonnée, elle est réveillée par le baiser d'un prince et vit heureuse pour toujours.",
+    "moral": "La gentillesse et l'amour triomphent toujours du mal.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-zeej4c9?w=800"
+  },
+  {
+    "title": "Hansel et Gretel",
+    "fullContent": "Dans une petite maison près de la forêt, vivaient Hansel et Gretel avec leurs parents. Un jour, leur mère décida de les emmener dans la forêt profonde. Les enfants, courageux et rusés, laissèrent des petits cailloux blancs pour retrouver le chemin de la maison. Mais, la deuxième fois, ils ne trouvèrent que des miettes de pain qui avaient disparu. Perdus, ils errèrent jusqu'à une maison en pain d'épices. Curieux, ils s'approchèrent, et une vieille sorcière les invita à entrer. Mais elle n'était pas gentille et voulait les garder pour elle-même. Grâce à leur intelligence et leur courage, Hansel et Gretel réussirent à s'échapper et retrouvèrent le chemin de leur maison, avec des trésors que la sorcière avait cachés.",
+    "summary": "Hansel et Gretel se perdent en forêt mais découvrent une maison en pain d'épices. Grâce à leur intelligence et leur courage, ils échappent à une sorcière et rentrent chez eux, riches en trésors.",
+    "moral": "Ne jamais perdre espoir et utiliser l'intelligence pour surmonter les difficultés.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-ijt17?w=800"
+  },
+  {
+    "title": "Raiponce",
+    "fullContent": "Il était une fois, une jeune fille nommée Raiponce qui vivait dans une tour haute sans porte. Une méchante sorcière l'y avait enfermée. Raiponce avait de longs cheveux dorés qui descendaient jusqu'au sol. La sorcière montait dans la tour en s'accrochant aux cheveux de Raiponce. Un jour, un prince entendit la douce voix de Raiponce et fut curieux. Il découvrit la tour et appela Raiponce. Elle laissa tomber ses cheveux et le prince monta. Ils se lièrent d'amitié et chaque jour, le prince venait lui rendre visite. Un jour, la sorcière découvrit leurs rencontres et coupa les cheveux de Raiponce, l'emmenant dans un désert lointain. Pourtant, le prince ne perdit pas espoir. Après avoir erré pendant des jours, il retrouva Raiponce. Ensemble, ils retournèrent dans le royaume du prince, se marièrent et vécurent heureux pour toujours. Et la tour fut envahie par les fleurs, symbole de leur amour éternel.",
+    "summary": "Raiponce est enfermée dans une tour par une sorcière. Un prince la découvre et tombe amoureux. Après des aventures, ils se retrouvent et vivent heureux.",
+    "moral": "L'amour et la détermination surmontent tous les obstacles.",
+    "ageRange": "3-5 years",
+    "authorName": "Frères Grimm",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-lj54i?w=800"
+  },
+  {
+    "title": "Le Roi Grenouille",
+    "fullContent": "Il était une fois, dans un royaume lointain, une jeune princesse qui adorait jouer près d'une fontaine magique au fond d'une forêt. Un jour, alors qu'elle jouait avec sa balle dorée, celle-ci tomba dans l'eau. La princesse, désespérée, ne savait que faire. Soudain, une grenouille apparut et lui proposa de récupérer la balle en échange d'une promesse d'amitié. La princesse accepta, pensant que c'était une simple promesse. La grenouille plongea dans l'eau et remonta avec la balle. Mais lorsque la grenouille demanda à partager les repas et les jeux de la princesse, celle-ci était d'abord réticente. Au fil des jours, la princesse découvrit que la grenouille était gentille et amusante. Un soir, elle lui donna un baiser de bonne nuit. À cet instant, la grenouille se transforma en un prince charmant! Il expliqua qu'il avait été ensorcelé et que seule l'amitié sincère pouvait briser le sort. La princesse et le prince devinrent les meilleurs amis et vécurent de nombreuses aventures ensemble dans le royaume enchanté.",
+    "summary": "Une princesse rencontre une grenouille près d'une fontaine magique. Après avoir promis de devenir amie avec elle, elle découvre que la grenouille est en fait un prince ensorcelé. Leur amitié sincère brise le sort et ils vivent heureux ensemble.",
+    "moral": "L'amitié sincère et la bonté de cœur peuvent briser les sorts les plus puissants.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-vh38xs?w=800"
+  },
+  {
+    "title": "Le Petit Lutin et la Fille du Meunier",
+    "fullContent": "Il était une fois, une jeune fille dont le père était meunier. Un jour, il dit au roi que sa fille pouvait filer de la paille en or. Le roi, curieux, fit venir la fille dans son château. Il lui donna une pièce remplie de paille et lui ordonna de la transformer en or avant le lever du soleil. La fille était désespérée, mais soudain, un petit lutin apparut. Il lui proposa de l'aider en échange de son collier. Elle accepta et le lutin transforma toute la paille en or. Le lendemain matin, le roi fut émerveillé et demanda encore plus d'or. La fille dut demander l'aide du lutin à nouveau, cette fois en échange de sa bague. Le roi, toujours avide, demanda une troisième fois de l'or. Cette fois, le lutin demanda le premier enfant de la fille comme prix pour son aide. Désespérée, elle accepta. Quand elle devint reine et eut un enfant, le lutin revint. Il lui donna trois jours pour deviner son nom afin de garder son enfant. La reine envoya quelqu'un espionner le lutin et découvrit qu'il s'appelait \"Rumpelstiltskin\". En entendant son nom, le lutin disparut pour toujours, et la reine vécut heureuse avec son enfant.",
+    "summary": "Une meunière doit transformer la paille en or avec l'aide d'un lutin. Après avoir promis son enfant, elle découvre son nom pour le sauver. Elle vit ensuite heureuse avec son enfant.",
+    "moral": "La ruse et le courage peuvent nous aider à surmonter les difficultés.",
+    "ageRange": "3-5 years",
+    "authorName": "Frères Grimm",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-pi52g?w=800"
+  },
+  {
+    "title": "Les Musiciens de Brême",
+    "fullContent": "Il était une fois un âne qui travaillait dur pour son maître. Mais il était devenu vieux et faible. Un jour, il décida de partir pour Brême pour devenir musicien. En chemin, il rencontra un chien fatigué, un chat triste et un coq qui chantait pour la dernière fois. Tous avaient des maîtres qui ne les voulaient plus. Ensemble, ils décidèrent de former un groupe musical et de s'entraider. En marchant vers Brême, ils trouvèrent une petite maison éclairée dans la forêt. Curieux, ils regardèrent par la fenêtre et virent des voleurs partageant un repas. Les animaux eurent une idée: ils se mirent à chanter fort ensemble. Les voleurs, effrayés par ce bruit étrange, s'enfuirent dans la nuit. Heureux d'avoir trouvé un foyer, les quatre amis décidèrent de rester dans la maison pour toujours, chantant et vivant en paix.",
+    "summary": "Quatre animaux, un âne, un chien, un chat et un coq, s'unissent pour devenir musiciens à Brême. Ensemble, ils chassent des voleurs d'une maison et y trouvent un foyer.",
+    "moral": "L'union fait la force, et ensemble, nous pouvons surmonter les défis.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-ppig8b?w=800"
+  },
+  {
+    "title": "Le Vaillant Petit Tailleur",
+    "fullContent": "Il était une fois un petit tailleur qui, un jour, réussit à tuer sept mouches d'un coup pendant qu'il mangeait sa tartine de confiture. Fier de son exploit, il fabriqua une ceinture sur laquelle il broda 'Sept d'un coup !'. Le tailleur, plein de courage, partit à l'aventure avec sa ceinture. Sur son chemin, il rencontra un géant. Le géant, impressionné par la ceinture, pensa que le tailleur était un puissant guerrier. Le petit tailleur usa de ruse et d'intelligence pour surmonter les défis que le géant lui imposa, comme jeter une pierre très loin. Le géant, trompé, laissa le tailleur continuer son chemin. Le petit tailleur poursuivit ses aventures, utilisant son esprit vif et sa ceinture pour gagner le respect et l'admiration de tous. Finalement, il devint un héros dans tout le royaume, prouvant que même le plus petit d'entre nous peut accomplir de grandes choses avec courage et intelligence.",
+    "summary": "Un petit tailleur rusé, après avoir tué sept mouches d'un coup, part à l'aventure avec sa ceinture 'Sept d'un coup !'. Grâce à son esprit vif, il surmonte les défis d'un géant et devient un héros dans le royaume.",
+    "moral": "Le courage et l'intelligence peuvent transformer les plus petits en grands héros.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-hh6dvh?w=800"
+  },
+  {
+    "title": "Le Loup et les Sept Chevreaux",
+    "fullContent": "Il était une fois une maman chèvre qui avait sept petits chevreaux. Un jour, elle leur dit : 'Je dois aller au marché, mais faites attention au loup. Il a une voix rauque et des pattes sombres.' Les chevreaux promirent d'être prudents. Peu après son départ, le loup frappa à la porte. 'Ouvrez, mes chers enfants, c'est votre maman !' dit-il d'une voix douce. Mais les chevreaux répondirent : 'Non, tu n'es pas notre maman ! Ta voix est rauque.' Le loup alla chez un apiculteur pour adoucir sa voix avec du miel. Il revint et chanta encore : 'Ouvrez, mes chers enfants, c'est votre maman !' Les chevreaux hésitèrent mais demandèrent de voir sa patte. Le loup, malin, avait mis de la farine sur sa patte pour la rendre blanche. En croyant que c'était leur maman, les chevreaux ouvrirent la porte. Le loup entra et chassa les chevreaux, sauf le plus jeune qui se cacha dans l'horloge. Quand la maman chèvre revint, elle trouva la maison en désordre et chercha ses enfants. Le plus jeune sortit de sa cachette et lui raconta tout. Ensemble, ils partirent à la recherche du loup. Ils le trouvèrent endormi sous un arbre et libérèrent les chevreaux qu'il avait avalés. Heureux d'être à nouveau réunis, ils rentrèrent chez eux et vécurent en paix.",
+    "summary": "Une maman chèvre met en garde ses sept chevreaux contre le loup. Malgré leurs précautions, le loup rusé les trompe. Seul le plus jeune échappe et, avec l'aide de sa maman, sauve ses frères. Ensemble, ils vivent heureux.",
+    "moral": "Il est important d'être prudent et de ne pas se fier aux apparences.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-bth8h?w=800"
+  },
+  {
+    "title": "L'Oie d'Or",
+    "fullContent": "Il était une fois un jeune garçon nommé Jean, qui était très gentil mais souvent négligé par sa famille. Un jour, il rencontra un vieil homme dans la forêt. Par bonté, Jean partagea son maigre repas avec lui. En récompense, le vieil homme lui donna une oie aux plumes d'or. Jean rentra chez lui, et tout le village fut émerveillé par l'oie brillante. La famille de Jean, qui avait toujours été avide, essaya de s'emparer de l'oie, mais ils restèrent collés à elle. Jean continua sa route avec l'oie et les villageois collés, jusqu'à ce qu'il arrive dans un royaume où la princesse était triste. La vue de ce spectacle farfelu la fit rire pour la première fois depuis longtemps. Le roi, reconnaissant, offrit à Jean une grande récompense et la main de sa fille. Jean et la princesse vécurent heureux, tandis que sa famille apprit l'importance de la gentillesse.",
+    "summary": "Jean, un garçon gentil, reçoit une oie d'or magique après avoir partagé son repas. Sa famille avide reste collée à l'oie. Finalement, la princesse rit et Jean gagne une récompense royale. La gentillesse triomphe.",
+    "moral": "La gentillesse et la générosité sont toujours récompensées.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-0zllkvn?w=800"
+  },
+  {
+    "title": "Le Pêcheur et sa Femme",
+    "fullContent": "Il était une fois un pêcheur qui vivait avec sa femme dans une petite cabane près de la mer. Un jour, il attrapa un poisson merveilleux qui pouvait parler. Le poisson lui demanda de le relâcher, et en retour, il réaliserait un souhait. Le pêcheur accepta et rentra chez lui. Sa femme, avide, lui demanda de retourner voir le poisson pour qu'il leur donne une belle maison. Le poisson exauça le souhait. Mais la femme n'était pas satisfaite et demanda à chaque fois davantage : un château, puis être reine, et enfin, elle voulait être aussi puissante que le soleil et la lune. Le poisson, fatigué de tant de demandes, fit tout disparaître, et le pêcheur et sa femme se retrouvèrent dans leur petite cabane. Ils comprirent alors qu'ils devaient être heureux avec ce qu'ils avaient.",
+    "summary": "Un pêcheur trouve un poisson magique qui exauce les souhaits. Sa femme, avide, demande toujours plus, jusqu'à ce que tout disparaisse. Ils apprennent à apprécier ce qu'ils ont.",
+    "moral": "Apprécie ce que tu as et ne sois pas trop avide.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "fr",
+    "isTranslated": false,
+    "originalLanguage": "fr",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-58e39p?w=800"
+  },
+  {
+    "title": "Rapunzel's Escape",
+    "fullContent": "Once upon a time, in a land far away, there lived a girl named Rapunzel who had the most beautiful, golden hair. She was held captive in a tall tower by a wicked witch. The tower had no stairs or door, just one window at the very top. Every day, the witch would call, 'Rapunzel, Rapunzel, let down your hair!' Rapunzel would lower her long hair down so the witch could climb up.\n\nOne day, a kind prince heard Rapunzel singing and was drawn to her beautiful voice. He watched the witch climb up and decided to visit when she left. Using the same words, 'Rapunzel, Rapunzel, let down your hair!' he climbed up to meet her.\n\nRapunzel was surprised but happy to have a visitor. They talked and laughed, and soon, they became friends. The prince promised to help her escape. He visited her every day, bringing her pieces of silk so she could weave a ladder.\n\nFinally, the ladder was ready. One starry night, Rapunzel climbed down with the prince. They rode away to his kingdom where Rapunzel was free at last.\n\nFrom that day on, Rapunzel and the prince lived happily ever after, surrounded by love and laughter.",
+    "summary": "Rapunzel, trapped in a tower by a witch, is discovered by a kind prince. He helps her escape by bringing silk to weave a ladder. They find freedom and happiness together.",
+    "moral": "True friendship and kindness can overcome even the tallest obstacles.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-qu1ujci?w=800"
+  },
+  {
+    "title": "The Little Helper and the Golden Straw",
+    "fullContent": "Once upon a time, in a small village, there lived a kind miller with a daughter named Ella. One sunny day, the miller boasted to the king that Ella could spin straw into gold. Hearing this, the king summoned Ella to the castle and led her to a room filled with straw. ‘Spin it into gold by morning, or you will stay here forever,’ he said.\n\nElla sat in the room, feeling worried and alone. Suddenly, a tiny little man appeared with a twinkle in his eye. ‘I can help you spin this straw into gold,’ he offered, ‘but what will you give me in return?’ Ella thought for a moment and gave him her necklace.\n\nThe little man worked all night, and by morning, the room sparkled with gold. The king was amazed and decided to test Ella again, placing her in a larger room with more straw. The little man appeared once more and asked for Ella's ring. She agreed, and again, by morning the room was filled with shining gold.\n\nOn the third night, the king led Ella to an enormous room of straw. This time, Ella had nothing left to give the little man. ‘Promise me your firstborn child when you become queen,’ the little man suggested. Ella hesitated but agreed.\n\nYears later, Ella became queen and had a beautiful baby. The little man returned to claim his promise. Ella was sad, so the little man offered to let her keep her child if she could guess his name in three days. Ella thought hard and finally guessed, ‘Rumpelstiltskin!’\n\nThe little man stomped his feet in surprise and vanished forever, leaving the queen and her baby to live happily ever after.",
+    "summary": "Ella, a miller's daughter, must spin straw into gold for the king. A tiny helper aids her in exchange for promises. When he claims her future child, Ella guesses his name, Rumpelstiltskin, freeing herself and living happily ever after.",
+    "moral": "Promises should be made carefully, and clever thinking can solve big problems.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-me60k?w=800"
+  },
+  {
+    "title": "The Clever Little Kids and the Big Bad Wolf",
+    "fullContent": "Once upon a time, in a cozy little cottage by the forest, lived a mother goat and her seven playful kids. One sunny morning, Mother Goat needed to go to the market, so she gathered her little ones and said, \"Beware of the big bad wolf. Don’t open the door unless you hear my sweet voice and see my white hooves!\" The kids nodded, promising to be careful.\n\nOff went Mother Goat, and the kids busied themselves with games and laughter. Suddenly, there was a knock at the door. \"Let me in, dear children. It’s your mother!\" said a gruff voice. The kids peeked through the crack in the door and saw big, dark paws. \"No! You’re not our mother!\" they cried. \"She has white hooves!\"\n\nThe wolf huffed and puffed, but the clever kids wouldn’t be tricked. He tried again, rubbing flour on his paws to look like Mother Goat. He knocked and spoke in a softer voice. \"Let me in, dear children.\" But the kids were still cautious. They asked the wolf to show his paws through the window. Seeing his trick, they shouted, \"Go away, you’re the wolf!\"\n\nThe wolf was very angry, but he couldn’t fool the clever kids. Finally, Mother Goat returned from the market and hugged her smart little ones tight. They told her everything, and she said, \"I’m so proud of you all!\"\n\nFrom then on, the kids always remembered their mother’s wise words and stayed safe and happy in their cozy cottage.",
+    "summary": "A mother goat warns her kids about a tricky wolf. The wolf tries different ways to fool them, but the clever kids stay safe by recognizing their mother's voice and paws. Mother Goat returns and praises her children for their wisdom.",
+    "moral": "Always listen to your parents' advice and trust your instincts to stay safe.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-uojlyv?w=800"
+  },
+  {
+    "title": "The Golden Goose",
+    "fullContent": "Once upon a time, in a little village, there was a kind-hearted boy named Timothy. One day, while wandering through the forest, he found a beautiful golden goose. To his surprise, the goose laid golden eggs! Timothy decided to take the goose home to show his family. Along the way, many people tried to take the goose, but as soon as they touched it, they stuck to it like glue. Despite the chaos, Timothy remained calm and continued his journey. When he reached the village, everyone was amazed by the golden goose. Timothy, always kind and generous, shared the golden eggs with everyone, bringing joy and happiness to all. The villagers learned to appreciate the magic of kindness and unity, and they lived happily ever after.",
+    "summary": "Timothy finds a golden goose in the forest. As people try to take it, they stick to it, creating a funny procession. Timothy's kindness brings joy to his village when he shares the golden eggs.",
+    "moral": "Kindness and generosity bring happiness to everyone.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-ijpd4?w=800"
+  },
+  {
+    "title": "Tom Thumb's Big Adventure",
+    "fullContent": "Once upon a time, in a cozy cottage, there lived a couple who wished for a child. One day, they were blessed with a tiny boy no bigger than a thumb. They named him Tom Thumb. Despite his size, Tom was clever and brave! When his parents went to the market, Tom rode on a horse's ear to guide them. One day, Tom was swallowed by a cow! But being smart, he tickled the cow's tummy until it sneezed him out. Later, he was captured by a bird but cleverly escaped by tickling its feet, causing it to drop him gently to the ground. Through all his adventures, Tom returned safely to his loving parents. They hugged him tightly, happy to have their little hero back. Tom's parents realized that even the smallest person could have the biggest heart. And they lived happily ever after in their cozy cottage.",
+    "summary": "Tom Thumb, tiny as a thumb, had big adventures. He guided his parents to the market, got swallowed by a cow, and was taken by a bird. Cleverly, he escaped each time and returned home safely. His family learned that even small people can have big hearts.",
+    "moral": "No matter how small you are, your courage and wit can help you overcome any challenge.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-cop3do?w=800"
+  },
+  {
+    "title": "The Fisherman and His Wife",
+    "fullContent": "Once upon a time, there was a kind fisherman who lived with his wife in a small cottage by the sea. One day, he caught a magical fish that could speak. 'Please let me go,' the fish said, 'and I will grant you any wish.' The fisherman, being kind-hearted, let the fish swim away, and he wished for nothing. But when he told his wife, she wanted a bigger house. The fisherman went back to the sea, and the magical fish granted her wish. Each time his wife wished for more—a castle, to be queen, and even to rule the world. But with every wish, the sea grew darker and stormier. Finally, when she wished to be like a god, the sea roared, and they lost everything, returning to their small cottage. The fisherman and his wife learned that being happy with what you have is the greatest treasure of all.",
+    "summary": "A fisherman catches a magical fish that grants wishes. His wife's growing greed leads to losing everything. They learn to be content with what they have.",
+    "moral": "Be happy with what you have, and don't let greed take over your heart.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-mus5a8?w=800"
+  },
+  {
+    "title": "The Journey of the Animal Friends",
+    "fullContent": "Once upon a time, in a cozy little village, there lived a donkey, a dog, a cat, and a rooster. They were all getting old and their owners didn't need them anymore. So, they decided to set off together to the town of Bremen to become musicians. As they walked through the forest, they sang joyful songs. The donkey brayed, the dog barked, the cat meowed, and the rooster crowed. \n\nOne night, as they were resting under a big tree, they spotted a little house with a warm light glowing inside. Curious, they peeked through the window and saw some robbers counting their gold. The animals decided to scare the robbers away and have a safe place to sleep. \n\nTogether, they made a plan. The donkey stood on his hind legs, the dog climbed onto his back, the cat perched on the dog, and the rooster flew up to the top. At the count of three, they all made their loudest sounds! The donkey brayed, the dog barked, the cat meowed, and the rooster crowed. The robbers were so frightened by the noise and shadows that they ran away into the forest!\n\nThe animal friends were so happy and proud of their cleverness. They settled into the cozy house, where they sang and played music every night. Though they never made it to Bremen, they found a new home and happiness together. \n\nAnd from that day on, they lived as the happiest animal musicians anyone had ever seen.",
+    "summary": "Four aging animals—a donkey, dog, cat, and rooster—set off to become musicians in Bremen. On their journey, they scare away robbers from a cozy house and decide to live there, happy and safe.",
+    "moral": "Teamwork and friendship can help overcome any obstacle.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-dl1rqp?w=800"
+  },
+  {
+    "title": "The Twelve Brothers",
+    "fullContent": "Once upon a time, there lived a king and queen who had twelve sons. The king worried that if his next child was a girl, she would take the throne from the boys. He told the queen if a girl was born, the boys must leave. When a baby girl, named Lily, was born, the brothers were sent away. As the years passed, Lily grew curious about her lost brothers. She journeyed into the forest and found them living in a little house. Overjoyed, the brothers welcomed her. But a spell was cast on them, turning them into birds. Lily, determined to save them, gathered twelve lilies and stayed silent for twelve years. Her love and dedication broke the spell, turning her brothers back into humans. They returned home, and the king realized the value of family. The brothers and Lily lived happily ever after, always cherishing their bond.",
+    "summary": "A princess named Lily finds her twelve brothers in the forest after they are sent away. When a spell turns them into birds, she saves them with love and courage, breaking the spell and reuniting the family.",
+    "moral": "Love and determination can overcome any challenge.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-6jxko5?w=800"
+  },
+  {
+    "title": "The Secret of the White Snake",
+    "fullContent": "Once upon a time, in a peaceful kingdom, there was a kind king who had a secret. Every night, he enjoyed a special dish—a white snake. This gave him the ability to understand animals. One day, a young servant discovered the secret when he tasted the dish out of curiosity. Suddenly, he could hear the birds chirping about a lost golden ring! Determined to help, the servant listened to the animals and found the ring hidden in a duck's nest. The grateful king rewarded him with a small bag of gold. With this gift, the servant traveled the world, using his newfound talent to help animals and people alike. He saved bees, rescued fish, and even helped a princess in distress. Each kind act brought him joy and happiness. In the end, the servant returned to the kingdom, where he was celebrated for his bravery and kindness. He lived happily, always listening to the whispers of his animal friends.",
+    "summary": "A kind servant learns to understand animals after tasting a magical dish. He helps find a lost ring and uses his gift to aid creatures and people, earning happiness and respect.",
+    "moral": "Kindness and curiosity can lead to unexpected adventures and rewards.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-esrcwe?w=800"
+  },
+  {
+    "title": "The Helpful Elves and the Grateful Shoemaker",
+    "fullContent": "Once upon a time, in a small village, there lived a kind shoemaker and his wife. The shoemaker worked hard but had little to show for it. One night, with just enough leather for one last pair of shoes, he cut out the pieces and left them on his workbench. To his surprise, the next morning, a beautiful pair of shoes sat in their place. The shoemaker and his wife were amazed! That day, a customer bought the shoes for a good price, allowing the shoemaker to buy more leather.\n\nThe shoemaker prepared the leather again and left it out overnight. To his delight, he found two pairs of shoes the next morning. This continued night after night. Every day brought more shoes, more customers, and more happiness.\n\nCurious about who was helping them, the shoemaker and his wife decided to stay awake one night. They quietly hid in a corner and watched as two tiny elves appeared. The elves sang softly while stitching and crafting the shoes with great skill.\n\nThe shoemaker and his wife were deeply grateful. To thank the elves, they made tiny clothes and shoes for them. That night, they left the gifts on the workbench. When the elves arrived, they were thrilled. They danced with joy and put on the new clothes before disappearing into the night.\n\nFrom that day on, the shoemaker and his wife never saw the elves again, but their shoemaking business flourished. They often remembered the kind elves who had helped them and felt grateful for their magical friends.",
+    "summary": "A kind shoemaker and his wife are helped by elves who secretly make shoes during the night. Grateful for the elves' help, the couple makes tiny clothes as a thank you. The elves happily accept the gifts and leave, but the shoemaker's business continues to thrive, reminding them of the elves' kindness.",
+    "moral": "Kindness and gratitude can bring unexpected help and happiness.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-hspdq?w=800"
+  },
+  {
+    "title": "Rapunzel's Gentle Escape",
+    "fullContent": "Once upon a time, in a faraway land, there was a beautiful girl named Rapunzel with long, golden hair that shimmered like the sun. She lived in a tall tower deep within the forest, where an enchantress had placed her. Every day, Rapunzel would sing sweet songs that floated through the trees, bringing joy to all who heard. One day, a kind prince heard her lovely voice and decided to find its source. He discovered the tower and saw Rapunzel looking out of the window. Captivated by her beauty, he called out to her, and Rapunzel let down her long hair so the prince could climb up. They became friends and shared stories, laughter, and dreams. The prince promised to return and help Rapunzel see the world beyond the tower. With the prince's help, Rapunzel found the courage to leave the tower and explore the beauty that awaited her. Together, they journeyed through the forest, discovering magical places and making new friends. Rapunzel found happiness and freedom, and they lived joyfully ever after, cherishing each moment of their newfound adventure.",
+    "summary": "Rapunzel, a girl with golden hair, lived in a tower. A prince, charmed by her singing, found her and helped her escape. They journeyed together, discovering magical places and making new friends. Rapunzel found happiness and freedom, living joyfully ever after.",
+    "moral": "Friendship and courage can help you find freedom and happiness.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-1zsnv?w=800"
+  },
+  {
+    "title": "The Little Straw Weaver",
+    "fullContent": "Once upon a time, in a little village, there was a miller's daughter named Emma. Her father, wanting to impress the king, told a tale that Emma could spin straw into gold. The king, curious and intrigued, summoned her to the castle. He set her in a room full of straw and asked her to spin it into gold by morning. Emma was worried, as she didn't know how to do such a thing. Suddenly, a tiny, mysterious man appeared. He offered to help her in exchange for her bracelet. Reluctantly, Emma agreed. The little man spun the straw into beautiful gold. The next day, the king was amazed but wanted more. Again, Emma was sent to a larger room with more straw. The little man appeared once more and this time asked for her necklace. Emma agreed, and once again, the straw turned to gold. On the third day, the king demanded even more. Emma was left in a huge room filled with straw. The little man appeared and asked for her firstborn child. Emma hesitated but agreed, thinking it would never happen. Years later, Emma, now a queen, had a baby. The little man returned to claim his promise. Heartbroken, Emma pleaded with him. He agreed to let her keep her child if she could guess his name. For days, Emma tried to guess, but nothing worked. Finally, she overheard the little man singing his name in the woods: Rumpelstiltskin. When she guessed his name correctly, he disappeared forever, and Emma lived happily with her family.",
+    "summary": "Emma, a miller's daughter, must spin straw into gold with the help of a mysterious man. She promises him her firstborn but later discovers his name, Rumpelstiltskin, setting her free. Emma's cleverness helps her keep her child and live happily ever after.",
+    "moral": "Promises should be made carefully, and cleverness can help solve difficult problems.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-sw5f4?w=800"
+  },
+  {
+    "title": "The Wise Little Kids and the Clever Wolf",
+    "fullContent": "Once upon a time, in a cozy little house, there lived a mother goat and her seven young kids. One day, before heading to the market, Mother Goat warned her kids about the big bad wolf who loved to trick little goats. 'Remember, never open the door unless you hear my sweet voice and see my white paws,' she said. Off she went, leaving the kids safe inside. The wolf, who had been listening, decided to pretend to be Mother Goat. He knocked on the door and tried to sound like her, but his voice was too rough. So, he ate some honey to soften it. Then, he knocked again and said, 'Dear children, let me in!' The kids were cautious and asked to see his paws. But the wolf's dark paws gave him away. Determined, the wolf found some flour and dusted his paws to make them look white. This time, when he knocked, the kids saw the white paws and opened the door. The wolf rushed in, but the clever little kids quickly hid. The youngest kid hid inside the clock. Later, Mother Goat returned and found the house in disarray. The youngest kid emerged and told her everything. Together, they found the wolf sleeping under a tree and gently cut him open. Out came the other kids, safe and sound. They filled the wolf's belly with stones and stitched him up again. When the wolf awoke, he felt thirsty and went to the river. The weight of the stones made him topple into the water, never to bother the little goats again. The family lived happily ever after, always remembering the importance of being cautious.",
+    "summary": "A mother goat warns her kids about a tricky wolf. The wolf disguises himself, but the kids stay cautious. When fooled, they hide, and their mother saves them. They trick the wolf into leaving forever, living happily ever after.",
+    "moral": "Always be cautious and listen to your parents' advice.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-u2nlq?w=800"
+  },
+  {
+    "title": "Tiny Tom's Great Adventure",
+    "fullContent": "Once upon a time, in a cozy little cottage, there lived a couple who wished for a child. One day, their wish came true, and they had a son as tiny as a thumb! They named him Tom Thumb. Despite his size, Tom was brave and curious. One sunny day, he decided to explore the world. He climbed onto a horse's ear and whispered directions, leading the horse through the fields. As he traveled, Tom met a friendly butterfly who offered to show him the garden. They played among colorful flowers and danced in the gentle breeze. When the sun began to set, Tom realized it was time to go home. The butterfly carried him back to his parents, who hugged him tightly. Tom had a big heart and a sense of adventure, proving that even the smallest person can have a great adventure. And so, Tom Thumb lived happily ever after, exploring and learning more about the world around him.",
+    "summary": "Tiny Tom Thumb, a brave and curious boy, embarks on an adventure, riding a horse and befriending a butterfly. He explores the garden and returns home safely, showing that even the smallest person can have big adventures and a big heart.",
+    "moral": "Even the smallest among us can have the biggest adventures if they are brave and curious.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-vmen42?w=800"
+  },
+  {
+    "title": "The Bremen Town Musicians",
+    "fullContent": "Once upon a time, there was a donkey who had grown old and could no longer carry heavy loads. His owner decided to get rid of him, but the donkey had other plans. He set off to Bremen to become a musician. On his way, he met a tired dog, a cat who was not good at catching mice anymore, and a rooster who was meant to be cooked for dinner. They all decided to join the donkey and become musicians in Bremen. \n\nAs night fell, they found a cozy cottage in the woods. Inside, they saw robbers enjoying a feast. The clever animals decided to surprise the robbers. The donkey brayed, the dog barked, the cat meowed, and the rooster crowed. The noise was so terrible that the robbers ran away in fear. The animals feasted on the leftover food and settled in for a good night's sleep. \n\nThe robbers tried to return, but when they peeked inside, the animals made even louder noises, scaring the robbers away for good. The donkey, dog, cat, and rooster never made it to Bremen but found a new home and happiness in the little cottage. They lived there peacefully and played music together every day.",
+    "summary": "A donkey, dog, cat, and rooster band together to become musicians in Bremen. They scare away robbers from a cottage, find food, and make a happy home together. Their journey teaches the value of friendship and teamwork.",
+    "moral": "Friendship and teamwork can help overcome any obstacle.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-wo850p?w=800"
+  },
+  {
+    "title": "The Magic of Mother Holle",
+    "fullContent": "Once upon a time, in a cozy little village, there lived a gentle girl with her stepmother and stepsister. The stepmother loved her own daughter dearly but was unkind to the gentle girl, making her do all the housework. One day, while spinning yarn by the well, the girl accidentally pricked her finger and dropped the spindle into the water. Afraid of her stepmother's anger, she jumped into the well after it. \n\nTo her surprise, she found herself in a magical world filled with blooming flowers and singing birds. As she wandered, she met Mother Holle, a kind old woman who needed help with her chores. The girl agreed to help, and for days she made the beds, shook the feather pillows until it snowed, and baked the bread. Mother Holle was pleased with her hard work and kindness. \n\nAs a reward, Mother Holle showered her with golden coins and sent her back home. When the stepmother saw this, she grew envious and sent her own daughter to Mother Holle, hoping for the same fortune. But the stepsister was lazy and refused to help with the chores. Displeased, Mother Holle sent her home covered in soot instead of gold. \n\nFrom that day on, the gentle girl lived happily, respected and cherished by all, while her stepsister learned the value of hard work and kindness.",
+    "summary": "A kind girl enters a magical world where she helps Mother Holle with chores. Rewarded with gold for her kindness, she returns home. Her lazy stepsister tries to do the same but is covered in soot instead, learning the importance of hard work and kindness.",
+    "moral": "Kindness and hard work are always rewarded.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-8wquds?w=800"
+  },
+  {
+    "title": "The Little Mermaid's Dream",
+    "fullContent": "Once upon a time, in the deep blue sea, there lived a little mermaid named Ariel. She loved to explore and collect treasures from the world above. Her favorite was a shiny seashell that sparkled in the sunlight. Ariel often dreamed of visiting the world beyond the ocean. One day, she swam to the surface and saw a grand ship with people dancing and singing. Ariel was enchanted by their joyful music. Suddenly, a storm rolled in, and the ship was tossed by the waves. Ariel bravely rescued a young prince who had fallen into the sea. She brought him safely to shore and watched over him until he woke up. The prince never saw Ariel, but he remembered her sweet song. Ariel returned to the ocean, happy to have helped. She realized that kindness and love are treasures greater than any she could collect. As she swam home, she knew her dreams would always be part of her heart, just like the sparkling seashell.",
+    "summary": "Ariel, the little mermaid, loves collecting treasures and dreams of the world above. After saving a prince from a storm, she learns that kindness and love are the greatest treasures. She returns home, embracing her dreams and the joy of helping others.",
+    "moral": "Kindness and love are the greatest treasures of all.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-d52d4q?w=800"
+  },
+  {
+    "title": "The Special Swan",
+    "fullContent": "Once upon a time, in a cozy pond, a mother duck watched over her nest of eggs. One day, they began to crack open, revealing fluffy yellow ducklings. However, one egg was different and took a little longer. When it finally hatched, out came a grey, fluffy bird that looked nothing like the others. The other ducklings laughed and called him 'ugly.'\n\nFeeling sad, the little bird decided to explore the pond. He met animals who teased him because of his looks, but he kept swimming and waddling along. As time passed, the seasons changed, and so did the grey bird.\n\nOne sunny morning, he caught a glimpse of his reflection in the water. To his surprise, he had grown into a beautiful swan, gliding gracefully across the pond. The other animals were amazed, and the once-ugly duckling realized he had been special all along.\n\nFrom that day on, the swan lived happily, surrounded by friends who appreciated him for who he truly was. And he never forgot the most important lesson: it's what's inside that truly counts.",
+    "summary": "A grey duckling, teased for being different, discovers he's a beautiful swan. Embracing his uniqueness, he learns that true beauty comes from within, and finds happiness and friendship.",
+    "moral": "True beauty comes from being yourself and accepting who you are.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-9ayy4?w=800"
+  },
+  {
+    "title": "The Snow Queen's Gentle Journey",
+    "fullContent": "Once upon a time, in a quiet village, there lived a boy named Kai and a girl named Gerda. They were best friends, playing together every day. One winter, a mysterious Snow Queen appeared, taking Kai on a magical sleigh ride to her ice palace. Gerda missed her friend dearly and set off on a journey to find him. With a warm heart and brave spirit, Gerda traveled through beautiful snowy landscapes, meeting friendly animals and kind people who helped her along the way. Finally, she reached the Snow Queen's palace and melted the ice around Kai's heart with her love. The Snow Queen saw the warmth of friendship and decided to let Kai go. Gerda and Kai returned home, sharing tales of their adventure. The Snow Queen learned the joy of kindness, and the village was forever grateful for Gerda's courage.",
+    "summary": "Gerda sets off on a journey to find her friend Kai, taken by the Snow Queen. With her warm heart, she melts the ice around his heart, teaching the Snow Queen about love and friendship.",
+    "moral": "Love and friendship can overcome even the coldest challenges.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-azllva?w=800"
+  },
+  {
+    "title": "The Emperor's New Clothes",
+    "fullContent": "Once upon a time, in a faraway kingdom, there lived an emperor who loved clothes more than anything else. He spent all his money on new outfits and ignored his duties. One day, two clever tricksters arrived in the city. They claimed to weave the finest clothes that were invisible to anyone unfit for their position. The emperor, intrigued, paid them handsomely to make him a new set of clothes. \n\nThe tricksters pretended to work on looms day and night. When the emperor went to check, he saw nothing but air. Yet, he didn't want to appear unfit, so he praised the invisible clothes. His ministers, not wanting to seem foolish, did the same. Finally, the emperor decided to show off his new attire in a grand parade. \n\nThe entire city gathered to admire their emperor's new clothes, but no one could see anything. Still, they cheered, not wanting to admit they saw nothing. Suddenly, a little child cried out, \"But the emperor has no clothes!\" Everyone gasped, and soon the truth spread through the crowd. The emperor realized he had been fooled, but it was too late. He walked on, embarrassed but wiser, realizing the importance of honesty and self-awareness.",
+    "summary": "An emperor, obsessed with clothes, is tricked by two weavers who pretend to make him invisible clothes. Everyone pretends to see them, fearing to seem foolish, until a child points out the truth. The emperor learns to value honesty.",
+    "moral": "Honesty is important, and we should not be afraid to speak the truth.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-fqgt6i?w=800"
+  },
+  {
+    "title": "Tiny Thumbelina's Adventure",
+    "fullContent": "Once upon a time, in a cozy village, there lived a kind woman who wished for a child. One day, a fairy granted her wish with a tiny girl no bigger than her thumb, whom she named Thumbelina. Thumbelina lived happily in a walnut shell, singing sweet songs. One night, a curious toad took her away, hoping she'd marry her son. Thumbelina was scared, but friendly fish and a gentle butterfly helped her escape. She drifted on a lily pad, enjoying the warm sun. As the seasons changed, she found a warm home with a kind field mouse. One day, a swallow with a broken wing needed help. Thumbelina cared for him through winter. In spring, the swallow, now healed, offered to take her to a sunny land. Thumbelina agreed. They flew over mountains and fields, arriving in a garden of flowers where tiny people lived. There, Thumbelina met a kind prince who loved her dearly. She found her home among the flowers, always grateful for the friends who helped her along the way. Thumbelina lived happily ever after, in a world where she truly belonged.",
+    "summary": "Thumbelina, a tiny girl, is taken on an adventure by a toad. With the help of friendly animals, she escapes and finds her true home in a land of flowers, where she meets a kind prince who loves her dearly.",
+    "moral": "Kindness and courage can help you find your true place in the world.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-ko3lnf?w=800"
+  },
+  {
+    "title": "Rapunzel's Magical Garden",
+    "fullContent": "Once upon a time, in a faraway land, there was a beautiful girl named Rapunzel. She lived in a tall tower surrounded by a magical garden. Her golden hair flowed like a golden river. Every morning, the sun would shine on her hair, making it sparkle like stars. Rapunzel loved to sing, and her voice was as sweet as the gentle breeze that danced through the garden. One day, a friendly bird flew to her window and chirped a cheerful tune. Rapunzel smiled and sang along, her voice echoing through the forest. The bird brought messages from the outside world, tales of adventures and new friends. Though she lived alone, Rapunzel never felt lonely, for the garden was full of life, and the sky was her canvas. The flowers would sway to her songs, and the trees would whisper secrets of the wind. As the day turned to night, the stars would twinkle brightly, and Rapunzel would weave dreams of kindness and love. She knew that one day, she would explore the world beyond her tower. Until then, her heart remained full of hope and joy, for her songs filled the world with happiness.",
+    "summary": "Rapunzel, with her golden hair, lives in a tower surrounded by a magical garden. She sings with a friendly bird and dreams of exploring the world. Though alone, she finds joy and love in her garden, sharing her happiness through song.",
+    "moral": "Even when alone, finding joy in the world around us can fill our hearts with happiness.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-u04kt5?w=800"
+  },
+  {
+    "title": "Rumpelstiltskin's Kind Heart",
+    "fullContent": "Once upon a time, in a small village, there lived a poor miller who had a lovely daughter named Lily. One day, while talking to the king, the miller boasted that Lily could spin straw into gold. The curious king summoned Lily to the castle and locked her in a room filled with straw, demanding she turn it into gold by morning.\n\nAs Lily sat crying, a little man named Rumpelstiltskin appeared. He offered to help her, and with a gentle smile, he spun all the straw into gold. In return, he asked for her necklace. The next day, the king was amazed and demanded even more gold. Rumpelstiltskin returned and spun the straw again, this time asking for Lily's ring.\n\nOn the third day, the king asked for more gold and promised to marry Lily if she succeeded. Rumpelstiltskin appeared once more, but Lily had nothing left to give. He kindly asked for her first child when she became queen. Desperate, Lily agreed.\n\nYears passed, and Lily, now a queen, had a beautiful baby. Rumpelstiltskin returned to claim his promise. Seeing Lily's tears, he felt pity and said, 'If you can guess my name in three days, you can keep your child.'\n\nLily sent messengers across the kingdom to gather every possible name. On the third day, a messenger overheard Rumpelstiltskin singing his name in the forest. When Rumpelstiltskin returned, Lily guessed correctly, 'Rumpelstiltskin!' The little man smiled, clapped his hands, and vanished, leaving Lily and her child in peace.\n\nAnd so, Lily lived happily ever after, grateful for Rumpelstiltskin's kind heart.",
+    "summary": "A miller's daughter, Lily, is helped by Rumpelstiltskin to spin straw into gold for the king. When asked to guess his name to save her child, she succeeds and keeps her baby. Rumpelstiltskin's kindness leads to a happy ending.",
+    "moral": "Kindness and cleverness can solve even the trickiest problems.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-bvu3eg?w=800"
+  },
+  {
+    "title": "The Wolf and the Clever Kids",
+    "fullContent": "Once upon a time, in a little house near the woods, lived a mother goat and her seven little kids. One day, the mother goat had to go to the forest to find food, so she gathered her kids and said, 'Dear ones, I must leave for a while. Beware of the sly wolf. Remember, he has a deep voice and rough paws.' The kids nodded and promised to be careful. As soon as their mother left, the wolf came knocking on the door. 'Let me in, dear children,' he called, but his voice was deep and scary. The kids replied, 'No! You are not our mother. Your voice is too deep!' The wolf went away, upset but determined. He found some honey and rubbed it on his throat to make his voice sweet. Returning to the house, he called out again, 'Let me in, dear children!' This time, his voice sounded like their mother's. The youngest kid peeked through the door crack and saw the wolf's rough paws. 'No!' shouted the youngest, 'You are not our mother! Your paws are rough!' The wolf growled and ran away, knowing he had been outsmarted. Later, the mother goat returned and praised her kids for their cleverness. She hugged them tightly, thankful for their wisdom and bravery. From then on, the kids always remembered their mother's lessons and stayed safe.",
+    "summary": "A mother goat warns her kids about the wolf. The wolf tries to trick them with a sweet voice, but the kids notice his rough paws and stay safe. The mother goat returns, proud of her clever children.",
+    "moral": "Always be cautious and trust your instincts.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-e6z7xl?w=800"
+  },
+  {
+    "title": "Tom Thumb's Tiny Adventure",
+    "fullContent": "Once upon a time, in a cozy little village, lived a tiny boy named Tom Thumb. He was no bigger than his father’s thumb, yet he was full of courage and curiosity. One sunny morning, Tom's parents decided to take him on a trip to the forest. Tom was so excited to see the tall trees and hear the birds sing. As they walked, Tom climbed onto his father's hat, enjoying the view from up high.\n\nSuddenly, a gentle breeze swept through the forest, and Tom was carried away! He landed softly on a bed of flowers. \"Oh dear!\" he exclaimed, but being a brave little fellow, he decided to explore. He met a friendly butterfly who offered to take him back to his parents. Tom climbed onto the butterfly's back, and they flew over the forest.\n\nOn their way, they stopped by a sparkling stream where Tom saw his reflection for the first time. \"Look how tiny I am!\" he giggled. Finally, the butterfly brought him back to his worried parents, who were overjoyed to see him safe and sound.\n\nFrom that day on, Tom's parents always kept him close, and Tom learned that being small didn't mean he couldn't have big adventures. Every night, Tom would dream of flying with his butterfly friend, knowing he was loved and cared for.",
+    "summary": "Tom Thumb, a tiny yet brave boy, gets swept away by the wind during a forest trip. With the help of a friendly butterfly, he explores the forest and safely returns to his parents. Through this adventure, he learns that being small doesn't stop him from having big adventures, and he finds joy in knowing he is loved and safe.",
+    "moral": "Even the smallest person can have big adventures. Always cherish the love and care of your family.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-6hs7pg?w=800"
+  },
+  {
+    "title": "The Secrets of the White Snake",
+    "fullContent": "Once upon a time, in a faraway kingdom, there lived a kind king who had a trusted servant. Every night, the king ate a special dish that no one else was allowed to see. One evening, the servant's curiosity got the better of him, and he tasted the dish when the king wasn't looking. It was a piece of a magical white snake! Suddenly, the servant could understand the speech of animals. The next day, he heard the birds in the garden talking about a lost ring. Using the information he learned from the birds, the servant found the ring and was praised by the king. With his new gift, the servant helped many creatures, from ants needing help to fish stuck in a net. Through his kindness, he learned that helping others brings happiness. Eventually, the servant became a respected figure in the kingdom, known for his wisdom and kindness. The king, seeing the good heart of his servant, rewarded him with a place of honor. And so, the servant lived a life full of joy and understanding, knowing that listening and helping others made the world a better place.",
+    "summary": "A servant gains the ability to understand animals after tasting a magical white snake. Using his newfound power, he helps creatures in need, showing that kindness and understanding create happiness. He earns the king's trust and becomes respected for his good heart.",
+    "moral": "Kindness and understanding bring happiness and respect.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-0d3sqo?w=800"
+  },
+  {
+    "title": "The Kind Shoemaker and the Elves",
+    "fullContent": "Once upon a time, in a cozy little village, there lived a kind shoemaker and his wife. Despite his hard work, the shoemaker found it difficult to make ends meet. One chilly night, after cutting the last piece of leather, he left it on his workbench, hoping to craft shoes in the morning. To his surprise, when he awoke, he discovered a pair of beautiful shoes on his bench! They were perfectly made, and soon a customer bought them for a good price. With the money, the shoemaker bought more leather. Again, he left the pieces out overnight, and again, in the morning, found more stunning shoes. Night after night, this magical help continued, allowing the shoemaker and his wife to live comfortably. Curious about the mystery, they decided to stay up one night. As the clock struck midnight, two tiny elves appeared, dressed in rags, and began to sew with nimble fingers. The shoemaker and his wife realized how much the elves had helped them. Wanting to show their gratitude, they made tiny clothes and shoes for the elves. The next night, the elves discovered the gifts and were overjoyed. They danced happily and, with a twinkle in their eyes, disappeared into the night, never to return. The shoemaker and his wife were grateful for their help and continued to live happily, always remembering the kindness of the elves.",
+    "summary": "A kind shoemaker receives magical help from tiny elves, who make beautiful shoes for him overnight. In gratitude, the shoemaker and his wife make clothes for the elves, who dance with joy and then disappear, leaving the couple to live happily ever after.",
+    "moral": "Kindness is always rewarded, and gratitude is the best response to help received.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-dofhrk?w=800"
+  },
+  {
+    "title": "Mother Holle's Magical World",
+    "fullContent": "Once upon a time, there was a kind and hardworking girl who lived with her stepmother and lazy stepsister. Every day, the girl was given many chores to do. One day, she accidentally dropped her spindle into a well. As she reached in to retrieve it, she fell in and found herself in a magical land. There, she met Mother Holle, a kind old lady who asked her to help shake her feather bed and make the snow fall on Earth. The girl did her tasks with care and kindness, and Mother Holle rewarded her with golden riches. When the girl returned home, her stepmother was amazed and sent her lazy stepsister to try her luck. But the stepsister did not work hard or help Mother Holle, so she returned home covered in soot. The kind girl lived happily ever after, filled with joy and kindness.",
+    "summary": "A kind girl falls into a magical world and helps Mother Holle by shaking her feather bed, making snow fall on Earth. As a reward, she returns home with golden riches. Her lazy stepsister tries the same but is punished for her laziness. The story shows the value of hard work and kindness.",
+    "moral": "Hard work and kindness bring rewards, while laziness and selfishness do not.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-jfn82?w=800"
+  },
+  {
+    "title": "The Soldier and the Magical Blue Light",
+    "fullContent": "Once upon a time, a brave soldier returned home from a long war, only to find he was no longer needed. With a heavy heart, he wandered through the forest until he came upon a small, cozy cottage. Inside lived an old woman who kindly offered him shelter. As he helped her with chores, he noticed she often used a peculiar blue light. Curious, the soldier asked about it. The woman revealed that the light held magical powers. Intrigued, the soldier asked if he could borrow it for the night. As soon as he lit the blue light, a mischievous little spirit appeared, ready to grant his wishes. The soldier's heart filled with joy as he realized the light could help him create a new life. He wished for a warm home and good friends, and with each wish, his happiness grew. The soldier learned to appreciate the magic of kindness and gratitude, and he lived a contented life, surrounded by the warmth of newfound friends and his own cozy home.",
+    "summary": "A kind soldier discovers a magical blue light in a forest cottage. The light grants wishes, helping him find happiness with a warm home and good friends. He learns the power of kindness and gratitude, living joyfully ever after.",
+    "moral": "True happiness comes from kindness and gratitude.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-i9z08b?w=800"
+  },
+  {
+    "title": "The Little Mermaid's Gentle Adventure",
+    "fullContent": "Once upon a time, deep under the sea, there lived a little mermaid named Marina. She was curious and loved exploring her colorful underwater world. One day, Marina saw a bright light shimmering above the ocean. It was the sun! She swam to the surface and met a friendly seagull named Sammy. Sammy told her stories about the land, the trees, and the stars. Marina listened with wide eyes. She wished to see the land, but her grandmother told her she must wait until she was older. Every day, Marina returned to the surface to hear more tales from Sammy. One day, a gentle wind carried the sweet scent of flowers to her. She closed her eyes and imagined what they looked like. Marina learned to appreciate the beauty of her ocean home while dreaming of the land above. She realized that one day, she would explore the world above, but for now, she was happy with her adventures under the sea. Marina's heart was filled with joy as she swam with her dolphin friends and danced with the seaweed. She knew that patience would lead her to wonderful places, and she felt grateful for the magic in her underwater world.",
+    "summary": "Marina, a curious little mermaid, befriends a seagull named Sammy who tells her tales of the land. She learns to appreciate her underwater world and dreams of exploring the land one day. Patience and joy fill her heart as she waits for her adventure.",
+    "moral": "Patience and appreciation for what you have can bring joy and happiness.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-bdpy?w=800"
+  },
+  {
+    "title": "The Lovely Swan",
+    "fullContent": "Once upon a time, in a cozy nest by the pond, a mother duck sat on her eggs. One sunny morning, the eggs began to crack open. Out popped fluffy ducklings, all except one. This last one was different—bigger and not as fluffy. The other animals whispered, 'What an odd duckling!' The little one felt left out, but his mother loved him just the same. When he tried to play, the other ducklings teased him, calling him 'ugly'. Feeling sad, the little duckling waddled away to explore the pond. As seasons changed, he grew bigger. One day, he saw graceful swans gliding by. They were so beautiful, and he admired them from afar. Winter turned to spring, and the pond came alive with colors. The little duckling had grown stronger. One sunny day, he caught a glimpse of his reflection in the water. He was astonished! He wasn’t a duckling anymore; he had turned into a magnificent swan! The other swans welcomed him with open wings. He realized he wasn’t ugly or odd; he was simply a swan, always meant to be beautiful in his own way. From that day on, he spread his wings with joy, knowing he had found where he truly belonged.",
+    "summary": "A unique duckling feels left out and sad until he discovers he is a beautiful swan, realizing his true beauty was always within. This tale teaches us to embrace our differences and find joy in who we truly are.",
+    "moral": "Embrace your uniqueness; true beauty comes from being yourself.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-yb3p2?w=800"
+  },
+  {
+    "title": "The Snow Queen's Gentle Heart",
+    "fullContent": "Once upon a time, in a land where snowflakes danced like stars, there lived a brave girl named Lily. Her best friend, Sam, was taken by the Snow Queen to her icy palace. Determined to save him, Lily embarked on a magical journey. She met friendly animals who guided her through the snowy forest. At last, she found the Snow Queen's palace, where Sam sat frozen. Lily's warm hug melted the icy spell, freeing Sam. Even the Snow Queen's heart softened, and she let them return home. From that day on, the Snow Queen watched over them like a caring guardian, and the land blossomed with kindness and warmth. Lily and Sam learned that courage and love can melt even the coldest hearts.",
+    "summary": "Lily saves her friend Sam from the Snow Queen with courage and love, melting even the Snow Queen's icy heart. They return home, and the Snow Queen becomes their gentle guardian.",
+    "moral": "Love and bravery can change hearts and create warmth in the coldest places.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-gwxljx?w=800"
+  },
+  {
+    "title": "The Gentle Nightingale",
+    "fullContent": "Once upon a time in a faraway land, there was a beautiful garden owned by an emperor. In this garden lived a small, brown nightingale with a voice so lovely that even the flowers would turn their heads to listen. The emperor heard of this enchanting bird and invited it to the palace. When the nightingale sang, the emperor was so moved that tears filled his eyes. To show his gratitude, he gave the nightingale a golden cage. But the nightingale missed the freedom of the garden. Understanding the nightingale's sadness, the emperor decided to let it fly free, realizing that its songs were more beautiful when it was happy. Every night, the nightingale would return to sing, filling the empire with peaceful music, and the emperor learned the joy of true friendship.",
+    "summary": "A kind emperor learns that the nightingale's song is most beautiful when it is free. He lets it fly back to the garden, and the nightingale returns each night to sing, filling the empire with peace.",
+    "moral": "True beauty and happiness come from freedom and friendship.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-xar0gf?w=800"
+  },
+  {
+    "title": "The Little Match Girl's Dreamy Lights",
+    "fullContent": "Once upon a time, in a small snowy town, there was a little girl named Ella. She sold matches on the street, hoping to buy warm food. One chilly evening, she lit a match to warm her tiny hands. As the match glowed, Ella saw a magical vision: a cozy home filled with laughter and love. Each match she lit brought a new, wondrous scene—dancing stars, smiling faces, and twinkling lights. The glow comforted her and made her feel safe and loved. Soon, a kind family passing by noticed Ella and invited her to their warm home, offering her food and a loving place to stay. From that night on, Ella lived with the kind family, surrounded by warmth and happiness, and the little matches stayed as a reminder of the magical dreams that came true.",
+    "summary": "Ella, a little girl selling matches, lights them for warmth and sees magical visions. A kind family notices her and offers her a loving home. She finds warmth and happiness, with the matches reminding her of dreams come true.",
+    "moral": "Kindness and hope can light up the darkest of times.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-vi2r8h?w=800"
+  },
+  {
+    "title": "The Princess and the Pea",
+    "fullContent": "Once upon a time, in a faraway kingdom, there lived a prince who wanted to marry a real princess. He traveled to many lands, but none of the princesses seemed genuine to him. One stormy night, a young woman knocked on the castle door, claiming to be a princess. To test her, the queen placed a tiny pea under twenty mattresses and twenty feather beds. The next morning, the young woman said she had a terrible night's sleep, feeling something hard in her bed. The prince was overjoyed because only a real princess could be sensitive enough to feel the pea. They married and lived happily ever after, with the pea displayed in the royal museum.",
+    "summary": "A prince seeks a real princess to marry. A young woman arrives at the castle claiming to be one. To test her, the queen places a pea under twenty mattresses. The next day, the woman feels the pea, proving her true princess status. They marry and live happily.",
+    "moral": "True qualities are often revealed through small tests.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-xnx9rk?w=800"
+  },
+  {
+    "title": "The Brave Soldier and the Magic Tinderbox",
+    "fullContent": "Once upon a time, a brave soldier was returning home from a long journey. On his way, he met an old woman who asked for his help. 'In that tree is a magic tinderbox,' she said. 'Bring it to me, and you can keep all the treasure you find.'\n\nThe soldier climbed the tree and found a room filled with gold, silver, and a curious little tinderbox. He took the treasure and the tinderbox, but when he saw the magic it could do, he decided to keep it.\n\nWith a strike of the tinderbox, three magical dogs appeared, ready to help him. They brought him food, built him a cozy house, and made him happy. But the real magic was how the soldier used his new powers to help the people around him.\n\nHe shared his treasure with the villagers, fixing broken roofs and planting gardens. Because of his kindness, everyone loved him. The soldier learned that the true treasure was not in gold or magic but in the friends he made and the smiles he created.\n\nAnd so, the brave soldier lived happily ever after, with the magic tinderbox and his three loyal dogs by his side, always ready to lend a paw.",
+    "summary": "A brave soldier finds a magic tinderbox and discovers its power to summon three helpful dogs. Instead of keeping the treasure for himself, he shares it with the villagers, spreading joy and kindness. The true magic lies in the friendships he makes and the happiness he brings.",
+    "moral": "True treasure is found in kindness and the joy we bring to others.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-62mexk?w=800"
+  },
+  {
+    "title": "Tiny Tom and the Friendly Forest",
+    "fullContent": "Once upon a time, in a snug little village, there lived a boy named Tom Thumb. Tom was no bigger than a thumb, but he had a heart as big as the sky. One sunny morning, Tom decided to explore the forest. With a cheerful wave to his parents, he set off. The trees towered above him like gentle giants, and the birds sang sweet songs just for him. As Tom wandered, he met a kind squirrel named Nutty. Nutty was busy collecting acorns for the winter. 'Hello, Tom!' chirped Nutty. 'Would you like to help me?' Tom nodded happily and climbed onto Nutty's fluffy tail. Together, they gathered acorns and shared stories until the sun began to set. On his way home, Tom found a little bird with a hurt wing. 'Don't worry, little bird,' said Tom softly. He gently wrapped a leaf around the bird's wing and sang a lullaby until the bird felt better. As the stars twinkled above, Tom returned home, his heart full of joy. 'I had the best adventure!' he told his parents, who hugged him tight. And so, Tom Thumb learned that no matter how small you are, you can make a big difference with kindness and friendship.",
+    "summary": "Tom Thumb, a tiny boy with a big heart, explores the forest, helps a squirrel gather acorns, and cares for an injured bird. He learns that kindness makes a big difference.",
+    "moral": "Even the smallest person can make a big impact with kindness and friendship.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-m5ryxg?w=800"
+  },
+  {
+    "title": "The Wise White Snake",
+    "fullContent": "Once upon a time, in a faraway kingdom, a kind servant worked for a wise king. Each day, the king enjoyed a special meal alone in his room. Curious about the secret, the servant peeked one day and discovered a delicious white snake on the plate. Unable to resist, he tasted it, and suddenly he could understand the language of animals! This new power revealed many wonders, including a chance to help creatures in need. One day, he saved a flock of worried birds from a hunter, and in return, they gifted him a golden feather. Another time, he helped an ant who was struggling to carry food, and the grateful ant promised to help him one day. News of his kindness spread across the kingdom. When the princess lost her ring, the king was worried. The servant used his gift to listen to the whispers of the animals. With their help, he found the ring in a duck's nest, and the king was so grateful that he rewarded the servant with a new position in the palace. The servant learned that kindness and helping others opened doors to magical adventures and friendships. And so, he lived happily, always ready to lend a hand.",
+    "summary": "In a kingdom, a kind servant discovers the power to understand animals after tasting a magical white snake. With his new ability, he helps creatures in need and finds the lost ring of a princess. His kindness brings him wonderful adventures and a happy life in the palace. The story reminds us that helping others leads to unexpected friendships and happiness.",
+    "moral": "Kindness and helping others can lead to wonderful adventures and friendships.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-tbzk29?w=800"
+  },
+  {
+    "title": "The Helpful Little Elves",
+    "fullContent": "Once upon a time, in a cozy village, there lived a kind shoemaker. He worked very hard, but he was very poor. One night, with only enough leather for one last pair of shoes, he carefully cut the leather and went to bed. In the morning, to his surprise, he found a beautiful pair of shoes on his workbench! The stitches were perfect, and the design was lovely. Soon, a customer came and bought the shoes for a good price. The shoemaker was so happy! He bought more leather with the money and left it on his workbench the next night. Again, he found perfectly made shoes in the morning! Night after night, the shoemaker left leather on his table, and every morning, he found finished shoes. Curious to know who was helping him, the shoemaker and his wife decided to stay up and watch. They hid behind a curtain and, as the clock struck midnight, two tiny elves appeared! They were dressed in tattered clothes but worked quickly and skillfully. The shoemaker and his wife wanted to thank the elves. So, they made tiny clothes and shoes for them. The next night, the elves found the gifts and were overjoyed! They danced around happily and then left. They never returned, but the shoemaker and his wife were no longer poor. They lived happily ever after, always remembering the little elves who helped them in their time of need.",
+    "summary": "A poor shoemaker discovers that elves are secretly making shoes for him. Grateful, he and his wife make clothes for the elves, who happily leave, never to return. The shoemaker prospers and lives happily ever after.",
+    "moral": "Kindness and gratitude can lead to wonderful and unexpected rewards.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-x1tnr?w=800"
+  },
+  {
+    "title": "The Kind Girl and Mother Holle",
+    "fullContent": "Once upon a time, there was a kind little girl who lived with her stepmother and stepsister. Every day, she worked hard while her stepsister did nothing. One day, while spinning wool, she pricked her finger and dropped the spindle down a well. Her stepmother told her to retrieve it, so she jumped into the well. When she awoke, she found herself in a beautiful field and decided to explore. She came across a bread oven full of delicious loaves, asking to be taken out before they burned. The kind girl obliged. Then, she met an apple tree with ripe apples, asking to be picked. She kindly picked the apples. Finally, she arrived at a small house belonging to Mother Holle, an old woman who asked for help with her chores. The girl agreed and worked diligently. Mother Holle was pleased and rewarded her with gold before sending her home. Her stepmother, intrigued by the gold, sent the lazy stepsister to the well. But the stepsister refused to help the bread and apples and was lazy with Mother Holle’s chores. Instead of gold, she returned home covered in pitch. The kind girl lived happily, knowing that kindness and hard work are always rewarded.",
+    "summary": "A kind girl falls into a magical world, helps others, and is rewarded by Mother Holle. Her lazy stepsister tries the same but is punished for her selfishness.",
+    "moral": "Kindness and hard work lead to rewards, while laziness and selfishness bring trouble.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-1jubyc?w=800"
+  },
+  {
+    "title": "The Magic Blue Light",
+    "fullContent": "Once upon a time, in a faraway kingdom, there was a brave soldier who had served the king faithfully. One day, the soldier found himself alone and lost in a dark forest. Just when he thought all hope was gone, he discovered a little blue light glowing softly beneath an old tree. Curious, he picked it up and suddenly, a kind little dwarf appeared. The dwarf, grateful for being freed, promised to help the soldier whenever the blue light was lit. The soldier used the light to find his way home and soon realized that the blue light had magical powers. He returned to the kingdom and used the dwarf's help to bring joy and happiness to the people. The king, hearing of the soldier's kindness, welcomed him back with open arms. The soldier continued to use the blue light to help others, and he lived a life full of adventure and friendship. And so, with the blue light always shining bright, he helped make the world a better place.",
+    "summary": "A brave soldier finds a magical blue light in a forest, which summons a helpful dwarf. With the dwarf's aid, the soldier spreads joy and kindness throughout the kingdom, eventually being welcomed back by the king. This story teaches us the power of kindness and friendship.",
+    "moral": "Kindness and helping others can light up the world.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-9996jf?w=800"
+  },
+  {
+    "title": "The Little Mermaid's New Adventure",
+    "fullContent": "Once upon a time, in a beautiful underwater kingdom, there lived a little mermaid named Aria. She had a shimmering tail and a voice as sweet as the ocean breeze. Aria loved exploring the sea and playing with her fish friends. But what she loved most was listening to stories about the world above the waves. One day, Aria swam to the surface and spotted a grand ship. Onboard was a kind prince who waved at her with joy. Aria wanted to be part of his world, so she visited the gentle Sea Witch and asked for legs. The Sea Witch granted her wish, but in return, Aria had to give up her voice.\n\nWith her new legs, Aria danced on the shore and met the prince. They became good friends, sharing adventures and laughter. Although Aria couldn't speak, her heart spoke loudly through her kindness and bravery. When the prince faced a storm at sea, Aria saved him with her mermaid magic, proving that true friendship doesn't need words.\n\nIn the end, the Sea Witch returned Aria's voice, and the prince promised to visit her underwater kingdom. Together, they learned that the most precious treasures are not found on land or sea, but in the bonds of friendship and love.",
+    "summary": "The little mermaid Aria dreams of the world above the sea. She gains legs from the Sea Witch, losing her voice. Befriending a prince, she shows that true friendship transcends words. With kindness and bravery, Aria helps the prince, earning back her voice and proving that the best treasures are in friendship and love.",
+    "moral": "True friendship and love don't need words to be understood. Kindness and bravery shine through.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-btuhib?w=800"
+  },
+  {
+    "title": "Thumbelina's Journey to a New Home",
+    "fullContent": "Once upon a time, in a cozy little garden, there lived a tiny girl named Thumbelina. She was as small as a thumb, and she loved to play among the flowers. One day, a kind old woman planted a magic seed, and from it grew a beautiful flower. When the petals opened, there was Thumbelina! She spent her days playing with the butterflies and singing with the birds.\n\nBut one night, a curious frog took Thumbelina to his pond, wanting her to marry his son. Thumbelina was frightened and cried for help. Luckily, a kind fish heard her and nibbled at the lily pad, setting her free. Thumbelina floated down the stream until she found a friendly field mouse who offered her shelter for the winter.\n\nThe field mouse introduced her to a mole who wished to marry her, but Thumbelina didn't want to live underground. As spring came, Thumbelina met a beautiful swallow who was hurt during the winter. She nursed him back to health, and in return, the swallow offered to take her to a land of sunshine and flowers.\n\nThumbelina climbed onto the swallow's back, and they flew to a place where the sun always shone, and flowers bloomed everywhere. There, she met a tiny prince who was just her size. They became friends and soon married, living happily in a world full of beauty and warmth.\n\nAnd so, Thumbelina found her true home, surrounded by love and happiness.",
+    "summary": "Thumbelina, a tiny girl born from a flower, goes on an adventure. She escapes a frog and a mole with the help of kind creatures. Eventually, a swallow takes her to a land of sunshine where she finds happiness with a tiny prince.",
+    "moral": "Kindness and courage can lead you to a place where you truly belong.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-bt3sq?w=800"
+  },
+  {
+    "title": "The Little Spinner and the Secret Name",
+    "fullContent": "Once upon a time, in a peaceful village, there was a young girl named Clara who loved to dream of magical things. One day, her father told the king that Clara could spin straw into gold. The king brought Clara to his castle and asked her to prove it. Clara was worried, as she didn't know how to spin gold. But then, a friendly little man appeared. He said, 'I can help you, but you must guess my name in three days.' Clara agreed. \n\nThe little man spun the straw into gold, and the king was pleased. On the third day, Clara tried to guess the man's name. She thought and thought, and then she remembered a name she had heard in a dream: 'Rumpelstiltskin!' The little man was surprised and said, 'You guessed it!' He danced around happily and disappeared. Clara was relieved and went home to her family, happy to be free and safe. \n\nAnd from that day on, Clara learned to always be honest and think carefully before making promises.",
+    "summary": "Clara, a young girl, must guess the name of a mysterious little man who helps her spin straw into gold. When she guesses 'Rumpelstiltskin,' she frees herself from a promise and learns the importance of honesty and caution.",
+    "moral": "Always be honest and think carefully before making promises.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-znjvke?w=800"
+  },
+  {
+    "title": "The Clever Little Goats",
+    "fullContent": "Once upon a time, in a cozy cottage by the woods, a mother goat lived with her seven playful kids. One day, the mother goat had to go to the market. She warned her kids about the big, bad wolf who loved to trick and eat little goats. 'Don't open the door to anyone but me,' she said, 'and look for my white hoof before you do!' The wolf, overhearing, soon knocked on the door. 'Let me in, my sweet kids,' he growled. But the clever kids saw his dark paws and refused. The wolf returned with flour-covered paws to look like the mother goat. This time, the youngest kid saw something was wrong and told his siblings to hide. The wolf, thinking he had fooled them, entered but only found empty rooms. The littlest kid had hidden in the clock, watching carefully. When the wolf left, the mother goat returned. The littlest kid emerged, and they all shared a hug, happy and safe. From that day on, they always checked carefully before opening the door.",
+    "summary": "A mother goat warns her seven kids about a tricky wolf. The wolf tries to deceive them, but the clever kids stay safe by double-checking and hiding. They learn to always be cautious and look out for each other.",
+    "moral": "Always be cautious and check carefully before trusting strangers.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-fzucf?w=800"
+  },
+  {
+    "title": "The Helpful Elves and the Shoemaker",
+    "fullContent": "Once upon a time, in a small village, there lived a kind shoemaker and his wife. They were very poor and had only enough leather left to make one last pair of shoes. That evening, the shoemaker cut out the pieces and left them on his workbench. \"Tomorrow, I'll finish these shoes,\" he said to his wife with a hopeful smile.\n\nThat night, something magical happened. While the shoemaker and his wife were fast asleep, two tiny elves tiptoed into the shop. They wore little hats and had twinkling eyes. The elves worked quickly and skillfully, stitching the pieces of leather together to create a beautiful pair of shoes.\n\nThe next morning, the shoemaker was amazed to find the finished shoes on his workbench. \"Who could have done this?\" he wondered. The shoes were so perfect that they were quickly sold, and the shoemaker used the money to buy more leather.\n\nEach night, the elves returned to help. The shoemaker's shop became famous for its beautiful shoes, and soon, he and his wife were no longer poor. Grateful for the elves' kindness, the shoemaker and his wife decided to make little clothes and shoes for the elves as a thank you. They left them on the workbench one night.\n\nWhen the elves returned and found the gifts, they were delighted. They danced and clapped with joy, wearing their new clothes and shoes. From that night on, the elves never returned, but the shoemaker and his wife remained prosperous and happy, always remembering the kindness of the little elves.",
+    "summary": "A kind shoemaker and his wife receive magical help from elves who secretly make shoes for them at night. The shoemaker and his wife thank the elves with gifts, leading to a prosperous life. The story teaches about gratitude and kindness.",
+    "moral": "Gratitude and kindness can bring unexpected blessings.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-42kknu?w=800"
+  },
+  {
+    "title": "The Tale of Mother Holle",
+    "fullContent": "Once upon a time, there was a kind girl who worked hard spinning yarn by the well in her village. One day, while spinning, her spindle fell into the deep, dark waters. As she reached in to retrieve it, she found herself in a magical land. There, she met Mother Holle, a kind old woman who needed help with her chores. The girl worked diligently, shaking the feather beds until the feathers flew, creating snow in the world above. Pleased with her hard work, Mother Holle decided to reward the girl by showering her with gold. The girl returned home, gleaming with happiness and gold. Her stepmother, upon hearing her tale, sent her own lazy daughter to try her luck. But the lazy girl refused to work and was sent home by Mother Holle covered in soot instead of gold. The kind girl and her mother lived happily ever after in their humble home, grateful for their blessings.",
+    "summary": "A kind girl falls into a magical land where she meets Mother Holle. By working hard, she is rewarded with gold. Her lazy stepsister tries to do the same but is instead covered in soot. The tale teaches that hard work and kindness are always rewarded.",
+    "moral": "Hard work and kindness bring great rewards, while laziness and greed lead to disappointment.",
+    "ageRange": "3-5 years",
+    "authorName": "Brothers Grimm",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-pgfbcu?w=800"
+  },
+  {
+    "title": "The Little Mermaid's Wish",
+    "fullContent": "Once upon a time, beneath the sparkling sea, there lived a little mermaid named Ariel. She was curious about the world above the waves and dreamed of walking on land. One day, she met a wise turtle who told her of a magical shell that could grant her wish. Ariel swam through coral gardens and danced with dolphins until she found the shell. She wished to visit the land and see the stars. Magically, she found herself on the shore with legs! Ariel explored the sandy beaches, collecting shiny seashells and tiny pebbles. She loved the feeling of the sun on her face and the gentle breeze in her hair. But as the sun set, she missed her ocean home. The wise turtle appeared again and reminded her that home is where the heart is. Ariel realized she could visit the land whenever she wished, but the sea would always be her home. With a happy heart, she returned to the ocean, feeling grateful for the adventures she had above the waves.",
+    "summary": "Ariel, a curious little mermaid, uses a magical shell to explore the land. She discovers the beauty of the world above the sea but learns that her true home is beneath the waves. She returns to her ocean home, happy to have seen the stars.",
+    "moral": "No matter where you go, home is where the heart is.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-klgmeb?w=800"
+  },
+  {
+    "title": "The Ugly Duckling's Journey",
+    "fullContent": "Once upon a time, in a sunny meadow, a mother duck sat patiently on her nest, waiting for her eggs to hatch. One by one, the eggs cracked open, and out came fluffy little ducklings. But the last egg was different; it was bigger and took longer to hatch. When it finally did, out popped a duckling that looked unlike any other. The other ducklings giggled and whispered, calling him 'ugly.'\n\nFeeling sad, the little duckling waddled away to find a place where he belonged. He met a group of kind-hearted ducks who welcomed him, but he still felt out of place. Seasons changed, and winter turned to spring. One day, as he swam in a clear pond, he saw his reflection and was surprised to see a beautiful swan looking back at him.\n\nThe little duckling had grown into a magnificent swan! Now, he understood why he had felt different. He was never an ugly duckling; he was a beautiful swan all along. And so, the swan spread his wings and flew happily into the sky, knowing he had found his true self.",
+    "summary": "An 'ugly' duckling feels out of place until he discovers he's a beautiful swan, realizing his true identity.",
+    "moral": "True beauty comes from being yourself.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-8d1oub?w=800"
+  },
+  {
+    "title": "The Snow Queen's Warm Heart",
+    "fullContent": "Once upon a time in a frosty kingdom, there lived a kind Snow Queen. She had a magical garden where snowflakes danced like little stars. One day, a young girl named Lily wandered into the garden. The Snow Queen welcomed Lily with a gentle smile, showing her the beauty of snow. As they made snow angels together, Lily's laughter warmed the Snow Queen's heart, melting any icy loneliness she felt. They became friends, and the Snow Queen taught Lily about the wonders of winter. Lily returned to her village, sharing her newfound love for snow. The villagers learned to appreciate the snowy days, and the Snow Queen visited often, bringing joy and laughter. The Snow Queen and Lily's friendship showed everyone that kindness and warmth can brighten even the coldest days.",
+    "summary": "A kind Snow Queen befriends a girl named Lily in a magical snow garden. Their friendship brings warmth and joy to the frosty kingdom, teaching everyone that kindness can brighten cold days.",
+    "moral": "Kindness and friendship can bring warmth and joy even in the coldest places.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-za8eld?w=800"
+  },
+  {
+    "title": "Tiny Thumbelina's Journey",
+    "fullContent": "Once upon a time, in a small village, there lived a woman who longed for a child. One day, a kind fairy gave her a magical seed. When the woman planted it, a beautiful flower bloomed, and inside it was a tiny girl no bigger than a thumb. She named her Thumbelina. Thumbelina loved to sing and dance, but her adventures soon began when a toad spotted her and wanted her for his son. She was taken to the river, but with the help of some friendly fish, she floated away on a lily pad. \n\nAs Thumbelina journeyed through forests and streams, she met many creatures. A kind beetle thought she was the prettiest thing he'd ever seen, but his friends disagreed. So, Thumbelina continued on, finding shelter in a friendly mouse's home during winter. The mouse introduced her to a wealthy mole who wished to marry her. Though Thumbelina was grateful, she missed the warmth of the sun and the freedom of the outdoors.\n\nOne day, Thumbelina helped a swallow who had been injured in the cold. When spring came, the swallow invited her to fly away to a land of flowers. There, Thumbelina found others like her, small and full of life. She was crowned the Flower Princess, and she lived happily ever after, surrounded by love and beauty.",
+    "summary": "Tiny Thumbelina is born from a flower and goes on a grand adventure. She escapes a toad, a beetle, and a mole, helping those she meets. With a swallow's help, she finds a land of flowers and happiness.",
+    "moral": "No matter how small you are, courage and kindness can lead you to happiness.",
+    "ageRange": "3-5 years",
+    "authorName": "Hans Christian Andersen",
+    "language": "en",
+    "isTranslated": false,
+    "originalLanguage": "en",
+    "sourceType": "curated",
+    "likeCount": 0,
+    "isPublic": true,
+    "imageUrl": "https://images.unsplash.com/photo-m2g8ap?w=800"
   }
 ];

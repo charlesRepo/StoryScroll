@@ -32,8 +32,6 @@ const AGE_RANGES = ["0-2 years", "3-5 years", "6-10 years"];
 const LANGUAGES = [
   { value: "en", label: "English" },
   { value: "fr", label: "French" },
-  { value: "es", label: "Spanish" },
-  { value: "de", label: "German" },
 ];
 
 export default function CreateStoryForm({

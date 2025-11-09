@@ -1,7 +1,7 @@
 # Bedtime Story Discovery App
 
 ## Overview
-A mobile-first web application designed for discovering and creating bedtime stories for children. The app features a TikTok-style vertical swipe feed for browsing, AI-powered story generation, and personalized filtering. Its purpose is to provide an engaging platform where parents can find, save, and create custom stories tailored to their children's age, language, and preferences, leveraging a rich library of both classical and AI-generated content.
+A mobile-first web application designed for discovering and creating bedtime stories for children. The app features a TikTok-style vertical swipe feed for browsing, AI-powered story generation, and personalized filtering. Supports **English and French** languages. Its purpose is to provide an engaging platform where parents can find, save, and create custom stories tailored to their children's age, language, and preferences, leveraging a rich library of both classical and AI-generated content.
 
 ## User Preferences
 Preferred communication style: Simple, everyday language.
@@ -31,7 +31,7 @@ Preferred communication style: Simple, everyday language.
     - `likedStories`: Junction table (userId, storyId).
     - `dismissedStories`: Junction table for tracking dismissed stories (userId, storyId).
 - **Decisions**: Denormalized `likeCount` for performance, `sourceType` for content categorization, `isTranslated` and `originalLanguage` for multi-language support.
-- **Initialization**: Automatic database population on startup with a curated library of 51 classical stories (English, French, German, Spanish) and sample stories, ensuring a rich content base for new deployments.
+- **Initialization**: Automatic database population on startup with a curated library of 135 AI-generated classical bedtime stories (113 English, 20 French), ensuring a rich content base for new deployments.
 
 ## External Dependencies
 
@@ -43,10 +43,19 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+### Language Support Update (November 2025)
+Simplified language support to focus on English and French:
+- **Supported Languages**: English and French only (removed Spanish and German)
+- **Story Library**: 135 AI-generated classical bedtime stories
+  - 113 English original stories (Grimm, Andersen, Aesop's Fables, traditional folktales)
+  - 20 French original stories (Perrault, La Fontaine fables, traditional French tales)
+- **Generation Method**: Used GPT-4o to create authentic retellings of classical public domain stories
+- **Quality Standards**: All summaries under 70 words/390 characters, age-appropriate categorization (mostly 3-5 years)
+- **Frontend Updates**: Language selectors updated across FilterBar, ProfileSection, and CreateStoryForm
+
 ### Story Summary & Title Optimization (November 2025)
 Optimized story presentation for better mobile readability:
 - **Title Font-Size**: Reduced from 36px to 32px for better visual balance
 - **Summary Length**: Capped at 70 words or 390 characters (displays 4-5 lines on mobile)
-- **Updated Stories**: Revised 10 popular English stories (Hansel and Gretel, Cinderella, Little Red Riding Hood, The Three Little Pigs, The Ugly Duckling, Goldilocks, Jack and the Beanstalk, The Golden Goose, Puss in Boots, Sleeping Beauty)
-- **AI Generation**: Updated prompt to enforce summary length limits for all new stories
+- **AI Generation**: Updated OpenAI prompt to enforce summary length limits for all new stories
 - **Result**: Clean, readable cards that provide quick story context without overwhelming the screen
