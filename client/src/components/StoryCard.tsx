@@ -151,15 +151,10 @@ export default function StoryCard({
         )}
 
         <div className="flex items-center justify-between text-sm text-gray-600 pt-2">
-          {sourceType === "classic" ? (
-            <div className="flex items-center gap-1" data-testid="text-source-classic">
+          {authorName && (
+            <div className="flex items-center gap-1" data-testid="text-author">
               <Book className="h-4 w-4" />
-              <span>Classic Story</span>
-            </div>
-          ) : (
-            <div className="flex items-center gap-1" data-testid="text-source-user">
-              <User className="h-4 w-4" />
-              <span>Shared by {authorName}</span>
+              <span>Author: {authorName}</span>
             </div>
           )}
           {likeCount > 0 && (

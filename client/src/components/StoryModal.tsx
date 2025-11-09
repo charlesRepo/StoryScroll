@@ -106,15 +106,10 @@ export default function StoryModal({
               </div>
 
               <div className="flex items-center justify-between text-sm text-muted-foreground pt-2 border-t">
-                {sourceType === "classic" ? (
-                  <div className="flex items-center gap-1" data-testid="text-source-modal-classic">
+                {authorName && (
+                  <div className="flex items-center gap-1" data-testid="text-author-modal">
                     <Book className="h-4 w-4" />
-                    <span>Classic Story</span>
-                  </div>
-                ) : (
-                  <div className="flex items-center gap-1" data-testid="text-source-modal-user">
-                    <User className="h-4 w-4" />
-                    <span>Shared by {authorName}</span>
+                    <span>Author: {authorName}</span>
                   </div>
                 )}
                 {likeCount > 0 && (
