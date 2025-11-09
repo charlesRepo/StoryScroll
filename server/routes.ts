@@ -188,7 +188,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json({ story });
     } catch (error: any) {
       if (error instanceof z.ZodError) {
-        return res.status(400).json({ error: error.errors });
+        // Format Zod validation errors into a readable message
+        const messages = error.errors.map(e => `${e.path.join('.')}: ${e.message}`).join(', ');
+        return res.status(400).json({ error: `Validation error: ${messages}` });
       }
       res.status(500).json({ error: error.message });
     }
