@@ -386,9 +386,7 @@ async function generateAllStories() {
   return allStories;
 }
 
-// Run if called directly
-if (require.main === module) {
-  generateAllStories().catch(console.error);
-}
+// Run the generation
+generateAllStories().catch(console.error);
 
 export { generateAllStories, storyTitles };
