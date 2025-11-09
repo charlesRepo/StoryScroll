@@ -26,7 +26,10 @@ export interface IStorage {
   // Story operations
   getStory(id: string): Promise<Story | undefined>;
   getStories(filters: { language?: string; ageRange?: string; isPublic?: boolean; excludeIds?: string[] }): Promise<Story[]>;
+  getUserStories(userId: string): Promise<Story[]>;
   createStory(story: InsertStory): Promise<Story>;
+  updateStory(id: string, updates: Partial<InsertStory>): Promise<Story | undefined>;
+  deleteStory(id: string): Promise<void>;
   incrementStoryLikes(storyId: string): Promise<void>;
   decrementStoryLikes(storyId: string): Promise<void>;
 
@@ -104,6 +107,25 @@ export class DbStorage implements IStorage {
   async createStory(story: InsertStory): Promise<Story> {
     const result = await db.insert(stories).values(story).returning();
     return result[0];
+  }
+
+  async getUserStories(userId: string): Promise<Story[]> {
+    return await db.select()
+      .from(stories)
+      .where(eq(stories.authorId, userId))
+      .orderBy(desc(stories.createdAt));
+  }
+
+  async updateStory(id: string, updates: Partial<InsertStory>): Promise<Story | undefined> {
+    const result = await db.update(stories)
+      .set(updates)
+      .where(eq(stories.id, id))
+      .returning();
+    return result[0];
+  }
+
+  async deleteStory(id: string): Promise<void> {
+    await db.delete(stories).where(eq(stories.id, id));
   }
 
   async incrementStoryLikes(storyId: string): Promise<void> {

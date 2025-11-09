@@ -12,6 +12,7 @@ import {
 import { Label } from "@/components/ui/label";
 import SettingsDialog from "./SettingsDialog";
 import DismissedStoriesSection from "./DismissedStoriesSection";
+import MyStoriesSection from "./MyStoriesSection";
 import type { User } from "@shared/schema";
 
 export interface ProfileSectionProps {
@@ -107,7 +108,8 @@ export default function ProfileSection({
         </div>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-6">
+        <MyStoriesSection onStoryClick={onStoryClick} />
         <DismissedStoriesSection onStoryClick={onStoryClick} />
       </div>
 

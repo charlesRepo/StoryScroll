@@ -12,10 +12,11 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Loader2, Sparkles, Save } from "lucide-react";
+import { Loader2, Sparkles } from "lucide-react";
 import { apiRequest, queryClient } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import type { Story } from "@shared/schema";
+import EditStoryForm from "./EditStoryForm";
 
 export interface CreateStoryFormProps {
   onGenerate: (params: {
@@ -44,31 +45,37 @@ export default function CreateStoryForm({
   const [generateMoral, setGenerateMoral] = useState(true);
   const [ageRange, setAgeRange] = useState("3-5 years");
   const [language, setLanguage] = useState("en");
-  const [isPublic, setIsPublic] = useState(true);
 
-  const saveStoryMutation = useMutation({
-    mutationFn: async () => {
+  const publishStoryMutation = useMutation({
+    mutationFn: async (storyData: {
+      title: string;
+      summary: string;
+      moral: string;
+      fullContent: string;
+      isPublic: boolean;
+    }) => {
       if (!generatedStory) return;
       
       const response = await apiRequest("POST", "/api/stories", {
-        title: generatedStory.title!,
-        summary: generatedStory.summary!,
-        moral: generatedStory.moral || null,
-        fullContent: generatedStory.fullContent!,
+        title: storyData.title,
+        summary: storyData.summary,
+        moral: storyData.moral || null,
+        fullContent: storyData.fullContent,
         imageUrl: "https://images.unsplash.com/photo-1506812574058-fc75fa93fead?w=800&q=80",
         ageRange: generatedStory.ageRange!,
         language: generatedStory.language!,
-        sourceType: "ai-generated",
-        isPublic,
+        sourceType: "user-shared",
+        isPublic: storyData.isPublic,
       });
       return await response.json();
     },
     onSuccess: () => {
       toast({
-        title: "Story saved!",
-        description: "Your custom story has been saved successfully.",
+        title: "Story published!",
+        description: "Your custom story has been published successfully.",
       });
       queryClient.invalidateQueries({ queryKey: ["/api/stories"] });
+      queryClient.invalidateQueries({ queryKey: ["/api/stories/mine"] });
       
       // Reset form
       setTheme("");
@@ -76,8 +83,8 @@ export default function CreateStoryForm({
     },
     onError: (error: any) => {
       toast({
-        title: "Save failed",
-        description: error.message || "Failed to save story",
+        title: "Publish failed",
+        description: error.message || "Failed to publish story",
         variant: "destructive",
       });
     },
@@ -185,78 +192,18 @@ export default function CreateStoryForm({
           </Button>
         </div>
       ) : (
-        <div className="space-y-6">
-          <div className="p-6 border rounded-lg space-y-4 bg-card">
-            <h3 className="text-xl font-serif font-semibold" data-testid="text-generated-title">
-              {generatedStory.title}
-            </h3>
-            
-            {generatedStory.moral && (
-              <div className="p-4 bg-primary/10 rounded-md">
-                <p className="text-sm font-medium text-muted-foreground mb-1">Moral of the Story</p>
-                <p className="text-sm">{generatedStory.moral}</p>
-              </div>
-            )}
-            
-            <div className="prose prose-sm max-w-none">
-              <p className="text-sm text-muted-foreground italic mb-3">{generatedStory.summary}</p>
-              <div className="whitespace-pre-wrap text-sm leading-relaxed">
-                {generatedStory.fullContent}
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center justify-between p-4 border rounded-md">
-            <div className="space-y-1">
-              <Label htmlFor="public">Share Publicly</Label>
-              <p className="text-sm text-muted-foreground">
-                Allow other parents to discover this story
-              </p>
-            </div>
-            <Switch
-              id="public"
-              checked={isPublic}
-              onCheckedChange={setIsPublic}
-              disabled={saveStoryMutation.isPending}
-              data-testid="switch-public"
-            />
-          </div>
-
-          <div className="flex gap-3">
-            <Button
-              variant="outline"
-              size="lg"
-              className="flex-1"
-              onClick={() => {
-                setTheme("");
-                setGenerateMoral(true);
-              }}
-              disabled={saveStoryMutation.isPending}
-              data-testid="button-create-another"
-            >
-              Create Another
-            </Button>
-            <Button
-              size="lg"
-              className="flex-1 gap-2"
-              onClick={() => saveStoryMutation.mutate()}
-              disabled={saveStoryMutation.isPending}
-              data-testid="button-save-story"
-            >
-              {saveStoryMutation.isPending ? (
-                <>
-                  <Loader2 className="h-4 w-4 animate-spin" />
-                  Saving...
-                </>
-              ) : (
-                <>
-                  <Save className="h-4 w-4" />
-                  Save Story
-                </>
-              )}
-            </Button>
-          </div>
-        </div>
+        <EditStoryForm
+          initialTitle={generatedStory.title || ""}
+          initialSummary={generatedStory.summary || ""}
+          initialMoral={generatedStory.moral || ""}
+          initialContent={generatedStory.fullContent || ""}
+          onPublish={(storyData) => publishStoryMutation.mutate(storyData)}
+          onCancel={() => {
+            setTheme("");
+            setGenerateMoral(true);
+          }}
+          isPublishing={publishStoryMutation.isPending}
+        />
       )}
     </div>
   );

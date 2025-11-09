@@ -141,20 +141,32 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.get("/api/stories", async (req, res) => {
     try {
       const { language, ageRange } = req.query;
+      const userId = req.session.userId;
       
       // Get dismissed story IDs for authenticated users to exclude from feed
       let excludeIds: string[] = [];
-      if (req.session.userId) {
-        excludeIds = await storage.getUserDismissedStoryIds(req.session.userId);
+      if (userId) {
+        excludeIds = await storage.getUserDismissedStoryIds(userId);
       }
 
-      const stories = await storage.getStories({
+      // Get public stories
+      const publicStories = await storage.getStories({
         language: language as string,
         ageRange: ageRange as string,
         isPublic: true,
         excludeIds,
       });
 
+      // If authenticated and no filters applied, also include user's own private stories for search
+      let userStories: any[] = [];
+      if (userId && !language && !ageRange) {
+        userStories = await storage.getUserStories(userId);
+        // Filter out stories that are already in public stories
+        const publicIds = new Set(publicStories.map(s => s.id));
+        userStories = userStories.filter(s => !publicIds.has(s.id));
+      }
+
+      const stories = [...publicStories, ...userStories];
       res.json({ stories });
     } catch (error: any) {
       res.status(500).json({ error: error.message });
@@ -192,6 +204,69 @@ export async function registerRoutes(app: Express): Promise<Server> {
         const messages = error.errors.map(e => `${e.path.join('.')}: ${e.message}`).join(', ');
         return res.status(400).json({ error: `Validation error: ${messages}` });
       }
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  // Get user's own stories
+  app.get("/api/stories/mine", requireAuth, async (req, res) => {
+    try {
+      const userId = req.session.userId!;
+      const stories = await storage.getUserStories(userId);
+      res.json({ stories });
+    } catch (error: any) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  // Update a user's story
+  app.patch("/api/stories/:id", requireAuth, async (req, res) => {
+    try {
+      const userId = req.session.userId!;
+      const storyId = req.params.id;
+
+      // Get story to verify ownership
+      const existingStory = await storage.getStory(storyId);
+      if (!existingStory) {
+        return res.status(404).json({ error: "Story not found" });
+      }
+
+      if (existingStory.authorId !== userId) {
+        return res.status(403).json({ error: "You can only edit your own stories" });
+      }
+
+      const validatedData = insertStorySchema.partial().parse(req.body);
+      const updatedStory = await storage.updateStory(storyId, validatedData);
+      
+      res.json({ story: updatedStory });
+    } catch (error: any) {
+      if (error instanceof z.ZodError) {
+        const messages = error.errors.map(e => `${e.path.join('.')}: ${e.message}`).join(', ');
+        return res.status(400).json({ error: `Validation error: ${messages}` });
+      }
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  // Delete a user's story
+  app.delete("/api/stories/:id", requireAuth, async (req, res) => {
+    try {
+      const userId = req.session.userId!;
+      const storyId = req.params.id;
+
+      // Get story to verify ownership
+      const existingStory = await storage.getStory(storyId);
+      if (!existingStory) {
+        return res.status(404).json({ error: "Story not found" });
+      }
+
+      if (existingStory.authorId !== userId) {
+        return res.status(403).json({ error: "You can only delete your own stories" });
+      }
+
+      await storage.deleteStory(storyId);
+      res.json({ success: true });
+    } catch (error: any) {
       res.status(500).json({ error: error.message });
     }
   });
