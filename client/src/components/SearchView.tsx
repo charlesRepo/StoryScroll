@@ -49,14 +49,14 @@ export default function SearchView({
     <div className="h-full flex flex-col bg-background">
       {/* Search Header */}
       <div className="sticky top-0 z-50 bg-background border-b p-4">
-        <div className="relative flex items-center">
+        <div className="relative flex items-center gap-2">
           <div className="absolute left-3 pointer-events-none">
             <Search className="h-5 w-5 text-muted-foreground" data-testid="icon-search" />
           </div>
           <Input
             type="text"
             placeholder="Search stories..."
-            className="pl-10 pr-10"
+            className="pl-10 pr-3"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             data-testid="input-search"
@@ -66,7 +66,7 @@ export default function SearchView({
             <Button
               size="icon"
               variant="ghost"
-              className="absolute right-1 h-8 w-8"
+              className="h-8 w-8 flex-shrink-0"
               onClick={() => setSearchQuery("")}
               data-testid="button-clear-search"
             >
