@@ -130,11 +130,20 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.get("/api/stories", async (req, res) => {
     try {
       const { language, ageRange } = req.query;
+      
+      // Get dismissed story IDs for authenticated users to exclude from feed
+      let excludeIds: string[] = [];
+      if (req.session.userId) {
+        excludeIds = await storage.getUserDismissedStoryIds(req.session.userId);
+      }
+
       const stories = await storage.getStories({
         language: language as string,
         ageRange: ageRange as string,
         isPublic: true,
+        excludeIds,
       });
+
       res.json({ stories });
     } catch (error: any) {
       res.status(500).json({ error: error.message });
@@ -310,6 +319,46 @@ Return the response in this exact JSON format:
       const { storyId } = req.params;
       const liked = await storage.isStoryLiked(userId, storyId);
       res.json({ liked });
+    } catch (error: any) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  // Dismissed stories routes
+  app.get("/api/dismissed-stories", requireAuth, async (req, res) => {
+    try {
+      const userId = req.session.userId!;
+      const stories = await storage.getUserDismissedStories(userId);
+      res.json({ stories });
+    } catch (error: any) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  app.post("/api/dismissed-stories/:storyId", requireAuth, async (req, res) => {
+    try {
+      const userId = req.session.userId!;
+      const { storyId } = req.params;
+
+      const isDismissed = await storage.isStoryDismissed(userId, storyId);
+      if (isDismissed) {
+        await storage.restoreStory(userId, storyId);
+        res.json({ dismissed: false });
+      } else {
+        await storage.dismissStory(userId, storyId);
+        res.json({ dismissed: true });
+      }
+    } catch (error: any) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  app.get("/api/dismissed-stories/:storyId/status", requireAuth, async (req, res) => {
+    try {
+      const userId = req.session.userId!;
+      const { storyId } = req.params;
+      const dismissed = await storage.isStoryDismissed(userId, storyId);
+      res.json({ dismissed });
     } catch (error: any) {
       res.status(500).json({ error: error.message });
     }

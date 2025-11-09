@@ -39,6 +39,13 @@ export const likedStories = pgTable("liked_stories", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
+export const dismissedStories = pgTable("dismissed_stories", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  userId: varchar("user_id").notNull().references(() => users.id),
+  storyId: varchar("story_id").notNull().references(() => stories.id),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
 export const insertUserSchema = createInsertSchema(users).omit({
   id: true,
   createdAt: true,
@@ -57,9 +64,16 @@ export const insertLikedStorySchema = createInsertSchema(likedStories).omit({
   createdAt: true,
 });
 
+export const insertDismissedStorySchema = createInsertSchema(dismissedStories).omit({
+  id: true,
+  createdAt: true,
+});
+
 export type InsertUser = z.infer<typeof insertUserSchema>;
 export type User = typeof users.$inferSelect;
 export type InsertStory = z.infer<typeof insertStorySchema>;
 export type Story = typeof stories.$inferSelect;
 export type InsertLikedStory = z.infer<typeof insertLikedStorySchema>;
 export type LikedStory = typeof likedStories.$inferSelect;
+export type InsertDismissedStory = z.infer<typeof insertDismissedStorySchema>;
+export type DismissedStory = typeof dismissedStories.$inferSelect;

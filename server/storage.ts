@@ -5,12 +5,15 @@ import {
   type InsertStory, 
   type LikedStory, 
   type InsertLikedStory,
+  type DismissedStory,
+  type InsertDismissedStory,
   users,
   stories,
-  likedStories
+  likedStories,
+  dismissedStories
 } from "@shared/schema";
 import { db } from "./db";
-import { eq, and, desc } from "drizzle-orm";
+import { eq, and, desc, notInArray } from "drizzle-orm";
 
 export interface IStorage {
   // User operations
@@ -22,7 +25,7 @@ export interface IStorage {
 
   // Story operations
   getStory(id: string): Promise<Story | undefined>;
-  getStories(filters: { language?: string; ageRange?: string; isPublic?: boolean }): Promise<Story[]>;
+  getStories(filters: { language?: string; ageRange?: string; isPublic?: boolean; excludeIds?: string[] }): Promise<Story[]>;
   createStory(story: InsertStory): Promise<Story>;
   incrementStoryLikes(storyId: string): Promise<void>;
   decrementStoryLikes(storyId: string): Promise<void>;
@@ -32,6 +35,13 @@ export interface IStorage {
   likeStory(userId: string, storyId: string): Promise<LikedStory>;
   unlikeStory(userId: string, storyId: string): Promise<void>;
   isStoryLiked(userId: string, storyId: string): Promise<boolean>;
+
+  // Dismissed stories operations
+  getUserDismissedStories(userId: string): Promise<Story[]>;
+  dismissStory(userId: string, storyId: string): Promise<DismissedStory>;
+  restoreStory(userId: string, storyId: string): Promise<void>;
+  isStoryDismissed(userId: string, storyId: string): Promise<boolean>;
+  getUserDismissedStoryIds(userId: string): Promise<string[]>;
 }
 
 export class DbStorage implements IStorage {
@@ -73,13 +83,16 @@ export class DbStorage implements IStorage {
     return result[0];
   }
 
-  async getStories(filters: { language?: string; ageRange?: string; isPublic?: boolean } = {}): Promise<Story[]> {
+  async getStories(filters: { language?: string; ageRange?: string; isPublic?: boolean; excludeIds?: string[] } = {}): Promise<Story[]> {
     let query = db.select().from(stories);
     
     const conditions = [];
     if (filters.language) conditions.push(eq(stories.language, filters.language));
     if (filters.ageRange) conditions.push(eq(stories.ageRange, filters.ageRange));
     if (filters.isPublic !== undefined) conditions.push(eq(stories.isPublic, filters.isPublic));
+    if (filters.excludeIds && filters.excludeIds.length > 0) {
+      conditions.push(notInArray(stories.id, filters.excludeIds));
+    }
     
     if (conditions.length > 0) {
       query = query.where(and(...conditions)) as any;
@@ -162,6 +175,68 @@ export class DbStorage implements IStorage {
         eq(likedStories.storyId, storyId)
       ));
     return result.length > 0;
+  }
+
+  // Dismissed stories operations
+  async getUserDismissedStories(userId: string): Promise<Story[]> {
+    const result = await db
+      .select({
+        id: stories.id,
+        title: stories.title,
+        summary: stories.summary,
+        moral: stories.moral,
+        fullContent: stories.fullContent,
+        imageUrl: stories.imageUrl,
+        ageRange: stories.ageRange,
+        language: stories.language,
+        isTranslated: stories.isTranslated,
+        originalLanguage: stories.originalLanguage,
+        sourceType: stories.sourceType,
+        authorId: stories.authorId,
+        authorName: stories.authorName,
+        likeCount: stories.likeCount,
+        isPublic: stories.isPublic,
+        createdAt: stories.createdAt,
+      })
+      .from(dismissedStories)
+      .innerJoin(stories, eq(dismissedStories.storyId, stories.id))
+      .where(eq(dismissedStories.userId, userId))
+      .orderBy(desc(dismissedStories.createdAt));
+    
+    return result;
+  }
+
+  async dismissStory(userId: string, storyId: string): Promise<DismissedStory> {
+    const result = await db.insert(dismissedStories)
+      .values({ userId, storyId })
+      .returning();
+    return result[0];
+  }
+
+  async restoreStory(userId: string, storyId: string): Promise<void> {
+    await db.delete(dismissedStories)
+      .where(and(
+        eq(dismissedStories.userId, userId),
+        eq(dismissedStories.storyId, storyId)
+      ));
+  }
+
+  async isStoryDismissed(userId: string, storyId: string): Promise<boolean> {
+    const result = await db.select().from(dismissedStories)
+      .where(and(
+        eq(dismissedStories.userId, userId),
+        eq(dismissedStories.storyId, storyId)
+      ));
+    return result.length > 0;
+  }
+
+  async getUserDismissedStoryIds(userId: string): Promise<string[]> {
+    const result = await db
+      .select({ storyId: dismissedStories.storyId })
+      .from(dismissedStories)
+      .where(eq(dismissedStories.userId, userId));
+    
+    return result.map(r => r.storyId);
   }
 }
 
