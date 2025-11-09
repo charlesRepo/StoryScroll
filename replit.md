@@ -165,6 +165,24 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+### Story Card Redesign (November 2025)
+Redesigned story cards with a paper-like, minimalist appearance:
+- **Removed Images**: Eliminated the 30vh image section from story cards for a cleaner look
+- **Larger Title**: Increased title size from `text-2xl` to `text-4xl` with bold weight for better readability
+- **Paper-like Card Design**:
+  - Off-white background color (`#faf8f5`) for a paper-like aesthetic
+  - Subtle shadow (`shadow-lg`) for depth
+  - Rounded corners with subtle border
+  - Centered layout with max-width constraint
+- **Updated Typography**: All text uses gray tones optimized for off-white background
+  - Title: dark gray (`gray-900`)
+  - Summary: medium gray (`gray-700`)
+  - Metadata: lighter gray (`gray-600`)
+- **Improved Scrolling**: Fixed scroll container height to use `min-h-full` instead of `h-screen`
+  - Cards now match scroll container height exactly
+  - Proper snap alignment throughout feed
+  - No extra space at bottom when scrolling
+
 ### Search Functionality Rebuild (November 2025)
 Completely rebuilt search functionality with simplified, more reliable implementation:
 - **Simple Search Algorithm**: Replaced complex fuzzy matching with basic case-insensitive `.includes()` matching
