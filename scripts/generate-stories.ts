@@ -139,135 +139,6 @@ const storyTitles = {
     "Le Meunier, son Fils et l'Âne",
     "Les Deux Amis",
   ],
-  de: [
-    // Brüder Grimm (Original German)
-    "Schneewittchen",
-    "Hänsel und Gretel",
-    "Rapunzel",
-    "Rumpelstilzchen",
-    "Der Froschkönig",
-    "Schneeweißchen und Rosenrot",
-    "Der Wolf und die sieben Geißlein",
-    "Die Goldene Gans",
-    "Daumesdick",
-    "Vom Fischer und seiner Frau",
-    "Das tapfere Schneiderlein",
-    "Die Bremer Stadtmusikanten",
-    "Der goldene Vogel",
-    "Die zwölf Brüder",
-    "Die weiße Schlange",
-    "Die Wichtelmänner",
-    "Frau Holle",
-    "Die vier kunstreichen Brüder",
-    "Einäuglein, Zweiäuglein und Dreiäuglein",
-    "Das blaue Licht",
-    "Dornröschen",
-    "Aschenputtel",
-    "Rotkäppchen",
-    "Die Gänsemagd",
-    "Der gestiefelte Kater",
-    "Allerleirauh",
-    "Der Bärenhäuter",
-    "Brüderchen und Schwesterchen",
-    "König Drosselbart",
-    "Die kluge Else",
-    "Die Sterntaler",
-    "Tischlein deck dich",
-    "Der süße Brei",
-    "Die sieben Raben",
-    "Die sechs Schwäne",
-    "Die Kristallkugel",
-    "Der Teufel mit den drei goldenen Haaren",
-    "Hans im Glück",
-    "Die Bienenkönigin",
-    // Hans Christian Andersen (German translations)
-    "Die kleine Meerjungfrau",
-    "Das hässliche Entlein",
-    "Die Schneekönigin",
-    "Des Kaisers neue Kleider",
-    "Däumelinchen",
-    "Der standhafte Zinnsoldat",
-    "Die Nachtigall",
-    "Das kleine Mädchen mit den Schwefelhölzern",
-    "Die Prinzessin auf der Erbse",
-    "Das Feuerzeug",
-    // German Fables
-    "Der Hase und der Igel",
-    "Der Fuchs und der Storch",
-    "Der Löwe und die Maus",
-    "Die Stadtmaus und die Landmaus",
-    "Der Fuchs und die Trauben",
-    "Die Grille und die Ameise",
-    "Der Rabe und der Fuchs",
-    "Das Huhn und das goldene Ei",
-    "Der Nordwind und die Sonne",
-    "Der Wolf im Schafspelz",
-  ],
-  es: [
-    // Spanish Adaptations of Perrault
-    "Caperucita Roja",
-    "Cenicienta",
-    "La Bella Durmiente",
-    "El Gato con Botas",
-    "Pulgarcito",
-    "Barba Azul",
-    "Las Hadas",
-    "Riquete el del Copete",
-    // Spanish Adaptations of Grimm
-    "Blancanieves",
-    "Hansel y Gretel",
-    "Rapunzel",
-    "Rumpelstiltskin",
-    "El Príncipe Rana",
-    "Los Músicos de Bremen",
-    "El Sastrecillo Valiente",
-    "El Lobo y los Siete Cabritos",
-    "El Ganso de Oro",
-    "El Pescador y su Mujer",
-    "Blancanieves y Rosenrot",
-    "La Madre Nieve",
-    "Los Siete Cuervos",
-    "Los Doce Hermanos",
-    // Spanish Adaptations of Andersen
-    "La Sirenita",
-    "El Patito Feo",
-    "La Reina de las Nieves",
-    "El Traje Nuevo del Emperador",
-    "Pulgarcita",
-    "El Soldadito de Plomo",
-    "El Ruiseñor",
-    "La Cerillera",
-    "La Princesa y el Guisante",
-    "El Encendedor",
-    // Spanish Traditional Stories
-    "Los Tres Cerditos",
-    "Ricitos de Oro y los Tres Osos",
-    "Juan y las Habichuelas Mágicas",
-    "El Hombre de Jengibre",
-    "La Bella y la Bestia",
-    "Aladino y la Lámpara Maravillosa",
-    // Fábulas de Esopo (Spanish)
-    "La Liebre y la Tortuga",
-    "El Niño que Gritaba Lobo",
-    "La Cigarra y la Hormiga",
-    "El Zorro y las Uvas",
-    "El León y el Ratón",
-    "El Ratón de Ciudad y el Ratón de Campo",
-    "El Zorro y el Cuervo",
-    "La Gallina de los Huevos de Oro",
-    "El Viento del Norte y el Sol",
-    "El Perro y su Reflejo",
-    "El Zorro y la Cigüeña",
-    "El Cuervo y el Cántaro",
-    "El Lobo con Piel de Oveja",
-    "El Haz de Leña",
-    "El León y el Mosquito",
-    "La Zorra y el Leñador",
-    "Las Ranas Pidiendo Rey",
-    "La Lechera",
-    "El Águila y la Zorra",
-    "El Ciervo en la Fuente",
-  ],
 };
 
 interface StoryData {
@@ -276,9 +147,9 @@ interface StoryData {
   moral: string;
   fullContent: string;
   ageRange: '0-2 years' | '3-5 years' | '6-10 years';
-  language: 'en' | 'fr' | 'de' | 'es';
+  language: 'en' | 'fr';
   isTranslated: boolean;
-  originalLanguage: 'en' | 'fr' | 'de' | 'es';
+  originalLanguage: 'en' | 'fr';
   sourceType: 'curated';
   authorName: string;
   likeCount: number;
@@ -288,13 +159,11 @@ interface StoryData {
 
 async function generateStoryInOriginalLanguage(
   title: string,
-  originalLang: 'en' | 'fr' | 'de' | 'es'
+  originalLang: 'en' | 'fr'
 ): Promise<Omit<StoryData, 'language' | 'isTranslated'>> {
   const languageNames = {
     en: 'English',
     fr: 'French',
-    de: 'German',
-    es: 'Spanish',
   };
 
   const prompt = `You are a master storyteller creating a bedtime story for children based on the classical tale "${title}".
@@ -366,13 +235,11 @@ Return ONLY valid JSON in this exact format:
 
 async function translateStory(
   originalStory: Omit<StoryData, 'language' | 'isTranslated'>,
-  targetLang: 'en' | 'fr' | 'de' | 'es'
+  targetLang: 'en' | 'fr'
 ): Promise<StoryData> {
   const languageNames = {
     en: 'English',
     fr: 'French',
-    de: 'German',
-    es: 'Spanish',
   };
 
   const prompt = `Translate this bedtime story from ${languageNames[originalStory.originalLanguage]} to ${languageNames[targetLang]}.
@@ -428,9 +295,11 @@ Return ONLY valid JSON:
 
 async function generateAllStories() {
   console.log('Starting story generation pipeline...\n');
+  console.log('Generating 120 original stories (60 English + 60 French)');
+  console.log('Then translating each to create 240 total story records\n');
   
   const allStories: StoryData[] = [];
-  const languages: ('en' | 'fr' | 'de' | 'es')[] = ['en', 'fr', 'de', 'es'];
+  const languages: ('en' | 'fr')[] = ['en', 'fr'];
 
   // Generate stories in original languages first
   const originalStories: Record<string, Omit<StoryData, 'language' | 'isTranslated'>> = {};
@@ -501,7 +370,7 @@ async function generateAllStories() {
 
   console.log(`\n\n=== Generation Complete ===`);
   console.log(`Total stories generated: ${allStories.length}`);
-  console.log(`Expected: ${240 * 4} (240 originals × 4 languages)`);
+  console.log(`Expected: 240 (120 originals × 2 languages)`);
 
   // Save to file
   const outputPath = path.join(__dirname, '../server/generated-stories.json');
