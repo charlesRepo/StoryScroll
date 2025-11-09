@@ -12,6 +12,7 @@ A mobile-first web application for discovering and creating bedtime stories for 
 - Optional user authentication for personalization and saved stories
 - Profile editing with secure password management
 - Story liking and bookmarking (requires login)
+- Story dismissal with undo functionality (requires login)
 - Search functionality (available to all users)
 - Reading time estimation
 - Classical bedtime story library from public domain sources
@@ -77,8 +78,10 @@ Preferred communication style: Simple, everyday language.
   - Filter by age and language
 - **Protected (Auth Required)**:
   - Like/save stories
+  - Dismiss/restore stories
   - Create custom AI stories
   - View liked stories collection
+  - View dismissed stories collection
   - Access user profile and preferences
 
 **Key Routes:**
@@ -89,6 +92,9 @@ Preferred communication style: Simple, everyday language.
 - `/api/stories/generate` (POST) - **Protected** - AI story generation
 - `/api/liked-stories` (GET) - **Protected** - User's saved stories
 - `/api/liked-stories/:id` (POST) - **Protected** - Like/unlike story
+- `/api/dismissed-stories` (GET) - **Protected** - User's dismissed stories
+- `/api/dismissed-stories/:id` (POST) - **Protected** - Dismiss story (idempotent)
+- `/api/dismissed-stories/:id` (DELETE) - **Protected** - Restore story (idempotent)
 - `/api/users/preferences` (PATCH) - **Protected** - User preference updates
 - `/api/users/profile` (PATCH) - **Protected** - Update user profile
 
@@ -113,6 +119,12 @@ Preferred communication style: Simple, everyday language.
 **likedStories table:**
 - Junction table for user-story many-to-many relationship
 - Foreign keys to users and stories with cascading
+
+**dismissedStories table:**
+- Junction table for user-story many-to-many relationship
+- Tracks stories users have dismissed from their feed
+- Foreign keys to users and stories with cascading
+- Composite unique constraint on (userId, storyId)
 
 **Design Decisions:**
 - Denormalized likeCount for performance (avoids COUNT queries on feed)
@@ -151,6 +163,20 @@ Preferred communication style: Simple, everyday language.
 - Future: Support for AI-generated images or user uploads
 
 ## Recent Changes
+
+### Story Dismissal Feature (November 2025)
+Implemented story dismissal with undo functionality:
+- Users can dismiss stories from feed using X button on story cards
+- Toast notification appears with Undo button for quick restoration
+- Dismissed stories section in Profile tab (collapsible) to view and restore dismissed stories
+- Race condition fixed using separate idempotent endpoints:
+  - POST `/api/dismissed-stories/:id` → always dismiss (idempotent)
+  - DELETE `/api/dismissed-stories/:id` → always restore (idempotent)
+- Per-story pending state tracking prevents overlapping mutations
+- SQL-level filtering excludes dismissed stories from main feed
+- Database table: dismissedStories (userId, storyId junction)
+- All endpoints properly authenticated and protected
+- E2E tested including rapid click scenarios
 
 ### Profile Editing Feature (November 2025)
 Added comprehensive profile editing functionality:
