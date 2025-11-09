@@ -27,6 +27,7 @@ export interface IStorage {
   getStory(id: string): Promise<Story | undefined>;
   getStories(filters: { language?: string; ageRange?: string; isPublic?: boolean; excludeIds?: string[] }): Promise<Story[]>;
   getUserStories(userId: string): Promise<Story[]>;
+  getStoryByAuthorAndTitle(authorId: string, title: string): Promise<Story | undefined>;
   createStory(story: InsertStory): Promise<Story>;
   updateStory(id: string, updates: Partial<InsertStory>): Promise<Story | undefined>;
   deleteStory(id: string): Promise<void>;
@@ -114,6 +115,13 @@ export class DbStorage implements IStorage {
       .from(stories)
       .where(eq(stories.authorId, userId))
       .orderBy(desc(stories.createdAt));
+  }
+
+  async getStoryByAuthorAndTitle(authorId: string, title: string): Promise<Story | undefined> {
+    const result = await db.select()
+      .from(stories)
+      .where(and(eq(stories.authorId, authorId), eq(stories.title, title)));
+    return result[0];
   }
 
   async updateStory(id: string, updates: Partial<InsertStory>): Promise<Story | undefined> {

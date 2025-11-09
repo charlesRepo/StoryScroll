@@ -207,6 +207,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
         authorName: user?.username,
       });
 
+      // Check if author already has a story with this title
+      const existingStory = await storage.getStoryByAuthorAndTitle(userId, validatedData.title);
+      if (existingStory) {
+        return res.status(400).json({ 
+          error: "You already have a story with this title. Please choose a different title." 
+        });
+      }
+
       const story = await storage.createStory(validatedData);
       res.json({ story });
     } catch (error: any) {
