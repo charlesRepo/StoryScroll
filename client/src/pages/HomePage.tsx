@@ -316,11 +316,11 @@ export default function HomePage() {
         />
       )}
 
-      <div className="h-full pb-16">
+      <div className="flex-1 overflow-hidden">
         {activeTab === "feed" && (
           <div
             ref={scrollContainerRef}
-            className="h-full overflow-y-scroll snap-y snap-mandatory scrollbar-hide"
+            className="h-full overflow-y-auto snap-y snap-mandatory scrollbar-hide"
             style={{ 
               scrollbarWidth: "none", 
               msOverflowStyle: "none",
@@ -328,7 +328,7 @@ export default function HomePage() {
             }}
           >
             {stories.length === 0 ? (
-              <div className="h-full flex items-center justify-center p-6 text-center">
+              <div className="min-h-full flex items-center justify-center p-6 text-center">
                 <div>
                   <p className="text-muted-foreground mb-2">No stories found</p>
                   <p className="text-sm text-muted-foreground">

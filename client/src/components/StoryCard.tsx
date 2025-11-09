@@ -62,7 +62,7 @@ export default function StoryCard({
 
   return (
     <div
-      className="h-screen w-full flex flex-col bg-background snap-start cursor-pointer"
+      className="min-h-full w-full flex flex-col bg-background snap-start cursor-pointer"
       onClick={onClick}
       data-testid="card-story"
     >
