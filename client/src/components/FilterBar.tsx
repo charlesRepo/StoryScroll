@@ -6,6 +6,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import logoUrl from "@assets/storyscroll_logo_1762725801637.png";
 
 export interface FilterBarProps {
   selectedAge: string;
@@ -29,18 +30,26 @@ export default function FilterBar({
   return (
     <div className="sticky top-0 z-50 bg-white/95 dark:bg-gray-950/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 supports-[backdrop-filter]:dark:bg-gray-950/80 border-b">
       <div className="p-4 space-y-3">
-        <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-hide">
-          {AGE_RANGES.map((age) => (
-            <Badge
-              key={age}
-              variant={selectedAge === age ? "default" : "outline"}
-              className="cursor-pointer whitespace-nowrap hover-elevate active-elevate-2"
-              onClick={() => onAgeChange(age)}
-              data-testid={`button-age-${age.replace(/\s+/g, "-")}`}
-            >
-              {age}
-            </Badge>
-          ))}
+        <div className="flex items-center gap-3">
+          <img 
+            src={logoUrl} 
+            alt="StoryScroll" 
+            className="w-10 h-10 object-contain flex-shrink-0"
+            data-testid="img-filter-bar-logo"
+          />
+          <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-hide flex-1">
+            {AGE_RANGES.map((age) => (
+              <Badge
+                key={age}
+                variant={selectedAge === age ? "default" : "outline"}
+                className="cursor-pointer whitespace-nowrap hover-elevate active-elevate-2"
+                onClick={() => onAgeChange(age)}
+                data-testid={`button-age-${age.replace(/\s+/g, "-")}`}
+              >
+                {age}
+              </Badge>
+            ))}
+          </div>
         </div>
 
         <Select value={selectedLanguage} onValueChange={onLanguageChange}>
