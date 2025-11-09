@@ -47,9 +47,9 @@ export default function StoryModal({
   const readingTime = calculateReadingTime(fullContent);
 
   return (
-    <div className="fixed inset-0 z-50 bg-background" data-testid="modal-story">
+    <div className="fixed inset-0 z-50 bg-card" data-testid="modal-story">
       <div className="flex flex-col h-full">
-        <div className="sticky top-0 z-10 bg-background border-b">
+        <div className="sticky top-0 z-10 bg-card border-b">
           <div className="flex items-center justify-between p-4">
             <Button
               size="icon"
