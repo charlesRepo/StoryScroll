@@ -27,7 +27,7 @@ export default function FilterBar({
   onLanguageChange,
 }: FilterBarProps) {
   return (
-    <div className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b">
+    <div className="sticky top-0 z-50 bg-white/95 dark:bg-gray-950/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 supports-[backdrop-filter]:dark:bg-gray-950/80 border-b">
       <div className="p-4 space-y-3">
         <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-hide">
           {AGE_RANGES.map((age) => (
