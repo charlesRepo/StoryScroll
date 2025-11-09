@@ -73,3 +73,10 @@ Added clear indication when user reaches the end of available stories:
 - **Helper Text**: Suggests changing filters to see different stories
 - **Snap Scroll**: Message uses same full-height layout and snap behavior as story cards
 - **Conditional Display**: Only shows when stories are available (not shown in empty state)
+
+### Author Attribution Display (November 2025)
+Improved story source attribution for clarity:
+- **Unified Label**: Changed from "Classic Story" / "Shared by" to consistent "Author:" label
+- **Source Display**: Shows actual author/source names (e.g., "Author: Brothers Grimm", "Author: Hans Christian Andersen")
+- **Consistency**: Same display format in both story cards and story modal
+- **Classical Sources**: All 135 classical stories properly attributed to original authors (Grimm, Andersen, Aesop, Perrault, etc.)
