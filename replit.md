@@ -48,7 +48,7 @@ Integrated official branding with new logo and comprehensive color palette updat
 - **Logo Asset**: Added `attached_assets/storyscroll_logo_1762725801637.png` featuring sleeping scroll character with moon and stars
 - **Logo Placement**: 
   - AuthScreen: Large logo (128x128px) above "StoryScroll" title on authentication screen
-  - App Header: Branded header bar at top of feed with dark teal background `hsl(195, 52%, 24%)`, logo (40x40px) on left, and "StoryScroll" text in golden yellow `hsl(43, 85%, 65%)` next to it
+  - App Header: Compact branded header bar (40px height) at top of feed with dark blue background `rgb(19, 50, 81)`, logo (40x40px) on left, and "StoryScroll" text in golden yellow `hsl(43, 85%, 65%)` next to it
 - **Brand Name**: Changed from "Bedtime Stories" to "StoryScroll" across the application
 - **Color Palette** (extracted from logo):
   - **Primary**: Golden Yellow `hsl(43, 85%, 55-60%)` - Warmth, magic, storytelling
