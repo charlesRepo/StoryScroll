@@ -43,6 +43,18 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Changes
 
+### Story Publishing & Editing Feature (November 2025)
+Added comprehensive story publishing and management capabilities:
+- **Edit Before Publishing**: After AI generates a story, users can now edit title, summary, moral, and full content before publishing
+- **Privacy Control**: Users can choose to share stories publicly or keep them private via isPublic toggle
+- **My Stories Section**: Profile now displays all user's published stories with view/delete options
+- **Story Ownership**: Backend enforces ownership checks on PATCH/DELETE operations to prevent unauthorized edits
+- **Enhanced Search**: Search includes user's own stories (both public and private) plus other users' public stories
+- **Feed Integration**: Public user-shared stories automatically appear in the main feed alongside classical stories
+- **Backend Endpoints**: Added GET /api/stories/mine, PATCH /api/stories/:id, DELETE /api/stories/:id
+- **Storage Methods**: Implemented getUserStories, updateStory, deleteStory for complete CRUD operations
+- **Components**: Created EditStoryForm and MyStoriesSection components for seamless user experience
+
 ### Language Support Update (November 2025)
 Simplified language support to focus on English and French:
 - **Supported Languages**: English and French only (removed Spanish and German)

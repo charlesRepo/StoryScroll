@@ -173,6 +173,17 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Get user's own stories (MUST be before /api/stories/:id to avoid route collision)
+  app.get("/api/stories/mine", requireAuth, async (req, res) => {
+    try {
+      const userId = req.session.userId!;
+      const stories = await storage.getUserStories(userId);
+      res.json({ stories });
+    } catch (error: any) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+
   app.get("/api/stories/:id", async (req, res) => {
     try {
       const story = await storage.getStory(req.params.id);
@@ -204,17 +215,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
         const messages = error.errors.map(e => `${e.path.join('.')}: ${e.message}`).join(', ');
         return res.status(400).json({ error: `Validation error: ${messages}` });
       }
-      res.status(500).json({ error: error.message });
-    }
-  });
-
-  // Get user's own stories
-  app.get("/api/stories/mine", requireAuth, async (req, res) => {
-    try {
-      const userId = req.session.userId!;
-      const stories = await storage.getUserStories(userId);
-      res.json({ stories });
-    } catch (error: any) {
       res.status(500).json({ error: error.message });
     }
   });
