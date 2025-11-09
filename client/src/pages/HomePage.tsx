@@ -51,6 +51,17 @@ export default function HomePage() {
 
   const stories = storiesData?.stories || [];
 
+  // Fetch ALL stories for search (no filters)
+  const { data: allStoriesData } = useQuery<{ stories: Story[] }>({
+    queryKey: ["/api/stories"],
+    queryFn: async () => {
+      const response = await apiRequest("GET", "/api/stories");
+      return await response.json();
+    },
+  });
+
+  const allStories = allStoriesData?.stories || [];
+
   // Fetch liked stories
   const { data: likedStoriesData } = useQuery<{ stories: Story[] }>({
     queryKey: ["/api/liked-stories"],
@@ -355,7 +366,7 @@ export default function HomePage() {
 
         {activeTab === "search" && (
           <SearchView
-            allStories={stories}
+            allStories={allStories}
             onStoryClick={(id) => setSelectedStory(id)}
             onLike={handleLike}
             likedStories={likedStoryIds}

@@ -74,7 +74,7 @@ export default function SearchView({
     <div className="h-full flex flex-col bg-background">
       <div className="sticky top-0 z-50 bg-background border-b p-4">
         <div className="relative w-full max-w-full">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground pointer-events-none" />
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground pointer-events-none" data-testid="icon-search" aria-hidden="true" />
           <Input
             type="search"
             placeholder="Search stories in any language..."
@@ -83,6 +83,7 @@ export default function SearchView({
             onChange={(e) => setSearchQuery(e.target.value)}
             data-testid="input-search"
             autoFocus
+            aria-label="Search stories"
           />
           {searchQuery && (
             <Button
