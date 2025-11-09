@@ -37,7 +37,7 @@ export default function HomePage() {
     }
   }, [selectedLanguage, selectedAge, isAuthenticated]);
 
-  // Fetch stories from API
+  // Fetch stories from API (no auth required for browsing)
   const { data: storiesData } = useQuery<{ stories: Story[] }>({
     queryKey: ["/api/stories", selectedLanguage, selectedAge],
     queryFn: async () => {
@@ -45,7 +45,6 @@ export default function HomePage() {
       const response = await apiRequest("GET", url);
       return await response.json();
     },
-    enabled: isAuthenticated,
   });
 
   const stories = storiesData?.stories || [];
@@ -177,16 +176,15 @@ export default function HomePage() {
       likedStoriesList.find((s) => s.id === selectedStory)
     : null;
 
-  // Show auth screen if not authenticated
-  if (!isAuthenticated && !authLoading) {
-    return <AuthScreen />;
-  }
-
-  // Show loading state
-  if (authLoading) {
+  // Show auth screen only for tabs that require authentication
+  const requiresAuth = activeTab === "create" || activeTab === "liked" || activeTab === "profile";
+  if (!isAuthenticated && !authLoading && requiresAuth) {
     return (
-      <div className="h-screen flex items-center justify-center">
-        <p className="text-muted-foreground">Loading...</p>
+      <div className="h-screen flex flex-col bg-background">
+        <div className="flex-1 flex items-center justify-center">
+          <AuthScreen />
+        </div>
+        <BottomNav activeTab={activeTab} onTabChange={setActiveTab} />
       </div>
     );
   }
