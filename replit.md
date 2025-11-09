@@ -5,13 +5,14 @@
 A mobile-first web application for discovering and creating bedtime stories for children. The app features a TikTok-style vertical swipe feed for browsing stories, AI-powered story generation, and personalized filtering by age range and language. Parents can like stories, save them to their profile, and create custom stories tailored to their child's preferences.
 
 **Core Features:**
+- **Anonymous browsing**: Browse and search stories without signing up
 - Vertical story feed with age-appropriate filtering (0-2, 3-5, 6-10 years)
 - Multi-language support (English, French, Spanish, German)
-- AI-powered story generation using OpenAI
-- User authentication and personalization
+- AI-powered story generation using OpenAI (requires login)
+- Optional user authentication for personalization and saved stories
 - Profile editing with secure password management
-- Story liking and bookmarking
-- Search functionality
+- Story liking and bookmarking (requires login)
+- Search functionality (available to all users)
 - Reading time estimation
 - Classical bedtime story library from public domain sources
 
@@ -62,17 +63,34 @@ Preferred communication style: Simple, everyday language.
 - Repository pattern separating business logic from data access
 
 **Authentication:**
+- **Optional authentication model**: Users can browse stories anonymously
+- Authentication required only for interactive features (liking, creating, profile)
 - bcrypt for password hashing
 - Session middleware with secure cookie configuration
 - Protected route middleware for authenticated endpoints
 
+**Public vs Protected Features:**
+- **Public (No Auth Required)**:
+  - Browse story feed
+  - Search stories
+  - Read full story content
+  - Filter by age and language
+- **Protected (Auth Required)**:
+  - Like/save stories
+  - Create custom AI stories
+  - View liked stories collection
+  - Access user profile and preferences
+
 **Key Routes:**
 - `/api/auth/*` - User authentication (signup, login, logout)
-- `/api/stories` - Story CRUD operations with filtering
-- `/api/liked-stories` - User's saved stories
-- `/api/users/preferences` - User preference updates
-- `/api/users/profile` - Update user profile (username, email, password)
-- `/api/stories/generate` - AI story generation endpoint
+- `/api/stories` (GET) - **Public** - Story browsing with filtering
+- `/api/stories/:id` (GET) - **Public** - Individual story details
+- `/api/stories` (POST) - **Protected** - Create story
+- `/api/stories/generate` (POST) - **Protected** - AI story generation
+- `/api/liked-stories` (GET) - **Protected** - User's saved stories
+- `/api/liked-stories/:id` (POST) - **Protected** - Like/unlike story
+- `/api/users/preferences` (PATCH) - **Protected** - User preference updates
+- `/api/users/profile` (PATCH) - **Protected** - Update user profile
 
 ### Database Design
 

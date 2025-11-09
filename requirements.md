@@ -14,10 +14,11 @@ A mobile-first web application for parents with children under 10 to discover an
 
 ### 1. Story Discovery & Browsing
 
+- **Anonymous browsing**: Browse and search stories without signing up or logging in
 - **TikTok-style vertical swipe feed** for browsing stories
 - **Age-based filtering**: 0-2 years, 3-5 years, 6-10 years
 - **Multi-language support**: English, French, German, Spanish
-- **Search functionality** to find specific stories
+- **Search functionality** to find specific stories (available to all users)
 - **Story cards** showing title, summary, age range, language, author, and reading time estimate
 - Stories display in full-screen card format optimized for bedtime reading
 - Sticky filter bar for quick age/language switching
@@ -25,24 +26,27 @@ A mobile-first web application for parents with children under 10 to discover an
 
 ### 2. User Authentication & Accounts
 
+- **Optional authentication**: Users can browse stories without signing up
 - **Secure password-based authentication** (signup, login, logout)
 - **User profiles** with preferences
 - **Profile editing**: Update username, email, and password
 - Password changes require current password verification for security
 - All passwords hashed with bcrypt (10 rounds)
 - Session-based authentication with secure cookies
+- Authentication only required for interactive features (liking, creating, profile)
 
 ### 3. Story Interaction Features
 
-- **Like stories** (heart icon)
-- **Save/bookmark stories** to user profile
-- **View liked stories** on profile page
-- Stories show like counts
-- Persistent user preferences across sessions
+- **Like stories** (heart icon) - **Requires login**
+- **Save/bookmark stories** to user profile - **Requires login**
+- **View liked stories** on profile page - **Requires login**
+- Stories show like counts (visible to all users)
+- Persistent user preferences across sessions (for logged-in users)
+- Login prompt shown when anonymous users try to interact with stories
 
 ### 4. AI Story Generation
 
-- **Custom story creation** using OpenAI API
+- **Custom story creation** using OpenAI API - **Requires login**
 - Users can specify:
   - Theme/topic
   - Age range
@@ -52,6 +56,7 @@ A mobile-first web application for parents with children under 10 to discover an
   - Summary
   - Moral lesson
   - Full story content
+- Login screen shown when anonymous users try to access create feature
 
 ### 5. Story Content Requirements
 
@@ -189,17 +194,23 @@ Every story must include:
 
 ### API Endpoints
 
-- `/api/auth/signup` - User registration
-- `/api/auth/login` - User login
-- `/api/auth/logout` - User logout
-- `/api/auth/me` - Get current user
-- `/api/stories` - Story CRUD operations with filtering (GET, POST)
-- `/api/stories/:id` - Individual story operations
-- `/api/liked-stories` - Get user's saved stories
-- `/api/liked-stories` - Like/unlike stories (POST, DELETE)
-- `/api/users/preferences` - Update user preferences (PATCH)
-- `/api/users/profile` - Update user profile (PATCH)
-- `/api/stories/generate` - AI story generation endpoint (POST)
+**Public Endpoints (No Authentication Required):**
+- `/api/stories` (GET) - Browse stories with filtering
+- `/api/stories/:id` (GET) - Get individual story details
+
+**Authentication Endpoints:**
+- `/api/auth/signup` (POST) - User registration
+- `/api/auth/login` (POST) - User login
+- `/api/auth/logout` (POST) - User logout
+- `/api/auth/me` (GET) - Get current user
+
+**Protected Endpoints (Authentication Required):**
+- `/api/stories` (POST) - Create new story
+- `/api/stories/generate` (POST) - AI story generation
+- `/api/liked-stories` (GET) - Get user's saved stories
+- `/api/liked-stories/:storyId` (POST) - Like/unlike story
+- `/api/users/preferences` (PATCH) - Update user preferences
+- `/api/users/profile` (PATCH) - Update user profile
 
 ### Database Schema
 
