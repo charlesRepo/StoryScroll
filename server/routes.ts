@@ -2,6 +2,8 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import session from "express-session";
+import connectPgSimple from "connect-pg-simple";
+import { neon } from "@neondatabase/serverless";
 import { insertStorySchema } from "@shared/schema";
 import { z } from "zod";
 import OpenAI from "openai";
@@ -14,16 +16,25 @@ declare module "express-session" {
 }
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Session store with PostgreSQL
+  const PgStore = connectPgSimple(session);
+  const sessionStore = new PgStore({
+    conString: process.env.DATABASE_URL,
+    createTableIfMissing: true,
+  });
+
   // Session middleware
   app.use(
     session({
+      store: sessionStore,
       secret: process.env.SESSION_SECRET || "bedtime-stories-secret",
       resave: false,
       saveUninitialized: false,
       cookie: {
-        maxAge: 1000 * 60 * 60 * 24 * 30, // 30 days
+        maxAge: 1000 * 60 * 60 * 24 * 6, // 6 days as requested
         httpOnly: true,
         secure: process.env.NODE_ENV === "production",
+        sameSite: "lax",
       },
     })
   );

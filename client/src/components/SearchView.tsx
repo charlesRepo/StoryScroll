@@ -26,23 +26,33 @@ export interface SearchViewProps {
   likedStories: Set<string>;
 }
 
-// Simple fuzzy search function
-function fuzzySearch(searchTerm: string, text: string): boolean {
-  const search = searchTerm.toLowerCase().replace(/\s+/g, '');
-  const target = text.toLowerCase().replace(/\s+/g, '');
+// Simple search function
+function searchStory(searchTerm: string, text: string): boolean {
+  const search = searchTerm.toLowerCase().trim();
+  const target = text.toLowerCase();
   
-  if (target.includes(searchTerm.toLowerCase())) {
+  // Direct match with spaces
+  if (target.includes(search)) {
     return true;
   }
   
+  // Fuzzy match without spaces (for typos)
+  const searchNoSpaces = search.replace(/\s+/g, '');
+  const targetNoSpaces = target.replace(/\s+/g, '');
+  
+  if (targetNoSpaces.includes(searchNoSpaces)) {
+    return true;
+  }
+  
+  // Character sequence match
   let searchIndex = 0;
-  for (let i = 0; i < target.length && searchIndex < search.length; i++) {
-    if (target[i] === search[searchIndex]) {
+  for (let i = 0; i < targetNoSpaces.length && searchIndex < searchNoSpaces.length; i++) {
+    if (targetNoSpaces[i] === searchNoSpaces[searchIndex]) {
       searchIndex++;
     }
   }
   
-  return searchIndex === search.length;
+  return searchIndex === searchNoSpaces.length;
 }
 
 export default function SearchView({
@@ -56,7 +66,7 @@ export default function SearchView({
   const filteredStories = searchQuery.trim()
     ? allStories.filter((story) => {
         const searchableText = `${story.title} ${story.summary} ${story.fullContent}`;
-        return fuzzySearch(searchQuery, searchableText);
+        return searchStory(searchQuery, searchableText);
       })
     : [];
 

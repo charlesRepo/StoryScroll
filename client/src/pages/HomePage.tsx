@@ -257,15 +257,17 @@ export default function HomePage() {
     };
   }, [currentStoryIndex, activeTab, stories.length]);
 
-  // Auto-scroll to current story
+  // Auto-scroll to current story with proper snap alignment
   useEffect(() => {
     if (scrollContainerRef.current && activeTab === "feed") {
       const container = scrollContainerRef.current;
-      const storyHeight = window.innerHeight;
-      container.scrollTo({
-        top: currentStoryIndex * storyHeight,
-        behavior: "smooth",
-      });
+      const cards = container.querySelectorAll('[data-testid="card-story"]');
+      if (cards[currentStoryIndex]) {
+        cards[currentStoryIndex].scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
     }
   }, [currentStoryIndex, activeTab]);
 
@@ -307,8 +309,12 @@ export default function HomePage() {
         {activeTab === "feed" && (
           <div
             ref={scrollContainerRef}
-            className="h-full overflow-y-auto snap-y snap-mandatory scrollbar-hide"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+            className="h-full overflow-y-scroll snap-y snap-mandatory scrollbar-hide"
+            style={{ 
+              scrollbarWidth: "none", 
+              msOverflowStyle: "none",
+              scrollSnapStop: "always",
+            }}
           >
             {stories.length === 0 ? (
               <div className="h-full flex items-center justify-center p-6 text-center">
