@@ -69,57 +69,56 @@ export default function StoryCard({
         className="bg-[#faf8f5] rounded-lg shadow-lg p-8 max-w-2xl w-full space-y-4 border border-gray-200/50 cursor-pointer"
         onClick={onClick}
       >
-        <div className="flex items-start justify-between gap-4">
-          <h2 className="text-4xl font-serif font-bold text-gray-900 leading-tight flex-1" data-testid="text-story-title">
-            {title}
-          </h2>
-          <div className="flex gap-1 flex-shrink-0">
-            {showRestoreButton && onRestore && (
-              <Button
-                size="icon"
-                variant="ghost"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onRestore();
-                }}
-                data-testid="button-restore"
-              >
-                <ArrowUpLeft className="h-5 w-5" />
-              </Button>
-            )}
-            {showDismissButton && (
-              <Button
-                size="icon"
-                variant="ghost"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onDismiss?.();
-                }}
-                disabled={isDismissPending}
-                className="no-default-hover-elevate"
-                data-testid="button-dismiss"
-              >
-                {isDismissPending ? (
-                  <Loader2 className="h-5 w-5 animate-spin" />
-                ) : (
-                  <X className="h-5 w-5" />
-                )}
-              </Button>
-            )}
+        <div className="flex justify-end gap-1 mb-2">
+          {showRestoreButton && onRestore && (
             <Button
               size="icon"
               variant="ghost"
-              className={isLiked ? "text-destructive" : ""}
               onClick={(e) => {
                 e.stopPropagation();
-                onLike?.();
+                onRestore();
               }}
-              data-testid="button-like"
+              data-testid="button-restore"
             >
-              <Heart className={`h-5 w-5 ${isLiked ? "fill-current" : ""}`} />
+              <ArrowUpLeft className="h-5 w-5" />
             </Button>
-          </div>
+          )}
+          {showDismissButton && (
+            <Button
+              size="icon"
+              variant="ghost"
+              onClick={(e) => {
+                e.stopPropagation();
+                onDismiss?.();
+              }}
+              disabled={isDismissPending}
+              className="no-default-hover-elevate"
+              data-testid="button-dismiss"
+            >
+              {isDismissPending ? (
+                <Loader2 className="h-5 w-5 animate-spin" />
+              ) : (
+                <X className="h-5 w-5" />
+              )}
+            </Button>
+          )}
+          <Button
+            size="icon"
+            variant="ghost"
+            className={isLiked ? "text-destructive" : ""}
+            onClick={(e) => {
+              e.stopPropagation();
+              onLike?.();
+            }}
+            data-testid="button-like"
+          >
+            <Heart className={`h-5 w-5 ${isLiked ? "fill-current" : ""}`} />
+          </Button>
         </div>
+
+        <h2 className="text-4xl font-serif font-bold text-gray-900 leading-tight w-full" data-testid="text-story-title">
+          {title}
+        </h2>
 
         <div className="flex flex-wrap items-center gap-2">
           {readingTime && (
@@ -137,15 +136,9 @@ export default function StoryCard({
           <Badge variant="secondary" data-testid="badge-language">
             {language}
           </Badge>
-          {isTranslated && originalLanguage && (
-            <Badge variant="outline" className="gap-1" data-testid="badge-translated">
-              <Globe className="h-3 w-3" />
-              Translated from {originalLanguage}
-            </Badge>
-          )}
         </div>
 
-        <p className="text-lg text-gray-700 leading-relaxed" data-testid="text-story-summary">
+        <p className="text-xl text-gray-700 leading-relaxed min-h-[10rem]" data-testid="text-story-summary">
           {summary}
         </p>
 
