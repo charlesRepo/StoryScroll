@@ -80,3 +80,13 @@ Improved story source attribution for clarity:
 - **Source Display**: Shows actual author/source names (e.g., "Author: Brothers Grimm", "Author: Hans Christian Andersen")
 - **Consistency**: Same display format in both story cards and story modal
 - **Classical Sources**: All 135 classical stories properly attributed to original authors (Grimm, Andersen, Aesop, Perrault, etc.)
+
+### Image Removal & Search Fix (November 2025)
+Removed broken placeholder images to fix functionality issues:
+- **Story Modal**: Removed broken Unsplash image placeholder from modal view
+- **Search Results**: Removed broken images from search result cards
+- **Click Fix**: Fixed search card clickability by removing `overflow-hidden` class that conflicted with elevation utilities
+- **Current State**: App displays text-only story cards and modals
+- **Trade-off**: Improved functionality (no broken images, everything clickable) at cost of visual appeal
+- **Note**: Database still contains `imageUrl` field with Unsplash placeholders; not currently displayed in UI
+- **Future Options**: Could add proper image generation, upload custom illustrations, or use reliable image service
