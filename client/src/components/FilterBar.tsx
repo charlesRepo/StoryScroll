@@ -30,7 +30,7 @@ export default function FilterBar({
   return (
     <div className="sticky top-0 z-50">
       <div 
-        className="px-4 h-[60px] flex items-center gap-3"
+        className="px-4 py-2 flex items-center gap-3"
         style={{ backgroundColor: 'rgb(19, 50, 81)' }}
         data-testid="header-storyscroll"
       >
