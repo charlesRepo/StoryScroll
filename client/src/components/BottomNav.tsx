@@ -16,7 +16,7 @@ export default function BottomNav({ activeTab, onTabChange }: BottomNavProps) {
   ];
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 bg-card border-t">
+    <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-gray-950 border-t">
       <div className="flex items-center justify-around h-16 safe-area-inset-bottom">
         {tabs.map(({ id, icon: Icon, label, testId }) => (
           <Button
