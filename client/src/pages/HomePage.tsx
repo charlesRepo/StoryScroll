@@ -3,6 +3,7 @@ import { useQuery, useMutation } from "@tanstack/react-query";
 import { useAuth } from "@/lib/auth";
 import { queryClient, apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
+import { ToastAction } from "@/components/ui/toast";
 import type { Story } from "@shared/schema";
 import StoryCard from "@/components/StoryCard";
 import FilterBar from "@/components/FilterBar";
@@ -13,6 +14,7 @@ import LikedStoriesGrid from "@/components/LikedStoriesGrid";
 import ProfileSection from "@/components/ProfileSection";
 import SearchView from "@/components/SearchView";
 import AuthScreen from "@/components/AuthScreen";
+import { Loader2 } from "lucide-react";
 
 export default function HomePage() {
   const { user, isLoading: authLoading, isAuthenticated, logout } = useAuth();
@@ -86,6 +88,107 @@ export default function HomePage() {
       return;
     }
     likeMutation.mutate(storyId);
+  };
+
+  // Track pending operations per story
+  const [pendingByStory, setPendingByStory] = useState<Record<string, { dismiss?: boolean; undo?: boolean }>>({});
+
+  // Helper to set pending state
+  const setPending = (storyId: string, operation: 'dismiss' | 'undo', pending: boolean) => {
+    setPendingByStory(prev => {
+      const current = prev[storyId] || {};
+      if (!pending && !current.dismiss && !current.undo) {
+        const { [storyId]: _, ...rest } = prev;
+        return rest;
+      }
+      return {
+        ...prev,
+        [storyId]: { ...current, [operation]: pending }
+      };
+    });
+  };
+
+  // Dismiss mutation
+  const dismissMutation = useMutation({
+    mutationFn: async (storyId: string) => {
+      const response = await apiRequest("POST", `/api/dismissed-stories/${storyId}`);
+      return await response.json() as { dismissed: boolean };
+    },
+  });
+
+  // Restore mutation
+  const restoreMutation = useMutation({
+    mutationFn: async (storyId: string) => {
+      const response = await apiRequest("DELETE", `/api/dismissed-stories/${storyId}`);
+      return await response.json() as { dismissed: boolean };
+    },
+  });
+
+  const handleDismiss = async (storyId: string) => {
+    if (!isAuthenticated) {
+      toast({
+        title: "Sign in required",
+        description: "Please sign in to dismiss stories",
+      });
+      return;
+    }
+    if (pendingByStory[storyId]?.dismiss) return;
+
+    setPending(storyId, 'dismiss', true);
+    try {
+      const data = await dismissMutation.mutateAsync(storyId);
+      await queryClient.invalidateQueries({ queryKey: ["/api/stories"] });
+      await queryClient.invalidateQueries({ queryKey: ["/api/dismissed-stories"] });
+
+      if (data.dismissed) {
+        const dismissedStoryId = storyId;
+        toast({
+          title: "Story dismissed",
+          description: "Story removed from your feed",
+          action: (
+            <ToastAction 
+              altText="Undo dismiss" 
+              onClick={() => handleUndo(dismissedStoryId)}
+            >
+              Undo
+            </ToastAction>
+          ),
+        });
+      }
+    } catch {
+      toast({
+        title: "Error",
+        description: "Failed to dismiss story",
+        variant: "destructive",
+      });
+    } finally {
+      setPending(storyId, 'dismiss', false);
+    }
+  };
+
+  const handleUndo = async (capturedStoryId: string) => {
+    if (pendingByStory[capturedStoryId]?.undo) {
+      return;
+    }
+
+    setPending(capturedStoryId, 'undo', true);
+    try {
+      await restoreMutation.mutateAsync(capturedStoryId);
+      await queryClient.invalidateQueries({ queryKey: ["/api/stories"] });
+      await queryClient.invalidateQueries({ queryKey: ["/api/dismissed-stories"] });
+      toast({
+        title: "Undone",
+        description: "Story restored to feed",
+      });
+    } catch {
+      toast({
+        title: "Error",
+        description: "Failed to undo",
+        variant: "destructive",
+      });
+    } finally {
+      setPending(capturedStoryId, 'undo', false);
+    }
   };
 
   // AI Story generation
@@ -223,6 +326,8 @@ export default function HomePage() {
                   {...story}
                   isLiked={likedStoryIds.has(story.id)}
                   onLike={() => handleLike(story.id)}
+                  onDismiss={() => handleDismiss(story.id)}
+                  isDismissPending={pendingByStory[story.id]?.dismiss || false}
                   onClick={() => setSelectedStory(story.id)}
                 />
               ))
@@ -280,6 +385,7 @@ export default function HomePage() {
               onChildAgeChange={setSelectedAge}
               onLanguageChange={setSelectedLanguage}
               onSignOut={logout}
+              onStoryClick={(id) => setSelectedStory(id)}
             />
           </div>
         )}

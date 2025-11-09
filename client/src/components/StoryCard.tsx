@@ -1,4 +1,4 @@
-import { Heart, Book, Globe, User, Clock } from "lucide-react";
+import { Heart, Book, Globe, User, Clock, X, ArrowUpLeft, Loader2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
@@ -17,8 +17,14 @@ export interface StoryCardProps {
   authorName?: string;
   likeCount?: number;
   isLiked?: boolean;
+  isDismissed?: boolean;
   onLike?: () => void;
+  onDismiss?: () => void;
+  onRestore?: () => void;
   onClick?: () => void;
+  showDismissButton?: boolean;
+  showRestoreButton?: boolean;
+  isDismissPending?: boolean;
 }
 
 // Calculate reading time based on word count (assuming 200 words per minute for reading aloud to children)
@@ -43,8 +49,14 @@ export default function StoryCard({
   authorName,
   likeCount = 0,
   isLiked = false,
+  isDismissed = false,
   onLike,
+  onDismiss,
+  onRestore,
   onClick,
+  isDismissPending = false,
+  showDismissButton = true,
+  showRestoreButton = false,
 }: StoryCardProps) {
   const readingTime = fullContent ? calculateReadingTime(fullContent) : null;
 
@@ -68,18 +80,52 @@ export default function StoryCard({
           <h2 className="text-2xl font-serif font-semibold text-foreground leading-tight flex-1" data-testid="text-story-title">
             {title}
           </h2>
-          <Button
-            size="icon"
-            variant="ghost"
-            className={isLiked ? "text-destructive" : ""}
-            onClick={(e) => {
-              e.stopPropagation();
-              onLike?.();
-            }}
-            data-testid="button-like"
-          >
-            <Heart className={`h-5 w-5 ${isLiked ? "fill-current" : ""}`} />
-          </Button>
+          <div className="flex gap-1">
+            {showRestoreButton && onRestore && (
+              <Button
+                size="icon"
+                variant="ghost"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onRestore();
+                }}
+                data-testid="button-restore"
+              >
+                <ArrowUpLeft className="h-5 w-5" />
+              </Button>
+            )}
+            {showDismissButton && (
+              <Button
+                size="icon"
+                variant="ghost"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onDismiss?.();
+                }}
+                disabled={isDismissPending}
+                className="no-default-hover-elevate"
+                data-testid="button-dismiss"
+              >
+                {isDismissPending ? (
+                  <Loader2 className="h-5 w-5 animate-spin" />
+                ) : (
+                  <X className="h-5 w-5" />
+                )}
+              </Button>
+            )}
+            <Button
+              size="icon"
+              variant="ghost"
+              className={isLiked ? "text-destructive" : ""}
+              onClick={(e) => {
+                e.stopPropagation();
+                onLike?.();
+              }}
+              data-testid="button-like"
+            >
+              <Heart className={`h-5 w-5 ${isLiked ? "fill-current" : ""}`} />
+            </Button>
+          </div>
         </div>
 
         <div className="flex flex-wrap items-center gap-2">

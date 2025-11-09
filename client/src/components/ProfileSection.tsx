@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
 import SettingsDialog from "./SettingsDialog";
+import DismissedStoriesSection from "./DismissedStoriesSection";
 import type { User } from "@shared/schema";
 
 export interface ProfileSectionProps {
@@ -20,6 +21,7 @@ export interface ProfileSectionProps {
   onChildAgeChange: (age: string) => void;
   onLanguageChange: (language: string) => void;
   onSignOut: () => void;
+  onStoryClick: (storyId: string) => void;
 }
 
 const AGE_RANGES = ["0-2 years", "3-5 years", "6-10 years"];
@@ -37,6 +39,7 @@ export default function ProfileSection({
   onChildAgeChange,
   onLanguageChange,
   onSignOut,
+  onStoryClick,
 }: ProfileSectionProps) {
   const [settingsOpen, setSettingsOpen] = useState(false);
 
@@ -104,6 +107,10 @@ export default function ProfileSection({
             </SelectContent>
           </Select>
         </div>
+      </div>
+
+      <div className="space-y-4">
+        <DismissedStoriesSection onStoryClick={onStoryClick} />
       </div>
 
       <Button

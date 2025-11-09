@@ -340,14 +340,25 @@ Return the response in this exact JSON format:
       const userId = req.session.userId!;
       const { storyId } = req.params;
 
+      // Idempotent: always dismiss (insert ignores duplicates via unique constraint)
       const isDismissed = await storage.isStoryDismissed(userId, storyId);
-      if (isDismissed) {
-        await storage.restoreStory(userId, storyId);
-        res.json({ dismissed: false });
-      } else {
+      if (!isDismissed) {
         await storage.dismissStory(userId, storyId);
-        res.json({ dismissed: true });
       }
+      res.json({ dismissed: true });
+    } catch (error: any) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  app.delete("/api/dismissed-stories/:storyId", requireAuth, async (req, res) => {
+    try {
+      const userId = req.session.userId!;
+      const { storyId } = req.params;
+
+      // Idempotent: always restore (delete is safe even if row doesn't exist)
+      await storage.restoreStory(userId, storyId);
+      res.json({ dismissed: false });
     } catch (error: any) {
       res.status(500).json({ error: error.message });
     }
