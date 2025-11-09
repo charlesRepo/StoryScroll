@@ -59,3 +59,10 @@ Optimized story presentation for better mobile readability:
 - **Summary Length**: Capped at 70 words or 390 characters (displays 4-5 lines on mobile)
 - **AI Generation**: Updated OpenAI prompt to enforce summary length limits for all new stories
 - **Result**: Clean, readable cards that provide quick story context without overwhelming the screen
+
+### Filter Loading State (November 2025)
+Improved user feedback during filter changes:
+- **Loading Spinner**: Added loading indicator when changing age range or language filters
+- **Implementation**: Uses TanStack Query's `isFetching` state to detect when stories are being refetched
+- **UX Improvement**: Prevents showing "No stories found" message during brief loading periods
+- **Visual Design**: Spinner with "Loading stories..." text provides clear feedback during filter transitions
