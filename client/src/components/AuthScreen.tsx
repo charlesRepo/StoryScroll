@@ -74,7 +74,7 @@ export default function AuthScreen() {
             />
           </div>
           <h1 className="text-4xl font-serif font-bold text-foreground">
-            StoryScroll
+            Story Scroll
           </h1>
           <p className="text-lg text-muted-foreground">
             Discover the perfect bedtime story for your child

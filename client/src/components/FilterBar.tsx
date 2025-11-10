@@ -45,7 +45,7 @@ export default function FilterBar({
           style={{ color: 'hsl(43, 85%, 65%)', fontSize: '23px' }}
           data-testid="text-header-title"
         >
-          StoryScroll
+          Story Scroll
         </h1>
       </div>
 
