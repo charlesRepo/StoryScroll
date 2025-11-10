@@ -48,9 +48,38 @@ export default function HomePage() {
       const response = await apiRequest("GET", url);
       return await response.json();
     },
+    staleTime: 0, // Always refetch to show loading state
+    gcTime: 0, // Don't cache data
   });
 
   const stories = storiesData?.stories || [];
+
+  // Loading state with minimum display time
+  const [showLoading, setShowLoading] = useState(false);
+  const loadingStartTimeRef = useRef<number>(0);
+
+  useEffect(() => {
+    if (isStoriesFetching) {
+      // Show loading immediately and record start time
+      setShowLoading(true);
+      loadingStartTimeRef.current = Date.now();
+    } else {
+      // Calculate how long loading was shown
+      const elapsedTime = Date.now() - loadingStartTimeRef.current;
+      const minDisplayTime = 500; // Minimum 500ms display time
+      
+      if (elapsedTime < minDisplayTime) {
+        // Wait for remaining time before hiding
+        const timeout = setTimeout(() => {
+          setShowLoading(false);
+        }, minDisplayTime - elapsedTime);
+        return () => clearTimeout(timeout);
+      } else {
+        // Already shown long enough, hide immediately
+        setShowLoading(false);
+      }
+    }
+  }, [isStoriesFetching]);
 
   // Fetch ALL stories for search (no filters)
   const { data: allStoriesData } = useQuery<{ stories: Story[] }>({
@@ -320,25 +349,31 @@ export default function HomePage() {
         />
       )}
 
-      <div className="flex-1 overflow-hidden">
+      <div className="flex-1 overflow-hidden relative">
         {activeTab === "feed" && (
-          <div
-            ref={scrollContainerRef}
-            className="h-full overflow-y-auto snap-y snap-mandatory scrollbar-hide bg-primary"
-            style={{ 
-              scrollbarWidth: "none", 
-              msOverflowStyle: "none",
-              scrollSnapStop: "always",
-            }}
-          >
-            {isStoriesFetching ? (
-              <div className="min-h-full flex items-center justify-center" data-testid="loading-stories">
-                <div className="flex flex-col items-center gap-3">
-                  <Loader2 className="h-8 w-8 animate-spin text-primary" />
-                  <p className="text-sm text-muted-foreground">Loading stories...</p>
+          <>
+            {showLoading && (
+              <div 
+                className="absolute inset-0 bg-black/60 z-50 flex items-center justify-center"
+                data-testid="loading-stories-overlay"
+                style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+              >
+                <div className="flex flex-col items-center gap-3 bg-card p-6 rounded-lg shadow-lg">
+                  <Loader2 className="h-12 w-12 animate-spin text-primary" />
+                  <p className="text-lg font-medium">Loading stories...</p>
                 </div>
               </div>
-            ) : stories.length === 0 ? (
+            )}
+            <div
+              ref={scrollContainerRef}
+              className="h-full overflow-y-auto snap-y snap-mandatory scrollbar-hide bg-primary"
+              style={{ 
+                scrollbarWidth: "none", 
+                msOverflowStyle: "none",
+                scrollSnapStop: "always",
+              }}
+            >
+              {stories.length === 0 && !isStoriesFetching ? (
               <div className="min-h-full flex items-center justify-center p-6 text-center">
                 <div>
                   <p className="text-muted-foreground mb-2">No stories found</p>
@@ -375,7 +410,8 @@ export default function HomePage() {
                 )}
               </>
             )}
-          </div>
+            </div>
+          </>
         )}
 
         {activeTab === "create" && (

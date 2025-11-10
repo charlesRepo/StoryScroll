@@ -110,10 +110,12 @@ Optimized story presentation for better mobile readability:
 
 ### Filter Loading State (November 2025)
 Improved user feedback during filter changes:
-- **Loading Spinner**: Added loading indicator when changing age range or language filters
-- **Implementation**: Uses TanStack Query's `isFetching` state to detect when stories are being refetched
-- **UX Improvement**: Prevents showing "No stories found" message during brief loading periods
-- **Visual Design**: Spinner with "Loading stories..." text provides clear feedback during filter transitions
+- **Loading Spinner**: Overlay spinner appears when changing age range or language filters
+- **Minimum Display Time**: Enforced 500ms minimum display to prevent flashing (even for fast API responses)
+- **Implementation**: Uses TanStack Query's `isFetching` state with custom timing logic to ensure visibility
+- **Visual Design**: Semi-transparent dark overlay with large spinner icon and "Loading stories..." text in centered card
+- **Query Configuration**: `staleTime: 0, gcTime: 0` to ensure every filter change triggers a fresh API call
+- **UX Improvement**: Consistent loading feedback prevents jarring instant updates and shows users the app is responding to their input
 
 ### End-of-Feed Message (November 2025)
 Added clear indication when user reaches the end of available stories:
