@@ -28,13 +28,15 @@ export default function BottomNav({ activeTab, onTabChange }: BottomNavProps) {
           >
             <Icon
               className={`h-6 w-6 ${
-                activeTab === id ? "text-primary" : "text-muted-foreground"
+                activeTab === id ? "text-foreground" : "text-muted-foreground"
               }`}
+              style={activeTab === id ? { color: 'rgb(19, 50, 81)' } : undefined}
             />
             <span
               className={`text-xs ${
-                activeTab === id ? "text-primary font-medium" : "text-muted-foreground"
+                activeTab === id ? "text-foreground font-medium" : "text-muted-foreground"
               }`}
+              style={activeTab === id ? { color: 'rgb(19, 50, 81)' } : undefined}
             >
               {label}
             </span>
