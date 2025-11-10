@@ -378,6 +378,131 @@ Return the response in this exact JSON format:
     }
   });
 
+  // Admin endpoint: Add story with automatic categorization and translation
+  app.post("/api/stories/add-with-translation", requireAuth, async (req, res) => {
+    try {
+      const {
+        title,
+        author,
+        language,
+        fullContent,
+        translateToOtherLanguage = true
+      } = req.body;
+
+      if (!title || !author || !language || !fullContent) {
+        return res.status(400).json({
+          error: "Title, author, language, and full content are required"
+        });
+      }
+
+      // Import AI helpers dynamically
+      const { categorizeStory, translateStory } = await import("./aiStoryHelpers");
+
+      // Step 1: Generate summary and moral using AI
+      const openai = new OpenAI({
+        apiKey: process.env.OPENAI_API_KEY,
+      });
+
+      const summaryPrompt = `Based on this bedtime story, create a concise summary (max 70 words or 390 characters) and extract the moral lesson if present.
+
+Title: ${title}
+Content: ${fullContent}
+
+Respond in JSON format:
+{
+  "summary": "Engaging summary (max 70 words)",
+  "moral": "Moral lesson or empty string if none"
+}`;
+
+      const summaryResponse = await openai.chat.completions.create({
+        model: "gpt-4o",
+        messages: [{ role: "user", content: summaryPrompt }],
+        response_format: { type: "json_object" },
+        temperature: 0.5,
+      });
+
+      const summaryData = JSON.parse(summaryResponse.choices[0]?.message?.content || "{}");
+
+      // Step 2: Categorize the story by age range
+      const categorization = await categorizeStory(
+        title,
+        summaryData.summary,
+        summaryData.moral || null,
+        fullContent
+      );
+
+      // Step 3: Save the original story
+      const imageUrl = `https://images.unsplash.com/photo-1516416615694-856c1e7a4ba7?w=400`;
+
+      const originalStory = await storage.createStory({
+        title,
+        summary: summaryData.summary,
+        moral: summaryData.moral || null,
+        fullContent,
+        imageUrl,
+        ageRange: categorization.ageRange,
+        language,
+        isTranslated: false,
+        originalLanguage: language,
+        sourceType: "curated",
+        authorName: author,
+        authorId: null,
+        isPublic: true,
+      });
+
+      console.log(`✅ Added story: ${title} (${categorization.ageRange})`);
+
+      // Step 4: Translate to other language if requested
+      let translatedStory = null;
+      if (translateToOtherLanguage) {
+        const targetLang = language === "en" ? "fr" : "en";
+
+        const translation = await translateStory(
+          {
+            title,
+            summary: summaryData.summary,
+            moral: summaryData.moral || null,
+            fullContent,
+          },
+          targetLang
+        );
+
+        translatedStory = await storage.createStory({
+          title: translation.title,
+          summary: translation.summary,
+          moral: translation.moral || null,
+          fullContent: translation.fullContent,
+          imageUrl,
+          ageRange: categorization.ageRange,
+          language: targetLang,
+          isTranslated: true,
+          originalLanguage: language,
+          sourceType: "curated",
+          authorName: author,
+          authorId: null,
+          isPublic: true,
+        });
+
+        console.log(`✅ Translated to ${targetLang}: ${translation.title}`);
+      }
+
+      res.json({
+        success: true,
+        originalStory,
+        translatedStory,
+        categorization: {
+          ageRange: categorization.ageRange,
+          reasoning: categorization.reasoning,
+        },
+      });
+    } catch (error: any) {
+      console.error("Failed to add story with translation:", error);
+      res.status(500).json({
+        error: "Failed to add story. Please try again."
+      });
+    }
+  });
+
   // Liked stories routes
   app.get("/api/liked-stories", requireAuth, async (req, res) => {
     try {
