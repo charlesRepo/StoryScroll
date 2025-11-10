@@ -13,7 +13,7 @@ export function FeedWelcomeBanner({ onDismiss }: FeedWelcomeBannerProps) {
         size="icon"
         variant="ghost"
         onClick={onDismiss}
-        className="absolute top-1 right-1 h-8 w-8"
+        className="absolute top-0 right-0 h-8 w-8"
         data-testid="button-dismiss-banner"
         aria-label="Dismiss welcome message"
       >
