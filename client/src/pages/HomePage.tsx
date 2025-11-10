@@ -14,6 +14,8 @@ import LikedStoriesGrid from "@/components/LikedStoriesGrid";
 import ProfileSection from "@/components/ProfileSection";
 import SearchView from "@/components/SearchView";
 import AuthScreen from "@/components/AuthScreen";
+import { FeedWelcomeBanner } from "@/components/FeedWelcomeBanner";
+import { useLocalStorageState } from "@/hooks/use-local-storage-state";
 import { Loader2 } from "lucide-react";
 
 export default function HomePage() {
@@ -29,6 +31,12 @@ export default function HomePage() {
   const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
   const [generatedStory, setGeneratedStory] = useState<Partial<Story> | null>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  
+  // Welcome banner dismissal state
+  const [isWelcomeBannerDismissed, setIsWelcomeBannerDismissed] = useLocalStorageState(
+    "feedWelcomeDismissed",
+    false
+  );
 
   // Update preferences when language or age changes
   useEffect(() => {
@@ -351,22 +359,26 @@ export default function HomePage() {
 
       <div className="flex-1 overflow-hidden relative">
         {activeTab === "feed" && (
-          <>
-            {showLoading && (
-              <div 
-                className="absolute inset-0 bg-black/60 z-50 flex items-center justify-center"
-                data-testid="loading-stories-overlay"
-                style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
-              >
-                <div className="flex flex-col items-center gap-3 bg-card p-6 rounded-lg shadow-lg">
-                  <Loader2 className="h-12 w-12 animate-spin text-primary" />
-                  <p className="text-lg font-medium">Loading stories...</p>
-                </div>
-              </div>
+          <div className="h-full flex flex-col">
+            {!isWelcomeBannerDismissed && (
+              <FeedWelcomeBanner onDismiss={() => setIsWelcomeBannerDismissed(true)} />
             )}
-            <div
-              ref={scrollContainerRef}
-              className="h-full overflow-y-auto snap-y snap-mandatory scrollbar-hide bg-primary"
+            <div className="flex-1 overflow-hidden relative">
+              {showLoading && (
+                <div 
+                  className="absolute inset-0 bg-black/60 z-50 flex items-center justify-center"
+                  data-testid="loading-stories-overlay"
+                  style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+                >
+                  <div className="flex flex-col items-center gap-3 bg-card p-6 rounded-lg shadow-lg">
+                    <Loader2 className="h-12 w-12 animate-spin text-primary" />
+                    <p className="text-lg font-medium">Loading stories...</p>
+                  </div>
+                </div>
+              )}
+              <div
+                ref={scrollContainerRef}
+                className="h-full overflow-y-auto snap-y snap-mandatory scrollbar-hide bg-primary"
               style={{ 
                 scrollbarWidth: "none", 
                 msOverflowStyle: "none",
@@ -410,8 +422,9 @@ export default function HomePage() {
                 )}
               </>
             )}
+              </div>
             </div>
-          </>
+          </div>
         )}
 
         {activeTab === "create" && (
