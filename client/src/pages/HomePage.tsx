@@ -359,13 +359,16 @@ export default function HomePage() {
 
       <div className="flex-1 overflow-hidden relative">
         {activeTab === "feed" && (
-          <div className="h-full flex flex-col">
+          <div className="h-full grid grid-rows-[auto,1fr]">
+            {/* Banner Row - Non-scrolling */}
             {!isWelcomeBannerDismissed && (
-              <div className="bg-background">
+              <div className="sticky top-0 z-30 bg-background">
                 <FeedWelcomeBanner onDismiss={() => setIsWelcomeBannerDismissed(true)} />
               </div>
             )}
-            <div className="flex-1 overflow-hidden relative">
+            
+            {/* Feed Row - Scrolling yellow container */}
+            <div className="relative overflow-hidden">
               {showLoading && (
                 <div 
                   className="absolute inset-0 bg-black/60 z-50 flex items-center justify-center"
@@ -381,12 +384,13 @@ export default function HomePage() {
               <div
                 ref={scrollContainerRef}
                 className="h-full overflow-y-auto snap-y snap-mandatory scrollbar-hide bg-primary"
-              style={{ 
-                scrollbarWidth: "none", 
-                msOverflowStyle: "none",
-                scrollSnapStop: "always",
-              }}
-            >
+                style={{ 
+                  scrollbarWidth: "none", 
+                  msOverflowStyle: "none",
+                  scrollSnapStop: "always",
+                  overscrollBehavior: "contain",
+                }}
+              >
               {stories.length === 0 && !isStoriesFetching ? (
               <div className="min-h-full flex items-center justify-center p-6 text-center">
                 <div>
