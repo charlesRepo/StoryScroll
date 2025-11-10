@@ -38,6 +38,7 @@ export default function FilterBar({
           src={logoUrl} 
           alt="StoryScroll" 
           className="w-[80px] h-[80px] object-contain flex-shrink-0"
+          style={{ transform: 'scaleX(-1)' }}
           data-testid="img-header-logo"
         />
         <h1 
