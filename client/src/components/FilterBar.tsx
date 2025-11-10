@@ -37,12 +37,12 @@ export default function FilterBar({
         <img 
           src={logoUrl} 
           alt="StoryScroll" 
-          className="w-[60px] h-[60px] object-contain flex-shrink-0"
+          className="w-[80px] h-[80px] object-contain flex-shrink-0"
           data-testid="img-header-logo"
         />
         <h1 
-          className="text-xl font-serif font-bold"
-          style={{ color: 'hsl(43, 85%, 65%)' }}
+          className="font-serif font-bold"
+          style={{ color: 'hsl(43, 85%, 65%)', fontSize: '23px' }}
           data-testid="text-header-title"
         >
           StoryScroll
