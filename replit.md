@@ -83,9 +83,9 @@ Implemented comprehensive AI-powered system for story library management:
   - 0-2 years: Pure fantasy themes with no moral lessons (simple sensory stories)
   - 3-5 years: Fantasy mixed with simple moral lessons
   - 6-10 years: Realistic themes with strong moral lessons
-- **Current Distribution**:
-  - French: 44 in 3-5 years, 6 in 6-10 years, 0 in 0-2 years
-  - English: 1 in 0-2 years, 116 in 3-5 years
+- **Final Distribution** (199 total stories):
+  - English: 6 (0-2 years), 116 (3-5 years), 11 (6-10 years) = 133 stories
+  - French: 14 (0-2 years), 44 (3-5 years), 6 (6-10 years) = 64 stories
 - **Note**: Classical stories (Perrault, Grimm, La Fontaine) naturally fall into 3-5 and 6-10 years due to their moral-teaching nature. The 0-2 years category requires specially curated simple, moral-free stories.
 
 **Translation System**:
@@ -138,6 +138,33 @@ Removed broken placeholder images to fix functionality issues:
 - **Trade-off**: Improved functionality (no broken images, everything clickable) at cost of visual appeal
 - **Note**: Database still contains `imageUrl` field with Unsplash placeholders; not currently displayed in UI
 - **Future Options**: Could add proper image generation, upload custom illustrations, or use reliable image service
+
+### Age-Specific Story Generation Pipeline (November 2025)
+Built specialized AI generation system to fill gaps in underrepresented age groups:
+
+**Infrastructure Created**:
+- **Curated Theme Banks** (`server/storyTitleBanks.ts`): 15 infant + 15 older themes for both EN/FR
+  - Infant themes: Sensory stories (The Sleepy Moon, Soft Cloud's Journey, etc.)
+  - Older themes: Realistic scenarios (The Lost Library Book, Broken Promise, etc.)
+- **Generation Pipeline** (`server/generateAgeSpecificStories.ts`):
+  - Age-specific prompts with strict content requirements
+  - Retry logic (3 attempts per story) to ensure quality
+  - Batch processing to avoid timeouts
+- **Validation System**:
+  - Word count enforcement: 120-220 words (0-2 years), 450-650 words (6-10 years)
+  - Pattern-based moral detection using regex to identify teaching phrases
+  - Rejects infant stories with moral lessons, ensures older stories have morals
+
+**Results**:
+- Generated 20 infant stories (6 EN, 14 FR) with pure sensory content
+- Generated 17 older stories (11 EN, 6 FR) with realistic themes and morals
+- Filled previously empty age cohorts, providing balanced content distribution
+- 100% validation success rate on final test batches
+
+**Technical Notes**:
+- French stories trend shorter due to language conciseness
+- Validation improved from keyword matching to pattern-based phrase detection
+- All new stories tagged with `authorName: "StoryScroll Team"` and `sourceType: "curated"`
 
 ### Error Message Improvements (November 2025)
 Implemented centralized error handling to prevent JSON objects from appearing in user-facing error messages:
