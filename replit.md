@@ -13,7 +13,7 @@ Preferred communication style: Simple, everyday language.
 - **Components**: Full-screen story cards with a paper-like, minimalist design, off-white backgrounds, larger titles, and optimized typography (Merriweather for content, Inter for UI) for readability. Includes a sticky filter bar and bottom navigation.
 - **Branding**: "Story Scroll" logotype with a sleeping scroll character logo, integrated into the AuthScreen and a branded header bar using the logo's color palette.
 - **Interaction**: TikTok-style vertical swipe for story browsing. Loading spinners with minimum display times provide user feedback during filter changes. End-of-feed messages indicate when no more stories are available.
-- **Onboarding**: Enhanced `AuthScreen` and a dismissible `FeedWelcomeBanner` introduce new users to the app's purpose and core features.
+- **Onboarding**: Enhanced `AuthScreen` and a dismissible `FeedWelcomeBanner` introduce new users to the app's purpose and core features. Both use unified intro messaging: "Story Scroll helps parents discover the perfect bedtime story. Browse hundreds of classic tales, create custom AI-powered stories for your child, and share your favorites with other parents. Filter by age and language to find exactly what you need."
 
 ### Technical Implementation
 - **Frontend**: React with TypeScript (Vite), shadcn/ui (Radix UI primitives), Tailwind CSS. State managed with TanStack React Query (server state/API caching) and React Context API (authentication). Wouter for client-side routing.

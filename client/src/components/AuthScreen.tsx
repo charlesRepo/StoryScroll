@@ -77,12 +77,9 @@ export default function AuthScreen() {
           <h1 className="text-4xl font-serif font-bold text-foreground">
             Story Scroll
           </h1>
-          <div className="space-y-2 px-4">
-            <p className="text-lg font-medium text-foreground">
-              Never wonder what story to tell at bedtime again
-            </p>
-            <p className="text-base text-muted-foreground">
-              Browse hundreds of classic bedtime stories, create custom AI-powered tales, and share your favorites with other parents. Available in English and French, tailored for ages 0-10.
+          <div className="px-4">
+            <p className="text-base text-muted-foreground leading-relaxed">
+              Story Scroll helps parents discover the perfect bedtime story. Browse hundreds of classic tales, create custom AI-powered stories for your child, and share your favorites with other parents. Filter by age and language to find exactly what you need.
             </p>
           </div>
         </div>
