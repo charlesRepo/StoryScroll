@@ -359,11 +359,11 @@ export default function HomePage() {
 
       <div className="flex-1 overflow-hidden relative">
         {activeTab === "feed" && (
-          <div className="h-full flex flex-col">
+          <div className="flex-1 min-h-0 flex flex-col">
             {!isWelcomeBannerDismissed && (
               <FeedWelcomeBanner onDismiss={() => setIsWelcomeBannerDismissed(true)} />
             )}
-            <div className="flex-1 overflow-hidden relative">
+            <div className="flex-1 min-h-0 relative">
               {showLoading && (
                 <div 
                   className="absolute inset-0 bg-black/60 z-50 flex items-center justify-center"
