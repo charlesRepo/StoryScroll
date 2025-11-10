@@ -299,12 +299,13 @@ export async function registerRoutes(app: Express): Promise<Server> {
         ? "preschool children (3-5 years old)"
         : "early elementary children (6-10 years old)";
 
-      const languageName = {
+      const languageNames: Record<string, string> = {
         en: "English",
         es: "Spanish",
         fr: "French",
         de: "German",
-      }[language] || "English";
+      };
+      const languageName = languageNames[language] || "English";
 
       const storyPrompt = `Write a bedtime story in ${languageName} for ${ageRangeWords} about: ${theme}
 

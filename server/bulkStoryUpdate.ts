@@ -134,13 +134,18 @@ export async function translateFrenchToEnglish() {
   for (let i = 0; i < frenchStories.length; i++) {
     const frStory = frenchStories[i];
     
+    // Check if translation already exists by matching author + age range + content similarity
     const existing = await db.select().from(stories).where(
-      eq(stories.title, frStory.title)
+      eq(stories.authorName, frStory.authorName || "Unknown")
     );
-    const hasEnglishVersion = existing.some(s => s.language === "en");
+    const hasEnglishVersion = existing.some(s => 
+      s.language === "en" && 
+      s.ageRange === frStory.ageRange &&
+      (s.isTranslated === true && s.originalLanguage === "fr")
+    );
     
     if (hasEnglishVersion) {
-      console.log(`⏭️  Skipping "${frStory.title}" - English version already exists`);
+      console.log(`⏭️  Skipping "${frStory.title}" - English translation already exists`);
       continue;
     }
     
@@ -197,13 +202,18 @@ export async function translateEnglishToFrench() {
   for (let i = 0; i < englishStories.length; i++) {
     const enStory = englishStories[i];
     
+    // Check if translation already exists by matching author + age range + translation markers
     const existing = await db.select().from(stories).where(
-      eq(stories.title, enStory.title)
+      eq(stories.authorName, enStory.authorName || "Unknown")
     );
-    const hasFrenchVersion = existing.some(s => s.language === "fr");
+    const hasFrenchVersion = existing.some(s => 
+      s.language === "fr" && 
+      s.ageRange === enStory.ageRange &&
+      (s.isTranslated === true && s.originalLanguage === "en")
+    );
     
     if (hasFrenchVersion) {
-      console.log(`⏭️  Skipping "${enStory.title}" - French version exists`);
+      console.log(`⏭️  Skipping "${enStory.title}" - French translation exists`);
       continue;
     }
     

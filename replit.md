@@ -70,14 +70,35 @@ Added comprehensive story publishing and management capabilities:
 - **Storage Methods**: Implemented getUserStories, updateStory, deleteStory for complete CRUD operations
 - **Components**: Created EditStoryForm and MyStoriesSection components for seamless user experience
 
-### Language Support Update (November 2025)
-Simplified language support to focus on English and French:
-- **Supported Languages**: English and French only (removed Spanish and German)
-- **Story Library**: 135 AI-generated classical bedtime stories
-  - 113 English original stories (Grimm, Andersen, Aesop's Fables, traditional folktales)
-  - 20 French original stories (Perrault, La Fontaine fables, traditional French tales)
-- **Generation Method**: Used GPT-4o to create authentic retellings of classical public domain stories
-- **Quality Standards**: All summaries under 70 words/390 characters, age-appropriate categorization (mostly 3-5 years)
+### AI-Based Story Expansion & Categorization (November 2025)
+Implemented comprehensive AI-powered system for story library management:
+
+**Story Library Expansion**:
+- **English Library**: 117 original stories (Grimm, Andersen, Aesop's Fables, traditional folktales)
+- **French Library**: 50 original stories (Perrault, La Fontaine fables, d'Aulnoy fairy tales)
+- Added 30 new classical French stories using AI generation from curated titles list
+
+**AI-Based Categorization System**:
+- **Categorization Criteria**:
+  - 0-2 years: Pure fantasy themes with no moral lessons (simple sensory stories)
+  - 3-5 years: Fantasy mixed with simple moral lessons
+  - 6-10 years: Realistic themes with strong moral lessons
+- **Current Distribution**:
+  - French: 44 in 3-5 years, 6 in 6-10 years, 0 in 0-2 years
+  - English: 1 in 0-2 years, 116 in 3-5 years
+- **Note**: Classical stories (Perrault, Grimm, La Fontaine) naturally fall into 3-5 and 6-10 years due to their moral-teaching nature. The 0-2 years category requires specially curated simple, moral-free stories.
+
+**Translation System**:
+- Bidirectional AI translation capability (French ↔ English)
+- Smart deduplication prevents duplicate translations
+- Tracks isTranslated and originalLanguage fields for all stories
+
+**Standardized Story Addition**:
+- API endpoint `/api/stories/add-with-translation` for adding new stories
+- Automatically generates summary and extracts moral using AI
+- Auto-categorizes by age group based on content analysis
+- Optionally translates to the other language (FR ↔ EN)
+- All new stories properly tagged with author, source type, and language metadata
 - **Frontend Updates**: Language selectors updated across FilterBar, ProfileSection, and CreateStoryForm
 
 ### Story Summary & Title Optimization (November 2025)
