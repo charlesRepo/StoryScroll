@@ -30,13 +30,13 @@ export default function BottomNav({ activeTab, onTabChange }: BottomNavProps) {
               className={`h-6 w-6 ${
                 activeTab === id ? "text-foreground" : "text-muted-foreground"
               }`}
-              style={activeTab === id ? { color: 'rgb(19, 50, 81)' } : undefined}
+              style={activeTab === id ? { color: 'hsl(43, 85%, 35%)' } : undefined}
             />
             <span
               className={`text-xs ${
                 activeTab === id ? "text-foreground font-medium" : "text-muted-foreground"
               }`}
-              style={activeTab === id ? { color: 'rgb(19, 50, 81)' } : undefined}
+              style={activeTab === id ? { color: 'hsl(43, 85%, 35%)' } : undefined}
             >
               {label}
             </span>
