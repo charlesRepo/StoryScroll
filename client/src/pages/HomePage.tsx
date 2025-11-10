@@ -376,8 +376,8 @@ export default function HomePage() {
               {stories.length === 0 && !isStoriesFetching ? (
               <div className="min-h-full flex items-center justify-center p-6 text-center">
                 <div>
-                  <p className="text-muted-foreground mb-2">No stories found</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-gray-800 dark:text-gray-200 mb-2 font-medium">No stories found</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
                     Try changing the language or age range filters
                   </p>
                 </div>
@@ -401,8 +401,8 @@ export default function HomePage() {
                     data-testid="end-of-feed"
                   >
                     <div className="text-center">
-                      <p className="text-muted-foreground">No more stories to show</p>
-                      <p className="text-sm text-muted-foreground mt-2">
+                      <p className="text-gray-800 dark:text-gray-200 font-medium">No more stories to show</p>
+                      <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
                         Try changing the filters to see different stories
                       </p>
                     </div>
