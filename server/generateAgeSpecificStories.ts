@@ -29,16 +29,26 @@ function countWords(text: string): number {
 }
 
 function detectMoralInText(text: string): boolean {
-  const moralKeywords = [
-    'lesson', 'learn', 'learned', 'taught', 'should', 'must',
-    'never', 'always', 'important', 'right', 'wrong',
-    'good', 'bad', 'better', 'best', 'realize', 'understood',
-    'leçon', 'apprend', 'appris', 'enseigne', 'doit', 'devrait',
-    'jamais', 'toujours', 'important', 'bien', 'mal', 'mieux'
+  // Only detect explicit moral teaching patterns, not common words
+  const strongMoralPatterns = [
+    /\blearned? (that|a lesson|an? important)/i,
+    /\btaught (that|about|a lesson)/i,
+    /\bthe lesson (is|was|of)/i,
+    /\bshould (always|never)/i,
+    /\bmust (always|never)/i,
+    /\bit('s| is) important to/i,
+    /\bthe right thing/i,
+    /\bdoing the right/i,
+    /\brealized? (that|how important)/i,
+    /\bunderstood (that|the importance)/i,
+    /\bappris (que|la leçon)/i,
+    /\benseigné (que|la leçon)/i,
+    /\bla leçon (est|était)/i,
+    /\bil faut (toujours|jamais)/i,
+    /\bc'est important de/i,
   ];
   
-  const lowerText = text.toLowerCase();
-  return moralKeywords.some(keyword => lowerText.includes(keyword));
+  return strongMoralPatterns.some(pattern => pattern.test(text));
 }
 
 function validateInfantStory(story: GeneratedStory): { isValid: boolean; reason?: string } {
@@ -97,23 +107,31 @@ Language: ${langName}
 
 CRITICAL REQUIREMENTS:
 - Length: 120-220 words ONLY (very short for infant attention spans)
-- NO moral lesson - this is pure sensory storytelling
+- NO moral lesson, NO teaching, NO life lessons whatsoever
+- This is PURE sensory storytelling - just describe what happens with soothing words
 - Simple, soothing, repetitive language
 - Focus on gentle imagery, soft sounds, calming sensations
 - Perfect for bedtime reading to very young children
+
+FORBIDDEN WORDS/PHRASES (do NOT use):
+- Any form of "learn", "taught", "lesson", "important", "should", "must"
+- Phrases like "realized that", "understood that", "the right thing"
+- Any conclusion that teaches or implies a message
+- NO character growth or development - just peaceful experiences
 
 The story should:
 - Use simple vocabulary and short sentences
 - Include gentle repetition and rhythm
 - Be calming and sleep-inducing
-- Focus on sensory experiences (soft, warm, gentle, quiet, etc.)
-- End with a peaceful conclusion
+- Focus only on sensory experiences (soft, warm, gentle, quiet, cozy, etc.)
+- End with a peaceful, sleepy conclusion
+- Just describe what the character sees, feels, hears - nothing more
 
 Respond in JSON format:
 {
   "title": "Story title in ${langName}",
   "summary": "2-3 sentence summary (max 50 words)",
-  "fullContent": "Complete story (120-220 words)",
+  "fullContent": "Complete sensory story (120-220 words) with NO teaching elements",
   "moral": "" // ALWAYS empty for this age group
 }`;
 
@@ -525,7 +543,9 @@ async function main() {
   }
 }
 
-if (require.main === module) {
+// Run if this is the main module
+const isMainModule = import.meta.url === `file://${process.argv[1]}`;
+if (isMainModule) {
   main();
 }
 
