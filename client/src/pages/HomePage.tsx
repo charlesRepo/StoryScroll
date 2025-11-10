@@ -361,7 +361,9 @@ export default function HomePage() {
         {activeTab === "feed" && (
           <div className="h-full flex flex-col">
             {!isWelcomeBannerDismissed && (
-              <FeedWelcomeBanner onDismiss={() => setIsWelcomeBannerDismissed(true)} />
+              <div className="bg-background">
+                <FeedWelcomeBanner onDismiss={() => setIsWelcomeBannerDismissed(true)} />
+              </div>
             )}
             <div className="flex-1 overflow-hidden relative">
               {showLoading && (
