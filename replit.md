@@ -1,7 +1,7 @@
 # Bedtime Story Discovery App
 
 ## Overview
-A mobile-first web application for discovering and creating bedtime stories for children. It features a TikTok-style vertical swipe feed, AI-powered story generation, and personalized filtering. The app supports English and French and aims to provide an engaging platform for parents to find, save, and create custom stories tailored to their children's age, language, and preferences, utilizing a rich library of both classical and AI-generated content.
+A mobile-first web application for discovering and creating bedtime stories for children. It features a TikTok-style vertical swipe feed, AI-powered story generation, and personalized filtering. The app supports English, French, and German and aims to provide an engaging platform for parents to find, save, and create custom stories tailored to their children's age, language, and preferences, utilizing a rich library of both classical and AI-generated content.
 
 ## User Preferences
 Preferred communication style: Simple, everyday language.
@@ -24,12 +24,27 @@ Preferred communication style: Simple, everyday language.
 - **AI-Powered Content**: AI generates custom stories (title, summary, moral, full content) with summaries capped at 70 words/390 characters. AI also categorizes stories by age group (2-4, 5-6, 7-8 years) based on content analysis, and provides bidirectional French ↔ English translation with deduplication. Specialized AI pipelines generate age-specific stories to balance content distribution across age groups. Age ranges are specifically targeted for bedtime storytelling (2-8 years old), as children 9+ typically read independently and 0-2 year olds don't yet understand story narratives.
 - **Age Range Migration**: Updated age ranges from (0-2, 3-5, 6-10) to (2-4, 5-6, 7-8 years) in Nov 2025. Multi-range compatibility layer in `server/routes.ts` maps new filters to legacy database values: "2-4 years"→["0-2", "3-5"], "5-6 years"→["3-5", "6-10"], "7-8 years"→["6-10"]. Storage layer supports both single and array age range queries via `inArray()`. This ensures existing stories remain accessible while migration script (`server/recategorize-stories.ts`) can run later.
 - **Error Handling**: Centralized frontend utility (`normalizeErrorMessage`) ensures user-friendly error messages, preventing raw JSON or "[object Object]" displays. Backend consistently returns `{ error: "string message" }` for all error responses.
-- **Database Initialization**: Automatically populates with a curated library of AI-generated classical bedtime stories (English and French) on startup.
+- **Classical Story Library**: Comprehensive tri-lingual library of 120 bedtime stories (90 classical adaptations + 30 AI-original):
+    - **English**: 30 classical (Carroll, Baum, Grimm, Perrault, Arabian Nights) + 10 AI-original
+    - **French**: 30 classical (Perrault, d'Aulnoy, de Beaumont, La Fontaine) + 10 AI-original  
+    - **German**: 30 classical (Brothers Grimm collection) + 10 AI-original
+  - AI creates bedtime-appropriate adaptations of classical stories while preserving their essence
+  - All stories attributed with "adapted from [Original Author]" or "StoryScroll Team"
+  - AI categorizes each story by age (2-4, 5-6, 7-8 years) based on complexity analysis
+  - AI generates age-appropriate morals for all stories (gentle for younger, stronger for older)
+- **Story Generation Pipeline**: 
+    - `server/classicalStoryData.ts`: Metadata for 90 classical stories with descriptions
+    - `server/story-processor.ts`: AI adaptation, age categorization, and moral generation
+    - `server/seed-stories-batch.ts`: Batch processor for all 120 stories (~2-3 hours runtime)
+    - `server/story-library.json`: Exported JSON with all processed stories
+    - `server/seed-production.ts`: Production seeder that imports from JSON
+    - See `server/ADD_MORE_STORIES.md` for instructions on adding more classical stories
+- **Database Seeding**: Run `tsx server/seed-production.ts` to populate database from JSON export
 
 ### Feature Specifications
 - **Public Features**: Browse feed, search, read stories, filter by age and language.
 - **Protected Features**: Like/save stories, dismiss/restore stories, create AI stories, manage profile.
-- **Multi-language Support**: Stories available in English and French, with metadata tracking translation status and original language. Language selectors are integrated across the application.
+- **Multi-language Support**: Stories available in English, French, and German, with metadata tracking translation status and original language. Language selectors are integrated across the application.
 - **Story Attribution**: Unified "Author:" label displays actual author/source names for all stories (e.g., "Brothers Grimm," "StoryScroll Team").
 
 ### System Design Choices
