@@ -44,7 +44,45 @@ export const infant_titles_fr: StoryTheme[] = [
   { title: "Le Lapin Câlin", theme: "Un lapin doux qui sautille vers son terrier confortable", language: "fr" },
 ];
 
-// 6-10 years: Realistic stories with strong moral lessons
+// 5-6 years: Fantasy stories with gentle moral lessons
+// Focus: Magical creatures, simple life lessons (sharing, kindness, trying new things, being brave)
+export const middle_titles_en: StoryTheme[] = [
+  { title: "The Lantern Fox Shares the Glow", theme: "A magical fox with a glowing tail learns that sharing light makes everyone happier", language: "en" },
+  { title: "The Rainbow Dragon's New Friend", theme: "A shy dragon discovers that being kind to someone different brings joy", language: "en" },
+  { title: "The Little Star Who Was Scared", theme: "A timid star learns that trying something new can be wonderful", language: "en" },
+  { title: "The Garden Fairy's Gift", theme: "A fairy realizes that helping others feels better than keeping everything", language: "en" },
+  { title: "The Brave Little Cloud", theme: "A small cloud finds courage to help when a valley needs rain", language: "en" },
+  { title: "The Turtle's Patient Journey", theme: "A young turtle discovers that taking time leads to success", language: "en" },
+  { title: "The Kind Moonbeam", theme: "A moonbeam learns that gentle words can brighten someone's night", language: "en" },
+  { title: "The Owl's Wise Choice", theme: "A young owl realizes that listening first helps solve problems", language: "en" },
+  { title: "The Friendly Forest Spirit", theme: "A playful spirit discovers that including everyone makes games more fun", language: "en" },
+  { title: "The Butterfly's Colorful Lesson", theme: "A butterfly learns that being yourself is better than copying others", language: "en" },
+  { title: "The Magic Acorn's Adventure", theme: "An acorn discovers that growing takes patience and care", language: "en" },
+  { title: "The Gentle Giant's Heart", theme: "A big creature learns that being gentle is its greatest strength", language: "en" },
+  { title: "The Wandering Wish", theme: "A wish learns that helping others makes wishes come true", language: "en" },
+  { title: "The Singing Stream", theme: "A babbling brook discovers that its song makes the forest happy", language: "en" },
+  { title: "The Sleepy Hedgehog's Kindness", theme: "A tired hedgehog finds that helping a friend brings warmth", language: "en" },
+];
+
+export const middle_titles_fr: StoryTheme[] = [
+  { title: "Le Renard Lanterne Partage sa Lueur", theme: "Un renard magique avec une queue lumineuse apprend que partager la lumière rend tout le monde plus heureux", language: "fr" },
+  { title: "Le Nouveau Ami du Dragon Arc-en-ciel", theme: "Un dragon timide découvre qu'être gentil avec quelqu'un de différent apporte de la joie", language: "fr" },
+  { title: "La Petite Étoile Qui Avait Peur", theme: "Une étoile timide apprend qu'essayer quelque chose de nouveau peut être merveilleux", language: "fr" },
+  { title: "Le Cadeau de la Fée du Jardin", theme: "Une fée réalise qu'aider les autres est meilleur que tout garder", language: "fr" },
+  { title: "Le Petit Nuage Courageux", theme: "Un petit nuage trouve le courage d'aider quand une vallée a besoin de pluie", language: "fr" },
+  { title: "Le Voyage Patient de la Tortue", theme: "Une jeune tortue découvre que prendre son temps mène au succès", language: "fr" },
+  { title: "Le Rayon de Lune Gentil", theme: "Un rayon de lune apprend que les mots doux peuvent illuminer la nuit de quelqu'un", language: "fr" },
+  { title: "Le Choix Sage du Hibou", theme: "Un jeune hibou réalise qu'écouter d'abord aide à résoudre les problèmes", language: "fr" },
+  { title: "L'Esprit de la Forêt Amical", theme: "Un esprit joueur découvre qu'inclure tout le monde rend les jeux plus amusants", language: "fr" },
+  { title: "La Leçon Colorée du Papillon", theme: "Un papillon apprend qu'être soi-même est mieux que de copier les autres", language: "fr" },
+  { title: "L'Aventure du Gland Magique", theme: "Un gland découvre que grandir demande de la patience et des soins", language: "fr" },
+  { title: "Le Cœur du Géant Gentil", theme: "Une grande créature apprend qu'être doux est sa plus grande force", language: "fr" },
+  { title: "Le Souhait Vagabond", theme: "Un souhait apprend qu'aider les autres fait que les souhaits se réalisent", language: "fr" },
+  { title: "Le Ruisseau Chantant", theme: "Un ruisseau babillard découvre que sa chanson rend la forêt heureuse", language: "fr" },
+  { title: "La Gentillesse du Hérisson Endormi", theme: "Un hérisson fatigué découvre qu'aider un ami apporte de la chaleur", language: "fr" },
+];
+
+// 7-8 years: Realistic stories with strong moral lessons
 // Focus: School, friendship, responsibility, consequences, honesty, kindness
 export const older_titles_en: StoryTheme[] = [
   { title: "The Lost Library Book", theme: "A child loses a library book and must decide whether to tell the truth", language: "en" },
