@@ -18,7 +18,7 @@ export function FeedWelcomeBanner({ onDismiss }: FeedWelcomeBannerProps) {
         damping: 12,
         stiffness: 200,
         duration: 0.6,
-        delay: 3
+        delay: 1.5
       }}
     >
       <Card className="mx-4 mt-4 p-4 relative bg-white dark:bg-white z-20 border-b-0 shadow-lg">
