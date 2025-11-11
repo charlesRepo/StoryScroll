@@ -17,6 +17,7 @@ import AuthScreen from "@/components/AuthScreen";
 import { FeedWelcomeBanner } from "@/components/FeedWelcomeBanner";
 import { useLocalStorageState } from "@/hooks/use-local-storage-state";
 import { Loader2 } from "lucide-react";
+import { AnimatePresence } from "framer-motion";
 
 export default function HomePage() {
   const { user, isLoading: authLoading, isAuthenticated, logout } = useAuth();
@@ -361,11 +362,13 @@ export default function HomePage() {
         {activeTab === "feed" && (
           <div className="h-full grid grid-rows-[auto,1fr]">
             {/* Banner Row - Non-scrolling */}
-            {!isWelcomeBannerDismissed && (
-              <div className="sticky top-0 z-30 bg-primary">
-                <FeedWelcomeBanner onDismiss={() => setIsWelcomeBannerDismissed(true)} />
-              </div>
-            )}
+            <AnimatePresence>
+              {!isWelcomeBannerDismissed && (
+                <div className="sticky top-0 z-30 bg-primary">
+                  <FeedWelcomeBanner onDismiss={() => setIsWelcomeBannerDismissed(true)} />
+                </div>
+              )}
+            </AnimatePresence>
             
             {/* Feed Row - Scrolling yellow container */}
             <div className="relative overflow-hidden">

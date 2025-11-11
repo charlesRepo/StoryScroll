@@ -1,6 +1,7 @@
 import { X } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 interface FeedWelcomeBannerProps {
   onDismiss: () => void;
@@ -8,7 +9,13 @@ interface FeedWelcomeBannerProps {
 
 export function FeedWelcomeBanner({ onDismiss }: FeedWelcomeBannerProps) {
   return (
-    <Card className="mx-4 mt-4 p-4 relative bg-white dark:bg-white z-20 border-b-0">
+    <motion.div
+      initial={{ opacity: 0, y: -20, scale: 0.95 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      exit={{ opacity: 0, y: -20, scale: 0.95 }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
+    >
+      <Card className="mx-4 mt-4 p-4 relative bg-white dark:bg-white z-20 border-b-0 shadow-lg">
       <Button
         size="icon"
         variant="ghost"
@@ -29,5 +36,6 @@ export function FeedWelcomeBanner({ onDismiss }: FeedWelcomeBannerProps) {
         </p>
       </div>
     </Card>
+    </motion.div>
   );
 }
