@@ -11,14 +11,24 @@ export function FeedWelcomeBanner({ onDismiss }: FeedWelcomeBannerProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: -100 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -50 }}
-      transition={{ 
-        type: "spring",
-        damping: 12,
-        stiffness: 200,
-        duration: 0.6,
-        delay: 1.5
+      animate={{ 
+        opacity: 1, 
+        y: 0,
+        transition: {
+          type: "spring",
+          damping: 12,
+          stiffness: 200,
+          duration: 0.6,
+          delay: 1.5
+        }
+      }}
+      exit={{ 
+        opacity: 0, 
+        y: -50,
+        transition: {
+          duration: 0.3,
+          ease: "easeIn"
+        }
       }}
     >
       <Card className="mx-4 mt-4 p-4 relative bg-white dark:bg-white z-20 border-b-0 shadow-lg">
