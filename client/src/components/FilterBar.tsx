@@ -15,7 +15,7 @@ export interface FilterBarProps {
   onLanguageChange: (language: string) => void;
 }
 
-const AGE_RANGES = ["0-2 years", "3-5 years", "6-10 years"];
+const AGE_RANGES = ["2-4 years", "5-6 years", "7-8 years"];
 const LANGUAGES = [
   { value: "en", label: "English" },
   { value: "fr", label: "French" },
