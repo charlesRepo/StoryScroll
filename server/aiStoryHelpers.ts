@@ -5,7 +5,7 @@ const openai = new OpenAI({
 });
 
 interface CategoryAnalysis {
-  ageRange: "0-2 years" | "3-5 years" | "6-10 years";
+  ageRange: "2-4 years" | "5-6 years" | "7-8 years";
   reasoning: string;
 }
 
@@ -21,7 +21,7 @@ interface GeneratedStory {
   summary: string;
   moral: string;
   fullContent: string;
-  ageRange: "0-2 years" | "3-5 years" | "6-10 years";
+  ageRange: "2-4 years" | "5-6 years" | "7-8 years";
 }
 
 export async function categorizeStory(
@@ -32,11 +32,11 @@ export async function categorizeStory(
 ): Promise<CategoryAnalysis> {
   const prompt = `You are an expert in child development and children's literature. Analyze the following bedtime story and categorize it into the appropriate age group based on these criteria:
 
-**0-2 years**: Stories with pure fantasy themes - magic, simple creatures, wonder and imagination with no moral lessons. Focus on sensory experiences, simple emotions, and magical elements.
+**2-4 years**: Stories with simple fantasy themes - magic, simple creatures, wonder and imagination. Focus on sensory experiences, basic emotions, repetition, and magical elements. Very simple narratives with clear beginnings and endings.
 
-**3-5 years**: Stories that combine fantasy with beginning moral lessons. Mix of magical elements with simple life lessons about kindness, sharing, courage, etc.
+**5-6 years**: Stories that combine fantasy with beginning moral lessons. Mix of magical elements with simple life lessons about kindness, sharing, courage, friendship. More developed plots but still age-appropriate complexity.
 
-**6-10 years**: Stories with realistic themes and strong moral lessons. Focus on real-world situations, character development, consequences of actions, and clear moral teachings.
+**7-8 years**: Stories with more realistic themes and stronger moral lessons. Focus on real-world situations, character development, consequences of actions, and clear moral teachings. Can handle more complex narratives and emotional depth.
 
 Story Title: ${title}
 Summary: ${summary}
@@ -45,7 +45,7 @@ Full Content: ${fullContent.substring(0, 1000)}...
 
 Respond in JSON format:
 {
-  "ageRange": "0-2 years" | "3-5 years" | "6-10 years",
+  "ageRange": "2-4 years" | "5-6 years" | "7-8 years",
   "reasoning": "Brief explanation of why this story fits this age group"
 }`;
 
@@ -124,9 +124,9 @@ Create a complete bedtime story with:
 2. The full story content (appropriate length for bedtime reading, 500-800 words)
 3. A moral lesson if appropriate
 4. Categorize by age group based on:
-   - 0-2 years: Pure fantasy, magic, simple wonder
-   - 3-5 years: Fantasy mixed with simple moral lessons
-   - 6-10 years: Realistic themes with strong moral lessons
+   - 2-4 years: Simple fantasy, magic, basic emotions, very simple narratives
+   - 5-6 years: Fantasy mixed with beginning moral lessons, more developed plots
+   - 7-8 years: More realistic themes with stronger moral lessons, complex narratives
 
 Respond in JSON format:
 {
@@ -134,7 +134,7 @@ Respond in JSON format:
   "summary": "Engaging summary (max 70 words)",
   "moral": "Moral lesson or empty string",
   "fullContent": "Complete story text",
-  "ageRange": "0-2 years" | "3-5 years" | "6-10 years"
+  "ageRange": "2-4 years" | "5-6 years" | "7-8 years"
 }`;
 
   const response = await openai.chat.completions.create({

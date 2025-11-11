@@ -99,7 +99,7 @@ async function generateInfantStory(
 ): Promise<GeneratedStory> {
   const langName = theme.language === "en" ? "English" : "French";
   
-  const prompt = `You are writing a bedtime story for infants and toddlers (0-2 years old).
+  const prompt = `You are writing a bedtime story for young children (2-4 years old).
 
 Title: ${theme.title}
 Theme: ${theme.theme}
@@ -174,7 +174,7 @@ async function generateOlderStory(
 ): Promise<GeneratedStory> {
   const langName = theme.language === "en" ? "English" : "French";
   
-  const prompt = `You are writing a realistic bedtime story for children aged 6-10 years old.
+  const prompt = `You are writing a realistic bedtime story for children aged 7-8 years old.
 
 Title: ${theme.title}
 Theme: ${theme.theme}
@@ -237,7 +237,7 @@ Respond in JSON format:
 }
 
 async function generateInfantStories(count: number = 15) {
-  console.log(`\n👶 Generating ${count} infant stories (0-2 years)...`);
+  console.log(`\n👶 Generating ${count} young children stories (2-4 years)...`);
   console.log("=" .repeat(60));
   
   const results = {
@@ -290,7 +290,7 @@ async function generateInfantStories(count: number = 15) {
         moral: null,
         fullContent: validStory.fullContent,
         imageUrl,
-        ageRange: "0-2 years",
+        ageRange: "2-4 years",
         language: "en",
         isTranslated: false,
         originalLanguage: "en",
@@ -348,7 +348,7 @@ async function generateInfantStories(count: number = 15) {
         moral: null,
         fullContent: validStory.fullContent,
         imageUrl,
-        ageRange: "0-2 years",
+        ageRange: "2-4 years",
         language: "fr",
         isTranslated: false,
         originalLanguage: "fr",
@@ -373,7 +373,7 @@ async function generateInfantStories(count: number = 15) {
 }
 
 async function generateOlderStories(count: number = 15) {
-  console.log(`\n📚 Generating ${count} stories for older children (6-10 years)...`);
+  console.log(`\n📚 Generating ${count} stories for older children (7-8 years)...`);
   console.log("=" .repeat(60));
   
   const results = {
@@ -426,7 +426,7 @@ async function generateOlderStories(count: number = 15) {
         moral: validStory.moral,
         fullContent: validStory.fullContent,
         imageUrl,
-        ageRange: "6-10 years",
+        ageRange: "7-8 years",
         language: "en",
         isTranslated: false,
         originalLanguage: "en",
@@ -485,7 +485,7 @@ async function generateOlderStories(count: number = 15) {
         moral: validStory.moral,
         fullContent: validStory.fullContent,
         imageUrl,
-        ageRange: "6-10 years",
+        ageRange: "7-8 years",
         language: "fr",
         isTranslated: false,
         originalLanguage: "fr",
@@ -514,8 +514,8 @@ async function main() {
   try {
     console.log("🚀 Starting Age-Specific Story Generation\n");
     console.log("This will create stories for underrepresented age groups:");
-    console.log("- 0-2 years: Simple sensory stories (NO morals)");
-    console.log("- 6-10 years: Realistic stories (WITH morals)\n");
+    console.log("- 2-4 years: Simple sensory stories (NO morals)");
+    console.log("- 7-8 years: Realistic stories (WITH morals)\n");
     
     // Generate infant stories
     await generateInfantStories(15);
