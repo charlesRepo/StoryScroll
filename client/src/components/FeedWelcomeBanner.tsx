@@ -8,7 +8,7 @@ interface FeedWelcomeBannerProps {
 
 export function FeedWelcomeBanner({ onDismiss }: FeedWelcomeBannerProps) {
   return (
-    <Card className="mx-4 mt-4 mb-3 p-4 relative bg-white dark:bg-white z-20">
+    <Card className="mx-4 mt-4 p-4 relative bg-white dark:bg-white z-20 border-b-0">
       <Button
         size="icon"
         variant="ghost"
