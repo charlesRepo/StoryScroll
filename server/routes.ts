@@ -138,19 +138,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   // Story routes
-  // Temporary compatibility layer: map new age ranges to old ones (multi-range support)
-  // This allows existing stories (with old ranges) to be displayed with new filters
-  // Each new range maps to multiple old ranges for better semantic coverage
-  function mapNewAgeRangeToOld(newRange: string | undefined): string[] | undefined {
-    if (!newRange) return undefined;
-    const mapping: Record<string, string[]> = {
-      "2-4 years": ["0-2 years", "3-5 years"],  // Toddlers + preschoolers
-      "5-6 years": ["3-5 years", "6-10 years"], // Overlap both early childhood ranges
-      "7-8 years": ["6-10 years"],              // Early elementary
-    };
-    return mapping[newRange] || [newRange];
-  }
-
   app.get("/api/stories", async (req, res) => {
     try {
       const { language, ageRange } = req.query;
@@ -162,13 +149,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
         excludeIds = await storage.getUserDismissedStoryIds(userId);
       }
 
-      // Map new age range to old age range for database compatibility
-      const mappedAgeRange = mapNewAgeRangeToOld(ageRange as string);
-
       // Get public stories
       const publicStories = await storage.getStories({
         language: language as string,
-        ageRange: mappedAgeRange,
+        ageRange: ageRange as string,
         isPublic: true,
         excludeIds,
       });

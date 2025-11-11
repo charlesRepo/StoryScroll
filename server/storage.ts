@@ -13,7 +13,7 @@ import {
   dismissedStories
 } from "@shared/schema";
 import { db } from "./db";
-import { eq, and, desc, notInArray, inArray } from "drizzle-orm";
+import { eq, and, desc, notInArray } from "drizzle-orm";
 
 export interface IStorage {
   // User operations
@@ -25,7 +25,7 @@ export interface IStorage {
 
   // Story operations
   getStory(id: string): Promise<Story | undefined>;
-  getStories(filters: { language?: string; ageRange?: string | string[]; isPublic?: boolean; excludeIds?: string[] }): Promise<Story[]>;
+  getStories(filters: { language?: string; ageRange?: string; isPublic?: boolean; excludeIds?: string[] }): Promise<Story[]>;
   getUserStories(userId: string): Promise<Story[]>;
   getStoryByAuthorAndTitle(authorId: string, title: string): Promise<Story | undefined>;
   createStory(story: InsertStory): Promise<Story>;
@@ -87,21 +87,12 @@ export class DbStorage implements IStorage {
     return result[0];
   }
 
-  async getStories(filters: { language?: string; ageRange?: string | string[]; isPublic?: boolean; excludeIds?: string[] } = {}): Promise<Story[]> {
+  async getStories(filters: { language?: string; ageRange?: string; isPublic?: boolean; excludeIds?: string[] } = {}): Promise<Story[]> {
     let query = db.select().from(stories);
     
     const conditions = [];
     if (filters.language) conditions.push(eq(stories.language, filters.language));
-    
-    // Support both single age range and multiple age ranges
-    if (filters.ageRange) {
-      if (Array.isArray(filters.ageRange)) {
-        conditions.push(inArray(stories.ageRange, filters.ageRange));
-      } else {
-        conditions.push(eq(stories.ageRange, filters.ageRange));
-      }
-    }
-    
+    if (filters.ageRange) conditions.push(eq(stories.ageRange, filters.ageRange));
     if (filters.isPublic !== undefined) conditions.push(eq(stories.isPublic, filters.isPublic));
     if (filters.excludeIds && filters.excludeIds.length > 0) {
       conditions.push(notInArray(stories.id, filters.excludeIds));
