@@ -1,0 +1,139 @@
+2025-11-11 23:24:30.76
+8d98ad41
+System
+starting up user application
+2025-11-11 23:24:30.76
+8d98ad41
+System
+metasidecar: loaded enterprise status from environment is_enterprise=false
+2025-11-11 23:24:30.76
+8d98ad41
+System
+forwarding local port 5000 to external port 80 (mapped as 1104)
+2025-11-11 23:24:31.40
+8d98ad41
+User
+> rest-express@1.0.0 start
+2025-11-11 23:24:31.40
+8d98ad41
+User
+> NODE_ENV=production node dist/index.js
+2025-11-11 23:24:32.54
+8d98ad41
+User
+✅ Stories table already contains 52 stories. Skipping initialization.
+2025-11-11 23:24:32.61
+8d98ad41
+User
+4:24:32 AM [express] serving on port 5000
+2025-11-11 23:39:37.19
+8d98ad41
+System
+system: received signal terminated
+2025-11-12 00:23:30.34
+8d98ad41
+System
+starting up user application
+2025-11-12 00:23:30.34
+8d98ad41
+System
+metasidecar: loaded enterprise status from environment is_enterprise=false
+2025-11-12 00:23:30.34
+8d98ad41
+System
+forwarding local port 5000 to external port 80 (mapped as 1104)
+2025-11-12 00:23:30.94
+8d98ad41
+User
+> rest-express@1.0.0 start
+2025-11-12 00:23:30.94
+8d98ad41
+User
+> NODE_ENV=production node dist/index.js
+2025-11-12 00:23:32.11
+8d98ad41
+User
+✅ Stories table already contains 52 stories. Skipping initialization.
+2025-11-12 00:23:32.18
+8d98ad41
+User
+5:23:32 AM [express] serving on port 5000
+2025-11-12 00:48:27.26
+8d98ad41
+System
+system: received signal terminated
+2025-11-12 01:24:38.92
+8d98ad41
+System
+starting up user application
+2025-11-12 01:24:38.92
+8d98ad41
+System
+metasidecar: loaded enterprise status from environment is_enterprise=false
+2025-11-12 01:24:38.92
+8d98ad41
+System
+forwarding local port 5000 to external port 80 (mapped as 1104)
+2025-11-12 01:24:39.83
+8d98ad41
+User
+> rest-express@1.0.0 start
+2025-11-12 01:24:39.83
+8d98ad41
+User
+> NODE_ENV=production node dist/index.js
+2025-11-12 01:24:41.07
+8d98ad41
+User
+✅ Stories table already contains 52 stories. Skipping initialization.
+2025-11-12 01:24:41.18
+8d98ad41
+User
+6:24:41 AM [express] serving on port 5000
+2025-11-12 01:39:47.33
+8d98ad41
+System
+system: received signal terminated
+2025-11-12 02:56:12.52
+8d98ad41
+System
+starting up user application
+2025-11-12 02:56:12.52
+8d98ad41
+System
+metasidecar: loaded enterprise status from environment is_enterprise=false
+2025-11-12 02:56:12.52
+8d98ad41
+System
+forwarding local port 5000 to external port 80 (mapped as 1104)
+2025-11-12 02:56:13.48
+8d98ad41
+User
+> rest-express@1.0.0 start
+2025-11-12 02:56:13.48
+8d98ad41
+User
+> NODE_ENV=production node dist/index.js
+2025-11-12 02:56:14.95
+8d98ad41
+User
+✅ Stories table already contains 52 stories. Skipping initialization.
+2025-11-12 02:56:15.12
+8d98ad41
+User
+7:56:15 AM [express] serving on port 5000
+2025-11-12 03:11:17.46
+8d98ad41
+System
+system: received signal terminated
+2025-11-12 07:58:57.48
+578e8b82
+System
+starting up user application
+2025-11-12 07:58:57.48
+578e8b82
+System
+metasidecar: loaded enterprise status from environment is_enterprise=false
+2025-11-12 07:58:57.48
+578e8b82
+System
