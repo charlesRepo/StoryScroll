@@ -39,14 +39,8 @@ export default function LikedStoriesGrid({
           onClick={() => onStoryClick(story.id)}
           data-testid={`card-liked-story-${story.id}`}
         >
-          <img
-            src={story.imageUrl}
-            alt={story.title}
-            className="w-full aspect-[4/3] object-cover"
-            data-testid={`img-liked-story-${story.id}`}
-          />
-          <div className="p-3 space-y-2">
-            <h3 className="text-sm font-semibold text-foreground line-clamp-2" data-testid={`text-liked-story-title-${story.id}`}>
+          <div className="p-4 space-y-2">
+            <h3 className="text-sm font-semibold text-foreground line-clamp-3" data-testid={`text-liked-story-title-${story.id}`}>
               {story.title}
             </h3>
             <div className="flex items-center gap-1 text-xs text-muted-foreground">
