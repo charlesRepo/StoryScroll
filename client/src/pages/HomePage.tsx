@@ -364,7 +364,7 @@ export default function HomePage() {
             {/* Banner Row - Non-scrolling */}
             <AnimatePresence>
               {!isWelcomeBannerDismissed && (
-                <div className="sticky top-0 z-30 bg-primary">
+                <div className="sticky top-0 z-30" style={{ backgroundColor: '#f2c75a' }}>
                   <FeedWelcomeBanner onDismiss={() => setIsWelcomeBannerDismissed(true)} />
                 </div>
               )}
@@ -386,8 +386,9 @@ export default function HomePage() {
               )}
               <div
                 ref={scrollContainerRef}
-                className="h-full overflow-y-auto snap-y snap-mandatory scrollbar-hide bg-primary"
+                className="h-full overflow-y-auto snap-y snap-mandatory scrollbar-hide"
                 style={{ 
+                  backgroundColor: '#f2c75a',
                   scrollbarWidth: "none", 
                   msOverflowStyle: "none",
                   scrollSnapStop: "always",
