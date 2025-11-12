@@ -19,7 +19,7 @@ export function FeedWelcomeBanner({ onDismiss }: FeedWelcomeBannerProps) {
           damping: 12,
           stiffness: 200,
           duration: 0.6,
-          delay: 1.5
+          delay: 1.0
         }
       }}
       exit={{ 
