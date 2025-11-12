@@ -1,0 +1,420 @@
+
+Als das Licht schließlich den Himmel erleuchtete, flüsterten die Sterne: "Danke, Leo! Du hast uns geholfen, die Träume der Tiere zu verwirklichen. Denke daran, dass dein Lächeln und dein Mut die Welt um dich herum erhellen können."
+
+Leo verabschiedete sich von den Tieren und den funkelnden Sternen. Er folgte dem geheimen Pfad zurück nach Hause, sein Herz voller Freude und Wärme. Von diesem Tag an wusste Leo, dass er immer die Kraft hatte, Licht und Freude in die Welt zu bringen, egal wo er war. 
+
+Und so schlief Leo in dieser Nacht ein, träumend von neuen Abenteuern im Zauberwald und den flüsternden Sternen, die ihm immer zur Seite standen.', 'https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=800&h=600&fit=crop', 'de', false, 'de', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('96ece29c-d906-486b-947f-1cec6d2ce7aa', 'Die Freundschaftsblume', 'In einem kleinen, bunten Dorf lebten ein fröhlicher Schmetterling namens Lila und ein freundlicher Maulwurf namens Max. Eines Tages fanden sie eine geheimnisvolle Blume, die die Kraft hatte, Freundschaft zu stärken. Auf ihrem Abenteuer lernen sie, wie wichtig Freundlichkeit und das Teilen von Freude sind. Eine zauberhafte Geschichte über die Bedeutung von Freundschaft und die kleinen Dinge im Leben.', 'Freundschaft und Freundlichkeit sind wichtige Werte im Leben. Wenn wir anderen helfen und Freude teilen, wird unsere eigene Freundschaft stärker und glücklicher!', 'Es war einmal in einem kleinen, bunten Dorf, wo die Sonne immer schien und die Vögel fröhlich sangen. Dort lebte ein zarter, blauer Schmetterling namens Lila. Lila liebte es, von Blume zu Blume zu fliegen und die süßen Düfte des Gartens einzuatmen. Eines Tages, während sie auf der Suche nach dem schönsten Nektar war, viel ihr Blick auf ein kleines Loch in der Erde.
+
+Neugierig schwebte sie näher und sah einen Maulwurf mit einem braunen, weichen Fell. "Hallo! Ich bin Max, der Maulwurf! Was machst du hier?" fragte er freundlich.
+
+"Ich bin Lila, der Schmetterling! Ich fliege gerne und erkunde die Welt!" antwortete sie.
+
+Max lächelte. "Das klingt spannend! Möchtest du mich auf meinem Abenteuer begleiten? Ich liebe es, die Erde zu graben und neue Dinge zu entdecken!" Lila war begeistert und stimmte sofort zu.
+
+Gemeinsam begaben sie sich auf eine Reise durch den Garten. Max grub Löcher und fand glitzernde Steine, während Lila über ihn hinwegflog und ihm die schönsten Blumen zeigte. Eines Tages entdeckten sie eine geheimnisvolle Blume, die in allen Regenbogenfarben leuchtete. "Wow! Was ist das für eine besondere Blume?" fragte Lila.
+
+"Ich habe gehört, dass diese Blume die Kraft hat, Freundschaft zu stärken!" sagte Max. "Wir sollten ihr etwas Gutes tun, um ihre Kraft zu wecken!" Lila nickte eifrig. 
+
+Sie beschlossen, die Blume zu gießen und sie mit frischen Blättern zu umgeben. Max grub um die Blume herum, während Lila fröhlich um sie herumflog und den ganzen Garten verzauberte. Nach einer Weile begann die Blume zu leuchten und ein sanfter Duft erfüllte die Luft. 
+
+Plötzlich erschien ein kleiner, glitzernder Lichtgeist. "Danke, dass ihr so freundlich zu meiner Blume wart! Ihr habt ihre Kraft geweckt!" sagte der Geist. "Nun wird eure Freundschaft für immer stark bleiben!"
+
+Lila und Max strahlten vor Freude. Sie hatten nicht nur die geheimnisvolle Blume entdeckt, sondern auch gelernt, wie wichtig es ist, freundlich zu sein und einander zu helfen.
+
+Von diesem Tag an waren sie die besten Freunde. Sie halfen einander jeden Tag, erforschten den Garten und teilten ihre Freude miteinander. Wenn Lila mit Max spielte, fühlte sie sich leicht wie ein Schmetterling. Und wenn Max mit Lila sprach, fühlte er sich stark und mutig.  
+
+Als die Sonne unterging und der Himmel in sanften Farben leuchtete, schlossen die beiden Freunde ihre Augen und schickten einen Wunsch zur Blume: "Möge unsere Freundschaft ewig blühen!"
+
+So lebten Lila und Max glücklich in ihrem bunten Dorf, stets umgeben von der Kraft der Freundschaft und der Wärme der Freundlichkeit.', 'https://images.unsplash.com/photo-1604004555489-723a93d6ce74?w=800&h=600&fit=crop', 'de', false, 'de', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('27225ff6-08e1-49b9-9c9a-5c70462cba27', 'Luna und der mutige Mondstrahl', 'In einem kleinen, friedlichen Dorf lebte die süße Maus Luna, die immer ein wenig schüchtern war. Eines Nachts begegnete sie einem Mondstrahl, der ihr half, ihren Mut zu finden. Zusammen erlebten sie ein aufregendes Abenteuer, das Luna lehrte, wie wichtig es ist, mutig zu sein und an sich selbst zu glauben.', 'Mut bedeutet nicht, keine Angst zu haben, sondern trotz der Angst zu handeln. Jeder kann mutig sein, wenn er an sich selbst glaubt und Hilfe annimmt.', 'Es war einmal in einem kleinen, ruhigen Dorf, wo die Blumen bunt blühten und die Sterne nachts am Himmel funkelten. In diesem Dorf lebte eine kleine Maus namens Luna. Luna war eine süße Maus mit weichem, grauem Fell und großen, neugierigen Augen. Doch Luna war auch sehr schüchtern und hatte oft Angst davor, neue Dinge auszuprobieren.
+
+Eines Abends, als der Mond hell am Himmel schien, schaute Luna aus ihrem kleinen Fenster. Der Mond war so schön und leuchtend, dass sie sich wünschte, sie könnte ihm näher kommen. Plötzlich bemerkte sie einen strahlenden Mondstrahl, der durch das Fenster schlüpfen und direkt zu ihr kommen wollte.
+
+"Hallo, kleine Maus!" flüsterte der Mondstrahl sanft. "Ich bin hier, um dir zu helfen!" 
+Luna war überrascht und ein wenig ängstlich. "Wie kannst du mir helfen?" fragte sie mit zitterndem Stimmchen.
+
+"Ich kann dir zeigen, wie mutig du sein kannst! Lass uns zusammen ein Abenteuer erleben!" antwortete der Mondstrahl mit einem freundlichen Lächeln.
+
+Luna zögerte, doch der Mondstrahl strahlte so hell, dass sie sich schließlich entschloss, ihm zu folgen. Gemeinsam schwebten sie über das Dorf, und der Mondstrahl führte sie über die bunten Dächer und die glitzernden Seen. Luna fühlte sich frei und glücklich, als sie durch die Nacht flogen.
+
+Plötzlich sahen sie einen kleinen, weinenden Vogel auf einem Baum sitzen. "Was ist los, kleiner Vogel?" fragte Luna besorgt. Der Vogel schniefte: "Ich habe Angst, den Baum zu verlassen, weil ich nicht fliegen kann!"
+
+„Hab keine Angst!" sagte der Mondstrahl. „Wenn du den Mut findest, es zu versuchen, wirst du sehen, dass du fliegen kannst!" Der kleine Vogel schaute zu Luna, die ihn ermutigend ansah. Mit dem Mondstrahl an seiner Seite wagte der Vogel einen Sprung und flatterte mit seinen kleinen Flügeln. Zu Lunas und des Mondstrahls Überraschung flog der Vogel tatsächlich!
+
+"Ich kann fliegen! Ich kann fliegen!" rief der Vogel glücklich. Luna klatschte vor Freude in die Pfoten und fühlte sich stolz, dass sie helfen konnte. 
+
+Der Mondstrahl lächelte und sagte: "Siehst du, Luna? Manchmal muss man einfach den ersten Schritt wagen, um mutig zu sein!"
+
+Nach diesem Abenteuer fühlte sich Luna viel mutiger. Als sie zurück in ihr kleines Zimmer ging, wusste sie, dass sie nun bereit war, neue Dinge auszuprobieren, ohne sich zu fürchten.
+
+Und während der Mondschein sanft durch ihr Fenster fiel, kuschelte sich Luna in ihr Bett und schloss die Augen. Sie träumte von all den Abenteuern, die sie noch erleben würde, und fühlte sich dabei ganz mutig und stark. 
+
+So schlief sie ein, während der Mondstrahl über das Dorf wachte und ein sanftes Licht auf alle Herzen sandte. Und von diesem Tag an war Luna nie mehr schüchtern, denn sie wusste, dass der Mut immer in ihr wohnte.', 'https://images.unsplash.com/photo-1476234251651-f353c1b3e3a1?w=800&h=600&fit=crop', 'de', false, 'de', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('f2502008-adc8-4bba-8d00-9117bfeff50f', 'Die Traumreise der kleinen Eule', 'In einem zauberhaften Wald lebt die kleine Eule Lila, die nicht schlafen kann. Auf ihrer nächtlichen Entdeckungsreise trifft sie viele Tiere, die ihr zeigen, wie schön die Nacht sein kann. Gemeinsam erleben sie magische Momente und finden die Ruhe, die Lila sucht.', 'Die Nacht birgt viele Wunder und Schönheiten, und es ist wichtig, die Welt um uns herum zu schätzen. Auch die Dunkelheit kann freundlich und tröstlich sein, wenn wir lernen, sie zu lieben.', 'Es war einmal eine kleine Eule namens Lila, die in einem wunderschönen Baum im Herzen eines tiefen, dunklen Waldes lebte. Doch eines Nachts konnte Lila einfach nicht schlafen. Die Sterne funkelten am Himmel, und der Mond schien so hell, dass er den Wald in sanftes Licht tauchte. Lila fühlte sich unruhig und beschloss, einen nächtlichen Spaziergang zu machen.
+
+Sie flatterte aus ihrem Baum und sah den schimmernden Fluss, der durch den Wald floss. "Oh, wie schön der Mond auf dem Wasser glitzert!" sprach Lila und schloss ihre Augen. Plötzlich hörte sie ein sanftes Plätschern. Es war der kluge alte Frosch Ferdinand, der am Ufer saß.
+
+"Hallo, kleine Eule! Warum bist du so spät noch wach?" fragte Ferdinand mit seiner tiefen Stimme. "Ich kann nicht schlafen," antwortete Lila. "Die Nacht ist zu schön, um zu ruhen!" Ferdinand lächelte und sagte: "Komm mit mir, ich zeige dir die Wunder der Nacht!"
+
+Gemeinsam hüpften sie entlang des Flusses, wo sie die glühenden Glühwürmchen entdeckten. "Schau, wie sie tanzen!" rief Ferdinand begeistert. Die kleinen Lichtpunkte flogen um Lila herum und zauberten ein Lächeln auf ihr Gesicht. "Es fühlt sich an wie ein Traum!" flüsterte Lila.
+
+Weiter ging ihre Reise bis zu einer Wiese, auf der die majestätischen Nachtigallen sangen. Ihr Gesang war so schön und melodisch, dass Lila für einen Moment vergaß, dass sie müde war. Sie lauschte dem Gesang und fühlte sich wie in einem zauberhaften Traum.
+
+Plötzlich bemerkte Lila einen kleinen Hasen, der nervös in seinem Bau herumhüpfte. "Was ist los, kleiner Hase?" fragte Lila besorgt. "Ich kann nicht schlafen, weil ich Angst habe vor der Dunkelheit!" antwortete der Hase. Lila lächelte und sagte: "Die Dunkelheit ist nicht böse! Sie bringt die Sterne und den Mond, die uns beschützen! Lass uns zusammen spielen, bis du dich besser fühlst!"
+
+Mit Lila und Ferdinand an seiner Seite sprang der Hase fröhlich über die Wiese und vergaß seine Ängste. Sie tanzten und lachten, bis der Himmel langsam zu erleuchten begann. Die ersten Sonnenstrahlen kitzelten die Wolken und die Nacht verschwand.
+
+Lila fühlte sich so glücklich, dass sie neue Freunde gefunden hatte und das Wunder der Nacht erleben durfte. "Die Nacht ist wirklich besonders!" sagte sie und bemerkte, dass sie jetzt müde war, aber auch voller Freude.
+
+Lila verabschiedete sich von ihren Freunden und flog zurück zu ihrem Baum. Als sie sich auf ihrem gemütlichen Schlafplatz niederließ, schloss sie die Augen und dachte an all die schönen Dinge, die sie erlebt hatte. Die Nacht war magisch, aber es war auch schön, sich jetzt auszuruhen und von neuen Abenteuern zu träumen.
+
+Mit einem leisen Flüstern der Eulen und dem sanften Licht des Morgens schlief Lila ein, zufrieden und glücklich in dem Wissen, dass die Nacht immer für sie da sein würde, wenn sie bereit war, ihre Wunder zu entdecken.', 'https://images.unsplash.com/photo-1516571748831-5d81767b788d?w=800&h=600&fit=crop', 'de', false, 'de', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('03282602-ecef-46e5-a68c-288a35eab8e6', 'Die Traumreise des kleinen Lichts', 'In einem kleinen, friedlichen Dorf lebte ein neugieriges Licht namens Lumi. Jede Nacht, wenn die Sterne leuchteten, träumte Lumi von fantastischen Abenteuern in der Welt der Träume. Begleite Lumi auf seiner Reise durch die Farben der Fantasie und entdecke, wie wichtig es ist, an die Macht der Träume zu glauben.', 'Die Geschichte lehrt, dass Träume und Fantasie eine wichtige Rolle in unserem Leben spielen. Wenn wir an unsere Träume glauben, können wir die wunderlichsten Abenteuer erleben, egal wie klein wir sind.', 'Es war einmal ein kleines, strahlendes Licht namens Lumi, das in einem ruhigen und friedlichen Dorf lebte. Jeden Abend, wenn die Sonne unterging und der Himmel in sanften Farben leuchtete, bereitete sich Lumi darauf vor, in die Welt der Träume zu reisen. Die anderen Lichter im Dorf sagten oft: "Lumi, du bist so neugierig! Was gibt es in der Traumwelt zu entdecken?"
+
+Doch Lumi wusste es schon genau: In der Traumwelt gab es keine Grenzen für die Fantasie! Eines Nachts, als die Sterne funkelten und der Mond freundlich lächelte, schloss Lumi seine kleinen Augen und wünschte sich, zu einem wunderschönen Regenbogen zu fliegen.
+
+Plötzlich fühlte Lumi, wie es sanft in die Luft gehoben wurde. Es schwebte über Hügel und Wälder, vorbei an glitzernden Seen, die wie Diamanten leuchteten. "Oh, wie schön!" rief Lumi voller Freude. Der Regenbogen war noch schöner, als es sich vorgestellt hatte. Er war aus leuchtenden Farben, die in der Nacht strahlten und Lumi einluden, jeden einzelnen Farbton zu erkunden.
+
+Mit einem kleinen Sprung landete Lumi auf dem roten Streifen des Regenbogens. Auf diesem Streifen traf es ein fröhliches, tanzendes Marienkäferchen namens Rudi. "Hallo, Lumi! Was für ein schöner Abend zum Träumen! Möchtest du mit mir tanzen?" fragte Rudi lächelnd.
+
+Gemeinsam tanzten sie über den Regenbogen, und Lumi spürte, wie die Farben des Regenbogens in ihm aufleuchteten. Von Rot zu Orange, von Gelb zu Grün, von Blau zu Violett – jede Farbe erzählte eine Geschichte von Freundschaft und Freude.
+
+Nach dem Tanz verabschiedete sich Rudi und wünschte Lumi eine gute Nacht. "Denk immer daran, Lumi, die Welt der Träume ist voller Wunder, wenn du nur an sie glaubst!" sagte Rudi und verschwand in einem schimmernden Licht.
+
+Lumi fühlte sich glücklich und voller Energie. Es ging weiter bis zur goldenen Wolke, die wie ein gemütliches Bett aussah. Darauf ließ sich Lumi nieder und schaute in den Himmel, der voller funkelnder Sterne war.
+
+In dieser Nacht träumte Lumi von allen möglichen Abenteuern – von fliegenden Fischen, die durch die Wolken schwammen, und von freundlichen Drachen, die Geschichten erzählten. Doch schließlich war es Zeit, zurück nach Hause zu fliegen. Mit einem sanften Flügeln des Windes wurde Lumi in die Realität zurückgebracht.
+
+Als die ersten Sonnenstrahlen das Dorf erhellten, öffnete Lumi seine Augen. Es fühlte sich warm und zufrieden an. Lumi wusste, dass es jede Nacht zurück in die Traumwelt reisen konnte, solange es an die Kraft der Fantasie glaubte. Und mit diesem Gedanken lächelte Lumi und war bereit, den neuen Tag zu begrüßen.', 'https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=800&h=600&fit=crop', 'de', false, 'de', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('49cede0c-6e1f-4673-8e46-5efdc35bbe5e', 'Luna and the Starry Surprise', 'In a cozy little village, young Luna and her family prepare for a special night under the stars. As they gather together, Luna''s heart fills with love and warmth. Join them on a gentle journey filled with laughter, kindness, and a magical surprise that highlights the beauty of family bonds. Perfect for snuggling up before bedtime.', 'Family love is like the stars—always shining bright, even when you can''t see them. Cherish the moments you share together, for they create warmth in our hearts.', 'Once upon a time, in a cozy little village where the trees whispered sweet songs and the rivers danced under the light of the moon, lived a little girl named Luna. Luna loved stars. Every night, she would sit by her window and gaze up at the twinkling lights that glittered across the sky.
+
+One evening, as the sun dipped behind the hills and painted the sky in shades of pink and orange, Luna had an idea. “Tonight is the perfect night for a family stargazing party!” she exclaimed, her bright eyes sparkling with excitement.
+
+She rushed to the kitchen where her mom was stirring a pot of warm soup. “Mom! Can we have a stargazing party tonight?” Luna asked, bouncing on her toes.
+
+“Of course, my little star!” her mother replied with a smile. “Let’s invite Dad and make it a cozy celebration.” So, they hurriedly made preparations. Luna helped set the table with soft blankets and fluffy pillows in their backyard. Her younger brother, Leo, giggled as he tossed the pillows around, turning the yard into a cozy nest.
+
+As the stars began to twinkle in the darkening sky, Dad returned home from work, bringing with him a big surprise—a bright lantern shaped like a star! “Look what I found!” he said, holding it high for everyone to see. Luna clapped her hands in delight. “It’s perfect for our stargazing!”
+
+With the lantern glowing softly, they all snuggled together under the blankets. Mom served warm soup in colorful bowls, and they shared stories about the stars above. “Did you know that each star has a name?” Dad said, pointing up. “That one is called Orion, and over there is the Big Dipper!”
+
+Luna listened intently, her heart swelling with love for her family. They laughed and enjoyed their soup, feeling warm and cozy under the starry sky. Leo, with his big brown eyes, said, “I want to catch a star!”
+
+“Let’s make a wish on a shooting star!” Luna suggested. As if on cue, a bright streak of light darted across the sky. “Quick, everyone, make a wish!” they all whispered together.
+
+Luna closed her eyes tightly and wished for her family to always be happy and together. When she opened her eyes, the stars seemed to shine even brighter, as if they were celebrating their love.
+
+After a while, Leo began to yawn, and soon Luna felt her eyelids getting heavy too. Mom wrapped her arms around them both, and Dad held the lantern high, casting a warm glow around them. “Look at all the stars, my loves,” Mom said softly. “They are like little lights of love watching over us.”
+
+As the sky sparkled above, Luna felt safe and loved, surrounded by her family. With happy hearts and a cozy blanket, they all drifted off to sleep, dreaming of twinkling stars and the adventures of tomorrow.
+
+And so, under the watchful gaze of the stars, Luna and her family nestled together, knowing that love was the brightest light of all.
+
+The end.', 'https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=800&h=600&fit=crop', 'en', false, 'en', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('440628a2-f8c6-4596-b56b-075970c96941', 'Willow and the Wishing Star', 'In a cozy little village, a kind-hearted squirrel named Willow discovers a magical wishing star that grants her the ability to help those in need. As she goes on a gentle adventure to assist her friends, Willow learns the joy of kindness and the warmth it brings to her heart. Join her as she spreads love and care throughout her woodland home!', 'Helping others brings joy not only to those we assist but also to ourselves. Kindness is a magical gift that can brighten the world around us.', 'Once upon a time, in a cozy little village nestled between the whispering woods and sparkling streams, there lived a kind-hearted squirrel named Willow. Willow had fluffy, russet fur and bright, twinkling eyes. She loved to scamper up and down the trees, playing with her friends and gathering acorns. But more than anything, Willow loved to help others.
+
+One soft, starlit evening, as Willow sat atop her favorite oak tree, she spotted a shimmering star twinkling brighter than all the others in the sky. Curious, she closed her eyes and wished, "Oh, how I wish I could help my friends every day!" To her surprise, a gentle voice drifted down from the star, saying, "Dear Willow, your wish is granted! Use your heart and kindness, and you shall be able to help those in need!"
+
+With a flutter of excitement, Willow leapt from her tree and scampered through the village. First, she met Benny the bunny, who was struggling to find his way home in the tall grass. "Don’t worry, Benny! I’ll help you!" said Willow. With her sharp eyes, she spotted the path leading back to Benny''s burrow and guided him safely home. Benny’s eyes sparkled with gratitude as he thanked Willow with a big, warm hug.
+
+Next, Willow heard a soft whimpering sound. It was Lily the little lamb, who had lost her favorite red scarf in the meadow. "Oh, Willow! Can you help me find my scarf?" she cried. Willow nodded eagerly and together they searched high and low. They scampered through daisies and peeked behind rocks until, at last, Willow spotted the bright red scarf caught in a bush. Lily bleated with joy, and they danced in a circle, their laughter filling the warm evening air.
+
+As the sun began to set, Willow noticed her friend Freddy the fox sitting sadly by the riverbank. "What’s the matter, Freddy?" she asked softly. With a sigh, Freddy said, "I wanted to catch a fish for dinner, but I can’t seem to catch any!" Willow thought for a moment and then had an idea. "Let’s work together! I’ll splash the water to scare the fish your way!" With Willow’s help, Freddy caught a shiny fish, and they shared a lovely dinner under the twinkling stars, feeling grateful for each other’s friendship.
+
+After a long, fulfilling day of helping her friends, Willow returned to her favorite oak tree and gazed up at the magical wishing star. "Thank you for granting my wish! Helping others makes my heart feel so happy and full!" The star twinkled brightly in response, and Willow knew that kindness was a special gift she could share every day.
+
+As she snuggled into her warm nest, Willow drifted off to sleep, dreaming of helping more friends and spreading joy throughout the village. The stars twinkled overhead, and the gentle night wrapped around her like a cozy blanket.
+
+And from that night on, Willow continued to help her friends, filling their lives with laughter, kindness, and love. The village flourished with happiness, all thanks to a little squirrel with a big heart and a magical wishing star that made her dreams come true.', 'https://images.unsplash.com/photo-1604004555489-723a93d6ce74?w=800&h=600&fit=crop', 'en', false, 'en', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('70756b55-2b5f-4c53-99b8-6f76d2f56acc', 'Oliver the Owl and the Shimmering Star', 'In the enchanted Whispering Woods, Oliver the Owl discovers that a twinkling star has fallen from the sky. Join Oliver and his friends as they use their creativity and teamwork to solve the mystery of the missing star, learning valuable lessons along the way. This gentle tale is filled with magic and imagination, perfect for bedtime cuddles.', 'When faced with a problem, working together and thinking creatively can lead to wonderful solutions. Friendship and teamwork are powerful tools for overcoming challenges.', 'Once upon a time, in the heart of the Whispering Woods, there lived a wise little owl named Oliver. Oliver''s soft feathers glistened under the moonlight, and he spent his nights soaring through the trees, sharing stories with his friends. The forest was full of gentle whispers, rustling leaves, and the sweet sounds of crickets singing. 
+
+One tranquil evening, as Oliver perched on a branch, he noticed something unusual. A twinkling light was missing from the sky! Puzzled, he fluffed his feathers and peered closer. ''Oh dear! The Shimmering Star has fallen!'' he exclaimed, his eyes wide with concern. The Shimmering Star was the brightest star in the sky, and without it, the night seemed a little darker. 
+
+Determined to help, Oliver called upon his friends. Daisy the rabbit hopped over, her ears perked up with curiosity. Benny the bear joined in, his big paws eager to lend a hand. And then there was Lila the fox, clever and quick, who always had a knack for finding solutions. 
+
+Together, they gathered beneath the ancient oak tree, where the moonlight glimmered softly through the leaves. ''We must find a way to bring the Shimmering Star back home,'' said Oliver, blinking his wise eyes. 
+
+''Let’s search the forest!'' suggested Daisy, her nose twitching with excitement. But Lila had another idea. ''What if we create something that can shine bright enough to guide the star back?'' she proposed. 
+
+Benny scratched his head, thinking hard. ''I can gather some fireflies!'' he said. They are little lights, and together they can shine bright!'' The friends cheered at the idea, and off Benny went, carefully collecting the glowing fireflies in a small jar. 
+
+Meanwhile, Oliver and Lila worked together to make a welcoming spot near the oak, placing twigs in a circle and sprinkling them with soft petals. ''This will be a cozy home for the star,'' Lila said, her tail flicking with excitement. 
+
+When Benny returned, the jar was filled with fireflies, illuminating the night like tiny lanterns. The friends placed the jar in the center of their beautiful arrangement and waited, hearts fluttering with hope. 
+
+As they gazed up at the sky, something magical happened. Slowly, the Shimmering Star began to twinkle brighter and brighter until it spotted the inviting glow below. With a gentle shimmer and a shimmer of light, it floated down, landing softly amongst the petals. 
+
+Oliver, Daisy, Benny, and Lila cheered with joy! The Shimmering Star twinkled brightly, happy to be home. ''Thank you for bringing me back,'' it said, its voice soft like a lullaby. ''You all worked together with such creativity and kindness!'' 
+
+With the star back in the night sky, the forest glowed with warmth and laughter. Oliver smiled, knowing they had solved the problem together. As they settled down under the oak tree, the moonlight wrapped around them like a blanket, and the friends fell asleep, dreaming of new adventures. 
+
+And from that night on, the Whispering Woods sparkled brighter than ever, thanks to the magic of friendship and creativity.
+
+Goodnight, little ones, and may your dreams be filled with stars.', 'https://images.unsplash.com/photo-1476234251651-f353c1b3e3a1?w=800&h=600&fit=crop', 'en', false, 'en', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('3d87f041-da47-40a0-a750-fcfd376ab8ce', 'Luna and the Magic Paintbrush', 'In the cozy village of Willowbrook, a shy little girl named Luna discovers a magical paintbrush that reveals her hidden talent for painting. As she explores her creativity, Luna learns about self-expression, friendship, and the joy of sharing her gifts with others. Join her on a soothing journey filled with colors, dreams, and the magic of discovering who you truly are.', 'Every child has a unique talent waiting to be discovered. Embracing one’s gifts can bring joy not only to oneself but also to others, and sharing talents can forge beautiful friendships.', 'Once upon a time, in the cozy village of Willowbrook, there lived a little girl named Luna. Luna was a shy child, often hiding behind her long, curly hair. She loved to watch the world around her but never felt quite brave enough to join in. One sunny afternoon, while wandering through the village market, Luna stumbled upon an old, wooden shop that she’d never noticed before. Curious, she pushed the door open and stepped inside.
+
+The shop was filled with all sorts of wonderful things: sparkling trinkets, colorful books, and even soft, fluffy pillows. But what caught Luna’s eye was a paintbrush resting on a shelf, glowing softly as if it held a secret. The shopkeeper, a wise old woman with twinkling eyes, noticed Luna’s fascination. 
+
+“Ah, my dear,” the woman said, “that is no ordinary paintbrush. It has magic in its bristles. It will help you discover your hidden talent.” 
+
+Intrigued, Luna carefully took the paintbrush. “What talent do I have?” she wondered, feeling a mix of excitement and nervousness. 
+
+That evening, Luna brought the paintbrush home and found a blank canvas in her room. She dipped the brush into paint and, to her surprise, it danced across the canvas, creating swirls of colors she had never imagined. The paintbrush seemed to guide her, and soon, a beautiful landscape filled with vibrant flowers, tall trees, and a shining sun appeared. 
+
+As Luna painted, she felt a warmth in her heart. She was no longer the shy little girl hiding in the shadows; she was an artist, filled with joy and creativity. Each stroke of the brush brought her more confidence, and she decided to paint every day after school. 
+
+One day, Luna heard laughter coming from the village square. Curious, she peeked outside and saw children playing games and sharing stories. For the first time, she wanted to join them. Gathering her courage, she took her canvas and walked to the square.
+
+“Would you like to see my painting?” Luna asked, her voice a little shaky. The children turned to her, and their eyes lit up with excitement. Luna revealed her painting, and the children gasped in awe. 
+
+“It’s beautiful!” one child exclaimed. “Can you teach us how to paint?” 
+
+Luna smiled, feeling the warmth spread through her like sunshine. “Of course!” she said. And so, she began to share her newfound talent with her friends. They all sat together, painting and laughing, creating their own masterpieces. Luna found not just her talent, but also new friends who loved her for who she was. 
+
+From that day on, Luna transformed from a shy girl into the heart of the village, spreading joy and creativity everywhere she went. The magic paintbrush helped her discover that everyone has a hidden talent waiting to shine, and sometimes all it takes is a little courage to share it. 
+
+As the stars twinkled in the night sky, Luna closed her eyes, grateful for the gift she had found, and the friendships that filled her heart with happiness. 
+
+And so, in the village of Willowbrook, the colors of creativity danced in the air, reminding everyone that they too could discover their own unique gifts, just like Luna. 
+
+And with that, Luna drifted off to sleep, dreaming of all the wonderful things she would create tomorrow.', 'https://images.unsplash.com/photo-1516571748831-5d81767b788d?w=800&h=600&fit=crop', 'en', false, 'en', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('68ce40ff-80e2-4206-a114-0a9f029ed04d', 'Lila and the Colorful Mistake', 'In a cozy little village, a cheerful chameleon named Lila learns that making mistakes can lead to wonderful new adventures. With her colorful friends, she discovers that every error is an opportunity to grow and create something beautiful. Join Lila on her journey of self-discovery in this soothing bedtime tale perfect for little dreamers.', 'Mistakes can lead to beautiful new creations and adventures. Embracing our errors helps us learn and grow in wonderful ways.', 'In the heart of the gentle Whispering Woods, there lived a cheerful chameleon named Lila. Lila was not just any chameleon; she could change her colors to match every flower, tree, and even the shimmering streams. She was known throughout the village of Colorvale for her brilliant hues and joyful spirit.
+
+One sunny day, Lila woke up excited to paint a masterpiece on a large canvas that her friends, Benny the Bunny and Tilly the Tortoise, had given her. “Today, I will create the most beautiful rainbow!” Lila announced, her eyes sparkling with delight. Benny and Tilly clapped their paws and flippers in encouragement.
+
+As Lila dipped her brush into vibrant reds, sunny yellows, and deep blues, the canvas began to fill with colors. But in her excitement, Lila accidentally knocked over a jar of green paint. It splashed all over her canvas, mixing with the other colors into a muddy brown.
+
+“Oh no!” Lila gasped, her heart sinking. “I ruined it! My rainbow is a mess!” 
+
+Benny hopped closer, his ears perked up. “Don’t worry, Lila. Sometimes mistakes can lead to something beautiful!” 
+
+Tilly nodded wisely. “Yes! Let’s see what we can create together.”
+
+Lila felt a tiny spark of hope. Perhaps her mistake wasn’t the end after all. With Benny and Tilly''s encouragement, she decided to embrace the unexpected brown paint. They started adding swirls and patterns, transforming the mess into a unique landscape of trees and mountains.
+
+As they painted, Lila began to smile again. She realized that the brown paint looked just like the rich earth in the forest. “I can turn this into a magical forest scene!” she exclaimed, her spirits lifting. 
+
+With each stroke, Lila’s imagination blossomed. They painted bright flowers sprouting from the soil, cheerful birds soaring in the sky, and even a shimmering stream that sparkled under the sun. The once-muddy canvas came alive with colors and stories. 
+
+Finally, after hours of painting, Lila stepped back to admire their work. The painting was vibrant and full of life—a beautiful representation of their adventure together. “This is even better than my rainbow!” Lila laughed joyfully. 
+
+Benny and Tilly cheered, “Hooray for Lila! Hooray for our colorful mistake!” 
+
+That night, as the stars twinkled above Whispering Woods, Lila snuggled into her cozy leaf bed, her heart full of happiness and warmth. She learned that making mistakes could lead to new beginnings and delightful surprises.
+
+From that day on, Lila wasn’t afraid of making mistakes. Instead, she embraced them, knowing they often held the key to creativity and joy. And so, with her friends by her side, Lila continued to fill the world with color and laughter, one joyful mistake at a time.', 'https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=800&h=600&fit=crop', 'en', false, 'en', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('29f0bc76-0710-4f01-9c91-a4c8d756aa6e', 'Les Étoiles de la Famille Luminette', 'Dans un petit village entouré de collines verdoyantes, la famille Luminette s''apprête à passer une soirée magique sous les étoiles. Alors qu''ils se rassemblent pour admirer le ciel, ils découvrent l''importance de l''amour familial et des petits moments de bonheur partagés. Cette histoire douce et réconfortante emmène les jeunes lecteurs dans un voyage chaleureux au cœur de la famille.', 'L''amour familial est un trésor précieux qui nous réchauffe le cœur, même dans les moments les plus sombres. Les souvenirs partagés et les moments de bonheur renforcent les liens qui unissent une famille.', 'Il était une fois, dans un petit village paisible, une famille joyeuse appelée les Luminette. Ils vivaient dans une maison en bois, entourée de fleurs colorées et d''arbres majestueux. Chaque soir, après le dîner, la maman, le papa, la petite Clara et le brave petit chien, Biscuit, sortaient dans leur jardin pour observer les étoiles scintillantes. 
+
+Un soir, alors que le ciel était d''un bleu profond et que la lune brillait comme un diamant, Clara demanda avec curiosité : « Maman, pourquoi les étoiles brillent-elles si fort ? » 
+
+La maman sourit et répondit : « Chaque étoile est comme un petit cœur qui bat dans le ciel. Elles brillent pour nous rappeler que nous ne sommes jamais seuls, même quand la nuit tombe. » Papa, en regardant les étoiles, ajouta : « Et chaque étoile représente un moment heureux que nous avons partagé en famille. » 
+
+Intriguée, Clara regarda le ciel et commença à imaginer les moments heureux qu''ils avaient vécus ensemble. Elle se souvint de leur pique-nique au bord de la rivière, des rires autour du feu de camp et des histoires racontées avant de s''endormir.  
+
+Tout à coup, Biscuit, le petit chien, aboya joyeusement. Il avait trouvé quelque chose dans l''herbe. Clara se leva et courut vers lui. C''était une petite étoile en papier qu''ils avaient fabriquée lors d''un après-midi pluvieux. « Regarde, maman ! » s''écria Clara. « Nous avons fait cette étoile ensemble ! » 
+
+La maman s''approcha et prit l''étoile de la main de Clara. Elle dit : « Chaque étoile que nous faisons ensemble est un souvenir précieux. Et chaque souvenir nous rappelle combien nous nous aimons. » 
+
+Les membres de la famille Luminette prirent le temps de partager leurs souvenirs préférés, riant ensemble et s''embrassant tendrement. Clara se sentit remplie de joie et de chaleur. Elle s''allongea sur l''herbe, les bras croisés derrière la tête, regardant les étoiles. 
+
+« Tu sais, dit le papa en souriant, même si certaines étoiles sont loin, l’amour de notre famille est toujours près de nous. » 
+
+Clara ferma les yeux, imaginant les étoiles comme des petits cœurs qui dansaient dans le ciel. Alors qu''elle s''endormait, elle se sentit enveloppée d''amour, tout comme les étoiles brillaient dans la nuit. 
+
+Et ainsi, la nuit passa paisiblement, avec les Luminette réunis, bercés par les doux murmures de la brise nocturne et des étoiles scintillantes au-dessus d''eux, rappelant à tous que l’amour familial illuminait même les nuits les plus sombres.', 'https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=800&h=600&fit=crop', 'fr', false, 'fr', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('af1ef473-0913-4861-ae38-8c8a4a602127', 'La Nuit des Étoiles Bienveillantes', 'Dans un petit village entouré de forêts scintillantes, un jeune renard nommé Félix découvre la magie d''aider les autres. Avec l''aide de ses amis, il apprend que la gentillesse et la solidarité illuminent les nuits sombres. Rejoignez Félix dans cette douce aventure, remplie de rires, d''amitié et de leçons précieuses.', 'Aider les autres apporte du bonheur, et la gentillesse crée des liens d''amitié. Chaque petit acte de bonté illumine le monde autour de nous.', 'Il était une fois, dans un village paisible niché au cœur de la forêt, un jeune renard nommé Félix. Félix avait un pelage doré et des yeux pétillants de curiosité. Chaque soir, lorsque le soleil se couchait et que les étoiles commençaient à briller, il sortait de son terrier pour explorer le monde qui l''entourait.
+
+Un soir, alors que la lune illuminait le ciel, Félix se promenait près d''un ruisseau. Il entendit soudain des pleurs. Intrigué, il suivit le son et découvrit une petite grenouille nommée Lila, qui était coincée dans une touffe d''herbes hautes. "Oh, Félix, aide-moi, s''il te plaît! Je ne peux pas sauter si haut pour sortir!"
+
+Félix, avec un grand sourire, s''approcha. "Ne t''inquiète pas, Lila! Je vais t''aider!" Avec précaution, il utilisa ses pattes pour dégager les herbes. En un rien de temps, Lila sauta hors de l''herbe et exprima sa gratitude. "Merci, Félix! Tu es vraiment un ami!" 
+
+Ravi d''avoir aidé, Félix continua sa promenade, son cœur léger. Plus loin, il rencontra un hibou nommé Oscar qui semblait triste. "Qu''est-ce qui ne va pas, Oscar?" demanda Félix. 
+
+"J''ai perdu ma voix. Je ne peux plus chanter la belle chanson de la nuit," répondit Oscar.
+
+Félix réfléchit un instant. "Peut-être que je peux t''aider!" dit-il avec enthousiasme. Il se mit à chanter une douce mélodie, et peu à peu, Oscar se joignit à lui. Avec un peu de temps et de patience, la voix d''Oscar revint, remplissant la nuit de musique. "Merci, Félix! Tu es un véritable ami!" s''exclama le hibou, les yeux brillants de joie.
+
+En continuant son chemin, Félix rencontra un groupe de petits animaux qui étaient en train de ramasser des baies. Ils semblaient débordés par le travail. "Bonjour! Que faites-vous?" demanda Félix. 
+
+"Nous voulons préparer une grande fête pour remercier notre forêt, mais il y a trop de baies à ramasser!" répondirent les animaux en chœur.
+
+"Je peux vous aider!" proposa Félix. Ensemble, ils ramassèrent les baies, riant et jouant tout en travaillant. La nuit était douce et étoilée, et bientôt, ils avaient rempli de nombreux paniers.
+
+Quand la fête commença, tous les animaux du village se rassemblèrent. Ils dansèrent sous les étoiles, chantèrent des chansons et partagèrent un festin délicieux. Félix se sentit heureux en voyant ses amis sourire et rire. 
+
+Alors qu''ils levaient leurs verres en remerciant la forêt, Félix comprit que chaque acte de gentillesse, aussi petit soit-il, illuminait le cœur des autres. Et dans ce moment de joie, il sut que le vrai trésor était d''aider ceux qui l''entouraient.
+
+Et ainsi, sous les étoiles brillantes, Félix s''endormit paisiblement, rêvant d''aventures futures où il pourrait encore aider ses amis. 
+
+Les étoiles brillèrent encore plus fort cette nuit-là, comme un doux rappel que la gentillesse est la plus belle des lumières.
+
+Et le village, baigné par la lune, s''endormit en paix, le cœur plein d''amour et d''amitié.', 'https://images.unsplash.com/photo-1604004555489-723a93d6ce74?w=800&h=600&fit=crop', 'fr', false, 'fr', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('fe0f9bbc-0475-4a37-896e-548a5ac4a8a5', 'La Nuit des Idées Lumineuses', 'Dans la charmante forêt de Lumière, un petit hibou nommé Hooty rencontre des amis qui ont des problèmes à résoudre. Ensemble, ils vont apprendre à utiliser leur imagination pour trouver des solutions créatives. Rejoignez Hooty et ses amis dans cette douce aventure nocturne pleine de magie et de créativité.', 'La créativité et la collaboration permettent de surmonter les obstacles. Avec un peu d''imagination et d''amitié, tout problème peut être résolu.', 'Il était une fois, dans la forêt enchantée de Lumière, un petit hibou nommé Hooty. Hooty avait des plumes douces et un regard curieux qui brillait dans la nuit. Chaque soir, il s''asseyait sur une branche d''arbre pour écouter les histoires des étoiles.
+
+Un soir, Hooty remarqua que ses amis, le lapin rapide nommé Poppy et la tortue sage appelée Tilly, semblaient inquiets. En s''approchant d''eux, il leur demanda : « Qu''est-ce qui ne va pas, mes chers amis ? »
+
+Poppy, tout essoufflé, répondit : « J''ai un problème ! Je voulais faire une course pour le grand festival de la forêt, mais des pierres bloquent le chemin ! » Tilly, qui était connue pour sa sagesse et sa patience, ajouta : « Et moi, j’ai une autre inquiétude. Mes fleurs préférées ne poussent pas à cause d’un manque de soleil. »
+
+Hooty réfléchit. « Pourquoi ne pas essayer de trouver des solutions ensemble ? » proposa-t-il en souriant. « Parfois, la créativité peut nous aider à surmonter les obstacles ! »
+
+D’abord, pour le chemin de Poppy, ils décidèrent d’organiser un petit groupe. Hooty invita tous les animaux de la forêt à se rassembler. Ensemble, ils chantèrent une joyeuse chanson qui fit vibrer les pierres. Comme par magie, les pierres se mirent à danser et se déplacèrent sur le côté, libérant ainsi le chemin ! Poppy sauta de joie et remercia tous ses amis pour leur aide.
+
+Ensuite, ils se tournèrent vers Tilly. Hooty pensa à une idée brillante. « Et si nous construisions un petit miroir en bois pour réfléchir la lumière du soleil vers tes fleurs ? »
+
+Avec l’aide de tous les animaux, ils trouvèrent des morceaux de bois et des feuilles brillantes. Ils travaillèrent ensemble sous la douce lueur de la lune, riant et partageant des histoires pendant qu’ils construisaient le miroir. Une fois terminé, ils placèrent le miroir près des fleurs de Tilly. Lorsque le soleil se leva le lendemain, les rayons lumineux frappèrent le miroir et illuminèrent les fleurs. Tilly sourit en voyant ses fleurs s’épanouir lentement, comme un doux arc-en-ciel.
+
+« Merci, Hooty ! Grâce à ton idée, mes fleurs sont magnifiques ! » s''exclama Tilly. Hooty, heureux de voir ses amis si contents, se dit que la créativité et l’amitié peuvent résoudre n’importe quel problème.
+
+À la fin de la nuit, les étoiles brillaient au-dessus d’eux, et Hooty s’endormit avec un sourire sur son visage, entouré de ses amis qui avaient appris à croire en leur capacité à créer des solutions ensemble. La forêt de Lumière était paisible, remplie de rires et d’amitié.
+
+Et ainsi, sous la lumière de la lune, tous s’endormirent, sachant que chaque problème pouvait avoir une solution, surtout quand on l’affronte ensemble avec un peu de créativité et beaucoup d’amour.', 'https://images.unsplash.com/photo-1476234251651-f353c1b3e3a1?w=800&h=600&fit=crop', 'fr', false, 'fr', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('f80f5c73-b35d-4382-831e-e821719ce16a', 'Le Jardin des Talents Cachés', 'Dans un petit village coloré, une petite tortue nommée Tilly découvre qu''elle possède des talents cachés. Avec l''aide de ses amis, elle explore ses passions et apprend à apprécier ses dons uniques. Cette histoire douce et rassurante invite les enfants à découvrir et à célébrer leurs propres talents.', 'Chaque enfant a des talents uniques à découvrir. Il est important d''explorer ses passions et d''apprécier ce qui nous rend spéciaux, même si cela prend un peu de temps.', 'Il était une fois, dans un petit village entouré de fleurs parfumées et de rivières scintillantes, une petite tortue nommée Tilly. Tilly était une tortue timide, toujours cachée dans sa carapace, regardant les autres animaux jouer et s''amuser. Elle se demandait souvent si elle avait un talent spécial, mais elle n''en était pas sûre.
+
+Un jour, alors que le soleil brillait et que les oiseaux chantaient, Tilly décida d''explorer son jardin secret, un endroit où les fleurs dansaient au rythme du vent. En s''y aventurant, elle rencontra son ami, Léo le lapin, qui sautillait joyeusement. "Bonjour Tilly! Pourquoi es-tu si triste?" demanda Léo. "Je voudrais découvrir mon talent, mais je ne sais pas par où commencer!" répondit Tilly avec un soupir.
+
+Léo, toujours enthousiaste, proposa : "Et si nous essayions différents jeux ensemble? Peut-être que tu as un talent caché!" Tilly accepta avec un petit sourire.
+
+Ils commencèrent par la course. Tilly se mit à courir aussi vite qu''elle pouvait, mais elle n''était pas aussi rapide que Léo. Ensuite, ils décidèrent de chanter. Tilly se mit à chanter doucement, mais sa voix était timide et se perdit dans le bruit des autres. Ils essayèrent aussi de danser, mais Tilly trébuchait plus souvent qu''elle ne tournait.
+
+Un peu découragée, Tilly s''assit sous un grand arbre. Léo, voyant sa tristesse, lui dit : "Ne t''inquiète pas, Tilly! Nous avons encore beaucoup de choses à essayer!" Il sortit une petite boîte pleine de crayons et de papiers colorés. "Que dirais-tu de dessiner?" demanda-t-il.
+
+Tilly prit un crayon et commença à dessiner. Ses pattes dansaient sur la feuille, et bientôt, un joli dessin de fleurs et de papillons apparut. Léo était émerveillé. "Regarde comme c''est beau, Tilly! Tu as un vrai talent pour le dessin!" s''exclama-t-il.
+
+Encouragée, Tilly continua à dessiner, et bientôt d''autres amis, comme Mia le canard et Sam le hérisson, vinrent admirer son travail. Chacun d''eux exprima son admiration, et cela fit sourire Tilly jusqu''aux oreilles. Elle réalisa alors que le jardin secret de ses talents s''ouvrait devant elle.
+
+À partir de ce jour-là, Tilly dessina chaque jour, créant des œuvres d''art qui apportaient de la joie à ses amis. Ils organisèrent même une exposition dans le jardin, où chacun pouvait admirer ses dessins éclatants. Tilly, avec son sourire radieux, avait enfin découvert son talent caché, et elle était très heureuse de le partager avec ceux qu''elle aimait.
+
+Lorsque les étoiles commencèrent à briller dans le ciel du soir, Tilly se sentit comblée. Elle avait appris que chacun avait quelque chose de spécial à offrir, même si cela prenait un peu de temps pour le découvrir. En rentrant chez elle, elle se mit à rêver à toutes les nouvelles créations qu''elle pourrait réaliser demain.
+
+Et ainsi, dans le doux murmure de la nuit, Tilly s''endormit, le cœur léger et le sourire aux lèvres, prête à découvrir encore plus de talents cachés dans les jours à venir.', 'https://images.unsplash.com/photo-1516571748831-5d81767b788d?w=800&h=600&fit=crop', 'fr', false, 'fr', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('7bb18307-000e-4945-9214-751f2d08e1dd', 'Le Petit Hibou et le Grand Échec', 'Dans une forêt paisible, un petit hibou nommé Hugo apprend que faire des erreurs fait partie de la vie. Avec l''aide de ses amis, il découvre la valeur de l''essai et de l''apprentissage, transformant ses échecs en succès. Une histoire douce et réconfortante qui encourage les enfants à embrasser leurs erreurs.', 'Les erreurs font partie de l''apprentissage. En essayant encore et encore, nous devenons plus forts et plus sages. Chaque échec est une opportunité de grandir !', 'Il était une fois, dans une forêt enchantée, un petit hibou nommé Hugo. Hugo était curieux et aimait explorer, mais il avait aussi tendance à faire des erreurs. Un jour, il décida d''apprendre à voler. Avec la lumière de la lune éclatante au-dessus de lui, il s''élança de la branche la plus basse d''un grand chêne. Mais sa première tentative ne se passa pas comme prévu. Au lieu de voler, il tomba dans un buisson de baies.
+
+"Oh non !" s''exclama Hugo, ses plumes couvertes de baies. Ses amis, Lila le lapin et Félix le renard, vinrent à son aide. "Ne t''inquiète pas, Hugo !" dit Lila avec un sourire doux. "Tout le monde fait des erreurs. Ce qui est important, c''est d''apprendre d''elles."
+
+Hugo se leva et secoua ses plumes. "Mais que dois-je faire ? Je veux vraiment apprendre à voler !" demanda-t-il, un peu triste.
+
+"Pourquoi ne pas essayer à nouveau ?" suggéra Félix. "Cette fois, essaie de sauter un peu plus haut et n''oublie pas de battre des ailes !" Hugo hocha la tête, déterminé à réussir.
+
+Il se remit sur la branche et observa ses amis. Lila et Félix l''encouragèrent : "Tu peux le faire, Hugo !" Avec un cœur rempli de courage, il se lança à nouveau dans les airs. Cette fois, il réussit à planer un peu plus longtemps avant de tomber à nouveau, mais pas dans un buisson de baies cette fois-ci. Il atterrit doucement sur une pelouse verte.
+
+"Regarde !" s''écria Lila. "Tu es devenu meilleur !" Hugo, bien que fatigué, se sentit fier de son effort. En se levant, il comprit que la chute faisait partie de l''apprentissage. Chaque fois qu''il essayait, il devenait un peu plus habile.
+
+Les jours passèrent, et chaque soir, Hugo s''entraînait avec Lila et Félix. Il faisait des erreurs, bien sûr, mais il riait aussi. Un soir, alors que le soleil se couchait, Hugo prit une grande inspiration. Il se tenait sur le bord d''une grande branche, hésitant. Mais avec la confiance de ses amis derrière lui, il se lança. Cette fois, il réussit à voler au-dessus de la forêt ! Il bipait de joie en battant des ailes, et ses amis applaudissaient.
+
+Quand il atterrit, Hugo était épuisé mais heureux. "Merci de croire en moi," dit-il avec un grand sourire. "J''ai appris que les erreurs ne sont pas la fin, mais un chemin vers le succès."
+
+À ce moment-là, tous les animaux de la forêt se rassemblèrent pour célébrer les progrès de Hugo. Et ils passèrent la nuit à raconter des histoires de leurs propres erreurs et des leçons qu''ils en avaient tirées. Dans la douce lumière de la lune, Hugo s''endormit, le cœur léger, sachant que chaque échec était une étape vers la réussite.
+
+Et c''est ainsi que le petit hibou apprit à voler et à apprécier les leçons que chaque erreur lui avait apportées.', 'https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=800&h=600&fit=crop', 'fr', false, 'fr', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('4cc13a87-549f-4158-80f4-08f4bfabef6d', 'Die magische Umarmung der Familie', 'In einem kleinen, malerischen Dorf lebte eine liebevolle Familie. Papa Bär, Mama Bär und ihr kleiner Sohn Bruno erleben an einem besonderen Abend, wie die Kraft der Familie und der Liebe selbst die dunkelsten Wolken vertreiben kann. Mit einem warmen Herz und einem magischen Umarmung entdecken sie die Freude des Zusammenseins.', 'Die Liebe innerhalb der Familie gibt uns Kraft und Geborgenheit, besonders in dunklen Zeiten. Gemeinsame Momente sind das wertvollste Geschenk, das wir uns gegenseitig machen können.', 'Es war einmal in einem kleinen, malerischen Dorf, wo die Sonne jeden Morgen freundlich auf die bunten Häuser schien und die Vögel fröhlich sangen. In diesem Dorf lebte eine liebevolle Familie: Papa Bär, Mama Bär und ihr kleiner Sohn Bruno. Bruno war ein neugieriger kleiner Bär, der immer neue Abenteuer suchte. Doch manchmal fühlte er sich auch ein wenig einsam.
+
+Eines Abends, als die Sonne hinter den hohen Bergen verschwand und der Himmel in sanften Farben leuchtete, saßen Papa Bär und Mama Bär mit Bruno in ihrer gemütlichen Hütte. „Was ist los, mein kleiner Bär?“, fragte Mama Bär, als sie Bruno mit einem besorgten Blick ansah. 
+
+„Ich möchte, dass wir etwas Besonderes zusammen machen“, antwortete Bruno und senkte seinen Kopf. „Ich will, dass es magisch ist!“
+
+Papa Bär lächelte und schlug vor: „Wie wäre es mit einem Umarmungsfest? Lass uns die besten Umarmungen der Welt kreieren!“ Bruno’s Augen leuchteten auf und er rief: „Ja! Lass uns das machen!“
+
+Die drei Bären begaben sich auf eine Reise in ihren eigenen Garten. Sie sammelten die schönsten Blumen, die sie finden konnten, und schmückten ihr kleines Fest mit bunten Blumensträußen. Dann setzten sie sich im weichen Gras zusammen, um eine besondere Umarmung zu kreieren.
+
+„Die erste Umarmung kommt von mir!“ rief Bruno und umarmte seinen Papa fest. Papa Bär lachte: „Die beste Umarmung ist die von meinem kleinen Bären!“
+
+„Jetzt bin ich dran!“ sagte Mama Bär und schloss beide Bären in ihre warmen Arme. „Das fühlt sich gut an, nicht wahr? Diese Umarmung ist voller Liebe!“ 
+
+Die drei Bären fingen an, lustige Umarmungen auszuprobieren – eine Umarmung wie ein Kreis, eine Umarmung, die wie ein Herz aussah und sogar eine Umarmung, die wie ein großer, schützender Regenbogen war! Sie lachten und freuten sich über die gemeinsamen Momente, während die Dunkelheit sanft um sie herum fiel.
+
+Schließlich, als der Mond hoch am Himmel stand und die Sterne funkelten, fühlte sich Bruno warm und geborgen. „Ich glaube, unsere Umarmungen sind wirklich magisch!“ sagte er leise. 
+
+„Ja“, flüsterte Papa Bär und Mama Bär nickte. „Die Liebe und die Umarmungen unserer Familie sind das Beste, was wir haben können. Sie geben uns Geborgenheit, wenn die Welt draußen dunkel ist.“ 
+
+Mit einem tiefen Seufzer der Zufriedenheit kuschelten sich die drei Bären aneinander und schauten zu den funkelnden Sternen hinauf. Bruno schloss seine Augen, während er sich in der Umarmung seiner Eltern verlor. Er fühlte sich geliebt und glücklich - und das war das größte Abenteuer von allen.
+
+So schliefen sie ein, umgeben von der Wärme der Familie und der Magie der Liebe, während der Mond über sie wachte und die Sterne lärmend ihre Gute-Nacht-Lieder sangen.', 'https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=800&h=600&fit=crop', 'de', false, 'de', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('783d3f8b-0b5c-41a2-9996-be1ebaa0786f', 'Der kleine Stern und die freundlichen Wolken', 'In einer zauberhaften Nacht am Himmel lebte ein kleiner Stern namens Luma. Luma wollte anderen helfen, um die Nacht noch strahlender zu machen. Gemeinsam mit den freundlichen Wolken erlebt er ein Abenteuer, bei dem sie herausfinden, wie wichtig es ist, füreinander da zu sein. Eine sanfte Geschichte über Freundschaft und Hilfsbereitschaft.', 'Es ist wichtig, anderen zu helfen und ihre eigenen besonderen Talente zu erkennen. Freundschaft und Hilfsbereitschaft machen die Welt schöner.', 'In einer friedlichen Nacht, hoch oben am Himmel, leuchtete der kleine Stern Luma. Er war nicht wie die anderen Sterne – er hatte einen besonderen Wunsch: Luma wollte anderen helfen. Eines Nachts bemerkte er, dass die Wolken traurig waren. Sie hatten ihre weiße Farbe verloren und sahen grau und trübe aus.
+
+Luma funkelte hell und rief: "Hallo, liebe Wolken! Warum seid ihr so traurig?"
+
+Die Wolken seufzten und antworteten: "Wir haben vergessen, wie schön es ist, zu strahlen. Wir können den Mond und die Sterne nicht richtig sehen, und das macht uns traurig."
+
+Luma überlegte kurz und hatte eine Idee. "Ich kann euch helfen! Lasst uns zusammenarbeiten, um die Nacht wieder schön zu machen!" Die Wolken schauten sich an und nickten begeistert.
+
+Zuerst bat Luma die Wolken, sich um ihn zu versammeln. "Wenn ihr euch eng um mich schart, kann ich euch mit meinem Licht aufhellen!" Die Wolken folgten seinem Vorschlag und bildeten einen großen, weichen Kreis um den kleinen Stern. Luma strahlte und sein Licht fiel auf die Wolken, die sanft zu funkeln begannen.
+
+"Seht ihr? Ihr strahlt wieder!" rief Luma voller Freude. Doch die Wolken waren vorsichtig. "Wir können nicht leuchten wie du, Luma. Wir sind nur Wolken!"
+
+"Das ist nicht wahr!" erwiderte Luma. "Ihr habt eure eigene Schönheit. Lasst uns ein Spiel spielen!" Die Wolken waren neugierig und fragten: "Wie?"
+
+"Wir werden zusammen Wolkenfiguren machen und sie in die Nacht malen! Wenn ihr euch zusammenknäuelt und in verschiedene Formen bringt, werden die anderen Sterne und der Mond sie sehen. Sie werden euch bewundern!" 
+
+Die Wolken waren begeistert und begannen, sich zu formen. Sie tanzten durch den Himmel, während Luma ihnen half. Bald hatten sie eine riesige Wolkenkatze, einen kuscheligen Wolkenhund und sogar einen Wolkenregenbogen erschaffen.
+
+Die anderen Sterne und der Mond schauten zu und klatschten vor Freude. "Was für ein wunderschöner Anblick!" rief der Mond. "Die Wolken sehen so glücklich aus!" Luma fühlte sich warm und zufrieden. Er hatte nicht nur den Wolken geholfen, sondern auch selbst gelernt, dass jeder einen besonderen Glanz hat.
+
+Als die Nacht zu Ende ging und der Morgen naht, waren die Wolken sanft und weich und strahlten wie nie zuvor. "Danke, Luma! Du hast uns gezeigt, wie wichtig es ist, anderen zu helfen und unsere eigene Schönheit zu erkennen!" sagten die Wolken.
+
+Luma lächelte und wusste, dass er immer für seine Freunde da sein würde. Und so gingen sie gemeinsam in die neue Nacht, bereit, den Himmel zu erhellen und anderen zu helfen, wann immer sie konnten.
+
+Die Sterne blitzen, und die Wolken leuchten sanft, während Luma in der Nacht seine neuen Freunde beschützt. Und so schliefen alle glücklich ein, während die Welt um sie herum still und friedlich wurde.', 'https://images.unsplash.com/photo-1604004555489-723a93d6ce74?w=800&h=600&fit=crop', 'de', false, 'de', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('cdb08bf2-cfad-417f-805e-444c5ef64be5', 'Lina und der Zauber der Ideen', 'In einem kleinen, friedlichen Dorf lebt das kreative Mädchen Lina. Eines Tages steht sie vor einer Herausforderung: Ein großes, verworrenes Knäuel aus bunten Schnüren blockiert den Weg zum Spielplatz. Mit ihrer Fantasie und dem Mut, ihre Freunde um Hilfe zu bitten, findet Lina einen einzigartigen Weg, das Problem zu lösen und alle zum Lachen zu bringen.', 'Gemeinsam kreativ zu denken und zusammenzuarbeiten, macht Herausforderungen leichter und bringt Freude. Wenn wir uns auf unsere Fantasie verlassen, können wir sogar die kniffligsten Probleme lösen.', 'Es war einmal in einem kleinen, sonnigen Dorf, wo die Blumen bunt blühten und die Vögel fröhlich sangen. Dort lebte ein fröhliches Mädchen namens Lina. Lina hatte eine blühende Fantasie und liebte es, mit ihren Freunden zu spielen.
+
+Eines Tages, als Lina und ihre Freunde auf dem Weg zum Spielplatz waren, entdeckten sie etwas Seltsames. Ein riesiges, verworrenes Knäuel aus bunten Schnüren blockierte den Weg. Die Schnüre waren rot, blau, gelb und grün, und sie schillerten im Sonnenlicht. Alle Kinder schauten sich besorgt an. „Wie sollen wir jetzt zum Spielplatz kommen?“ fragte Max, der größte von ihnen.
+
+Lina dachte nach. „Vielleicht können wir das Knäuel entwirren!“, schlug sie vor. Doch die Schnüre waren so kompliziert verstrickt, dass sie nicht wussten, wo sie anfangen sollten. Die Freunde fühlten sich ein wenig verloren.
+
+Da hatte Lina eine Idee. „Was wäre, wenn wir ein Spiel daraus machen? Jeder von uns kann eine Farbe der Schnüre wählen und versuchen, sie zu entwirren! So wird es viel mehr Spaß machen!“
+
+Die anderen Kinder waren begeistert. Sie wählten ihre Farben: Max nahm das Rot, Mia das Blau, und Tim die grüne Schnur. Zusammen begannen sie, die Schnüre zu entwirren, während sie lachten und spielten. Lina kletterte auf einen kleinen Hügel und beobachtete sie. Plötzlich rief sie: „Wartet! Lass uns eine Geschichte erfinden! Während wir die Schnüre entwirren, erzählen wir uns gegenseitig eine Geschichte über ein magisches Land!“
+
+Die Kinder stimmten begeistert zu. Während sie arbeiteten, erzählten sie von einem Königreich voller freundlicher Drachen und sprechender Tiere. Jedes Kind fügte etwas hinzu, und das Lachen und die Geschichten ließen die Zeit verfliegen. Lina beobachtete, wie die Farben der Schnüre langsam weniger verworren wurden. Bald war das Knäuel fast entwirrt und die Kinder jubelten.
+
+„Schaut mal!“, rief Mia, als die letzte Schnur befreit war. „Wir haben es geschafft!“
+
+Die Kinder sprangen vor Freude und liefen schnell zum Spielplatz, wo sie all ihre Lieblingsspiele spielten. Als die Sonne unterging, setzten sie sich auf die Wiese und schauten in den Himmel. „Das war das beste Abenteuer!“, sagte Max. „Und es war viel einfacher, als ich dachte!“, fügte Tim hinzu.
+
+Lina lächelte. „Manchmal müssen wir nur kreativ sein und zusammenarbeiten, um unsere Probleme zu lösen.“
+
+Und so lernten die Freunde, dass mit etwas Fantasie und Teamarbeit kein Problem zu groß ist. Sie gingen nach Hause, glücklich und zufrieden, bereit für neue Abenteuer am nächsten Tag.', 'https://images.unsplash.com/photo-1476234251651-f353c1b3e3a1?w=800&h=600&fit=crop', 'de', false, 'de', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('1c13fe3f-1622-45d1-a738-105aaa03ec65', 'Lia und der verborgene Talentbaum', 'In einem kleinen Dorf lebte ein Mädchen namens Lia, das oft zweifelte, was sie gut konnte. Eines Nachts entdeckte sie einen geheimen Baum, der ihr half, ihre besonderen Talente zu erkennen. Mit jedem neuen Talent, das sie fand, fühlte sich Lia mutiger und glücklicher. Eine sanfte Geschichte über Selbstentdeckung und die Freude, die in uns allen steckt.', 'Jeder hat besondere Talente in sich, die entdeckt werden wollen. Manchmal ist es wichtig, auf sein Herz zu hören und neue Dinge auszuprobieren, um die eigene Magie zu finden.', 'Es war einmal ein kleines Mädchen namens Lia, das in einem bunten Dorf lebte. Lia liebte es, mit ihren Freunden zu spielen und Geschichten zu hören, aber sie hatte oft das Gefühl, dass sie nichts Besonderes konnte. Ihre Freunde waren talentiert im Singen, Zeichnen und Tanzen, aber Lia fühlte sich manchmal ein wenig verloren.
+
+Eines Nachts, als der Mond hell am Himmel schien, beschloss Lia, einen Spaziergang im nahegelegenen Wald zu machen. Das sanfte Rascheln der Blätter und der Duft der Nachtblumen beruhigten sie. Plötzlich entdeckte sie einen geheimen Pfad, der von leuchtenden Blumen gesäumt war. Neugierig folgte Lia dem Weg.
+
+Am Ende des Pfades stand ein wunderschöner Baum, der in allen Farben des Regenbogens leuchtete. Lia konnte ihren Augen kaum trauen. Als sie näher trat, flüsterte der Baum: „Willkommen, Lia! Ich bin der Talentbaum. In meinen Ästen schlummern viele Talente, die du entdecken kannst.“
+
+Lia war begeistert. „Wie kann ich sie finden?“ fragte sie.
+
+„Schau in dein Herz und folge deinem Gefühl. Jedes Talent ist einzigartig, genau wie du!“ antwortete der Baum.
+
+Neugierig schloss Lia die Augen und konzentrierte sich. Plötzlich fühlte sie ein sanftes Ziehen in ihren Händen. Als sie die Augen öffnete, hielt sie einen Pinsel und eine Leinwand in den Händen. Sie begann zu malen und entdeckte, dass sie wunderschöne Bilder erschaffen konnte. Ihre Farben leuchteten wie die Blumen rund um den Baum.
+
+Nach einer Weile kam ein sanfter Wind und flüsterte: „Es gibt noch mehr zu entdecken, Lia!“
+
+Lia war voller Vorfreude und schloss wieder die Augen. Diesmal spürte sie das Bedürfnis zu tanzen. Als sie die Augen öffnete, trug sie ein funkelndes Kleid und begann zu tanzen, als würde die Musik aus dem Baum selbst kommen. Sie drehte sich und sprang, und die Freude erfüllte ihr Herz.
+
+Schließlich, als der Mond höher stieg, sagte der Baum: „Du hast so viele Talente in dir, Lia. Du musst nur den Mut haben, sie zu entdecken. Jeder Mensch ist besonders und hat seine eigene Magie.“
+
+Lia lächelte und fühlte sich leicht wie eine Feder. Sie verstand, dass Talente nicht nur in großen Dingen lagen, sondern auch in den kleinen Freuden des Lebens.
+
+Als der Morgen dämmerte, verabschiedete sich Lia von dem Talentbaum und versprach, ihre neuen Talente zu teilen. Mit einem glücklichen Herzen kehrte sie nach Hause zurück, bereit, zu malen, zu tanzen und ihre Träume zu leben.
+
+Von diesem Tag an wusste Lia, dass sie alles schaffen konnte, wenn sie nur auf ihr Herz hörte. Und so schlief sie jede Nacht mit einem Lächeln ein, die Geheimnisse des Talentbaums in ihrem Herzen.', 'https://images.unsplash.com/photo-1516571748831-5d81767b788d?w=800&h=600&fit=crop', 'de', false, 'de', 'StoryScroll Team', NULL, true, 0);
+INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES ('ef2861bb-a2c1-4a8f-8770-20d1ed29a3ce', 'Der kleine Fehler-Mäuserich', 'In einem bunten Wald lebte ein kleiner Mäuserich namens Max. Eines Tages wollte Max ein tolles Kunstwerk malen, aber seine ersten Versuche waren nicht perfekt. Gemeinsam mit seinen Freunden lernt Max, wie wichtig es ist, aus seinen Fehlern zu lernen und die Schönheit der Unvollkommenheit zu schätzen. Eine ruhige und tröstliche Geschichte über das Wachsen und Lernen.', 'Fehler sind ein wichtiger Teil des Lernens und helfen uns, kreativ zu sein. Es ist in Ordnung, nicht perfekt zu sein, denn manchmal sind die besten Dinge die, die aus unseren Fehlern entstehen.', 'Es war einmal ein kleiner Mäuserich namens Max, der in einem bunten Wald lebte. Max war ein neugieriger und kreativer Mäuserich, der es liebte, zu malen. Eines schönen Morgens beschloss er, ein großes Bild auf der Wiese zu malen, um die Schönheit des Waldes festzuhalten.
+
+Max nahm seine bunten Farben und begann zu malen. Doch als er den Himmel malen wollte, wurde die Farbe blau zu dunkel und der Sonnenstrahl sah eher aus wie ein komischer Regenbogen. Max schaute auf sein Bild und seufzte. "Oh nein, das sieht ja nicht gut aus!" 
+
+Gerade als Max traurig werden wollte, kam seine beste Freundin, die fröhliche Schmetterlingsdame Lila, vorbeigeflogen. Sie setzte sich neben ihn und schaute auf sein Bild. "Was ist denn los, Max?" fragte sie. "Es sieht nicht so aus, wie ich es mir vorgestellt habe. Ich kann nicht gut malen!" 
+
+Lila lächelte und sagte: "Weißt du, Max, manchmal können wir aus unseren Fehlern etwas Schönes lernen. Lass uns gemeinsam überlegen, was wir tun können!" Max schaute sie erstaunt an. "Wie meinst du das?" 
+
+"Schau dir die Farben an! Der Himmel ist nicht nur blau, er kann auch viele andere Farben haben! Und deine Sonnenstrahlen sind wie kleine Regenbogen, die Freude bringen! Lass uns zusammen weitermalen und sehen, was passiert!"
+
+Max nahm seinen Pinsel und begann, die Farben zu mischen. Er malte den Himmel in sanften Rosa- und Gelbtönen und die Sonnenstrahlen in den schönsten Regenbogenfarben. Plötzlich fühlte er sich viel besser. Es machte Spaß, die Farben zu vermischen und Neues auszuprobieren. 
+
+Mit Lila an seiner Seite malte Max weiter. Die Blumen wurden lebendiger, die Bäume schienen zu tanzen, und sogar die Wolken lächelten. Als sie fertig waren, betrachteten sie das große Bild, das jetzt leuchtete und strahlte. 
+
+"Siehst du, Max?" schnurrte Lila. "Deine Fehler haben dein Bild zu etwas ganz Besonderem gemacht!" Max lächelte breit. "Ich habe gelernt, dass nicht alles perfekt sein muss, um schön zu sein. Danke, Lila!" 
+
+Von diesem Tag an war Max nie wieder traurig über seine Fehler. Er wusste, dass sie Teil des Lernens waren und dass er mit jedem Pinselstrich etwas Neues entdeckte. Und so lebten Max und Lila glücklich und zufrieden in ihrem bunten Wald, immer bereit, neue Dinge zu lernen und zu malen.
+
+Als die Sonne unterging und der Himmel in den sanften Farben des Abendrots leuchtete, fühlte sich Max glücklich und zufrieden. Er wusste, dass es in Ordnung war, Fehler zu machen, denn sie führten zu den schönsten Entdeckungen. Und schließlich schlief er friedlich ein und träumte von all den Abenteuern, die noch kommen würden.', 'https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?w=800&h=600&fit=crop', 'de', false, 'de', 'StoryScroll Team', NULL, true, 0);
+
+-- Total: 120 INSERT statements generated
