@@ -1,9 +1,10 @@
 import { db } from "./db";
 import { stories } from "@shared/schema";
-import { classicalStories } from "./classical-stories";
-import { count, sql } from "drizzle-orm";
+import { developmentStories } from "./development-stories";
+import { count } from "drizzle-orm";
 
-const sampleStories = [
+// Legacy sample stories - kept for reference but not used
+const legacySampleStories = [
   {
     title: "The Little Star Who Lost Its Light",
     summary: "A tiny star learns that helping others makes it shine brighter than ever.",
@@ -210,22 +211,31 @@ export async function initializeStoriesIfEmpty() {
     const storyCount = Number(value);
 
     if (storyCount === 0) {
-      console.log("📚 Stories table is empty. Initializing with sample and classical stories...");
+      console.log("📚 Stories table is empty. Initializing with production stories...");
+      console.log(`📖 Loading ${developmentStories.length} curated stories (90 classical adaptations + 30 AI-originals)`);
       
-      // Insert sample stories
-      for (const story of sampleStories) {
-        await db.insert(stories).values(story);
+      // Insert all development stories in batches for better performance
+      const batchSize = 20;
+      let insertedCount = 0;
+      
+      for (let i = 0; i < developmentStories.length; i += batchSize) {
+        const batch = developmentStories.slice(i, i + batchSize);
+        await db.insert(stories).values(batch);
+        insertedCount += batch.length;
+        console.log(`   ✅ Inserted ${insertedCount}/${developmentStories.length} stories...`);
       }
-      console.log(`✅ Added ${sampleStories.length} sample stories`);
       
-      // Insert classical bedtime stories
-      for (const story of classicalStories) {
-        await db.insert(stories).values(story);
-      }
-      console.log(`✅ Added ${classicalStories.length} classical bedtime stories`);
+      // Show breakdown
+      const byLanguage = developmentStories.reduce((acc, story) => {
+        acc[story.language] = (acc[story.language] || 0) + 1;
+        return acc;
+      }, {} as Record<string, number>);
       
-      console.log(`\n🎉 Database initialized with ${sampleStories.length + classicalStories.length} total stories!`);
-      console.log("   Stories are now available in all languages (en, fr, de, es)");
+      console.log(`\n🎉 Database initialized with ${developmentStories.length} total stories!`);
+      console.log("   📊 Breakdown by language:");
+      Object.entries(byLanguage).forEach(([lang, count]) => {
+        console.log(`      ${lang.toUpperCase()}: ${count} stories`);
+      });
     } else {
       console.log(`✅ Stories table already contains ${storyCount} stories. Skipping initialization.`);
     }
