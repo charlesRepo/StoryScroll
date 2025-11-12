@@ -27,7 +27,7 @@ export default function HomePage() {
     "feed" | "search" | "create" | "liked" | "profile"
   >("feed");
   const [selectedLanguage, setSelectedLanguage] = useState<string>("en");
-  const [selectedAge, setSelectedAge] = useState<string>("2-4 years");
+  const [selectedAge, setSelectedAge] = useState<string>("5-6 years");
   const [selectedStory, setSelectedStory] = useState<string | null>(null);
   const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
   const [generatedStory, setGeneratedStory] = useState<Partial<Story> | null>(null);

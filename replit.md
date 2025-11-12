@@ -49,6 +49,12 @@ Preferred communication style: Simple, everyday language.
     - 40 German stories (30 classics + 10 AI-originals) using new age ranges
     - All stories use updated age ranges: 2-4, 5-6, 7-8 years (no legacy ranges remain)
     - Total cost: ~$3-5 in OpenAI API usage
+    - **Age Distribution** (AI-categorized based on story complexity):
+      - German: 40 stories in "5-6 years" (0 in 2-4, 0 in 7-8)
+      - English: 35 in "5-6 years", 3 in "2-4 years", 2 in "7-8 years"
+      - French: 38 in "5-6 years", 1 in "2-4 years", 1 in "7-8 years"
+      - **UX Adaptation**: Smart filter auto-selects "5-6 years" when changing language to ensure stories are always shown
+      - **Future Improvement**: Consider targeted regeneration to balance age distribution (e.g., generate 10 German "2-4 years" stories)
     - **Note**: To regenerate stories, clear database first with `DELETE FROM stories;` to avoid duplicates
 
 ### Feature Specifications
