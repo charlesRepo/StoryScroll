@@ -1,4 +1,4 @@
-import { X, Heart, Book, Globe, User, Clock } from "lucide-react";
+import { ArrowLeft, Heart, Book, Globe, User, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -55,7 +55,7 @@ export default function StoryModal({
               onClick={onClose}
               data-testid="button-close"
             >
-              <X className="h-6 w-6" />
+              <ArrowLeft className="h-6 w-6" />
             </Button>
             <Button
               size="icon"
