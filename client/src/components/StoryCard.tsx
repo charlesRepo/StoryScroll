@@ -60,7 +60,7 @@ export default function StoryCard({
 
   return (
     <div
-      className="min-h-full w-full flex items-center justify-center snap-start snap-always p-6"
+      className="min-h-full w-full flex items-center justify-center p-6"
       data-testid="card-story"
     >
       <div 

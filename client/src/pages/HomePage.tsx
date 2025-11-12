@@ -330,22 +330,6 @@ export default function HomePage() {
     setCurrentStoryIndex(0);
   }, [selectedLanguage]);
 
-  // Dynamically adjust scroll padding when banner is dismissed
-  // This ensures cards snap below the FilterBar instead of getting cropped
-  useEffect(() => {
-    if (scrollContainerRef.current && filterBarRef.current && activeTab === "feed") {
-      const filterBarHeight = filterBarRef.current.offsetHeight;
-      
-      // When banner is dismissed, add scroll padding equal to FilterBar height
-      // When banner is visible, no scroll padding needed (banner pushes content down)
-      if (isWelcomeBannerDismissed) {
-        scrollContainerRef.current.style.scrollPaddingTop = `${filterBarHeight}px`;
-      } else {
-        scrollContainerRef.current.style.scrollPaddingTop = "0px";
-      }
-    }
-  }, [isWelcomeBannerDismissed, activeTab]);
-
   const currentStory = selectedStory
     ? stories.find((s) => s.id === selectedStory) ||
       likedStoriesList.find((s) => s.id === selectedStory)
@@ -403,12 +387,11 @@ export default function HomePage() {
               )}
               <div
                 ref={scrollContainerRef}
-                className="h-full overflow-y-auto snap-y snap-mandatory scrollbar-hide"
+                className="h-full overflow-y-auto scrollbar-hide"
                 style={{ 
                   backgroundColor: '#f2c75a',
                   scrollbarWidth: "none", 
                   msOverflowStyle: "none",
-                  scrollSnapStop: "always",
                   overscrollBehavior: "contain",
                 }}
               >
@@ -436,7 +419,7 @@ export default function HomePage() {
                 ))}
                 {stories.length > 0 && (
                   <div 
-                    className="min-h-full flex items-center justify-center snap-start snap-always p-6"
+                    className="min-h-full flex items-center justify-center p-6"
                     data-testid="end-of-feed"
                   >
                     <div className="text-center">
