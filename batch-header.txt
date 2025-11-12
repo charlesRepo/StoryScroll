@@ -1,1 +1,2 @@
 -- Found 120 stories in development database
+-- Copy these INSERT statements to your Production Database

@@ -18,6 +18,7 @@ async function exportStories() {
         story.language,
         story.isTranslated,
         story.originalLanguage,
+        story.sourceType,
         story.authorName,
         story.authorId,
         story.isPublic,
@@ -33,7 +34,7 @@ async function exportStories() {
       });
 
       console.log(
-        `INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, author_name, author_id, is_public, like_count) VALUES (${escapedValues.join(', ')});`
+        `INSERT INTO stories (id, title, summary, moral, full_content, image_url, language, is_translated, original_language, source_type, author_name, author_id, is_public, like_count) VALUES (${escapedValues.join(', ')});`
       );
     }
 
