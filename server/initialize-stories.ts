@@ -210,8 +210,22 @@ export async function initializeStoriesIfEmpty() {
     const [{ value }] = await db.select({ value: count() }).from(stories);
     const storyCount = Number(value);
 
-    if (storyCount === 0) {
-      console.log("📚 Stories table is empty. Initializing with production stories...");
+    // In production: if we have the wrong number of stories (not 120), clear and reinitialize
+    // This handles the case where old/partial data exists
+    const isProduction = process.env.NODE_ENV === 'production';
+    const shouldReinitialize = isProduction && storyCount > 0 && storyCount !== developmentStories.length;
+
+    if (shouldReinitialize) {
+      console.log(`⚠️  Found ${storyCount} stories in production, but expected ${developmentStories.length}.`);
+      console.log("🔄 Clearing old stories and reinitializing with latest content...");
+      
+      // Delete all existing stories
+      await db.delete(stories);
+      console.log("   ✅ Cleared all old stories");
+    }
+
+    if (storyCount === 0 || shouldReinitialize) {
+      console.log("📚 Initializing with production stories...");
       console.log(`📖 Loading ${developmentStories.length} curated stories (90 classical adaptations + 30 AI-originals)`);
       
       // Insert all development stories in batches for better performance
