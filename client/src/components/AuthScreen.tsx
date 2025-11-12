@@ -69,7 +69,7 @@ export default function AuthScreen() {
             <img 
               src={logoUrl} 
               alt="StoryScroll Logo" 
-              className="w-32 h-32 object-contain"
+              className="w-32 h-32 object-contain rounded-[10px]"
               style={{ transform: 'scaleX(-1)' }}
               data-testid="img-logo"
             />
