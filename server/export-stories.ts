@@ -29,8 +29,18 @@ async function exportStories() {
         if (v === null || v === undefined) return 'NULL';
         if (typeof v === 'boolean') return v ? 'true' : 'false';
         if (typeof v === 'number') return v.toString();
-        // Escape single quotes in strings by doubling them
-        return "'" + v.toString().replace(/'/g, "''") + "'";
+        // Escape special characters for SQL:
+        // 1. Backslashes first (to avoid double-escaping)
+        // 2. Single quotes (double them)
+        // 3. Newlines (replace with space to keep on one line)
+        // 4. Carriage returns and tabs
+        const escaped = v.toString()
+          .replace(/\\/g, '\\\\')       // Escape backslashes
+          .replace(/'/g, "''")           // Escape single quotes
+          .replace(/\n/g, ' ')           // Replace newlines with spaces
+          .replace(/\r/g, ' ')           // Replace carriage returns
+          .replace(/\t/g, ' ');          // Replace tabs with spaces
+        return "'" + escaped + "'";
       });
 
       console.log(
