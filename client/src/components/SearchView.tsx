@@ -9,7 +9,6 @@ export interface SearchableStory {
   summary: string;
   fullContent: string;
   imageUrl: string;
-  ageRange: string;
   language: string;
   isTranslated?: boolean;
   originalLanguage?: string;
@@ -117,7 +116,7 @@ export default function SearchView({
                 </div>
                 <div className="px-3 pb-3 flex justify-between items-center">
                   <span className="text-xs text-muted-foreground capitalize">
-                    {story.ageRange}
+                    {story.language}
                   </span>
                   <Button
                     size="icon"

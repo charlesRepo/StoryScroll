@@ -8,7 +8,6 @@ export interface StoryModalProps {
   fullContent: string;
   moral?: string;
   imageUrl: string;
-  ageRange: string;
   language: string;
   isTranslated?: boolean;
   originalLanguage?: string;
@@ -33,7 +32,6 @@ export default function StoryModal({
   fullContent,
   moral,
   imageUrl,
-  ageRange,
   language,
   isTranslated,
   originalLanguage,
@@ -84,9 +82,6 @@ export default function StoryModal({
                   {readingTime} min
                 </div>
                 <span className="text-muted-foreground">|</span>
-                <Badge variant="secondary" data-testid="badge-age-modal">
-                  {ageRange}
-                </Badge>
                 <Badge variant="secondary" data-testid="badge-language-modal">
                   {language}
                 </Badge>

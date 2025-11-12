@@ -71,8 +71,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         username, 
         password: hashedPassword,
         email: email || null,
-        preferredLanguage: "en",
-        preferredAgeRange: "2-4 years"
+        preferredLanguage: "en"
       });
 
       req.session.userId = user.id;
@@ -201,7 +200,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Story routes
   app.get("/api/stories", async (req, res) => {
     try {
-      const { language, ageRange } = req.query;
+      const { language } = req.query;
       const userId = req.session.userId;
       
       // Get dismissed story IDs for authenticated users to exclude from feed
@@ -213,14 +212,13 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Get public stories
       const publicStories = await storage.getStories({
         language: language as string,
-        ageRange: ageRange as string,
         isPublic: true,
         excludeIds,
       });
 
       // If authenticated and no filters applied, also include user's own private stories for search
       let userStories: any[] = [];
-      if (userId && !language && !ageRange) {
+      if (userId && !language) {
         userStories = await storage.getUserStories(userId);
         // Filter out stories that are already in public stories
         const publicIds = new Set(publicStories.map(s => s.id));
@@ -346,23 +344,17 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   app.post("/api/stories/generate", requireAuth, async (req, res) => {
     try {
-      const { theme, ageRange, language, generateMoral } = req.body;
+      const { theme, language, generateMoral } = req.body;
       
-      if (!theme || !ageRange || !language) {
+      if (!theme || !language) {
         return res.status(400).json({ 
-          error: "Theme, age range, and language are required" 
+          error: "Theme and language are required" 
         });
       }
 
       const openai = new OpenAI({
         apiKey: process.env.OPENAI_API_KEY,
       });
-
-      const ageRangeWords = ageRange === "0-2 years" 
-        ? "very young toddlers (0-2 years old)"
-        : ageRange === "3-5 years"
-        ? "preschool children (3-5 years old)"
-        : "early elementary children (6-10 years old)";
 
       const languageNames: Record<string, string> = {
         en: "English",
@@ -372,10 +364,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
       };
       const languageName = languageNames[language] || "English";
 
-      const storyPrompt = `Write a bedtime story in ${languageName} for ${ageRangeWords} about: ${theme}
+      const storyPrompt = `Write a bedtime story in ${languageName} for children about: ${theme}
 
 The story should be:
-- Age-appropriate and engaging
+- Age-appropriate and engaging for children
 - Around 200-400 words long
 - Have a clear beginning, middle, and end
 - Be calming and suitable for bedtime
@@ -417,7 +409,6 @@ Return the response in this exact JSON format:
           fullContent: storyData.content,
           summary: storyData.summary,
           moral: generateMoral ? storyData.moral : null,
-          ageRange,
           language,
         }
       });
@@ -489,15 +480,7 @@ Respond in JSON format:
 
       const summaryData = JSON.parse(summaryResponse.choices[0]?.message?.content || "{}");
 
-      // Step 2: Categorize the story by age range
-      const categorization = await categorizeStory(
-        title,
-        summaryData.summary,
-        summaryData.moral || null,
-        fullContent
-      );
-
-      // Step 3: Save the original story
+      // Step 2: Save the original story
       const imageUrl = `https://images.unsplash.com/photo-1516416615694-856c1e7a4ba7?w=400`;
 
       const originalStory = await storage.createStory({
@@ -506,7 +489,6 @@ Respond in JSON format:
         moral: summaryData.moral || null,
         fullContent,
         imageUrl,
-        ageRange: categorization.ageRange,
         language,
         isTranslated: false,
         originalLanguage: language,
@@ -516,9 +498,9 @@ Respond in JSON format:
         isPublic: true,
       });
 
-      console.log(`✅ Added story: ${title} (${categorization.ageRange})`);
+      console.log(`✅ Added story: ${title}`);
 
-      // Step 4: Translate to other language if requested
+      // Step 3: Translate to other language if requested
       let translatedStory = null;
       if (translateToOtherLanguage) {
         const targetLang = language === "en" ? "fr" : "en";
@@ -539,7 +521,6 @@ Respond in JSON format:
           moral: translation.moral || null,
           fullContent: translation.fullContent,
           imageUrl,
-          ageRange: categorization.ageRange,
           language: targetLang,
           isTranslated: true,
           originalLanguage: language,
@@ -556,10 +537,6 @@ Respond in JSON format:
         success: true,
         originalStory,
         translatedStory,
-        categorization: {
-          ageRange: categorization.ageRange,
-          reasoning: categorization.reasoning,
-        },
       });
     } catch (error: any) {
       console.error("Failed to add story with translation:", error);
@@ -666,11 +643,10 @@ Respond in JSON format:
   app.patch("/api/users/preferences", requireAuth, async (req, res) => {
     try {
       const userId = req.session.userId!;
-      const { preferredLanguage, preferredAgeRange } = req.body;
+      const { preferredLanguage } = req.body;
       
       const user = await storage.updateUserPreferences(userId, {
-        preferredLanguage,
-        preferredAgeRange,
+        preferredLanguage
       });
 
       if (!user) {

@@ -21,7 +21,6 @@ import EditStoryForm from "./EditStoryForm";
 export interface CreateStoryFormProps {
   onGenerate: (params: {
     theme: string;
-    ageRange: string;
     language: string;
     generateMoral: boolean;
   }) => void;
@@ -30,10 +29,10 @@ export interface CreateStoryFormProps {
   onResetGeneratedStory: () => void;
 }
 
-const AGE_RANGES = ["0-2 years", "3-5 years", "6-10 years"];
 const LANGUAGES = [
   { value: "en", label: "English" },
   { value: "fr", label: "French" },
+  { value: "de", label: "German" },
 ];
 
 export default function CreateStoryForm({
@@ -45,7 +44,6 @@ export default function CreateStoryForm({
   const { toast } = useToast();
   const [theme, setTheme] = useState("");
   const [generateMoral, setGenerateMoral] = useState(true);
-  const [ageRange, setAgeRange] = useState("3-5 years");
   const [language, setLanguage] = useState("en");
 
   const publishStoryMutation = useMutation({
@@ -64,7 +62,6 @@ export default function CreateStoryForm({
         moral: storyData.moral || null,
         fullContent: storyData.fullContent,
         imageUrl: "https://images.unsplash.com/photo-1506812574058-fc75fa93fead?w=800&q=80",
-        ageRange: generatedStory.ageRange!,
         language: generatedStory.language!,
         sourceType: "user-shared",
         isPublic: storyData.isPublic,
@@ -95,7 +92,7 @@ export default function CreateStoryForm({
 
   const handleSubmit = () => {
     if (theme.trim()) {
-      onGenerate({ theme, ageRange, language, generateMoral });
+      onGenerate({ theme, language, generateMoral });
     }
   };
 
@@ -139,23 +136,6 @@ export default function CreateStoryForm({
               disabled={isGenerating}
               data-testid="switch-generate-moral"
             />
-          </div>
-
-          <div className="space-y-2">
-            <Label>Age Range</Label>
-            <div className="flex flex-wrap gap-2">
-              {AGE_RANGES.map((age) => (
-                <Badge
-                  key={age}
-                  variant={ageRange === age ? "default" : "outline"}
-                  className="cursor-pointer hover-elevate active-elevate-2"
-                  onClick={() => !isGenerating && setAgeRange(age)}
-                  data-testid={`button-create-age-${age.replace(/\s+/g, "-")}`}
-                >
-                  {age}
-                </Badge>
-              ))}
-            </div>
           </div>
 
           <div className="space-y-2">

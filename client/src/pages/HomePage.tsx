@@ -27,7 +27,6 @@ export default function HomePage() {
     "feed" | "search" | "create" | "liked" | "profile"
   >("feed");
   const [selectedLanguage, setSelectedLanguage] = useState<string>("en");
-  const [selectedAge, setSelectedAge] = useState<string>("5-6 years");
   const [selectedStory, setSelectedStory] = useState<string | null>(null);
   const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
   const [generatedStory, setGeneratedStory] = useState<Partial<Story> | null>(null);
@@ -39,21 +38,20 @@ export default function HomePage() {
     false
   );
 
-  // Update preferences when language or age changes
+  // Update preferences when language changes
   useEffect(() => {
     if (isAuthenticated) {
       apiRequest("PATCH", "/api/users/preferences", {
         preferredLanguage: selectedLanguage,
-        preferredAgeRange: selectedAge,
       }).catch(console.error);
     }
-  }, [selectedLanguage, selectedAge, isAuthenticated]);
+  }, [selectedLanguage, isAuthenticated]);
 
   // Fetch stories from API (no auth required for browsing)
   const { data: storiesData, isFetching: isStoriesFetching } = useQuery<{ stories: Story[] }>({
-    queryKey: ["/api/stories", selectedLanguage, selectedAge],
+    queryKey: ["/api/stories", selectedLanguage],
     queryFn: async () => {
-      const url = `/api/stories?language=${selectedLanguage}&ageRange=${encodeURIComponent(selectedAge)}`;
+      const url = `/api/stories?language=${selectedLanguage}`;
       const response = await apiRequest("GET", url);
       return await response.json();
     },
@@ -245,7 +243,6 @@ export default function HomePage() {
   const generateStoryMutation = useMutation({
     mutationFn: async (params: {
       theme: string;
-      ageRange: string;
       language: string;
       generateMoral: boolean;
     }) => {
@@ -324,10 +321,10 @@ export default function HomePage() {
     }
   }, [currentStoryIndex, activeTab]);
 
-  // Reset to first story when language or age changes
+  // Reset to first story when language changes
   useEffect(() => {
     setCurrentStoryIndex(0);
-  }, [selectedLanguage, selectedAge]);
+  }, [selectedLanguage]);
 
   const currentStory = selectedStory
     ? stories.find((s) => s.id === selectedStory) ||
@@ -353,8 +350,6 @@ export default function HomePage() {
         <FilterBar
           selectedLanguage={selectedLanguage}
           onLanguageChange={setSelectedLanguage}
-          selectedAge={selectedAge}
-          onAgeChange={setSelectedAge}
         />
       )}
 
@@ -484,9 +479,7 @@ export default function HomePage() {
           <div className="h-full overflow-y-auto">
             <ProfileSection
               user={user}
-              childAge={selectedAge}
               preferredLanguage={selectedLanguage}
-              onChildAgeChange={setSelectedAge}
               onLanguageChange={setSelectedLanguage}
               onSignOut={logout}
               onStoryClick={(id) => setSelectedStory(id)}

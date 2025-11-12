@@ -9,7 +9,6 @@ export interface StoryCardProps {
   moral?: string;
   fullContent?: string;
   imageUrl: string;
-  ageRange: string;
   language: string;
   isTranslated?: boolean;
   originalLanguage?: string;
@@ -41,7 +40,6 @@ export default function StoryCard({
   moral,
   fullContent,
   imageUrl,
-  ageRange,
   language,
   isTranslated,
   originalLanguage,
@@ -130,9 +128,6 @@ export default function StoryCard({
               <span className="text-gray-400">|</span>
             </>
           )}
-          <Badge variant="secondary" data-testid="badge-age">
-            {ageRange}
-          </Badge>
           <Badge variant="secondary" data-testid="badge-language">
             {language}
           </Badge>

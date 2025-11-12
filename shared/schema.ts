@@ -9,7 +9,6 @@ export const users = pgTable("users", {
   password: text("password").notNull(),
   email: text("email"),
   preferredLanguage: varchar("preferred_language", { length: 10 }).default("en"),
-  preferredAgeRange: varchar("preferred_age_range", { length: 20 }).default("3-5 years"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
@@ -20,7 +19,6 @@ export const stories = pgTable("stories", {
   moral: text("moral"),
   fullContent: text("full_content").notNull(),
   imageUrl: text("image_url").notNull(),
-  ageRange: varchar("age_range", { length: 20 }).notNull(),
   language: varchar("language", { length: 50 }).notNull(),
   isTranslated: boolean("is_translated").default(false),
   originalLanguage: varchar("original_language", { length: 50 }),

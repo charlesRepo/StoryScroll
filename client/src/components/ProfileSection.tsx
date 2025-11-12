@@ -17,25 +17,21 @@ import type { User } from "@shared/schema";
 
 export interface ProfileSectionProps {
   user: User;
-  childAge: string;
   preferredLanguage: string;
-  onChildAgeChange: (age: string) => void;
   onLanguageChange: (language: string) => void;
   onSignOut: () => void;
   onStoryClick: (storyId: string) => void;
 }
 
-const AGE_RANGES = ["0-2 years", "3-5 years", "6-10 years"];
 const LANGUAGES = [
   { value: "en", label: "English" },
   { value: "fr", label: "French" },
+  { value: "de", label: "German" },
 ];
 
 export default function ProfileSection({
   user,
-  childAge,
   preferredLanguage,
-  onChildAgeChange,
   onLanguageChange,
   onSignOut,
   onStoryClick,
@@ -75,22 +71,6 @@ export default function ProfileSection({
       />
 
       <div className="space-y-4 pt-4 border-t">
-        <div className="space-y-2">
-          <Label htmlFor="child-age">Child's Age</Label>
-          <Select value={childAge} onValueChange={onChildAgeChange}>
-            <SelectTrigger id="child-age" data-testid="select-child-age">
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              {AGE_RANGES.map((age) => (
-                <SelectItem key={age} value={age}>
-                  {age}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-        </div>
-
         <div className="space-y-2">
           <Label htmlFor="language">Preferred Language</Label>
           <Select value={preferredLanguage} onValueChange={onLanguageChange}>

@@ -20,12 +20,12 @@ export interface IStorage {
   getUser(id: string): Promise<User | undefined>;
   getUserByUsername(username: string): Promise<User | undefined>;
   createUser(user: InsertUser): Promise<User>;
-  updateUserPreferences(id: string, preferences: { preferredLanguage?: string; preferredAgeRange?: string }): Promise<User | undefined>;
+  updateUserPreferences(id: string, preferences: { preferredLanguage?: string }): Promise<User | undefined>;
   updateUserProfile(id: string, updates: { username?: string; email?: string | null; password?: string }): Promise<User | undefined>;
 
   // Story operations
   getStory(id: string): Promise<Story | undefined>;
-  getStories(filters: { language?: string; ageRange?: string; isPublic?: boolean; excludeIds?: string[] }): Promise<Story[]>;
+  getStories(filters: { language?: string; isPublic?: boolean; excludeIds?: string[] }): Promise<Story[]>;
   getUserStories(userId: string): Promise<Story[]>;
   getStoryByAuthorAndTitle(authorId: string, title: string): Promise<Story | undefined>;
   createStory(story: InsertStory): Promise<Story>;
@@ -65,7 +65,7 @@ export class DbStorage implements IStorage {
     return result[0];
   }
 
-  async updateUserPreferences(id: string, preferences: { preferredLanguage?: string; preferredAgeRange?: string }): Promise<User | undefined> {
+  async updateUserPreferences(id: string, preferences: { preferredLanguage?: string }): Promise<User | undefined> {
     const result = await db.update(users)
       .set(preferences)
       .where(eq(users.id, id))
@@ -87,12 +87,11 @@ export class DbStorage implements IStorage {
     return result[0];
   }
 
-  async getStories(filters: { language?: string; ageRange?: string; isPublic?: boolean; excludeIds?: string[] } = {}): Promise<Story[]> {
+  async getStories(filters: { language?: string; isPublic?: boolean; excludeIds?: string[] } = {}): Promise<Story[]> {
     let query = db.select().from(stories);
     
     const conditions = [];
     if (filters.language) conditions.push(eq(stories.language, filters.language));
-    if (filters.ageRange) conditions.push(eq(stories.ageRange, filters.ageRange));
     if (filters.isPublic !== undefined) conditions.push(eq(stories.isPublic, filters.isPublic));
     if (filters.excludeIds && filters.excludeIds.length > 0) {
       conditions.push(notInArray(stories.id, filters.excludeIds));
@@ -164,7 +163,6 @@ export class DbStorage implements IStorage {
         moral: stories.moral,
         fullContent: stories.fullContent,
         imageUrl: stories.imageUrl,
-        ageRange: stories.ageRange,
         language: stories.language,
         isTranslated: stories.isTranslated,
         originalLanguage: stories.originalLanguage,
@@ -217,7 +215,6 @@ export class DbStorage implements IStorage {
         moral: stories.moral,
         fullContent: stories.fullContent,
         imageUrl: stories.imageUrl,
-        ageRange: stories.ageRange,
         language: stories.language,
         isTranslated: stories.isTranslated,
         originalLanguage: stories.originalLanguage,

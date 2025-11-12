@@ -93,9 +93,6 @@ export default function MyStoriesSection({ onStoryClick }: MyStoriesSectionProps
 
               <div className="flex items-center gap-2 flex-wrap">
                 <Badge variant="secondary" className="text-xs">
-                  {story.ageRange}
-                </Badge>
-                <Badge variant="secondary" className="text-xs">
                   {story.language}
                 </Badge>
                 {story.isPublic ? (
