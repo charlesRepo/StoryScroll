@@ -313,9 +313,12 @@ export default function HomePage() {
       const container = scrollContainerRef.current;
       const cards = container.querySelectorAll('[data-testid="card-story"]');
       if (cards[currentStoryIndex]) {
+        // Use 'nearest' to prevent jumping on mobile devices
+        // This ensures cards snap properly within the visible area
         cards[currentStoryIndex].scrollIntoView({
           behavior: "smooth",
-          block: "start",
+          block: "nearest",
+          inline: "nearest"
         });
       }
     }
@@ -388,6 +391,7 @@ export default function HomePage() {
                   msOverflowStyle: "none",
                   scrollSnapStop: "always",
                   overscrollBehavior: "contain",
+                  scrollPaddingTop: "0px",
                 }}
               >
               {stories.length === 0 && !isStoriesFetching ? (
