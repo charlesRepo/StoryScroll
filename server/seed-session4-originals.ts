@@ -38,7 +38,7 @@ async function main() {
   for (let i = 0; i < 10; i++) {
     console.log(`\n[${i + 1}/10] Generating English original...`);
     try {
-      const processed = await processWithRetry(() => generateOriginalStory("en"));
+      const processed = await processWithRetry(() => generateOriginalStory("en", i));
       processedStories.push(processed);
       console.log(`  ✅ "${processed.title}" - Age: ${processed.ageRange}`);
     } catch (error) {
@@ -52,7 +52,7 @@ async function main() {
   for (let i = 0; i < 10; i++) {
     console.log(`\n[${i + 1}/10] Generating French original...`);
     try {
-      const processed = await processWithRetry(() => generateOriginalStory("fr"));
+      const processed = await processWithRetry(() => generateOriginalStory("fr", i));
       processedStories.push(processed);
       console.log(`  ✅ "${processed.title}" - Age: ${processed.ageRange}`);
     } catch (error) {
@@ -66,7 +66,7 @@ async function main() {
   for (let i = 0; i < 10; i++) {
     console.log(`\n[${i + 1}/10] Generating German original...`);
     try {
-      const processed = await processWithRetry(() => generateOriginalStory("de"));
+      const processed = await processWithRetry(() => generateOriginalStory("de", i));
       processedStories.push(processed);
       console.log(`  ✅ "${processed.title}" - Age: ${processed.ageRange}`);
     } catch (error) {

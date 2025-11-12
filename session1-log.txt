@@ -1,0 +1,110 @@
+
+🌙 SESSION 1: English Classics (30 stories) 🌙
+
+
+[1/30] Processing: Alice's Adventures in Wonderland
+Processing: Alice's Adventures in Wonderland by Lewis Carroll
+  ✅ Success! Age: 5-6 years, Summary: 356 chars
+
+[2/30] Processing: Through the Looking-Glass
+Processing: Through the Looking-Glass by Lewis Carroll
+  ✅ Success! Age: 5-6 years, Summary: 346 chars
+
+[3/30] Processing: The Wonderful Wizard of Oz
+Processing: The Wonderful Wizard of Oz by L. Frank Baum
+  ✅ Success! Age: 5-6 years, Summary: 285 chars
+
+[4/30] Processing: Peter Pan
+Processing: Peter Pan by J. M. Barrie
+  ✅ Success! Age: 5-6 years, Summary: 376 chars
+
+[5/30] Processing: The Wind in the Willows
+Processing: The Wind in the Willows by Kenneth Grahame
+  ✅ Success! Age: 5-6 years, Summary: 308 chars
+
+[6/30] Processing: The Velveteen Rabbit
+Processing: The Velveteen Rabbit by Margery Williams
+  ✅ Success! Age: 5-6 years, Summary: 350 chars
+
+[7/30] Processing: A Christmas Carol
+Processing: A Christmas Carol by Charles Dickens
+  ✅ Success! Age: 5-6 years, Summary: 404 chars
+
+[8/30] Processing: The Secret Garden
+Processing: The Secret Garden by Frances Hodgson Burnett
+  ✅ Success! Age: 5-6 years, Summary: 352 chars
+
+[9/30] Processing: Little Women
+Processing: Little Women by Louisa May Alcott
+  ✅ Success! Age: 5-6 years, Summary: 388 chars
+
+[10/30] Processing: The Jungle Book
+Processing: The Jungle Book by Rudyard Kipling
+  ✅ Success! Age: 5-6 years, Summary: 406 chars
+
+[11/30] Processing: Cinderella
+Processing: Cinderella by Charles Perrault
+  ✅ Success! Age: 5-6 years, Summary: 356 chars
+
+[12/30] Processing: Sleeping Beauty
+Processing: Sleeping Beauty by Charles Perrault
+  ✅ Success! Age: 5-6 years, Summary: 350 chars
+
+[13/30] Processing: Little Red Riding Hood
+Processing: Little Red Riding Hood by Charles Perrault
+  ✅ Success! Age: 5-6 years, Summary: 337 chars
+
+[14/30] Processing: Bluebeard
+Processing: Bluebeard by Charles Perrault
+  ✅ Success! Age: 5-6 years, Summary: 399 chars
+
+[15/30] Processing: Puss in Boots
+Processing: Puss in Boots by Charles Perrault
+  ✅ Success! Age: 5-6 years, Summary: 396 chars
+
+[16/30] Processing: Beauty and the Beast
+Processing: Beauty and the Beast by Jeanne-Marie Leprince de Beaumont
+  ✅ Success! Age: 5-6 years, Summary: 398 chars
+
+[17/30] Processing: Hansel and Gretel
+Processing: Hansel and Gretel by Jacob & Wilhelm Grimm
+  ✅ Success! Age: 5-6 years, Summary: 341 chars
+
+[18/30] Processing: Snow White
+Processing: Snow White by Jacob & Wilhelm Grimm
+  ✅ Success! Age: 5-6 years, Summary: 436 chars
+
+[19/30] Processing: Rapunzel
+Processing: Rapunzel by Jacob & Wilhelm Grimm
+  ✅ Success! Age: 5-6 years, Summary: 325 chars
+
+[20/30] Processing: Rumpelstiltskin
+Processing: Rumpelstiltskin by Jacob & Wilhelm Grimm
+  ✅ Success! Age: 5-6 years, Summary: 347 chars
+
+[21/30] Processing: The Frog Prince
+Processing: The Frog Prince by Jacob & Wilhelm Grimm
+  ✅ Success! Age: 5-6 years, Summary: 385 chars
+
+[22/30] Processing: The Golden Goose
+Processing: The Golden Goose by Jacob & Wilhelm Grimm
+  ✅ Success! Age: 5-6 years, Summary: 344 chars
+
+[23/30] Processing: The Fisherman and His Wife
+Processing: The Fisherman and His Wife by Jacob & Wilhelm Grimm
+  ✅ Success! Age: 5-6 years, Summary: 349 chars
+
+[24/30] Processing: The Twelve Dancing Princesses
+Processing: The Twelve Dancing Princesses by Jacob & Wilhelm Grimm
+  ✅ Success! Age: 5-6 years, Summary: 380 chars
+
+[25/30] Processing: The Goose Girl
+Processing: The Goose Girl by Jacob & Wilhelm Grimm
+  ✅ Success! Age: 5-6 years, Summary: 309 chars
+
+[26/30] Processing: The Elves and the Shoemaker
+Processing: The Elves and the Shoemaker by Jacob & Wilhelm Grimm
+  ✅ Success! Age: 5-6 years, Summary: 351 chars
+
+[27/30] Processing: Aladdin and the Magic Lamp
+Processing: Aladdin and the Magic Lamp by One Thousand and One Nights
