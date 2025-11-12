@@ -22,7 +22,6 @@ Soon, Stella became one of the brightest stars in the sky! She learned that the 
 
 And from that day on, whenever children looked up at the night sky, they could see Stella twinkling brightly, reminding them that kindness makes everyone shine.`,
     imageUrl: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&q=80",
-    ageRange: "3-5 years",
     language: "en",
     isTranslated: false,
     originalLanguage: "en",
@@ -49,7 +48,6 @@ Cuando llegaron a la madriguera, su mamá los abrazó fuertemente. "Bruno, fuist
 
 Esa noche, Bruno se dio cuenta de que ser valiente no significa no tener miedo. Significa hacer lo correcto incluso cuando tienes miedo. Y desde ese día, Bruno el Conejito se sintió un poco más valiente cada día.`,
     imageUrl: "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=800&q=80",
-    ageRange: "6-10 years",
     language: "es",
     isTranslated: false,
     originalLanguage: "es",
@@ -78,7 +76,6 @@ Dans l'océan, Rosée rencontra des milliers d'autres gouttes. Le soleil brillai
 
 Rosée sourit. Elle avait appris qu'être petit ne veut pas dire être sans importance. Chacun a un rôle spécial à jouer dans le monde.`,
     imageUrl: "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?w=800&q=80",
-    ageRange: "3-5 years",
     language: "fr",
     isTranslated: false,
     originalLanguage: "fr",
@@ -109,7 +106,6 @@ Der Wald wurde zu einem fröhlichen Ort. Bruno hatte viele Freunde gefunden, und
 
 Und so lernte Bruno, dass wahre Freundschaft nicht von der Größe abhängt, sondern von der Größe des Herzens.`,
     imageUrl: "https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=800&q=80",
-    ageRange: "6-10 years",
     language: "de",
     isTranslated: false,
     originalLanguage: "de",
@@ -156,7 +152,6 @@ Little owl fluffed her feathers and settled on her favorite branch. She looked u
 
 And with a happy heart, little owl closed her eyes and drifted off to sleep, surrounded by the quiet night.`,
     imageUrl: "https://images.unsplash.com/photo-1509023464722-18d996393ca8?w=800&q=80",
-    ageRange: "0-2 years",
     language: "en",
     isTranslated: false,
     originalLanguage: "en",
@@ -193,7 +188,6 @@ Soon, all the fish in the ocean had a shiny rainbow scale. Rainbow Fish still ha
 
 And Rainbow Fish learned that sharing makes everyone happier, including yourself.`,
     imageUrl: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80",
-    ageRange: "3-5 years",
     language: "en",
     isTranslated: false,
     originalLanguage: "en",
