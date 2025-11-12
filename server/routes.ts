@@ -137,6 +137,67 @@ export async function registerRoutes(app: Express): Promise<Server> {
     res.json({ user: userWithoutPassword });
   });
 
+  // Deterministically interleave stories to avoid consecutive stories from the same author
+  // This uses a round-robin approach that is stable across requests (no random shuffling)
+  function interleaveStoriesByAuthor(stories: any[]): any[] {
+    if (stories.length <= 1) return stories;
+    
+    // Group stories by author, using story ID as fallback to prevent "unknown" clumping
+    const byAuthor = new Map<string, any[]>();
+    for (const story of stories) {
+      const author = story.authorName || story.authorId || story.id;
+      if (!byAuthor.has(author)) {
+        byAuthor.set(author, []);
+      }
+      byAuthor.get(author)!.push(story);
+    }
+    
+    // Convert to array with author name for deterministic sorting
+    const authorData: Array<{ author: string; stories: any[] }> = [];
+    const authorEntries = Array.from(byAuthor.entries());
+    for (const [author, authorStories] of authorEntries) {
+      if (authorStories.length > 0) {
+        authorData.push({ author, stories: authorStories });
+      }
+    }
+    
+    // Sort deterministically: first by queue size (descending), then by author name
+    // This ensures consistent ordering across requests with the same data
+    authorData.sort((a, b) => {
+      if (b.stories.length !== a.stories.length) {
+        return b.stories.length - a.stories.length; // Larger collections first
+      }
+      return a.author.localeCompare(b.author); // Alphabetically as tiebreaker
+    });
+    
+    const authorQueues = authorData.map(d => d.stories);
+    
+    // Round-robin interleave: pick one story from each author in rotation
+    const result: any[] = [];
+    let queueIndex = 0;
+    
+    while (authorQueues.length > 0) {
+      // Get next queue in round-robin fashion
+      const queue = authorQueues[queueIndex % authorQueues.length];
+      
+      // Take the first story from this author's queue
+      const story = queue.shift();
+      if (story) {
+        result.push(story);
+      }
+      
+      // Remove empty queues
+      if (queue.length === 0) {
+        authorQueues.splice(queueIndex % authorQueues.length, 1);
+        // Don't increment index when we remove a queue
+      } else {
+        queueIndex++;
+      }
+    }
+    
+    return result;
+  }
+
   // Story routes
   app.get("/api/stories", async (req, res) => {
     try {
@@ -166,7 +227,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
         userStories = userStories.filter(s => !publicIds.has(s.id));
       }
 
-      const stories = [...publicStories, ...userStories];
+      let stories = [...publicStories, ...userStories];
+      
+      // Interleave stories to spread out stories from the same author (deterministic)
+      stories = interleaveStoriesByAuthor(stories);
+      
       res.json({ stories });
     } catch (error: any) {
       res.status(500).json({ error: error.message });
