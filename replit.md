@@ -35,11 +35,21 @@ Preferred communication style: Simple, everyday language.
 - **Story Generation Pipeline**: 
     - `server/classicalStoryData.ts`: Metadata for 90 classical stories with descriptions
     - `server/story-processor.ts`: AI adaptation, age categorization, and moral generation
-    - `server/seed-stories-batch.ts`: Batch processor for all 120 stories (~2-3 hours runtime)
-    - `server/story-library.json`: Exported JSON with all processed stories
-    - `server/seed-production.ts`: Production seeder that imports from JSON
+    - **Chunked Generation Scripts** (designed for Replit's 10-minute timeout limit):
+      - `server/seed-session1a-english.ts` + `seed-session1b-english.ts`: 30 English classics
+      - `server/seed-session2a-french.ts` + `seed-session2b-french.ts`: 30 French classics
+      - `server/seed-session3a-german.ts` + `seed-session3b-german.ts`: 30 German classics
+      - `server/seed-session4a-originals.ts` + `seed-session4b-originals.ts`: 30 AI-original stories
+    - Each session processes 15 stories with immediate database insertion to preserve progress
     - See `server/ADD_MORE_STORIES.md` for instructions on adding more classical stories
-- **Database Seeding**: Run `tsx server/seed-production.ts` to populate database from JSON export
+- **Database Status**: ✅ **GENERATION COMPLETE** (Nov 2025)
+    - All 120 bedtime stories successfully generated and stored in database
+    - 40 English stories (30 classics + 10 AI-originals) using new age ranges
+    - 40 French stories (30 classics + 10 AI-originals) using new age ranges
+    - 40 German stories (30 classics + 10 AI-originals) using new age ranges
+    - All stories use updated age ranges: 2-4, 5-6, 7-8 years (no legacy ranges remain)
+    - Total cost: ~$3-5 in OpenAI API usage
+    - **Note**: To regenerate stories, clear database first with `DELETE FROM stories;` to avoid duplicates
 
 ### Feature Specifications
 - **Public Features**: Browse feed, search, read stories, filter by age and language.
