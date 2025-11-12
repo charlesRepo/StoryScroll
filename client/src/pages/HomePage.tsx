@@ -31,6 +31,7 @@ export default function HomePage() {
   const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
   const [generatedStory, setGeneratedStory] = useState<Partial<Story> | null>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const filterBarRef = useRef<HTMLDivElement>(null);
   
   // Welcome banner dismissal state
   const [isWelcomeBannerDismissed, setIsWelcomeBannerDismissed] = useLocalStorageState(
@@ -329,6 +330,22 @@ export default function HomePage() {
     setCurrentStoryIndex(0);
   }, [selectedLanguage]);
 
+  // Dynamically adjust scroll padding when banner is dismissed
+  // This ensures cards snap below the FilterBar instead of getting cropped
+  useEffect(() => {
+    if (scrollContainerRef.current && filterBarRef.current && activeTab === "feed") {
+      const filterBarHeight = filterBarRef.current.offsetHeight;
+      
+      // When banner is dismissed, add scroll padding equal to FilterBar height
+      // When banner is visible, no scroll padding needed (banner pushes content down)
+      if (isWelcomeBannerDismissed) {
+        scrollContainerRef.current.style.scrollPaddingTop = `${filterBarHeight}px`;
+      } else {
+        scrollContainerRef.current.style.scrollPaddingTop = "0px";
+      }
+    }
+  }, [isWelcomeBannerDismissed, activeTab]);
+
   const currentStory = selectedStory
     ? stories.find((s) => s.id === selectedStory) ||
       likedStoriesList.find((s) => s.id === selectedStory)
@@ -350,10 +367,12 @@ export default function HomePage() {
   return (
     <div className="h-screen flex flex-col bg-background">
       {activeTab === "feed" && (
-        <FilterBar
-          selectedLanguage={selectedLanguage}
-          onLanguageChange={setSelectedLanguage}
-        />
+        <div ref={filterBarRef}>
+          <FilterBar
+            selectedLanguage={selectedLanguage}
+            onLanguageChange={setSelectedLanguage}
+          />
+        </div>
       )}
 
       <div className="flex-1 overflow-hidden relative">
@@ -391,7 +410,6 @@ export default function HomePage() {
                   msOverflowStyle: "none",
                   scrollSnapStop: "always",
                   overscrollBehavior: "contain",
-                  scrollPaddingTop: "0px",
                 }}
               >
               {stories.length === 0 && !isStoriesFetching ? (
