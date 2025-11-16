@@ -5,7 +5,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import logoUrl from "@assets/storyscroll_logo_1762725801637.png";
 
 export interface FilterBarProps {
   selectedLanguage: string;
@@ -30,7 +29,7 @@ export default function FilterBar({
         data-testid="header-storyscroll"
       >
         <img 
-          src={logoUrl} 
+          src={"/storyscroll_logo.png"}
           alt="StoryScroll" 
           className="w-[80px] h-[80px] object-contain flex-shrink-0"
           style={{ transform: 'scaleX(-1)' }}

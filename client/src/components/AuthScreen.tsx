@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useAuth } from "@/lib/auth";
 import { useToast } from "@/hooks/use-toast";
-import logoUrl from "@assets/storyscroll_logo_1762725801637.png";
+const logoUrl = "/storyscroll_logo.png";
 import { MARKETING_INTRO } from "@/lib/content";
 
 export default function AuthScreen() {

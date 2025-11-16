@@ -5,7 +5,7 @@
 - `server/`: Express API and services (`index.ts`, `routes.ts`, `storage.ts`).
 - `shared/`: Cross‑shared types and Drizzle schema (`schema.ts`).
 - `dist/`: Production build output (client assets in `dist/public`, server bundle in `dist/index.js`).
-- `scripts/`: One‑off data generation/migration helpers.
+  
 - Root config: `drizzle.config.ts`, `tailwind.config.ts`, `vite.config.ts`.
 
 ## Build, Test, and Development Commands

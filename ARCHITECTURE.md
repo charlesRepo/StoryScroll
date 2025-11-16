@@ -23,8 +23,8 @@ Preferred communication style: Simple, everyday language.
 - **Data Layer**: `IStorage` abstraction, Drizzle ORM for PostgreSQL, Repository pattern.
 - **Authentication**: Supports anonymous browsing for core features; authenticated users can like, save, create AI stories, and manage profiles.
 - **Story Management**: Users can edit AI-generated stories before publishing, set privacy (public/private), and manage their stories in a "My Stories" section. Search includes user-generated public and private stories.
-- **AI-Powered Content**: AI generates custom stories (title, summary, moral, full content) with summaries capped at 70 words/390 characters. AI provides bidirectional French ↔ English translation with deduplication.
-- **Age Range Removal (Nov 2025)**: Age range filtering and categorization have been completely removed from the application due to poor AI categorization (113/120 stories were categorized as "5-6 years"). Database schema no longer includes `ageRange` columns in `stories` or `users` tables. Stories are now filtered by language only. The legacy generation scripts in `server/seed-session*` and `server/story-processor.ts` still reference age categorization but are no longer used for the live application.
+- **AI-Powered Content**: Users can generate custom stories (title, summary, moral, full content) with summaries capped at 70 words/390 characters. AI provides bidirectional French ↔ English translation with deduplication.
+- **Age Range Removal (Nov 2025)**: Age range filtering and categorization have been completely removed from the application due to poor AI categorization (113/120 stories were categorized as "5-6 years"). Database schema no longer includes `ageRange` columns in `stories` or `users` tables. Stories are now filtered by language only.
 - **Error Handling**: Centralized frontend utility (`normalizeErrorMessage`) ensures user-friendly error messages, preventing raw JSON or "[object Object]" displays. Backend consistently returns `{ error: "string message" }` for all error responses.
 - **Story Interleaving**: Deterministic round-robin algorithm (`interleaveStoriesByAuthor` in `server/routes.ts`) spreads out stories from the same author to prevent consecutive stories from appearing back-to-back. Groups stories by author (using authorName, authorId, or story.id as fallback), sorts author groups by size (descending) and name (alphabetically), then interleaves using round-robin. The algorithm is deterministic - same input produces same output every time, ensuring stable feed order across requests and enabling future pagination support.
 - **Classical Story Library**: Comprehensive tri-lingual library of 120 bedtime stories (90 classical adaptations + 30 AI-original):
@@ -35,16 +35,10 @@ Preferred communication style: Simple, everyday language.
   - All stories attributed with "adapted from [Original Author]" or "StoryScroll Team"
   - AI categorizes each story by age (2-4, 5-6, 7-8 years) based on complexity analysis
   - AI generates age-appropriate morals for all stories (gentle for younger, stronger for older)
-- **Story Generation Pipeline**: 
-    - `server/classicalStoryData.ts`: Metadata for 90 classical stories with descriptions
-    - `server/story-processor.ts`: AI adaptation, age categorization, and moral generation
-    - **Chunked Generation Scripts** (designed for short execution time limits on some hosts):
-      - `server/seed-session1a-english.ts` + `seed-session1b-english.ts`: 30 English classics
-      - `server/seed-session2a-french.ts` + `seed-session2b-french.ts`: 30 French classics
-      - `server/seed-session3a-german.ts` + `seed-session3b-german.ts`: 30 German classics
-      - `server/seed-session4a-originals.ts` + `seed-session4b-originals.ts`: 30 AI-original stories
-    - Each session processes 15 stories with immediate database insertion to preserve progress
-    - See `server/ADD_MORE_STORIES.md` for instructions on adding more classical stories
+- **Content Source**
+    - A curated set of 120 stories (English/French/German) lives in `server/development-stories.ts`.
+    - On first run with an empty database, `initialize-stories.ts` seeds these stories in batches.
+    - Legacy generation/seed scripts were removed to keep the runtime lean. To update content, edit `server/development-stories.ts` or add an import tool.
 - **Database Status**: ✅ **GENERATION COMPLETE** (Nov 2025)
     - All 120 bedtime stories successfully generated and stored in database
     - 40 English stories (30 classics + 10 AI-originals)
