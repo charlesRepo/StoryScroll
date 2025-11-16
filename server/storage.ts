@@ -101,7 +101,7 @@ export class DbStorage implements IStorage {
       query = query.where(and(...conditions)) as any;
     }
     
-    return await query.orderBy(desc(stories.createdAt));
+    return await query.orderBy(desc(stories.createdAt), desc(stories.id));
   }
 
   async createStory(story: InsertStory): Promise<Story> {
@@ -113,7 +113,7 @@ export class DbStorage implements IStorage {
     return await db.select()
       .from(stories)
       .where(eq(stories.authorId, userId))
-      .orderBy(desc(stories.createdAt));
+      .orderBy(desc(stories.createdAt), desc(stories.id));
   }
 
   async getStoryByAuthorAndTitle(authorId: string, title: string): Promise<Story | undefined> {

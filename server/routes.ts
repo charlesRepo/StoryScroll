@@ -165,13 +165,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
     }
     
-    // Sort deterministically: first by queue size (descending), then by author name
-    // This ensures consistent ordering across requests with the same data
+    // Sort deterministically by recency: the most recently created story in each author's queue
+    // comes first, then by author name as a tie-breaker. This prioritizes fresh content while
+    // still interleaving different authors.
     authorData.sort((a, b) => {
-      if (b.stories.length !== a.stories.length) {
-        return b.stories.length - a.stories.length; // Larger collections first
-      }
-      return a.author.localeCompare(b.author); // Alphabetically as tiebreaker
+      const aTop = a.stories[0];
+      const bTop = b.stories[0];
+      const aTime = aTop?.createdAt ? new Date(aTop.createdAt).getTime() : 0;
+      const bTime = bTop?.createdAt ? new Date(bTop.createdAt).getTime() : 0;
+      if (bTime !== aTime) return bTime - aTime; // newer first
+      // Tie-break by newest story id (descending) for stable order
+      const aId = aTop?.id || "";
+      const bId = bTop?.id || "";
+      if (aId !== bId) return bId.localeCompare(aId);
+      // Final tie-breaker by author
+      return a.author.localeCompare(b.author);
     });
     
     const authorQueues = authorData.map(d => d.stories);

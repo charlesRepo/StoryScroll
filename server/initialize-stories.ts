@@ -228,15 +228,23 @@ export async function initializeStoriesIfEmpty() {
       console.log("📚 Initializing with production stories...");
       console.log(`📖 Loading ${developmentStories.length} curated stories (90 classical adaptations + 30 AI-originals)`);
       
+      // Assign deterministic timestamps in the past so newer content can be prioritized
+      // Newest story is most recent; older stories progressively older by 1 day
+      const now = Date.now();
+      const spacedStories = developmentStories.map((s, idx) => ({
+        ...s,
+        createdAt: new Date(now - (developmentStories.length - idx) * 24 * 60 * 60 * 1000),
+      }));
+
       // Insert all development stories in batches for better performance
       const batchSize = 20;
       let insertedCount = 0;
       
-      for (let i = 0; i < developmentStories.length; i += batchSize) {
-        const batch = developmentStories.slice(i, i + batchSize);
+      for (let i = 0; i < spacedStories.length; i += batchSize) {
+        const batch = spacedStories.slice(i, i + batchSize);
         await db.insert(stories).values(batch);
         insertedCount += batch.length;
-        console.log(`   ✅ Inserted ${insertedCount}/${developmentStories.length} stories...`);
+        console.log(`   ✅ Inserted ${insertedCount}/${spacedStories.length} stories...`);
       }
       
       // Show breakdown
