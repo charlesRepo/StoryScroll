@@ -60,11 +60,11 @@ export default function StoryCard({
 
   return (
     <div
-      className="min-h-full w-full flex items-center justify-center p-6"
+      className="w-full flex justify-center px-4 py-4"
       data-testid="card-story"
     >
       <div 
-        className="bg-[#faf8f5] rounded-lg shadow-lg p-8 max-w-2xl w-full space-y-4 border border-gray-200/50 cursor-pointer"
+        className="bg-[#faf8f5] rounded-lg shadow-lg p-5 max-w-2xl w-full space-y-4 border border-gray-200/50 cursor-pointer"
         onClick={onClick}
       >
         <div className="flex justify-end gap-1 mb-2">
@@ -114,7 +114,7 @@ export default function StoryCard({
           </Button>
         </div>
 
-        <h2 className="font-serif font-bold text-gray-900 leading-tight w-full" style={{ fontSize: '32px' }} data-testid="text-story-title">
+        <h2 className="font-serif font-bold text-gray-900 leading-tight w-full" style={{ fontSize: '28px' }} data-testid="text-story-title">
           {title}
         </h2>
 
@@ -133,7 +133,7 @@ export default function StoryCard({
           </Badge>
         </div>
 
-        <p className="text-lg text-gray-700 leading-relaxed" data-testid="text-story-summary">
+        <p className="text-base text-gray-700 leading-relaxed" data-testid="text-story-summary">
           {summary}
         </p>
 

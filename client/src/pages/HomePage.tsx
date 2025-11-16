@@ -291,69 +291,6 @@ export default function HomePage() {
     },
   });
 
-  // Swipe gesture handling
-  useEffect(() => {
-    const container = scrollContainerRef.current;
-    if (!container || activeTab !== "feed") return;
-
-    let startY = 0;
-    let currentY = 0;
-    let isDragging = false;
-
-    const handleTouchStart = (e: TouchEvent) => {
-      startY = e.touches[0].clientY;
-      isDragging = true;
-    };
-
-    const handleTouchMove = (e: TouchEvent) => {
-      if (!isDragging) return;
-      currentY = e.touches[0].clientY;
-    };
-
-    const handleTouchEnd = () => {
-      if (!isDragging) return;
-      isDragging = false;
-
-      const diff = startY - currentY;
-      const threshold = 50;
-
-      if (Math.abs(diff) > threshold) {
-        if (diff > 0 && currentStoryIndex < stories.length - 1) {
-          setCurrentStoryIndex((prev) => prev + 1);
-        } else if (diff < 0 && currentStoryIndex > 0) {
-          setCurrentStoryIndex((prev) => prev - 1);
-        }
-      }
-    };
-
-    container.addEventListener("touchstart", handleTouchStart);
-    container.addEventListener("touchmove", handleTouchMove);
-    container.addEventListener("touchend", handleTouchEnd);
-
-    return () => {
-      container.removeEventListener("touchstart", handleTouchStart);
-      container.removeEventListener("touchmove", handleTouchMove);
-      container.removeEventListener("touchend", handleTouchEnd);
-    };
-  }, [currentStoryIndex, activeTab, stories.length]);
-
-  // Auto-scroll to current story with proper snap alignment
-  useEffect(() => {
-    if (scrollContainerRef.current && activeTab === "feed") {
-      const container = scrollContainerRef.current;
-      const cards = container.querySelectorAll('[data-testid="card-story"]');
-      if (cards[currentStoryIndex]) {
-        // Use 'nearest' to prevent jumping on mobile devices
-        // This ensures cards snap properly within the visible area
-        cards[currentStoryIndex].scrollIntoView({
-          behavior: "smooth",
-          block: "nearest",
-          inline: "nearest"
-        });
-      }
-    }
-  }, [currentStoryIndex, activeTab]);
-
   // Reset to first story when language changes
   useEffect(() => {
     setCurrentStoryIndex(0);
