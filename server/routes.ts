@@ -24,6 +24,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   // Session middleware
+  const cookieSecureEnv = process.env.SESSION_COOKIE_SECURE;
+  const cookieSecure = typeof cookieSecureEnv === 'string'
+    ? cookieSecureEnv.toLowerCase() === 'true'
+    : process.env.NODE_ENV === "production";
+
   app.use(
     session({
       store: sessionStore,
@@ -33,7 +38,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       cookie: {
         maxAge: 1000 * 60 * 60 * 24 * 6, // 6 days as requested
         httpOnly: true,
-        secure: process.env.NODE_ENV === "production",
+        secure: cookieSecure,
         sameSite: "lax",
       },
     })

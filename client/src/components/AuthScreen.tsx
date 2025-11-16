@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { useAuth } from "@/lib/auth";
 import { useToast } from "@/hooks/use-toast";
 import logoUrl from "@assets/storyscroll_logo_1762725801637.png";
+import { MARKETING_INTRO } from "@/lib/content";
 
 export default function AuthScreen() {
   const [isSignup, setIsSignup] = useState(false);
@@ -78,9 +79,7 @@ export default function AuthScreen() {
             Story Scroll
           </h1>
           <div className="px-4">
-            <p className="text-base text-muted-foreground leading-relaxed">
-              Story Scroll helps parents discover the perfect bedtime story. Browse hundreds of classic tales, create custom AI-powered stories for your child, and share your favorites with other parents. Filter by age and language to find exactly what you need.
-            </p>
+            <p className="text-base text-muted-foreground leading-relaxed">{MARKETING_INTRO}</p>
           </div>
         </div>
 

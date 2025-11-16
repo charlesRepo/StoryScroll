@@ -374,7 +374,7 @@ Every story must include:
 - Test like/save functionality
 
 ### Deployment
-- Replit deployment platform
+- Cloud deployment platform (e.g., Render, Fly.io, Railway)
 - Auto-restart on code changes
 - Environment variable management
 - Production database separate from development

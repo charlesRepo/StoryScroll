@@ -38,7 +38,7 @@ Preferred communication style: Simple, everyday language.
 - **Story Generation Pipeline**: 
     - `server/classicalStoryData.ts`: Metadata for 90 classical stories with descriptions
     - `server/story-processor.ts`: AI adaptation, age categorization, and moral generation
-    - **Chunked Generation Scripts** (designed for Replit's 10-minute timeout limit):
+    - **Chunked Generation Scripts** (designed for short execution time limits on some hosts):
       - `server/seed-session1a-english.ts` + `seed-session1b-english.ts`: 30 English classics
       - `server/seed-session2a-french.ts` + `seed-session2b-french.ts`: 30 French classics
       - `server/seed-session3a-german.ts` + `seed-session3b-german.ts`: 30 German classics
@@ -75,3 +75,44 @@ Preferred communication style: Simple, everyday language.
 - **UI Components**: Radix UI primitives, shadcn/ui, Lucide React (icons).
 - **Session Storage**: `connect-pg-simple` (for PostgreSQL-backed session persistence).
 - **Image Hosting**: Unsplash (currently for placeholders, not actively displayed in UI).
+
+## Local Setup (.env + Neon)
+
+Use a local `.env` file and a Neon-hosted PostgreSQL database for development.
+
+1) Prerequisites
+- Node 18.18+ or 20.9+ and npm installed
+- Install dependencies: `npm install`
+
+2) Provision a Neon database
+- Create a free project/database at Neon and copy the connection string that includes SSL, e.g. `postgres://user:pass@ep-xxxx.neon.tech/neondb?sslmode=require`
+- In Neon → SQL Editor, enable UUID generation used by the schema:
+  - `CREATE EXTENSION IF NOT EXISTS pgcrypto;`
+
+3) Create a `.env` at the project root
+```
+DATABASE_URL=postgres://user:pass@ep-xxxx.neon.tech/neondb?sslmode=require
+SESSION_SECRET=replace-with-a-long-random-string
+# Optional – only needed for AI features
+# OPENAI_API_KEY=sk-...
+```
+Notes:
+- `.env` is git-ignored
+- The app and Drizzle auto-load `.env` via `dotenv` imports in `server/index.ts`, `server/db.ts`, and `drizzle.config.ts`
+
+4) Create tables from the schema
+- `npm run db:push` (uses Drizzle to create `users`, `stories`, `liked_stories`, `dismissed_stories`)
+- Session storage (`connect-pg-simple`) auto-creates its table on first run
+
+5) Run the app
+- Development: `npm run dev`
+- Production-like: `npm run build && npm run start`
+
+6) First-run seeding
+- On first boot with an empty `stories` table, the server automatically inserts ~120 curated stories
+- To reinitialize stories later: `DELETE FROM stories;` then restart the server
+
+Troubleshooting
+- `DATABASE_URL must be set`: ensure `.env` exists and contains a valid Neon URL
+- `function gen_random_uuid() does not exist`: run `CREATE EXTENSION IF NOT EXISTS pgcrypto;` in Neon
+- Connection issues: make sure the Neon URL includes `?sslmode=require`

@@ -2,6 +2,7 @@ import { X } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { MARKETING_INTRO } from "@/lib/content";
 
 interface FeedWelcomeBannerProps {
   onDismiss: () => void;
@@ -47,9 +48,7 @@ export function FeedWelcomeBanner({ onDismiss }: FeedWelcomeBannerProps) {
         <h2 className="text-lg font-semibold text-foreground">
           Welcome to Story Scroll!
         </h2>
-        <p className="text-sm text-muted-foreground leading-relaxed">
-          Story Scroll helps parents discover the perfect bedtime story. Browse hundreds of classic tales, create custom AI-powered stories for your child, and share your favorites with other parents. Filter by age and language to find exactly what you need.
-        </p>
+        <p className="text-sm text-muted-foreground leading-relaxed">{MARKETING_INTRO}</p>
       </div>
     </Card>
     </motion.div>
