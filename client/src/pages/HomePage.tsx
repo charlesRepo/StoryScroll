@@ -27,7 +27,7 @@ export default function HomePage() {
   const [activeTab, setActiveTab] = useState<
     "feed" | "search" | "create" | "liked" | "profile"
   >("feed");
-  const [selectedLanguage, setSelectedLanguage] = useState<string>("en");
+  const [selectedLanguage, setSelectedLanguage] = useState<string>("all");
   const [selectedStory, setSelectedStory] = useState<string | null>(null);
   const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
   const [generatedStory, setGeneratedStory] = useState<Partial<Story> | null>(null);
@@ -43,7 +43,7 @@ export default function HomePage() {
 
   // Update preferences when language changes
   useEffect(() => {
-    if (isAuthenticated) {
+    if (isAuthenticated && selectedLanguage !== "all") {
       apiRequest("PATCH", "/api/users/preferences", {
         preferredLanguage: selectedLanguage,
       }).catch(console.error);
@@ -54,7 +54,7 @@ export default function HomePage() {
   const { data: storiesData, isFetching: isStoriesFetching } = useQuery<{ stories: Story[] }>({
     queryKey: ["/api/stories", selectedLanguage],
     queryFn: async () => {
-      const url = `/api/stories?language=${selectedLanguage}`;
+      const url = selectedLanguage === "all" ? "/api/stories" : `/api/stories?language=${selectedLanguage}`;
       const response = await apiRequest("GET", url);
       return await response.json();
     },

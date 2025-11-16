@@ -213,7 +213,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Story routes
   app.get("/api/stories", async (req, res) => {
     try {
-      const { language } = req.query;
+      const rawLang = typeof req.query.language === 'string' ? req.query.language : undefined;
+      const language = rawLang && (rawLang === 'all' || rawLang.trim() === '') ? undefined : rawLang;
       const userId = req.session.userId;
       
       // Get dismissed story IDs for authenticated users to exclude from feed
@@ -224,7 +225,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       // Get public stories
       const publicStories = await storage.getStories({
-        language: language as string,
+        language: language as string | undefined,
         isPublic: true,
         excludeIds,
       });
