@@ -34,3 +34,15 @@ Troubleshooting
 More
 - Architecture and details: `ARCHITECTURE.md`
 - Contributor guide: `AGENTS.md`
+
+Production (Render)
+- Live URL: https://storyscroll.onrender.com/
+- Service: Web Service (Node 20)
+- Build command: `npm ci && npm run db:push && npm run build`
+- Start command: `npm run start`
+- Env vars:
+  - `DATABASE_URL` (Neon; include `?sslmode=require`)
+  - `SESSION_SECRET` (long random string)
+  - Optional: `OPENAI_API_KEY` (for AI generation)
+- Database prep (once in Neon SQL editor): `CREATE EXTENSION IF NOT EXISTS pgcrypto;`
+- First boot seeds ~120 curated stories automatically if the DB is empty.

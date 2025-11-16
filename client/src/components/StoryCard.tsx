@@ -146,12 +146,23 @@ export default function StoryCard({
         )}
 
         <div className="flex items-center justify-between text-sm text-gray-600 pt-2">
-          {authorName && (
-            <div className="flex items-center gap-1" data-testid="text-author">
-              <Book className="h-4 w-4" />
-              <span>Author: {authorName}</span>
-            </div>
-          )}
+          {authorName && (() => {
+            const trimmed = authorName.trim();
+            const lower = trimmed.toLowerCase();
+            let label = '';
+            if (lower.startsWith('adapted from')) {
+              const after = trimmed.slice('adapted from'.length).trimStart();
+              label = `Adapted from${after ? ' ' + after : ''}`;
+            } else {
+              label = `Author: ${trimmed}`;
+            }
+            return (
+              <div className="flex items-center gap-1" data-testid="text-author">
+                <Book className="h-4 w-4" />
+                <span>{label}</span>
+              </div>
+            );
+          })()}
           {likeCount > 0 && (
             <span className="text-gray-600" data-testid="text-like-count">
               {likeCount} {likeCount === 1 ? "like" : "likes"}
