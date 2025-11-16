@@ -87,3 +87,4 @@ app.use((req, res, next) => {
     log(`serving on port ${port}`);
   });
 })();
+// Same-origin deployment (Render) doesn't need CORS
