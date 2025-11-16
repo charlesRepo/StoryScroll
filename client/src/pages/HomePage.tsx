@@ -18,6 +18,7 @@ import { FeedWelcomeBanner } from "@/components/FeedWelcomeBanner";
 import { useLocalStorageState } from "@/hooks/use-local-storage-state";
 import { Loader2 } from "lucide-react";
 import { AnimatePresence } from "framer-motion";
+import { BackToTopButton } from "@/components/BackToTopButton";
 
 export default function HomePage() {
   const { user, isLoading: authLoading, isAuthenticated, logout } = useAuth();
@@ -32,6 +33,7 @@ export default function HomePage() {
   const [generatedStory, setGeneratedStory] = useState<Partial<Story> | null>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const filterBarRef = useRef<HTMLDivElement>(null);
+  const [showBackToTop, setShowBackToTop] = useState(false);
   
   // Welcome banner dismissal state
   const [isWelcomeBannerDismissed, setIsWelcomeBannerDismissed] = useLocalStorageState(
@@ -99,6 +101,33 @@ export default function HomePage() {
   });
 
   const allStories = allStoriesData?.stories || [];
+
+  // Show "back to top" button near the end of the feed
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (!container || activeTab !== "feed") return;
+
+    const onScroll = () => {
+      const threshold = 120; // px from bottom to trigger
+      const atBottom =
+        container.scrollTop + container.clientHeight >=
+        container.scrollHeight - threshold;
+      setShowBackToTop(atBottom);
+    };
+
+    // Run once to set initial state
+    onScroll();
+    container.addEventListener("scroll", onScroll, { passive: true });
+    return () => container.removeEventListener("scroll", onScroll);
+  }, [activeTab, stories.length]);
+
+  const handleBackToTop = () => {
+    const container = scrollContainerRef.current;
+    if (container) {
+      container.scrollTo({ top: 0, behavior: "smooth" });
+      setShowBackToTop(false);
+    }
+  };
 
   // Fetch liked stories
   const { data: likedStoriesData } = useQuery<{ stories: Story[] }>({
@@ -436,6 +465,13 @@ export default function HomePage() {
             </div>
           </div>
         )}
+
+        {/* Back to top button (only on feed) */}
+        <AnimatePresence>
+          {activeTab === "feed" && showBackToTop && (
+            <BackToTopButton onClick={handleBackToTop} />
+          )}
+        </AnimatePresence>
 
         {activeTab === "create" && (
           <div className="h-full overflow-y-auto">
