@@ -2,8 +2,8 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import session from "express-session";
+import rateLimit from "express-rate-limit";
 import connectPgSimple from "connect-pg-simple";
-import { neon } from "@neondatabase/serverless";
 import { insertStorySchema } from "@shared/schema";
 import { z } from "zod";
 import OpenAI from "openai";
@@ -16,6 +16,10 @@ declare module "express-session" {
 }
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Basic rate limits for auth endpoints
+  // express-rate-limit v7+: use `limit` (was `max`) and recommended draft-7 headers
+  const loginLimiter = rateLimit({ windowMs: 60_000, limit: 10, standardHeaders: 'draft-7', legacyHeaders: false });
+  const signupLimiter = rateLimit({ windowMs: 60_000, limit: 5, standardHeaders: 'draft-7', legacyHeaders: false });
   // Session store with PostgreSQL
   const PgStore = connectPgSimple(session);
   const sessionStore = new PgStore({
@@ -53,7 +57,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   };
 
   // Auth routes
-  app.post("/api/auth/signup", async (req, res) => {
+  app.post("/api/auth/signup", signupLimiter, async (req, res) => {
     try {
       const { username, password, email } = req.body;
       
@@ -79,7 +83,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
         preferredLanguage: "en"
       });
 
-      req.session.userId = user.id;
+      // Regenerate session on privilege change to prevent fixation
+      await new Promise<void>((resolve, reject) => {
+        req.session.regenerate((err: any) => {
+          if (err) return reject(err);
+          req.session.userId = user.id;
+          resolve();
+        });
+      });
       
       // Don't send password back to client
       const { password: _, ...userWithoutPassword } = user;
@@ -89,7 +100,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  app.post("/api/auth/login", async (req, res) => {
+  app.post("/api/auth/login", loginLimiter, async (req, res) => {
     try {
       const { username, password } = req.body;
       
@@ -107,8 +118,15 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(401).json({ error: "Invalid username or password" });
       }
 
-      req.session.userId = user.id;
-      
+      // Regenerate session on login to prevent fixation
+      await new Promise<void>((resolve, reject) => {
+        req.session.regenerate((err: any) => {
+          if (err) return reject(err);
+          req.session.userId = user.id;
+          resolve();
+        });
+      });
+
       // Don't send password back to client
       const { password: _, ...userWithoutPassword } = user;
       res.json({ user: userWithoutPassword });

@@ -19,7 +19,7 @@ Setup
 Run
 - Development: `npm run dev`
 - Production: `npm run build && npm run start`
-- App URL: `http://localhost:${PORT || 5000}` (set `PORT` to avoid conflicts)
+- App URL: `http://localhost:${PORT || 3000}` (set `PORT` to avoid conflicts)
 
 Notes
 - First start with an empty DB seeds ~120 curated stories automatically.
